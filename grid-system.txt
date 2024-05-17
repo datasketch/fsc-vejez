@@ -1,0 +1,11 @@
+// first step -> bg-colors, paddings
+<div class="py-x bg-x">
+    // second step -> grid system
+    <div class="grid grid-cols-4 lg:grid-cols-12 gap-5 mx-10 lg:mx-20 max-w-[1206px]">
+        // third step -> define child col-span or col-start <-> col-end item
+        <div class="col-span-x">child 1</div>
+        <div class="col-span-x">child 2</div>
+        <div class="col-start-x col-end-x">child 3</div>
+        <div class="col-start-x col-end-x">child 4</div>
+    </div>
+</div>
