@@ -21,7 +21,8 @@ const config: Config = {
         'asparagus': '#698F3F'
       },
       backgroundImage: {
-        'banner-one-home': "url('/images/elementos-graficos.svg')"
+        'banner-one-home': "url('/images/elementos-graficos.svg')",
+        'banner-two-home': "url('/images/green-backgorund.svg')",
       }
     },
   },

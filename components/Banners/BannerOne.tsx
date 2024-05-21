@@ -2,20 +2,11 @@
 export default function BannerOne() {
   return (
     <>
-      {/* <div className="absolute -z-10 mt-24 w-full mx-0">
-        <img src="/images/elementos-graficos.svg" alt="elementos-graficos" />
-      </div> */}
       <div className="flex justify-center mt-11">
         <h1 className="text-6xl font-proximaNovoaA">+60 <span className="italic text-dark-slate-gray">Datos plateados</span></h1>
       </div>
       <div className="bg-banner-one-home bg-cover bg-no-repeat absolute -z-10 mt-16">
         <div className="grid grid-cols-4 lg:grid-cols-12 gap-5 mx-10 lg:mx-20">
-          {/* <div className="row-start-1 col-start-4 col-span-6">
-            <h1 className="text-6xl font-proximaNovoaA">+60 <span className="italic text-dark-slate-gray">Datos plateados</span></h1>
-          </div> */}
-
-          {/* <img src="/images/elementos-graficos.svg" alt="elementos-graficos" />
-        </div> */}
           <div className="row-start-1 col-start-2 col-span-4 relative">
             <img src="/images/dialogue-ballon-g.svg" alt="dialogue-ballon-g" />
             <div className="absolute z-10 top-1 p-3 w-[262px]">
