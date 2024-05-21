@@ -8,8 +8,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mx-20">
+    <div>
       <BannerOne />
     </div>
   )
+
 }

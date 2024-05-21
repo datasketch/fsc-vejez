@@ -19,6 +19,9 @@ const config: Config = {
         'moonstone': '#41A5B4',
         'dark-slate-gray': '#1D5556',
         'asparagus': '#698F3F'
+      },
+      backgroundImage: {
+        'banner-one-home': "url('/images/elementos-graficos.svg')"
       }
     },
   },
