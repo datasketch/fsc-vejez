@@ -1,3 +1,4 @@
+import BannerOne from "@/components/Banners/BannerOne";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <div>main page</div>;
+  return (
+    <div className="mx-20">
+      <BannerOne />
+    </div>
+  )
 }
