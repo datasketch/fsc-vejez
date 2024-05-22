@@ -1,4 +1,5 @@
 import BannerOne from "@/components/Banners/BannerOne";
+import BannerThree from "@/components/Banners/BannerThree";
 import BannerTwo from "@/components/Banners/BannerTwo";
 import type { Metadata } from "next";
 
@@ -13,6 +14,7 @@ export default function Page() {
       <div>
         <BannerOne />
         <BannerTwo />
+        <BannerThree />
       </div>
     </>
   )
