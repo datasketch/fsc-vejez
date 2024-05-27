@@ -18,7 +18,9 @@ const config: Config = {
         'amaranth-purple': '#B6174B',
         'moonstone': '#41A5B4',
         'dark-slate-gray': '#1D5556',
-        'asparagus': '#698F3F'
+        'asparagus': '#698F3F',
+        'anti-flash-white': '#EFEFEF',
+        'davys-gray': '#505050'
       },
       backgroundImage: {
         'banner-one-home': "url('/images/elementos-graficos.svg')",
