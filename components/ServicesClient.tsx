@@ -4,6 +4,12 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ServicesCard from "./ServicesCard";
 import ReactPaginate from "react-paginate";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/FilterModal";
 
 const servicesData = [
   {
@@ -104,8 +110,8 @@ export default function ServicesClient() {
   return (
     <div ref={servicesRef} className="py-16">
       <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
-        <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
-          <div className="col-span-4">
+        <div className="grid grid-cols-12 gap-x-2.5 xl:gap-x-5">
+          <div className="col-span-12">
             <div className="flex items-center gap-x-2.5">
               <h2 className="text-2xl lg:text-[31px]">
                 <span className="font-semibold">Todos los</span>{" "}
@@ -121,7 +127,12 @@ export default function ServicesClient() {
               </button>
             </div>
           </div>
-          <div className="mt-8 lg:mt-12 col-span-4 lg:col-start-1 lg:col-end-3">
+          <div className="lg:hidden mt-8 col-span-12">
+            <button className="py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold w-full">
+              Descargar base de datos
+            </button>
+          </div>
+          <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-1 lg:col-end-3">
             <select
               name="filterBy"
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
@@ -129,7 +140,52 @@ export default function ServicesClient() {
               <option value="">Filtros</option>
             </select>
           </div>
-          <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-3 lg:col-end-7">
+          <div className="mt-4 lg:hidden col-span-4">
+            <Dialog>
+              <DialogTrigger>
+                <p className="flex items-center gap-x-2.5 py-2 px-5 rounded-[20px] bg-seasalt border border-eerie-black/40">
+                  <Image
+                    src="/images/icons/filter.svg"
+                    alt="filter icon"
+                    width={21}
+                    height={14}
+                  />
+                  <span>Filtros</span>
+                </p>
+              </DialogTrigger>
+              <DialogContent>
+                <div className="mt-8 flex flex-col justify-between h-full pb-10">
+                  <div>
+                    <label htmlFor="order-by" className="text-xl font-semibold">
+                      Ordenar por
+                    </label>
+                    <select
+                      name="orderBy"
+                      id="order-by"
+                      className="mt-2 py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
+                    >
+                      <option value="">Filtros</option>
+                    </select>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <DialogClose>
+                        <button className="text-[13px] text-dark-slate-gray underline">
+                          Reestablecer filtros
+                        </button>
+                      </DialogClose>
+                      <DialogClose>
+                        <button className="text-dark-slate-gray font-semibold rounded-[20px] bg-asparagus/40 py-2 px-4">
+                          Aplicar
+                        </button>
+                      </DialogClose>
+                    </div>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+          </div>
+          <div className="mt-4 lg:mt-12 col-span-8 lg:col-start-3 lg:col-end-7">
             <div className="relative">
               <input
                 onChange={(e) => setSearch(e.target.value)}
@@ -147,14 +203,14 @@ export default function ServicesClient() {
               </div>
             </div>
           </div>
-          <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-10 lg:col-end-13">
+          <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-10 lg:col-end-13">
             <div className="flex justify-start lg:justify-end">
               <button className="py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold">
                 Descargar base de datos
               </button>
             </div>
           </div>
-          <div className="mt-4 lg:mt-12 col-span-4 lg:col-span-12">
+          <div className="mt-4 lg:mt-12 col-span-12">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5 xl:gap-5">
               {filterData.length > 0 ? (
                 filterData

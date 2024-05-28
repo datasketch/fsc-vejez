@@ -17,7 +17,7 @@ export default function Page() {
         <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-start-2 lg:col-end-12">
-              <div className="text-center">
+              <div className="lg:text-center">
                 <h1 className="text-4xl lg:text-5xl xl:text-[61px] lg:leading-[67.1px]">
                   <span className="font-semibold">
                     Servicios digitales para
@@ -37,7 +37,7 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
-              <div className="text-center">
+              <div className="lg:text-center">
                 <h3 className="font-semibold text-xl">
                   Referentes de servicios digitales para personas mayores
                   alrededor del mundo
@@ -84,7 +84,7 @@ export default function Page() {
                 </span>
               </h2>
             </div>
-            <div className="col-span-4 lg:col-start-6 lg:col-end-13 lg:-translate-x-5">
+            <div className="mt-2 lg:mt-0 col-span-4 lg:col-start-6 lg:col-end-13 lg:-translate-x-5">
               <p>
                 Mientras que en Latinoamerica hay una especialización por los
                 servicios de E-Learning y la Telemedicina; España y Estados

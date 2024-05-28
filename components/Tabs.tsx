@@ -13,7 +13,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={clsx(
-      "flex w-full md:w-auto md:flex-row md:inline-flex flex-col justify-center rounded-[20px] overflow-hidden bg-seasalt p-[2px] u-shadow-1",
+      "inline-flex rounded-[20px] overflow-hidden bg-seasalt p-[2px] u-shadow-1 overflow-x-auto",
       className
     )}
     {...props}
@@ -28,7 +28,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={clsx(
-      "py-2 px-4 data-[state=active]:bg-asparagus/40 data-[state=active]:text-dark-slate-gray rounded-[20px] duration-300",
+      "py-2 px-4 data-[state=active]:bg-asparagus/40 data-[state=active]:text-dark-slate-gray rounded-[20px] flex-shrink-0 duration-300",
       className
     )}
     {...props}
