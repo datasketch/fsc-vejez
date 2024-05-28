@@ -8,7 +8,7 @@ export default function WebsiteLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="font-proxima-nova text-eerie-black bg-alabaster">
+      <body className="font-proxima-nova text-eerie-black bg-anti-flash-white">
         <Header />
         <main>{children}</main>
         <Footer />

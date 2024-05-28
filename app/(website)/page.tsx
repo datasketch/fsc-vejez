@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <div>main page</div>;
+  return <div className="h-[40vh]"></div>;
 }
