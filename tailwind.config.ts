@@ -20,7 +20,7 @@ const config: Config = {
         'dark-slate-gray': '#1D5556',
         'asparagus': '#698F3F',
         'alabaster': '#EFEFEF',
-        'vampire-gray': '#505050'
+        'vampire-gray': '#505050',
         'anti-flash-white': '#EFEFEF',
         'seasalt': '#FAFAFA'
       }
