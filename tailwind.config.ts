@@ -20,14 +20,19 @@ const config: Config = {
         'dark-slate-gray': '#1D5556',
         'asparagus': '#698F3F',
         'anti-flash-white': '#EFEFEF',
-        'davys-gray': '#505050'
+        'davys-gray': '#505050',
+        'seasalt': '#FAFAFA',
       },
       backgroundImage: {
         'banner-one-home': "url('/images/elementos-graficos.svg')",
         'banner-two-home': "url('/images/green-backgorund.svg')",
-      }
+        'banner-services': "url('/images/servicios/banner-services.svg')"
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require("tailwindcss-animate"),
+  ],
 };
 export default config;
