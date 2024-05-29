@@ -5,6 +5,7 @@ import ResourceCard from "./ResourceCard"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { removeAccents } from "@/util"
+import ReactPaginate from 'react-paginate';
 
 const optionsCategory = [
     {
@@ -56,6 +57,11 @@ export default function ResourcePanel({ data }: any) {
     const [selectedCategories, setSelectedCategories] = useState([])
     const [selectedType, setSelectedType] = useState([])
     const [selectedYear, setSelectedYear] = useState('')
+
+    const [itemOffset, setItemOffset] = useState(0);
+    const endOffset = itemOffset + 5;
+
+
     // @ts-ignore
     const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b)
 
@@ -95,11 +101,13 @@ export default function ResourcePanel({ data }: any) {
         // @ts-ignore
         .sort((a, b) => {
             if (order === 'AZ') {
-                return a.title.localeCompare(b.title) 
+                return a.title.localeCompare(b.title)
             } else if (order === 'ZA') {
                 return b.title.localeCompare(a.title)
             }
         })
+
+    const pageCount = Math.ceil(filteredData.length / 5);
 
     const handleCategoryChange = (e: any) => {
         const { value } = e.target
@@ -121,6 +129,12 @@ export default function ResourcePanel({ data }: any) {
 
         const result = Array.from(choicesSet)
         setSelectedType(result)
+    }
+
+    const handlePageClick = (event: any) => {
+        console.log(event);
+        const newOffset = (event.selected * 5);
+        setItemOffset(newOffset);
     }
 
     const clearAll = () => {
@@ -241,13 +255,28 @@ export default function ResourcePanel({ data }: any) {
                     </select>
                 </div>
                 {
-                    filteredData.map((item: any, idx: any) => {
+                    filteredData.slice(itemOffset, endOffset).map((item: any, idx: any) => {
                         return (
                             <ResourceCard key={idx} data={item} />
 
                         )
                     })
                 }
+                <div className="flex items-center justify-center lg:col-span-8 lg:col-start-5 mt-14 shado font-normal">
+                    <ReactPaginate
+                        className="flex items-center gap-x-8"
+                        breakLabel="..."
+                        nextLabel="Siguiente"
+                        onPageChange={handlePageClick}
+                        pageCount={pageCount}
+                        previousLabel="Anterior"
+                        nextClassName="font-bold rounded-3xl shadow-lg px-5 py-3"
+                        previousClassName="font-bold rounded-3xl shadow-lg px-5 py-3"
+                        disabledLinkClassName="opacity-60 font-normal"
+                        pageLinkClassName="block rounded-full grid place-items-center w-10 h-10"
+                        activeLinkClassName="bg-true-blue text-dark-slate-gray shadow-lg rounded-full font-bold"
+                    />
+                </div>
             </div>
         </div>
     )

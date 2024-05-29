@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import ResourcePanel from "@/components/ResourcePanel";
-import data from "@/static/data/recursos.json"
+import data from "@/public/data/recursos.json"
 
 export const metadata: Metadata = {
     title: "Recursos",

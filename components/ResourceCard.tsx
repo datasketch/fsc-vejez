@@ -1,6 +1,6 @@
 export default function ResourceCard({ data }: any) {
     return (
-        <div className="w-full rounded-xl shadow-lg flex gap-7 p-5 ">
+        <div className="w-full rounded-xl shadow-lg flex gap-7 p-5 mb-5">
             <div className="w-1/4">
                 <img src={data.image} className="" />
             </div>
