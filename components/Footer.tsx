@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="py-[60px] pb-10 relative z-10">
-        <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
+        <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-y-5 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
               <Image

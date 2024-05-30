@@ -24,9 +24,9 @@ const config: Config = {
         'seasalt': '#FAFAFA',
       },
       backgroundImage: {
-        'banner-one-home': "url('/images/elementos-graficos.svg')",
-        'banner-two-home': "url('/images/green-backgorund.svg')",
-        'banner-services': "url('/images/servicios/banner-services.svg')"
+        'banner-services': "url('/images/servicios/banner-services.svg')",
+        'banner-home': "url('/images/home/banner.svg')",
+        'banner-home-mobile': "url('/images/home/banner-mobile.svg')",
       },
     },
   },
