@@ -2,8 +2,7 @@
 
 import Image from "next/image"
 import ResourceCard from "./ResourceCard"
-import { useRouter } from "next/router"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { removeAccents } from "@/util"
 import ReactPaginate from 'react-paginate';
 
@@ -50,8 +49,6 @@ const optionsType = [
 ]
 
 export default function ResourcePanel({ data }: any) {
-    /* const router = useRouter() */
-
     const [query, setQuery] = useState('')
     const [order, setOrder] = useState('AZ')
     const [selectedCategories, setSelectedCategories] = useState([])
@@ -144,27 +141,6 @@ export default function ResourcePanel({ data }: any) {
         setSelectedYear('')
     }
 
-    /* useEffect(() => {
-        if (!router.isReady) return
-        const { query: { categoria } } = router
-    
-        if (region) {
-          const found = publishersExtend.find(e => e.name === region)
-          setSelectedRegion(regionsDropdown.find(e => e.value === region).label || '')
-          setPublicadors(found.list)
-          setDepartmentData(found.graph)
-          if (area) {
-            setPublicadors(found.extra.find(f => f.name === area).list)
-            setAreaDropdown(found.extra.map(f => {
-              return {
-                label: clearText(f.name),
-                value: f.name
-              }
-            }))
-          }
-        }
-      }, [router.isReady]) */
-
 
     return (
         <div className="grid grid-cols-12 u-container">
@@ -179,7 +155,7 @@ export default function ResourcePanel({ data }: any) {
                     />
                     <div className="absolute left-4 top-0 flex h-full w-5 items-center justify-center">
                         <Image
-                            src="/images/search.svg"
+                            src="/images/icons/search.svg"
                             width={20}
                             height={20}
                             alt=""

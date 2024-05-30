@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import data from "../../../static/data/percepciones.json"
+import data from "@/static/data/percepciones.json"
 import BarChart2 from "@/components/Barchart";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
