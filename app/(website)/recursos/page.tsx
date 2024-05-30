@@ -4,6 +4,7 @@ import ResourcePanel from "@/components/ResourcePanel";
 /* import data from "@/public/data/recursos.json" */
 import data from "@/static/data/recursos.json"
 
+
 export const metadata: Metadata = {
     title: "Recursos",
     description: "Lorem ipsum",
