@@ -19,6 +19,8 @@ const config: Config = {
         'moonstone': '#41A5B4',
         'dark-slate-gray': '#1D5556',
         'asparagus': '#698F3F',
+        'alabaster': '#EFEFEF',
+        'vampire-gray': '#505050',
         'anti-flash-white': '#EFEFEF',
         'seasalt': '#FAFAFA',
         'davys-gray': '#505050'
