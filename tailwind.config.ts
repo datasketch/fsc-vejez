@@ -19,14 +19,10 @@ const config: Config = {
         'moonstone': '#41A5B4',
         'dark-slate-gray': '#1D5556',
         'asparagus': '#698F3F',
-        'principal-2': '#37685C',
-        'principal-3': '#4D7B62',
-        'principal-4': '#628F68',
-        'principal-5': '#77A46E',
-        'principal-6': '#8CB973',
-        'principal-7': '#A1CE78',
         'alabaster': '#EFEFEF',
-        'vampire-gray': '#505050'
+        'vampire-gray': '#505050',
+        'anti-flash-white': '#EFEFEF',
+        'seasalt': '#FAFAFA'
       }
     },
   },
