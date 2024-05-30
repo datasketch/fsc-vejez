@@ -16,7 +16,8 @@ export default function Header() {
                 className={clsx(
                   "border-b pb-0.5 border-b-transparent lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300",
                   {
-                    "border-b-asparagus text-dark-slate-gray": pathname === "/",
+                    "!border-b-asparagus text-dark-slate-gray":
+                      pathname === "/",
                   }
                 )}
                 href="/"
@@ -28,7 +29,7 @@ export default function Header() {
               className={clsx(
                 "border-b pb-0.5 border-b-transparent lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300",
                 {
-                  "border-b-asparagus text-dark-slate-gray":
+                  "!border-b-asparagus text-dark-slate-gray":
                     pathname === "/percepciones",
                 }
               )}
@@ -39,7 +40,7 @@ export default function Header() {
               className={clsx(
                 "border-b pb-0.5 border-b-transparent lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300",
                 {
-                  "border-b-asparagus text-dark-slate-gray":
+                  "!border-b-asparagus text-dark-slate-gray":
                     pathname === "/servicios",
                 }
               )}
@@ -50,7 +51,7 @@ export default function Header() {
               className={clsx(
                 "border-b pb-0.5 border-b-transparent lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300",
                 {
-                  "border-b-asparagus text-dark-slate-gray":
+                  "!border-b-asparagus text-dark-slate-gray":
                     pathname === "/recursos",
                 }
               )}

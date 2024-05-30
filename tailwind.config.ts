@@ -22,10 +22,17 @@ const config: Config = {
         'alabaster': '#EFEFEF',
         'vampire-gray': '#505050',
         'anti-flash-white': '#EFEFEF',
-        'seasalt': '#FAFAFA'
+        'seasalt': '#FAFAFA',
+        'davys-gray': '#505050'
+      },
+      backgroundImage: {
+        'banner-services': "url('/images/servicios/banner-services.svg')"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require("tailwindcss-animate"),
+  ],
 };
 export default config;
