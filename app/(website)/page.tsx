@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="pt-16 pb-[600px] relative">
+      <div className="pt-16 pb-16 lg:pb-[600px] relative">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-start-4 lg:col-end-10 order-1">
@@ -177,7 +178,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="-mt-[500px] relative pt-12 pb-24 lg:pt-20 lg:pb-40 xl:pt-32 xl:pb-64 bg-banner-home-mobile lg:bg-banner-home bg-cover bg-center">
+      <div className="lg:-mt-[500px] relative pt-12 pb-24 lg:pt-20 lg:pb-40 xl:pt-32 xl:pb-64 bg-banner-home-mobile lg:bg-banner-home bg-cover bg-center">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
@@ -232,6 +233,455 @@ export default function Page() {
             src="/images/plants-2.svg"
             alt="plants 2"
           />
+        </div>
+      </div>
+      <div className="-mt-16 lg:-mt-32 xl:-mt-56 py-20 bg-seasalt rounded-[40px] relative">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4 lg:col-span-6">
+              <div className="flex items-center gap-x-2.5 xl:gap-x-5">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/home/phone.svg"
+                  alt="phone"
+                />
+                <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
+                  Tecnología y digitalización
+                </h2>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
+            <div className="mt-6 lg:mt-12 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Frecuencia de uso de internet y acceso a{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  dispositivos
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                El mapa muestra la distribución geográfica del acceso a internet
+                por departamento en Colombia, esto con base en los datos
+                suministrados por la Encuesta Nacional de Calidad de Vida 2022
+                sobre frecuencia en el uso de internet desde cualquier lugar y
+                dispositivo. El mapa usa una escala de colores para representar
+                los rangos de cobertura. los departamentos en tonos más oscuros
+                tienen una mayor proporción de hogares con acceso a internet,
+                mientras que los departamentos en tonos más claros tienen una
+                menor proporción.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-start-2 lg:col-end-7">
+              <Image
+                className="mx-auto lg:mx-0"
+                width={511}
+                height={651.75}
+                src="/images/home/map.svg"
+                alt="map"
+              />
+            </div>
+            <div className="mt-4 lg:mt-20 xl:mt-24 col-span-4 lg:col-start-8 lg:col-end-13">
+              <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
+                <div>
+                  <Image
+                    width={382}
+                    height={215}
+                    src="/images/home/legend.svg"
+                    alt="legend"
+                  />
+                </div>
+                <div className="hidden lg:block my-10">
+                  <Image
+                    width={1920}
+                    height={1}
+                    src="/images/home/dashed.svg"
+                    alt="dashed"
+                  />
+                </div>
+                <div>
+                  <Image
+                    width={491}
+                    height={319}
+                    src="/images/home/stadistic-map.svg"
+                    alt="stadistic map"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4 lg:col-span-6">
+              <div className="flex items-center gap-x-2.5 xl:gap-x-5">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/home/pig.svg"
+                  alt="pig"
+                />
+                <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
+                  Ingresos y finanzas
+                </h2>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
+            <div className="mt-6 lg:mt-12 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Fuentes de{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  ingreso
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                El gráfico representa proporcionalmente los tipos de ingresos
+                que reciben las personas mayores junto con las fuentes de las
+                cuales provienen
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 md:col-span-2 lg:col-start-2 lg:col-end-8">
+              <Image
+                className="mx-auto lg:mx-0"
+                width={645}
+                height={345}
+                src="/images/home/chart-1.svg"
+                alt="chart 1"
+              />
+            </div>
+            <div className="mt-4 lg:mt-20 xl:mt-24 col-span-4 md:col-span-2 lg:col-start-9 lg:col-end-13 md:self-center">
+              <Image
+                className="mx-auto lg:mx-0"
+                width={262}
+                height={125}
+                src="/images/home/chart-details-1.svg"
+                alt="chart details 1"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+            {/*  */}
+            <div className="mt-12 lg:mt-20 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Inclusión financiera, acceso a productos y{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  servicios financieros
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                El gráfico presentado es un gráfico de barras horizontal apilado
+                que ilustra el uso de productos financieros en las personas de
+                60 años o más. Los productos incluidos son: Cuenta corriente,
+                Cuenta de ahorros, CDT, Préstamo para compra de vivienda,
+                Préstamo para compra de vehículo, Préstamo de libre inversión,
+                Tarjeta de crédito, Otro, Ninguno.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={822}
+                height={696}
+                src="/images/home/ticket.svg"
+                alt="ticket"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="-mt-12 py-20 bg-seasalt rounded-[40px] relative">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4 lg:col-span-6">
+              <div className="flex items-center gap-x-2.5 xl:gap-x-5">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/home/health.svg"
+                  alt="health"
+                />
+                <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
+                  Salud y bienestar
+                </h2>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
+            <div className="mt-6 lg:mt-12 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Capacidades
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                La gráfica describe el nivel de desarrollo que tienen las
+                personas mayores para capacidades como oír aun usando audífonos
+                medicados. hablar o conversar, ver aun usando lentes o gafas,
+                mover el cuerpo, caminar o subir y bajar escaleras, agarrar o
+                mover objetos con las manos, entender, aprender, recordar o
+                tomar decisiones por sí mismo(a), comer, vestirse o bañarse por
+                sí mismo(a), relacionarse o interactuar con las demás personas.
+                La gráfica además de hacer un conteo por categoría, cuenta con
+                una escala para indicar en qué medida se posibilita o se
+                dificulta llevar a cabo cada actividad.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-start-1 lg:col-end-6">
+              <Image
+                className="mx-auto lg:mx-0"
+                width={585}
+                height={11}
+                src="/images/home/chart-details-2.svg"
+                alt="chart details 2"
+              />
+            </div>
+            <div className="mt-4 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={1042}
+                height={424}
+                src="/images/home/chart-2.svg"
+                alt="chart 2"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+            {/*  */}
+            <div className="mt-12 lg:mt-20 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Vivienda y composición{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  del hogar
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                El gráfico está dividido en tres secciones principales, la
+                primera corresponde a los grupos demográficos según sexo
+                (femenino, masculino). En la segunda sección se relacionan los
+                tipos de vivienda y la tercera sección se identifican las
+                condiciones de tenencia de vivienda. De esta manera se
+                relacionan en conjunto los datos según los respectivos cruces de
+                información.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-11">
+              <Image
+                width={1020}
+                height={13}
+                src="/images/home/chart-details-3.svg"
+                alt="chart details 3"
+              />
+            </div>
+            <div className="mt-8 lg:mt-10 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={1042}
+                height={527.23}
+                src="/images/home/chart-3.svg"
+                alt="chart 3"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4 lg:col-span-6">
+              <div className="flex items-center gap-x-2.5 xl:gap-x-5">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/home/education.svg"
+                  alt="education"
+                />
+                <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
+                  Educación
+                </h2>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
+            <div className="mt-6 lg:mt-12 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Tasa de{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  alfabetismo
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                De acuerdo con la Gran Encuesta Integrada de Hogares - 2022,
+                esta es la proporción de personas mayores que afirmaron saber
+                leer y escribir, en comparación con las respuestas frente al
+                mismo aspecto de las poblaciones de 14 - 26 años y 27 - 59 años.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-11">
+              <Image
+                width={1020}
+                height={13}
+                src="/images/home/chart-details-3.svg"
+                alt="chart details 3"
+              />
+            </div>
+            <div className="mt-8 lg:mt-10 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={1042}
+                height={400}
+                src="/images/home/chart-4.svg"
+                alt="chart 4"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+            {/*  */}
+            <div className="mt-12 lg:mt-20 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Nivel educativo{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  alcanzado
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                De acuerdo con la Gran Encuesta Integrada de Hogares - 2023, de
+                las personas mayores reportadas en el archivo de datos. "x"
+                completaron la primaria, "y" culminaron el bachillerato, "z"
+                alcanzaron un título universitario.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-7">
+              <Image
+                width={1020}
+                height={13}
+                src="/images/home/chart-details-5.svg"
+                alt="chart details 5"
+              />
+            </div>
+            <div className="mt-8 lg:mt-10 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={1037}
+                height={304}
+                src="/images/home/chart-5.svg"
+                alt="chart 5"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="-mt-12 py-20 bg-seasalt rounded-[40px] relative">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4 lg:col-span-6">
+              <div className="flex items-center gap-x-2.5 xl:gap-x-5">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/home/mobility.svg"
+                  alt="mobility"
+                />
+                <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
+                  Movilidad y transporte
+                </h2>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
+            <div className="mt-6 lg:mt-12 col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Número de viajes de grupos etarios por modalidad de{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  transporte en Bogotá
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
+              <p>
+                "A Pie" es la modalidad de transporte más utilizada entre los
+                diferentes grupos etarios. La siguiente modalidad más popular
+                varía según la edad, pero parece ser el "Auto" para los grupos
+                de 26 años o más. Es notable que ciertas modalidades de
+                transporte, como "Cable", "Transporte Escolar" y "Patineta", son
+                utilizadas en menor medida comparativamente. Además, el grupo
+                etario de "Más de 60" parece utilizar menos el transporte en
+                comparación con otros grupos etarios, con barras generalmente
+                más cortas.
+              </p>
+            </div>
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-6">
+              <Image
+                className="mx-auto lg:mx-0"
+                width={520}
+                height={13}
+                src="/images/home/chart-details-6.svg"
+                alt="chart details 6"
+              />
+            </div>
+            <div className="mt-4 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
+              <Image
+                className="mx-auto"
+                width={1042}
+                height={668}
+                src="/images/home/chart-6.svg"
+                alt="chart 6"
+              />
+            </div>
+            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="pt-20 pb-6">
+        <div className="u-container">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
+            <div className="col-span-4">
+              <h3 className="text-2xl lg:text-[31px] font-semibold">
+                Explora los{" "}
+                <span className="italic font-normal text-dark-slate-gray">
+                  datos
+                </span>
+              </h3>
+            </div>
+            <div className="mt-4 col-span-4 lg:col-span-12">
+              <Image
+                width={1267}
+                height={608}
+                src="/images/home/dashboard.svg"
+                alt="dashboard"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
