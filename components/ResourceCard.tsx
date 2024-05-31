@@ -1,18 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ResourceCard({ data }: any) {
+export default function ResourceCard({ data, image = false, cardTitle }: any) {
     return (
-        <div className="w-full rounded-xl shadow-lg flex gap-7 p-5 mb-5 relative">
-            <div className="w-1/4 z-10">
-                <img src={data.image} className="" />
-            </div>
-            <div className="w-3/4 z-10">
-                <h3>Informe</h3>
+        <div className="w-full h-[300px] rounded-xl shadow-lg flex gap-7 p-5 mb-5 relative">
+            {image &&
+                <div className="w-1/4 z-10">
+                    <img src={data.image} className="" />
+                </div>
+            }
+            {image ?
+            <div className="text-blue-dianne w-3/4 z-10">
+                <h3 className="font-semibold">{cardTitle}</h3>
                 <h5>{data.author}</h5>
                 <p className="text-sm">{data.year}</p>
-                <h4 className="text-xl leading-[22px] font-semibold mt-7">{data.title}</h4>
+                <h4 className="text-eerie-black text-xl leading-[22px] font-semibold mt-7">{data.title}</h4>
             </div>
+            :
+            <div className="text-blue-dianne z-10">
+                <h3 className="text-xl font-semibold">{cardTitle}</h3>
+                <h3 className="text-xl font-semibold mt-2">{data.law} {data.id}</h3>
+                <h5>{data.author}</h5>
+                <h4 className="text-eerie-black text-xl leading-[22px] font-semibold mt-7">{data.title}</h4>
+            </div>
+            }
             {
                 data.link &&
                 <div className="h-20 absolute bg-anti-flash-white w-full bottom-0 left-0 rounded-b-xl flex justify-end items-end">

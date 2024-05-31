@@ -23,7 +23,8 @@ const config: Config = {
         'vampire-gray': '#505050',
         'anti-flash-white': '#EFEFEF',
         'seasalt': '#FAFAFA',
-        'davys-gray': '#505050'
+        'davys-gray': '#505050',
+        'blue-dianne': '#1C5253'
       },
       backgroundImage: {
         'banner-services': "url('/images/servicios/banner-services.svg')"

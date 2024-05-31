@@ -22,6 +22,10 @@ const optionsCategory = [
     {
         label: "Educación",
         value: "education"
+    },
+    {
+        label: "Información sociodemográfica",
+        value: "sociodemograph"
     }
 ]
 
@@ -48,7 +52,7 @@ const optionsType = [
     },
 ]
 
-export default function ResourcePanel({ data }: any) {
+export default function ResourcePanel({ data, isType = false, image = false, cardTitle }: any) {
     const [query, setQuery] = useState('')
     const [order, setOrder] = useState('AZ')
     const [selectedCategories, setSelectedCategories] = useState([])
@@ -188,25 +192,29 @@ export default function ResourcePanel({ data }: any) {
                         })
                     }
                     <hr className="my-7" />
-                    <h2 className="mb-3 text-xl font-semibold">Tipo de publicación</h2>
-                    {
-                        optionsType.map((option, i) => {
-                            return (
-                                <div className="flex gap-2" key={i}>
-                                    <input
-                                        type="checkbox"
-                                        id={option.value}
-                                        // @ts-ignore
-                                        checked={selectedType.includes(option.value)}
-                                        onChange={handleTypeChange}
-                                        value={option.value}
-                                    />
-                                    <label htmlFor={option.value}>{option.label}</label>
-                                </div>
-                            )
-                        })
+                    {isType &&
+                        <>
+                            <h2 className="mb-3 text-xl font-semibold">Tipo de publicación</h2>
+                            {
+                                optionsType.map((option, i) => {
+                                    return (
+                                        <div className="flex gap-2" key={i}>
+                                            <input
+                                                type="checkbox"
+                                                id={option.value}
+                                                // @ts-ignore
+                                                checked={selectedType.includes(option.value)}
+                                                onChange={handleTypeChange}
+                                                value={option.value}
+                                            />
+                                            <label htmlFor={option.value}>{option.label}</label>
+                                        </div>
+                                    )
+                                })
+                            }
+                            <hr className="my-7" />
+                        </>
                     }
-                    <hr className="my-7" />
                     <h2 className="mb-3 text-xl font-semibold">Año</h2>
                     <select className='h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12' name="" id={selectedYear} value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
                         <option value="">Selecciona una opción</option>
@@ -233,7 +241,7 @@ export default function ResourcePanel({ data }: any) {
                 {
                     filteredData.slice(itemOffset, endOffset).map((item: any, idx: any) => {
                         return (
-                            <ResourceCard key={idx} data={item} />
+                            <ResourceCard key={idx} data={item} image={image} cardTitle={cardTitle} />
 
                         )
                     })
