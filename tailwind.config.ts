@@ -22,12 +22,14 @@ const config: Config = {
         'alabaster': '#EFEFEF',
         'vampire-gray': '#505050',
         'anti-flash-white': '#EFEFEF',
+        'davys-gray': '#505050',
         'seasalt': '#FAFAFA',
-        'davys-gray': '#505050'
       },
       backgroundImage: {
-        'banner-services': "url('/images/servicios/banner-services.svg')"
-      }
+        'banner-services': "url('/images/servicios/banner-services.svg')",
+        'banner-home': "url('/images/home/banner.svg')",
+        'banner-home-mobile': "url('/images/home/banner-mobile.svg')",
+      },
     },
   },
   plugins: [
