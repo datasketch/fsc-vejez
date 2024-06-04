@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import data from "@/static/data/percepciones.json"
+/* import data from "@/static/data/percepciones.json" */
+import data from "@/public/data/percepciones.json"
 import BarChart2 from "@/components/Barchart";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <div className="u-container font-proxima-nova">
-                <h1 className="text-6xl font-semibold">Percepciones sobre las <br /> personas mayores <i className="font-normal text-dark-slate-gray">en Colombia</i></h1>
-                <div className="grid grid-cols-12 gap-5 mt-24">
+            <div className="u-container font-proxima-nova mt-20">
+                <h1 className="text-4xl lg:text-6xl font-semibold">Percepciones sobre las <br /> personas mayores <i className="font-normal text-dark-slate-gray">en Colombia</i></h1>
+                <div className="lg:grid grid-cols-12 gap-5 mt-24">
                     <div className="col-span-3">
                         <h3 className="text-2xl font-semibold text-dark-slate-gray mb-1">Ciudades Cómo Vamos</h3>
                         <svg width="60" height="1" viewBox="0 0 60 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,15 +27,15 @@ export default function Page() {
                         </p>
                         <h4 className="text-xl font-semibold text-dark-slate-gray mt-14">Muestra de Ciudades Cómo Vamos</h4>
                         <p className="text-3xl font-bold text-dark-slate-gray mt-1">17.255 habitantes</p>
-                        <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px]">Proporción de los participantes de 60 años o más en la encuesta por sexo</h4>
-                        <BarChart2 data={data.ciudades_como_vamos.data} />
+                        <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-5">Proporción de los participantes de 60 años o más en la encuesta por sexo</h4>
+                        <BarChart2 data={data.ciudades_como_vamos.data_etario} />
                     </div>
-                    <div className="col-span-6 flex justify-center">
+                    <div className="col-span-6 flex justify-center my-20 lg:my-0">
                         <img src="/images/mapa-percepciones-1.png" alt="map1" />
                     </div>
-                    <div className="col-span-3 text-right ">
+                    <div className="col-span-3 lg:text-right ">
                         <h3 className="text-2xl font-semibold text-dark-slate-gray mb-1">Misión Colombia Envejece</h3>
-                        <div className="flex justify-end">
+                        <div className="flex lg:justify-end">
                             <svg width="60" height="1" viewBox="0 0 60 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="0.5" x2="60" y2="0.5" stroke="#1D5556" />
                             </svg>
@@ -62,12 +63,12 @@ export default function Page() {
             </div>
             <div className="bg-white w-full rounded-[40px] my-10">
                 <div className="u-container font-proxima-nova pb-10">
-                    <h2 className="text-center text-4xl  text-dark-slate-gray font-semibold pt-10">Percepciones Ciudades Cómo Vamos</h2>
-                    <div className="grid grid-cols-12 gap-5 mt-20">
+                    <h2 className="text-center text-2xl lg:text-4xl  text-dark-slate-gray font-semibold pt-10">Percepciones Ciudades Cómo Vamos</h2>
+                    <div className="lg:grid grid-cols-12 gap-5 mt-20">
                         <div className="col-span-5">
-                            <h3 className="text-4xl font-semibold">Percepciones sobre <i className="font-normal text-dark-slate-gray">la vejez</i></h3>
+                            <h3 className="text-2xl lg:text-4xl font-semibold">Percepciones sobre <i className="font-normal text-dark-slate-gray">la vejez</i></h3>
                         </div>
-                        <div className="col-span-7">
+                        <div className="col-span-7 mt-5 lg:mt-0">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
@@ -91,15 +92,15 @@ export default function Page() {
                         </div>
                     </div>
                     <p className="text-vampire-gray mt-16 ">Fuente y fecha de actualización</p>
-                    <div className="grid grid-cols-12 gap-5 mt-20">
+                    <div className="lg:grid grid-cols-12 gap-5 mt-20">
                         <div className="col-span-5">
-                            <h3 className="text-4xl font-semibold">Preparación económica y financiera para <i className="font-normal text-dark-slate-gray">la vejez</i></h3>
+                            <h3 className="text-2xl lg:text-4xl font-semibold">Preparación económica y financiera para <i className="font-normal text-dark-slate-gray">la vejez</i></h3>
                         </div>
-                        <div className="col-span-7">
+                        <div className="col-span-7 mt-5 lg:mt-0">
                             <p>La mayoría de las personas de las ciudades encuestadas están totalmente en desacuerdo con estar preparadas económica y financieramente para su vejez.</p>
                         </div>
                     </div>
-                    <HorizontalBarGraph />
+                    <HorizontalBarGraph data={data.ciudades_como_vamos.data_finanzas} />
                     <p className="text-vampire-gray mt-16 ">Fuente y fecha de actualización</p>
                 </div>
             </div>
