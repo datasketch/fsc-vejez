@@ -24,7 +24,6 @@ const config: Config = {
         'anti-flash-white': '#EFEFEF',
         'davys-gray': '#505050',
         'seasalt': '#FAFAFA',
-        'davys-gray': '#505050',
         'blue-dianne': '#1C5253',
       },
       backgroundImage: {
