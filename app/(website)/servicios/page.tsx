@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <>
       <div className="py-16">
-        <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
+        <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-start-2 lg:col-end-12">
               <div className="lg:text-center">
@@ -61,7 +61,7 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="w-full max-w-[797px]">
-                  <p className="leading-tight p-3 border border-eerie-black/10 rounded-[5px]">
+                  <p className="p-3 border border-eerie-black/10 rounded-[5px]">
                     El mapa muestra información obtenida de Socialab, Tsunami
                     LATAM y BID Lab. Los datos presentados son específicos y no
                     deben interpretarse como representativos de tendencias
@@ -74,7 +74,7 @@ export default function Page() {
         </div>
       </div>
       <div className="bg-seasalt py-16 rounded-[40px]">
-        <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
+        <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-start-1 lg:col-end-5">
               <h2 className="text-2xl lg:text-[31px] font-semibold">
@@ -165,7 +165,7 @@ export default function Page() {
         </div>
       </div>
       <ServicesClient />
-      <div className="mx-[30px] xl:mx-20 max-w-[1206px] border-t border-t-dark-slate-gray pt-16">
+      <div className="u-container border-t border-t-dark-slate-gray pt-16">
         <div className="bg-banner-services bg-cover bg-center rounded-[20px] p-8 md:p-10 lg:p-12 xl:p-[60px]">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-12">

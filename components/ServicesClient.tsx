@@ -109,7 +109,7 @@ export default function ServicesClient() {
 
   return (
     <div ref={servicesRef} className="py-16">
-      <div className="mx-[30px] xl:mx-20 max-w-[1206px]">
+      <div className="u-container">
         <div className="grid grid-cols-12 gap-x-2.5 xl:gap-x-5">
           <div className="col-span-12">
             <div className="flex items-center gap-x-2.5">
