@@ -24,6 +24,7 @@ const config: Config = {
         'anti-flash-white': '#EFEFEF',
         'davys-gray': '#505050',
         'seasalt': '#FAFAFA',
+        'blue-dianne': '#1C5253',
       },
       backgroundImage: {
         'banner-services': "url('/images/servicios/banner-services.svg')",
