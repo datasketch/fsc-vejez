@@ -1380,9 +1380,10 @@ export default function Page() {
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 De acuerdo con la Gran Encuesta Integrada de Hogares - 2023, de
-                las personas mayores reportadas en el archivo de datos. "x"
-                completaron la primaria, "y" culminaron el bachillerato, "z"
-                alcanzaron un título universitario.
+                las personas mayores reportadas en el archivo de datos.
+                &quot;x&quot; completaron la primaria, &quot;y&quot; culminaron
+                el bachillerato, &quot;z&quot; alcanzaron un título
+                universitario.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-7">
