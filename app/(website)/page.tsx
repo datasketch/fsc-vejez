@@ -1,9 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-import HeatMap from "@/components/HeatMap";
+import HeatMapHome from "@/components/HeatMapHome";
 import Map from "@/components/Map";
-import Sankey from "@/components/Sankey";
-import TreeMap from "@/components/TreeMap";
-import Waffle from "@/components/Waffle";
+import SankeyHome from "@/components/SankeyHome";
+import TreeMapHome from "@/components/TreeMapHome";
+import WaffleHome from "@/components/WaffleHome";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -349,7 +348,7 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <div className="h-[345px]">
-                <Waffle
+                <WaffleHome
                   data={[
                     {
                       id: "cats",
@@ -446,7 +445,7 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <div className="h-[424px]">
-                <HeatMap
+                <HeatMapHome
                   data={[
                     {
                       id: "Japan",
@@ -805,7 +804,7 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <div className="h-[527.23px]">
-                <Sankey
+                <SankeyHome
                   data={{
                     nodes: [
                       {
@@ -941,7 +940,7 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <div className="h-[400px]">
-                <TreeMap
+                <TreeMapHome
                   data={{
                     name: "nivo",
                     color: "hsl(6, 70%, 50%)",
@@ -1437,15 +1436,16 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                "A Pie" es la modalidad de transporte más utilizada entre los
-                diferentes grupos etarios. La siguiente modalidad más popular
-                varía según la edad, pero parece ser el "Auto" para los grupos
-                de 26 años o más. Es notable que ciertas modalidades de
-                transporte, como "Cable", "Transporte Escolar" y "Patineta", son
+                &quot;A Pie&quot; es la modalidad de transporte más utilizada
+                entre los diferentes grupos etarios. La siguiente modalidad más
+                popular varía según la edad, pero parece ser el &quot;Auto&quot;
+                para los grupos de 26 años o más. Es notable que ciertas
+                modalidades de transporte, como &quot;Cable&quot;,
+                &quot;Transporte Escolar&quot; y &quot;Patineta&quot;, son
                 utilizadas en menor medida comparativamente. Además, el grupo
-                etario de "Más de 60" parece utilizar menos el transporte en
-                comparación con otros grupos etarios, con barras generalmente
-                más cortas.
+                etario de &quot;Más de 60&quot; parece utilizar menos el
+                transporte en comparación con otros grupos etarios, con barras
+                generalmente más cortas.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-6">

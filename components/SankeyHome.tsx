@@ -1,14 +1,14 @@
 "use client";
 import { DefaultLink, DefaultNode, ResponsiveSankey } from "@nivo/sankey";
 
-interface SankeyProps {
+interface SankeyHomeProps {
   data: {
     nodes: DefaultNode[] | any;
     links: DefaultLink[];
   };
 }
 
-export default function Sankey({ data }: SankeyProps) {
+export default function SankeyHome({ data }: SankeyHomeProps) {
   return (
     <ResponsiveSankey
       data={data}

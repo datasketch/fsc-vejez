@@ -1,11 +1,11 @@
 "use client";
-import { ResponsiveTreeMap } from "@nivo/treemap";
+import { DefaultTreeMapDatum, ResponsiveTreeMap } from "@nivo/treemap";
 
-interface TreeMapProps {
-  data: any;
+interface TreeMapHomeProps {
+  data: DefaultTreeMapDatum[] | any;
 }
 
-export default function TreeMap({ data }: TreeMapProps) {
+export default function TreeMapHome({ data }: TreeMapHomeProps) {
   return (
     <ResponsiveTreeMap
       data={data}

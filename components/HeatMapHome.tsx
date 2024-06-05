@@ -5,11 +5,11 @@ import {
   ResponsiveHeatMap,
 } from "@nivo/heatmap";
 
-interface HeatMap {
+interface HeatMapHomeProps {
   data: HeatMapSerie<DefaultHeatMapDatum, Record<string, never>>[] | any;
 }
 
-export default function HeatMap({ data }: HeatMap) {
+export default function HeatMapHome({ data }: HeatMapHomeProps) {
   return (
     <ResponsiveHeatMap
       data={data}

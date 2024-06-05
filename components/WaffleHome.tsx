@@ -1,13 +1,11 @@
 "use client";
 import { Datum, ResponsiveWaffle } from "@nivo/waffle";
-import { useWindowSize } from "@uidotdev/usehooks";
 
-interface WaffleProps {
+interface WaffleHomeProps {
   data: Datum[];
 }
 
-export default function Waffle({ data }: WaffleProps) {
-  const { width } = useWindowSize();
+export default function WaffleHome({ data }: WaffleHomeProps) {
   return (
     <ResponsiveWaffle
       data={data}
@@ -25,8 +23,8 @@ export default function Waffle({ data }: WaffleProps) {
       motionStagger={2}
       legends={[
         {
-          anchor: width >= 1024 ? 'right' : 'top',
-          direction: width >= 1024 ? 'column' : 'row',
+          anchor: "right",
+          direction: "column",
           justify: false,
           translateX: 0,
           translateY: 0,
