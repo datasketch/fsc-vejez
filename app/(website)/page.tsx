@@ -1,4 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import HeatMap from "@/components/HeatMap";
+import Map from "@/components/Map";
+import Sankey from "@/components/Sankey";
+import TreeMap from "@/components/TreeMap";
+import Waffle from "@/components/Waffle";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -274,13 +279,7 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-start-2 lg:col-end-7">
-              <Image
-                className="mx-auto lg:mx-0"
-                width={511}
-                height={651.75}
-                src="/images/home/map.svg"
-                alt="map"
-              />
+              <Map />
             </div>
             <div className="mt-4 lg:mt-20 xl:mt-24 col-span-4 lg:col-start-8 lg:col-end-13">
               <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
@@ -348,23 +347,28 @@ export default function Page() {
                 cuales provienen
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 md:col-span-2 lg:col-start-2 lg:col-end-8">
-              <Image
-                className="mx-auto lg:mx-0"
-                width={645}
-                height={345}
-                src="/images/home/chart-1.svg"
-                alt="chart 1"
-              />
-            </div>
-            <div className="mt-4 lg:mt-20 xl:mt-24 col-span-4 md:col-span-2 lg:col-start-9 lg:col-end-13 md:self-center">
-              <Image
-                className="mx-auto lg:mx-0"
-                width={262}
-                height={125}
-                src="/images/home/chart-details-1.svg"
-                alt="chart details 1"
-              />
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+              <div className="h-[345px]">
+                <Waffle
+                  data={[
+                    {
+                      id: "cats",
+                      label: "Cats",
+                      value: 31.518062004545442,
+                    },
+                    {
+                      id: "dogs",
+                      label: "Dogs",
+                      value: 12.851344845901973,
+                    },
+                    {
+                      id: "rabbits",
+                      label: "Rabits",
+                      value: 4.677844118677385,
+                    },
+                  ]}
+                />
+              </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
@@ -440,23 +444,341 @@ export default function Page() {
                 dificulta llevar a cabo cada actividad.
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-start-1 lg:col-end-6">
-              <Image
-                className="mx-auto lg:mx-0"
-                width={585}
-                height={11}
-                src="/images/home/chart-details-2.svg"
-                alt="chart details 2"
-              />
-            </div>
-            <div className="mt-4 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
-              <Image
-                className="mx-auto"
-                width={1042}
-                height={424}
-                src="/images/home/chart-2.svg"
-                alt="chart 2"
-              />
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+              <div className="h-[424px]">
+                <HeatMap
+                  data={[
+                    {
+                      id: "Japan",
+                      data: [
+                        {
+                          x: "Train",
+                          y: -51022,
+                        },
+                        {
+                          x: "Subway",
+                          y: 6851,
+                        },
+                        {
+                          x: "Bus",
+                          y: 88758,
+                        },
+                        {
+                          x: "Car",
+                          y: 65654,
+                        },
+                        {
+                          x: "Boat",
+                          y: -51011,
+                        },
+                        {
+                          x: "Moto",
+                          y: 9945,
+                        },
+                        {
+                          x: "Moped",
+                          y: 56822,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 13495,
+                        },
+                        {
+                          x: "Others",
+                          y: -28251,
+                        },
+                      ],
+                    },
+                    {
+                      id: "France",
+                      data: [
+                        {
+                          x: "Train",
+                          y: 90879,
+                        },
+                        {
+                          x: "Subway",
+                          y: 7167,
+                        },
+                        {
+                          x: "Bus",
+                          y: 32317,
+                        },
+                        {
+                          x: "Car",
+                          y: -10430,
+                        },
+                        {
+                          x: "Boat",
+                          y: 96281,
+                        },
+                        {
+                          x: "Moto",
+                          y: 91304,
+                        },
+                        {
+                          x: "Moped",
+                          y: -72151,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: -86379,
+                        },
+                        {
+                          x: "Others",
+                          y: -77347,
+                        },
+                      ],
+                    },
+                    {
+                      id: "US",
+                      data: [
+                        {
+                          x: "Train",
+                          y: 10570,
+                        },
+                        {
+                          x: "Subway",
+                          y: 85136,
+                        },
+                        {
+                          x: "Bus",
+                          y: -38434,
+                        },
+                        {
+                          x: "Car",
+                          y: 81353,
+                        },
+                        {
+                          x: "Boat",
+                          y: -12758,
+                        },
+                        {
+                          x: "Moto",
+                          y: -48656,
+                        },
+                        {
+                          x: "Moped",
+                          y: -58837,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: -78072,
+                        },
+                        {
+                          x: "Others",
+                          y: 58203,
+                        },
+                      ],
+                    },
+                    {
+                      id: "Germany",
+                      data: [
+                        {
+                          x: "Train",
+                          y: -26834,
+                        },
+                        {
+                          x: "Subway",
+                          y: -93200,
+                        },
+                        {
+                          x: "Bus",
+                          y: -36417,
+                        },
+                        {
+                          x: "Car",
+                          y: -94160,
+                        },
+                        {
+                          x: "Boat",
+                          y: -17881,
+                        },
+                        {
+                          x: "Moto",
+                          y: -10223,
+                        },
+                        {
+                          x: "Moped",
+                          y: 93531,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 87925,
+                        },
+                        {
+                          x: "Others",
+                          y: -48601,
+                        },
+                      ],
+                    },
+                    {
+                      id: "Norway",
+                      data: [
+                        {
+                          x: "Train",
+                          y: -44142,
+                        },
+                        {
+                          x: "Subway",
+                          y: 58097,
+                        },
+                        {
+                          x: "Bus",
+                          y: -11473,
+                        },
+                        {
+                          x: "Car",
+                          y: 31710,
+                        },
+                        {
+                          x: "Boat",
+                          y: 48797,
+                        },
+                        {
+                          x: "Moto",
+                          y: 35472,
+                        },
+                        {
+                          x: "Moped",
+                          y: -42739,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 52177,
+                        },
+                        {
+                          x: "Others",
+                          y: 52444,
+                        },
+                      ],
+                    },
+                    {
+                      id: "Iceland",
+                      data: [
+                        {
+                          x: "Train",
+                          y: -79055,
+                        },
+                        {
+                          x: "Subway",
+                          y: 29650,
+                        },
+                        {
+                          x: "Bus",
+                          y: 80669,
+                        },
+                        {
+                          x: "Car",
+                          y: -90643,
+                        },
+                        {
+                          x: "Boat",
+                          y: -40491,
+                        },
+                        {
+                          x: "Moto",
+                          y: -64208,
+                        },
+                        {
+                          x: "Moped",
+                          y: 57170,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 15406,
+                        },
+                        {
+                          x: "Others",
+                          y: -57262,
+                        },
+                      ],
+                    },
+                    {
+                      id: "UK",
+                      data: [
+                        {
+                          x: "Train",
+                          y: 85414,
+                        },
+                        {
+                          x: "Subway",
+                          y: 39524,
+                        },
+                        {
+                          x: "Bus",
+                          y: 78489,
+                        },
+                        {
+                          x: "Car",
+                          y: 17512,
+                        },
+                        {
+                          x: "Boat",
+                          y: 78762,
+                        },
+                        {
+                          x: "Moto",
+                          y: -37255,
+                        },
+                        {
+                          x: "Moped",
+                          y: 91591,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 25565,
+                        },
+                        {
+                          x: "Others",
+                          y: -26899,
+                        },
+                      ],
+                    },
+                    {
+                      id: "Vietnam",
+                      data: [
+                        {
+                          x: "Train",
+                          y: 73874,
+                        },
+                        {
+                          x: "Subway",
+                          y: -83296,
+                        },
+                        {
+                          x: "Bus",
+                          y: 79123,
+                        },
+                        {
+                          x: "Car",
+                          y: -45415,
+                        },
+                        {
+                          x: "Boat",
+                          y: 49712,
+                        },
+                        {
+                          x: "Moto",
+                          y: -87260,
+                        },
+                        {
+                          x: "Moped",
+                          y: -63683,
+                        },
+                        {
+                          x: "Bicycle",
+                          y: 71687,
+                        },
+                        {
+                          x: "Others",
+                          y: 89830,
+                        },
+                      ],
+                    },
+                  ]}
+                />
+              </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
@@ -481,22 +803,101 @@ export default function Page() {
                 información.
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-11">
-              <Image
-                width={1020}
-                height={13}
-                src="/images/home/chart-details-3.svg"
-                alt="chart details 3"
-              />
-            </div>
-            <div className="mt-8 lg:mt-10 col-span-4 lg:col-span-12">
-              <Image
-                className="mx-auto"
-                width={1042}
-                height={527.23}
-                src="/images/home/chart-3.svg"
-                alt="chart 3"
-              />
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+              <div className="h-[527.23px]">
+                <Sankey
+                  data={{
+                    nodes: [
+                      {
+                        id: "John",
+                        nodeColor: "hsl(161, 70%, 50%)",
+                      },
+                      {
+                        id: "Raoul",
+                        nodeColor: "hsl(72, 70%, 50%)",
+                      },
+                      {
+                        id: "Jane",
+                        nodeColor: "hsl(215, 70%, 50%)",
+                      },
+                      {
+                        id: "Marcel",
+                        nodeColor: "hsl(282, 70%, 50%)",
+                      },
+                      {
+                        id: "Ibrahim",
+                        nodeColor: "hsl(177, 70%, 50%)",
+                      },
+                      {
+                        id: "Junko",
+                        nodeColor: "hsl(49, 70%, 50%)",
+                      },
+                    ],
+                    links: [
+                      {
+                        source: "Marcel",
+                        target: "Raoul",
+                        value: 150,
+                      },
+                      {
+                        source: "Marcel",
+                        target: "John",
+                        value: 77,
+                      },
+                      {
+                        source: "Marcel",
+                        target: "Jane",
+                        value: 173,
+                      },
+                      {
+                        source: "Junko",
+                        target: "Jane",
+                        value: 26,
+                      },
+                      {
+                        source: "Junko",
+                        target: "Raoul",
+                        value: 192,
+                      },
+                      {
+                        source: "Junko",
+                        target: "John",
+                        value: 105,
+                      },
+                      {
+                        source: "Junko",
+                        target: "Ibrahim",
+                        value: 73,
+                      },
+                      {
+                        source: "Jane",
+                        target: "Ibrahim",
+                        value: 158,
+                      },
+                      {
+                        source: "John",
+                        target: "Ibrahim",
+                        value: 102,
+                      },
+                      {
+                        source: "John",
+                        target: "Raoul",
+                        value: 84,
+                      },
+                      {
+                        source: "John",
+                        target: "Jane",
+                        value: 19,
+                      },
+                      {
+                        source: "Raoul",
+                        target: "Ibrahim",
+                        value: 33,
+                      },
+                    ],
+                  }}
+                />
+              </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
@@ -538,22 +939,432 @@ export default function Page() {
                 mismo aspecto de las poblaciones de 14 - 26 años y 27 - 59 años.
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-11">
-              <Image
-                width={1020}
-                height={13}
-                src="/images/home/chart-details-3.svg"
-                alt="chart details 3"
-              />
-            </div>
-            <div className="mt-8 lg:mt-10 col-span-4 lg:col-span-12">
-              <Image
-                className="mx-auto"
-                width={1042}
-                height={400}
-                src="/images/home/chart-4.svg"
-                alt="chart 4"
-              />
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+              <div className="h-[400px]">
+                <TreeMap
+                  data={{
+                    name: "nivo",
+                    color: "hsl(6, 70%, 50%)",
+                    children: [
+                      {
+                        name: "viz",
+                        color: "hsl(276, 70%, 50%)",
+                        children: [
+                          {
+                            name: "stack",
+                            color: "hsl(318, 70%, 50%)",
+                            children: [
+                              {
+                                name: "cchart",
+                                color: "hsl(138, 70%, 50%)",
+                                loc: 46578,
+                              },
+                              {
+                                name: "xAxis",
+                                color: "hsl(305, 70%, 50%)",
+                                loc: 101445,
+                              },
+                              {
+                                name: "yAxis",
+                                color: "hsl(33, 70%, 50%)",
+                                loc: 117331,
+                              },
+                              {
+                                name: "layers",
+                                color: "hsl(51, 70%, 50%)",
+                                loc: 58008,
+                              },
+                            ],
+                          },
+                          {
+                            name: "ppie",
+                            color: "hsl(5, 70%, 50%)",
+                            children: [
+                              {
+                                name: "chart",
+                                color: "hsl(275, 70%, 50%)",
+                                children: [
+                                  {
+                                    name: "pie",
+                                    color: "hsl(302, 70%, 50%)",
+                                    children: [
+                                      {
+                                        name: "outline",
+                                        color: "hsl(177, 70%, 50%)",
+                                        loc: 106963,
+                                      },
+                                      {
+                                        name: "slices",
+                                        color: "hsl(312, 70%, 50%)",
+                                        loc: 185343,
+                                      },
+                                      {
+                                        name: "bbox",
+                                        color: "hsl(24, 70%, 50%)",
+                                        loc: 39299,
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    name: "donut",
+                                    color: "hsl(101, 70%, 50%)",
+                                    loc: 27045,
+                                  },
+                                  {
+                                    name: "gauge",
+                                    color: "hsl(40, 70%, 50%)",
+                                    loc: 74078,
+                                  },
+                                ],
+                              },
+                              {
+                                name: "legends",
+                                color: "hsl(267, 70%, 50%)",
+                                loc: 110666,
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        name: "colors",
+                        color: "hsl(229, 70%, 50%)",
+                        children: [
+                          {
+                            name: "rgb",
+                            color: "hsl(184, 70%, 50%)",
+                            loc: 94191,
+                          },
+                          {
+                            name: "hsl",
+                            color: "hsl(282, 70%, 50%)",
+                            loc: 103098,
+                          },
+                        ],
+                      },
+                      {
+                        name: "utils",
+                        color: "hsl(325, 70%, 50%)",
+                        children: [
+                          {
+                            name: "randomize",
+                            color: "hsl(268, 70%, 50%)",
+                            loc: 84659,
+                          },
+                          {
+                            name: "resetClock",
+                            color: "hsl(56, 70%, 50%)",
+                            loc: 73180,
+                          },
+                          {
+                            name: "noop",
+                            color: "hsl(207, 70%, 50%)",
+                            loc: 95624,
+                          },
+                          {
+                            name: "tick",
+                            color: "hsl(220, 70%, 50%)",
+                            loc: 142851,
+                          },
+                          {
+                            name: "forceGC",
+                            color: "hsl(138, 70%, 50%)",
+                            loc: 143867,
+                          },
+                          {
+                            name: "stackTrace",
+                            color: "hsl(246, 70%, 50%)",
+                            loc: 19442,
+                          },
+                          {
+                            name: "dbg",
+                            color: "hsl(146, 70%, 50%)",
+                            loc: 153667,
+                          },
+                        ],
+                      },
+                      {
+                        name: "generators",
+                        color: "hsl(115, 70%, 50%)",
+                        children: [
+                          {
+                            name: "address",
+                            color: "hsl(239, 70%, 50%)",
+                            loc: 177244,
+                          },
+                          {
+                            name: "city",
+                            color: "hsl(82, 70%, 50%)",
+                            loc: 10466,
+                          },
+                          {
+                            name: "animal",
+                            color: "hsl(262, 70%, 50%)",
+                            loc: 191280,
+                          },
+                          {
+                            name: "movie",
+                            color: "hsl(161, 70%, 50%)",
+                            loc: 7651,
+                          },
+                          {
+                            name: "user",
+                            color: "hsl(302, 70%, 50%)",
+                            loc: 132639,
+                          },
+                        ],
+                      },
+                      {
+                        name: "set",
+                        color: "hsl(57, 70%, 50%)",
+                        children: [
+                          {
+                            name: "clone",
+                            color: "hsl(289, 70%, 50%)",
+                            loc: 199247,
+                          },
+                          {
+                            name: "intersect",
+                            color: "hsl(244, 70%, 50%)",
+                            loc: 22688,
+                          },
+                          {
+                            name: "merge",
+                            color: "hsl(106, 70%, 50%)",
+                            loc: 192002,
+                          },
+                          {
+                            name: "reverse",
+                            color: "hsl(210, 70%, 50%)",
+                            loc: 103388,
+                          },
+                          {
+                            name: "toArray",
+                            color: "hsl(81, 70%, 50%)",
+                            loc: 120446,
+                          },
+                          {
+                            name: "toObject",
+                            color: "hsl(270, 70%, 50%)",
+                            loc: 67935,
+                          },
+                          {
+                            name: "fromCSV",
+                            color: "hsl(210, 70%, 50%)",
+                            loc: 126607,
+                          },
+                          {
+                            name: "slice",
+                            color: "hsl(55, 70%, 50%)",
+                            loc: 74665,
+                          },
+                          {
+                            name: "append",
+                            color: "hsl(348, 70%, 50%)",
+                            loc: 120071,
+                          },
+                          {
+                            name: "prepend",
+                            color: "hsl(129, 70%, 50%)",
+                            loc: 28980,
+                          },
+                          {
+                            name: "shuffle",
+                            color: "hsl(331, 70%, 50%)",
+                            loc: 117411,
+                          },
+                          {
+                            name: "pick",
+                            color: "hsl(292, 70%, 50%)",
+                            loc: 119555,
+                          },
+                          {
+                            name: "plouc",
+                            color: "hsl(113, 70%, 50%)",
+                            loc: 32899,
+                          },
+                        ],
+                      },
+                      {
+                        name: "text",
+                        color: "hsl(130, 70%, 50%)",
+                        children: [
+                          {
+                            name: "trim",
+                            color: "hsl(253, 70%, 50%)",
+                            loc: 59808,
+                          },
+                          {
+                            name: "slugify",
+                            color: "hsl(94, 70%, 50%)",
+                            loc: 183290,
+                          },
+                          {
+                            name: "snakeCase",
+                            color: "hsl(105, 70%, 50%)",
+                            loc: 162878,
+                          },
+                          {
+                            name: "camelCase",
+                            color: "hsl(178, 70%, 50%)",
+                            loc: 163981,
+                          },
+                          {
+                            name: "repeat",
+                            color: "hsl(120, 70%, 50%)",
+                            loc: 119386,
+                          },
+                          {
+                            name: "padLeft",
+                            color: "hsl(359, 70%, 50%)",
+                            loc: 101253,
+                          },
+                          {
+                            name: "padRight",
+                            color: "hsl(236, 70%, 50%)",
+                            loc: 141943,
+                          },
+                          {
+                            name: "sanitize",
+                            color: "hsl(326, 70%, 50%)",
+                            loc: 195567,
+                          },
+                          {
+                            name: "ploucify",
+                            color: "hsl(56, 70%, 50%)",
+                            loc: 102422,
+                          },
+                        ],
+                      },
+                      {
+                        name: "misc",
+                        color: "hsl(142, 70%, 50%)",
+                        children: [
+                          {
+                            name: "greetings",
+                            color: "hsl(1, 70%, 50%)",
+                            children: [
+                              {
+                                name: "hey",
+                                color: "hsl(213, 70%, 50%)",
+                                loc: 98640,
+                              },
+                              {
+                                name: "HOWDY",
+                                color: "hsl(232, 70%, 50%)",
+                                loc: 26153,
+                              },
+                              {
+                                name: "aloha",
+                                color: "hsl(254, 70%, 50%)",
+                                loc: 63513,
+                              },
+                              {
+                                name: "AHOY",
+                                color: "hsl(95, 70%, 50%)",
+                                loc: 100176,
+                              },
+                            ],
+                          },
+                          {
+                            name: "other",
+                            color: "hsl(51, 70%, 50%)",
+                            loc: 95339,
+                          },
+                          {
+                            name: "path",
+                            color: "hsl(168, 70%, 50%)",
+                            children: [
+                              {
+                                name: "pathA",
+                                color: "hsl(56, 70%, 50%)",
+                                loc: 80696,
+                              },
+                              {
+                                name: "pathB",
+                                color: "hsl(211, 70%, 50%)",
+                                children: [
+                                  {
+                                    name: "pathB1",
+                                    color: "hsl(198, 70%, 50%)",
+                                    loc: 137381,
+                                  },
+                                  {
+                                    name: "pathB2",
+                                    color: "hsl(103, 70%, 50%)",
+                                    loc: 12683,
+                                  },
+                                  {
+                                    name: "pathB3",
+                                    color: "hsl(279, 70%, 50%)",
+                                    loc: 170013,
+                                  },
+                                  {
+                                    name: "pathB4",
+                                    color: "hsl(135, 70%, 50%)",
+                                    loc: 102703,
+                                  },
+                                ],
+                              },
+                              {
+                                name: "pathC",
+                                color: "hsl(341, 70%, 50%)",
+                                children: [
+                                  {
+                                    name: "pathC1",
+                                    color: "hsl(310, 70%, 50%)",
+                                    loc: 178789,
+                                  },
+                                  {
+                                    name: "pathC2",
+                                    color: "hsl(166, 70%, 50%)",
+                                    loc: 33510,
+                                  },
+                                  {
+                                    name: "pathC3",
+                                    color: "hsl(113, 70%, 50%)",
+                                    loc: 145944,
+                                  },
+                                  {
+                                    name: "pathC4",
+                                    color: "hsl(189, 70%, 50%)",
+                                    loc: 181926,
+                                  },
+                                  {
+                                    name: "pathC5",
+                                    color: "hsl(185, 70%, 50%)",
+                                    loc: 26876,
+                                  },
+                                  {
+                                    name: "pathC6",
+                                    color: "hsl(143, 70%, 50%)",
+                                    loc: 31163,
+                                  },
+                                  {
+                                    name: "pathC7",
+                                    color: "hsl(249, 70%, 50%)",
+                                    loc: 128224,
+                                  },
+                                  {
+                                    name: "pathC8",
+                                    color: "hsl(328, 70%, 50%)",
+                                    loc: 194161,
+                                  },
+                                  {
+                                    name: "pathC9",
+                                    color: "hsl(180, 70%, 50%)",
+                                    loc: 106713,
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  }}
+                />
+              </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
