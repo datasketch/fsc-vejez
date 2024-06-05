@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 /* import data from "@/static/data/percepciones.json" */
-import data from "@/public/data/percepciones.json"
+import data from "@/data/percepciones.json"
 import BarChart2 from "@/components/Barchart";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
@@ -100,7 +100,7 @@ export default function Page() {
                             <p>La mayoría de las personas de las ciudades encuestadas están totalmente en desacuerdo con estar preparadas económica y financieramente para su vejez.</p>
                         </div>
                     </div>
-                    <HorizontalBarGraph data={data.ciudades_como_vamos.data_finanzas} />
+                    <HorizontalBarGraph data={data.ciudades_como_vamos.data_finanzas.data} legend={data.ciudades_como_vamos.data_finanzas.legend} />
                     <p className="text-vampire-gray mt-16 ">Fuente y fecha de actualización</p>
                 </div>
             </div>

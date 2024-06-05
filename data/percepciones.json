@@ -1,0 +1,122 @@
+{
+    "ciudades_como_vamos": {
+        "total": 17255,
+        "data_etario": [
+            {
+                "name": "14-26",
+                "Hombres": 1004,
+                "Mujeres": 1017
+            },
+            {
+                "name": "27-59",
+                "Hombres": 2625,
+                "Mujeres": 3170
+            },
+            {
+                "name": "60+",
+                "Hombres": 1012,
+                "Mujeres": 1208
+            }
+        ],
+        "data_finanzas": {
+            "data": [
+                {
+                    "name": "Jóvenes",
+                    "Totalmente en desacuerdo": 836,
+                    "Desacuerdo": 419,
+                    "Ni de acuerdo ni desacuerdo": 433,
+                    "De acuerdo": 189,
+                    "Totalmente de acuerdo": 144
+                },
+                {
+                    "name": "Adultos",
+                    "Totalmente en desacuerdo": 2451,
+                    "Desacuerdo": 1017,
+                    "Ni de acuerdo ni desacuerdo": 1203,
+                    "De acuerdo": 592,
+                    "Totalmente de acuerdo": 532
+                },
+                {
+                    "name": "Personas mayores",
+                    "Totalmente en desacuerdo": 722,
+                    "Desacuerdo": 293,
+                    "Ni de acuerdo ni desacuerdo": 398,
+                    "De acuerdo": 356,
+                    "Totalmente de acuerdo": 451
+                }
+            ],
+            "legend": [
+                {
+                    "key": "Totalmente en desacuerdo",
+                    "fill": "#1D5556"
+                },
+                {
+                    "key": "Desacuerdo",
+                    "fill": "#FAAA8D"
+                },
+                {
+                    "key": "Ni de acuerdo ni desacuerdo",
+                    "fill": "#B6174B"
+                },
+                {
+                    "key": "De acuerdo",
+                    "fill": "#4B034F"
+                },
+                {
+                    "key": "Totalmente de acuerdo",
+                    "fill": "#41A5B4"
+                }
+            ]
+        }
+    },
+    "mision_colombia_envejece": {
+        "rango-edad": [
+            {
+                "label": "Mayores de 60",
+                "value": "44,4%"
+            },
+            {
+                "label": " Intergeneracional",
+                "value": "22,2%"
+            },
+            {
+                "label": "41-59 años",
+                "value": "22,2%"
+            }
+        ],
+        "distribucion_geografica": [
+            {
+                "place": "Bogotá",
+                "value": "28%"
+            },
+            {
+                "place": "Manizales",
+                "value": "23%"
+            },
+            {
+                "place": "Pasto",
+                "value": "15%"
+            },
+            {
+                "place": "Quibdó",
+                "value": "13%"
+            },
+            {
+                "place": "",
+                "value": ""
+            },
+            {
+                "place": "B/quilla",
+                "value": "11%"
+            },
+            {
+                "place": "Tunja",
+                "value": "6%"
+            },
+            {
+                "place": "Ipiales",
+                "value": "4%"
+            }
+        ]
+    }
+}

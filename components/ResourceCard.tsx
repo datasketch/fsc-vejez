@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ResourceCard({ data, image = false, cardTitle }: any) {
+interface ResourceCardProps {
+    data: any
+    image: boolean
+    cardTitle: string
+}
+
+export default function ResourceCard({ data, image = false, cardTitle }: ResourceCardProps) {
     return (
         <div className="w-full lg:h-[300px] rounded-xl shadow-lg flex flex-col lg:flex-row gap-7 lg:p-5 mb-5 relative">
             {image &&

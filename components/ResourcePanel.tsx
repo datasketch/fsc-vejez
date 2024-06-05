@@ -12,7 +12,7 @@ import {
     DialogTrigger,
 } from "@/components/FilterModal";
 
-const optionsCategory = [
+const optionsCategory:Array<{label: string, value: string}> = [
     {
         label: "Tecnología y digitalización",
         value: "tech"
@@ -35,7 +35,7 @@ const optionsCategory = [
     }
 ]
 
-const optionsType = [
+const optionsType:Array<{label: string, value: string}> = [
     {
         label: "Informe",
         value: "form"
@@ -58,16 +58,22 @@ const optionsType = [
     },
 ]
 
-export default function ResourcePanel({ data, isType = false, image = false, cardTitle }: any) {
+interface ResourcePanelProps {
+    data: any
+    isType: boolean
+    image: boolean,
+    cardTitle: string
+}
+
+export default function ResourcePanel({ data, isType = false, image = false, cardTitle }: ResourcePanelProps) {
     const [query, setQuery] = useState('')
     const [order, setOrder] = useState('AZ')
-    const [selectedCategories, setSelectedCategories] = useState([])
-    const [selectedType, setSelectedType] = useState([])
+    const [selectedCategories, setSelectedCategories] = useState<string[]>([])
+    const [selectedType, setSelectedType] = useState<string[]>([])
     const [selectedYear, setSelectedYear] = useState('')
 
     const [itemOffset, setItemOffset] = useState(0);
     const endOffset = itemOffset + 5;
-
 
     // @ts-ignore
     const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b)
@@ -80,7 +86,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
 
     function filterByCategory(item: any) {
         if (selectedCategories.length > 0) {
-            // @ts-ignore
             return selectedCategories.includes(item.category)
         }
         return true
@@ -88,7 +93,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
 
     function filterByType(item: any) {
         if (selectedType.length > 0) {
-            // @ts-ignore
             return selectedType.includes(item.type)
         }
         return true
@@ -120,7 +124,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
         const { value } = e.target
 
         const choicesSet = new Set(selectedCategories)
-        // @ts-ignore
         choicesSet.has(value) ? choicesSet.delete(value) : choicesSet.add(value)
 
         const result = Array.from(choicesSet)
@@ -131,7 +134,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
         const { value } = e.target
 
         const choicesSet = new Set(selectedType)
-        // @ts-ignore
         choicesSet.has(value) ? choicesSet.delete(value) : choicesSet.add(value)
 
         const result = Array.from(choicesSet)
@@ -181,7 +183,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
                                                             <input
                                                                 type="checkbox"
                                                                 id={option.value}
-                                                                // @ts-ignore
                                                                 checked={selectedCategories.includes(option.value)}
                                                                 onChange={handleCategoryChange}
                                                                 value={option.value}
@@ -202,7 +203,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
                                                                     <input
                                                                         type="checkbox"
                                                                         id={option.value}
-                                                                        // @ts-ignore
                                                                         checked={selectedType.includes(option.value)}
                                                                         onChange={handleTypeChange}
                                                                         value={option.value}
@@ -277,7 +277,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
                                         <input
                                             type="checkbox"
                                             id={option.value}
-                                            // @ts-ignore
                                             checked={selectedCategories.includes(option.value)}
                                             onChange={handleCategoryChange}
                                             value={option.value}
@@ -298,7 +297,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
                                                 <input
                                                     type="checkbox"
                                                     id={option.value}
-                                                    // @ts-ignore
                                                     checked={selectedType.includes(option.value)}
                                                     onChange={handleTypeChange}
                                                     value={option.value}

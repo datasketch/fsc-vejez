@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import ResourcePanel from "@/components/ResourcePanel";
-import data from "@/public/data/recursos.json"
+import data from "@/data/recursos.json"
 
 
 export const metadata: Metadata = {
@@ -24,10 +24,20 @@ export default function Page() {
                         <ResourcePanel data={data.biblioteca} isType={true} image={true} cardTitle="Informe" />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <ResourcePanel data={data.politicas} cardTitle="Política pública" />
+                        <ResourcePanel
+                            // @ts-ignore
+                            data={data.politicas}
+                            cardTitle="Política pública"
+                            isType={false}
+                            image={false} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <ResourcePanel data={data.datos} cardTitle="Datos" />
+                        <ResourcePanel
+                            // @ts-ignore
+                            data={data.datos}
+                            cardTitle="Datos"
+                            isType={false}
+                            image={false} />
                     </TabPanel>
                 </TabPanels>
             </TabGroup>

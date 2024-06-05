@@ -14,7 +14,12 @@ import {
 
 const BAR_AXIS_SPACE = 10;
 
-export default function HorizontalBarGraph({ data }: any) {
+interface HorizontalBarGraphProps {
+  data: Array<Record<string, string | number>>
+  legend: Array<Record<string, string>>
+}
+
+export default function HorizontalBarGraph({ data, legend }: HorizontalBarGraphProps) {
   return (
     <ResponsiveContainer width={"80%"} height={550} debounce={50} className="mt-20 mx-auto">
       <BarChart
@@ -31,11 +36,11 @@ export default function HorizontalBarGraph({ data }: any) {
 
         />
         <Legend verticalAlign="top" />
-        <Bar dataKey="Totalmente en desacuerdo" fill="#1D5556" />
-        <Bar dataKey="Desacuerdo" fill="#FAAA8D" />
-        <Bar dataKey="Ni de acuerdo ni desacuerdo" fill="#B6174B" />
-        <Bar dataKey="De acuerdo" fill="#4B034F" />
-        <Bar dataKey="Totalmente de acuerdo" fill="#41A5B4" />
+        {
+          legend.map((item, i) => {
+            return (<Bar key={i} dataKey={item.key} fill={item.fill} />)
+          })
+        }
       </BarChart>
     </ResponsiveContainer>
   );
