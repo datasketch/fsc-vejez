@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import ResourcePanel from "@/components/ResourcePanel";
 import data from "@/data/recursos.json"
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -41,6 +42,19 @@ export default function Page() {
                     </TabPanel>
                 </TabPanels>
             </TabGroup>
+            <div className="u-container mt-20 flex justify-between">
+                <div>
+                    <h2 className=" text-5xl font-bold text-blue-dianne">¿Quieres agregar un recurso sobre personas mayores?</h2>
+                    <Link
+                        className="inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px] mt-10"
+                        href="/"
+                    >
+                        <p className="text-nowrap">Envíanos tu información</p>
+                    </Link>
+                </div>
+                <img src="/images/recursos/icon-info-add-resource.png" alt="info" />
+            </div>
+            <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
         </div>
 
     )

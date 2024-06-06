@@ -30,7 +30,7 @@ export default function Page() {
                         <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-5">Proporción de los participantes de 60 años o más en la encuesta por sexo</h4>
                         <BarChart2 data={data.ciudades_como_vamos.data_etario} />
                     </div>
-                    <div className="col-span-6 flex justify-center my-20 lg:my-0">
+                    <div className="col-span-6 flex justify-center my-20 lg:my-0 mx-3">
                         <img src="/images/mapa-percepciones-1.png" alt="map1" />
                     </div>
                     <div className="col-span-3 lg:text-right ">
@@ -50,8 +50,8 @@ export default function Page() {
                                 data.mision_colombia_envejece.distribucion_geografica.map((item: any, i) => {
                                     return (
                                         <div key={i} className="text-left">
-                                            <p className="text-2xl text-dark-slate-gray font-semibold">{item.value}</p>
-                                            <p>{item.place}</p>
+                                            <p className="text-xl text-dark-slate-gray font-semibold">{item.value}</p>
+                                            <p className="text-sm">{item.place}</p>
                                         </div>
                                     )
                                 })
@@ -76,17 +76,16 @@ export default function Page() {
                         <div className="w-full max-w-2xl">
                             <TabGroup>
                                 <TabList className="flex gap-4 justify-center shadow-2xl">
-                                    <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Armenia</Tab>
-                                    <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Barranquilla</Tab>
-                                    <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Cali</Tab>
+                                    <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Manizales</Tab>
                                     <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Cartagena</Tab>
                                     <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Medellín</Tab>
                                     <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Pereira</Tab>
                                 </TabList>
                                 <TabPanels>
-                                    <TabPanel className="flex justify-center mt-16"><img src="/images/tmp-percepciones.png" alt="map1" /></TabPanel>
-                                    <TabPanel className="flex justify-center mt-16">Content 2</TabPanel>
-                                    <TabPanel className="flex justify-center mt-16">Content 3</TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/comovamos/percepcion-manizales.png" alt="map1" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/comovamos/percepcion-cartagena.png" alt="map2" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/comovamos/percepcion-medellin.png" alt="map3" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/comovamos/percepcion-pereira.png" alt="map4" /></TabPanel>
                                 </TabPanels>
                             </TabGroup>
                         </div>
@@ -121,9 +120,10 @@ export default function Page() {
                                     <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">Tecnología y digitalización</Tab>
                                 </TabList>
                                 <TabPanels>
-                                    <TabPanel className="flex justify-center mt-16"><img src="/images/tmp-percepciones.png" alt="map1" /></TabPanel>
-                                    <TabPanel className="flex justify-center mt-16">Content 2</TabPanel>
-                                    <TabPanel className="flex justify-center mt-16">Content 3</TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/mision/mision-health.png" alt="health" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/mision/mision-education.png" alt="education" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/mision/mision-finance.png" alt="finance" /></TabPanel>
+                                    <TabPanel className="flex justify-center mt-10"><img src="/images/percepciones/mision/mision-tech.png" alt="tech" /></TabPanel>
                                 </TabPanels>
                             </TabGroup>
                         </div>

@@ -29,16 +29,8 @@ export default function TabSections({ sections }: TabSectionProps) {
       </div>
       {sections.map((section, i) => {
         return (
-          <TabsContent key={`section-content-${i + 1}`} value={section.title}>
-            <Image
-              className="mx-auto"
-              src={section.srcImage}
-              alt={`${section.title} image`}
-              width={600}
-              height={600}
-              objectFit="cover"
-              objectPosition="center"
-            />
+          <TabsContent className="flex justify-center" key={`section-content-${i + 1}`} value={section.title}>
+            <img src={section.srcImage} alt={`${section.title} image`} />
           </TabsContent>
         );
       })}

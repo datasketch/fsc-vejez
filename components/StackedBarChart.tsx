@@ -12,7 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
+/* const data = [
   {
     name: "Argentina",
     "Desarrollo de apps": 3,
@@ -123,9 +123,14 @@ const data = [
     Telemedicina: 1,
     Wearable: 0,
   },
-];
+]; */
 
-export default function StackedBarChart() {
+interface StackedBarChartProps {
+  data: any
+  legend: any
+}
+
+export default function StackedBarChart({ data, legend }: StackedBarChartProps) {
   const { width }: any = useWindowSize();
 
   return (
@@ -147,7 +152,18 @@ export default function StackedBarChart() {
           <YAxis />
           <Tooltip />
           <Legend verticalAlign="top" height={width >= 1024 ? 60 : 100} />
-          <Bar
+          { legend.map( (item, i) => {
+            return (
+            <Bar
+              key={i}
+              barSize={40}
+              dataKey={item.key}
+              stackId="a"
+              fill={item.fill}
+            />
+          )
+          })}
+          {/* <Bar
             barSize={40}
             dataKey="Desarrollo de apps"
             stackId="a"
@@ -168,7 +184,7 @@ export default function StackedBarChart() {
           />
           <Bar barSize={40} dataKey="SaMD" stackId="a" fill="#41A5B4" />
           <Bar barSize={40} dataKey="Telemedicina" stackId="a" fill="#698F3F" />
-          <Bar barSize={40} dataKey="Wearable" stackId="a" fill="#767676" />
+          <Bar barSize={40} dataKey="Wearable" stackId="a" fill="#767676" /> */}
         </BarChart>
       </ResponsiveContainer>
     </div>
