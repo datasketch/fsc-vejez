@@ -11,23 +11,19 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
       data={data}
       identity="name"
       value="loc"
-      valueFormat=".02s"
       margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
-      labelSkipSize={12}
-      labelTextColor={{
-        from: "color",
-        modifiers: [["darker", 1.2]],
-      }}
-      parentLabelPosition="left"
-      parentLabelTextColor={{
-        from: "color",
-        modifiers: [["darker", 2]],
-      }}
-      colors={{ scheme: "nivo" }}
-      borderColor={{
-        from: "color",
-        modifiers: [["darker", 0.1]],
-      }}
+      label={(e) =>
+        e.id + " (" + ((e.data.loc / e.data.total) * 100).toFixed(1) + "%" + ")"
+      }
+      labelTextColor="#FAFAFA"
+      enableParentLabel={true}
+      parentLabelPosition="top"
+      parentLabelTextColor="#FAFAFA"
+      parentLabelSize={40}
+      parentLabelPadding={20}
+      nodeOpacity={1}
+      colors={["#1D5556", "#FAAA8D", "#B6174B", "#4B034F", "#41A5B4"]}
+      borderColor="#ffffff"
     />
   );
 }
