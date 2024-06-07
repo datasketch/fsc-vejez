@@ -9,7 +9,7 @@ interface MapDetailsProps {
 }
 
 export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
-  const [useDevices, setUseDevices] = useState(null);
+  const [devicesUsage, setDevicesUsage] = useState(null);
 
   function omit(key: string, obj: any) {
     const { [key]: omitted, ...rest } = obj;
@@ -22,11 +22,9 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
         (el) => el.cod_dpto === selectedDepartment
       );
       const formatDepartment = omit("cod_dpto", findDepartment);
-      setUseDevices(formatDepartment);
+      setDevicesUsage(formatDepartment);
     }
   }, [selectedDepartment]);
-
-  console.log(useDevices);
 
   return (
     <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
@@ -47,14 +45,14 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
         />
       </div>
       <div>
-        {useDevices ? (
+        {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
             <h3 className="font-semibold">
               ¿Cuáles de los siguientes dispositivos utiliza para acceder a
               internet?
             </h3>
             <div className="mt-6 space-y-4">
-              {Object.entries(useDevices).map(([key, value]: any, i) => {
+              {Object.entries(devicesUsage).map(([key, value]: any, i) => {
                 return (
                   <div
                     key={`device-${i + 1}`}
