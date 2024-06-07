@@ -1,0 +1,684 @@
+{
+    "categoria_servicio_pais": {
+        "data": [
+            {
+                "name": "Argentina",
+                "Educación": 3,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 3,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "Brasil",
+                "Educación": 1,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 1,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "Chile",
+                "Educación": 3,
+                "Ingresos y finanzas": 4,
+                "Salud y bienestar": 2,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "Colombia",
+                "Educación": 4,
+                "Ingresos y finanzas": 4,
+                "Salud y bienestar": 5,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "EEUU",
+                "Educación": 5,
+                "Ingresos y finanzas": 2,
+                "Salud y bienestar": 3,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "España",
+                "Educación": 1,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 2,
+                "Tecnología y digitalización": 4
+            },
+            {
+                "name": "Francia",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 1,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "Israel",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "Malta",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 1,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "México",
+                "Educación": 1,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 3,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "Panamá",
+                "Educación": 0,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "Paraguay",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 1,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "Perú",
+                "Educación": 1,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "República Checa",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 1
+            },
+            {
+                "name": "República Dominicana",
+                "Educación": 1,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 0
+            },
+            {
+                "name": "Uruguay",
+                "Educación": 3,
+                "Ingresos y finanzas": 1,
+                "Salud y bienestar": 2,
+                "Tecnología y digitalización": 3
+            },
+            {
+                "name": "USA",
+                "Educación": 0,
+                "Ingresos y finanzas": 0,
+                "Salud y bienestar": 0,
+                "Tecnología y digitalización": 1
+            }
+        ],
+        "legend": [
+            {
+                "key": "Educación",
+                "fill": "#1D5556"
+            },
+            {
+                "key": "Ingresos y finanzas",
+                "fill": "#FAAA8D"
+            },
+            {
+                "key": "Salud y bienestar",
+                "fill": "#B6174B"
+            },
+            {
+                "key": "Tecnología y digitalización",
+                "fill": "#4B034F"
+            }
+        ]
+    },
+    "servicios": [
+        {
+            "type": "Salud y bienestar",
+            "country": "Colombia",
+            "title": "Vital-e",
+            "description": "Es de Sura.Transfoma la atención en salud integrando la comodidad de una consulta virtual y la calidad de una presencial, facilitando a los médicos la realización de diagnósticos precisos desde cualquier lugar, por medio de dispositivos IoT logrando una experiencia diferencial.",
+            "externalLink": "https://www.arus.com.co/tecnologia/soluciones-digitales/vital-e"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Brasil",
+            "title": "Alice",
+            "description": "Una startup de telemedicina en donde puedes reservar consultas con médicos de distintas especialidades.",
+            "externalLink": "https://www.alice.com.br/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Paraguay",
+            "title": "Clinix",
+            "description": "Es una app que conecta a las personas con médicos especialistas por chat y videoconsultas de manera instantánea y asequible.",
+            "externalLink": "https://clinix.com.py/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Colombia",
+            "title": "Doc-Doc",
+            "description": "Es una app que conecta a las personas con médicos especialistas por chat y videoconsultas de manera instantánea y asequible.",
+            "externalLink": "https://www.doc-doc.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "México",
+            "title": "DocTour",
+            "description": "DocTour ofrece una atención de alta calidad y una plataforma integral centrada en el paciente usando tecnologías de la información y un modelo adaptado a sus necesidades con el fin de guiarlos en su jornada de salud.",
+            "externalLink": "https://www.doctour.app/inicio/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "España",
+            "title": "Hearts Radiant",
+            "description": "Hearts Radiant es una startup que busca hackear la longevidad de tal manera que se pueda vivir bien y de manera independiente hasta los 95 años. La startup española tiene como producto estrella, Rosita, un entrenador de longevidad inteligente. Entre las actividades que ofrece la aplicación resaltan las clases de cardio flamenco y yoga exclusivos para edades de 60 o más. El fin es crear hábitos personalizados y saludables accesible para las personas mayores.",
+            "externalLink": "https://www.rx-longevity.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "México",
+            "title": "Meddi",
+            "description": "Es una plataforma para prevenir, cuidar la salud y cubrir los gastos más comunes y frecuentes de salud, desde una consulta, hasta una cirugía compleja.",
+            "externalLink": "https://meddi.mx/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Colombia",
+            "title": "Selia",
+            "description": "Selia es una healthtech que conecta a personas en Latam con profesionales certificados en salud mental para consultas en video y en persona.",
+            "externalLink": "https://selia.co/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Chile",
+            "title": "Kinexperience",
+            "description": "Es un servicio de kinesiología a domicilio especializado en personas mayores, cuyo objetivo es transformar la rehabilitación en una experiencia personalizada y única.",
+            "externalLink": "https://www.kinexperience.cl/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Israel",
+            "title": "Myndyou",
+            "description": "MyndYou hace lo que ninguna otra plataforma hace hoy. MyEleanor, el asistente de atención virtual impulsado por IA, llama a los pacientes con mayor riesgo y entabla una conversación de IA dinámica y personalizada con ellos para aprender sobre su salud y sus vidas. Dado que MyEleanor también puede detectar cambios sutiles en la voz de un paciente, utiliza todos estos datos para clasificar a un paciente utilizando el motor de análisis de datos patentado. Se puede adaptar a español.",
+            "externalLink": "https://myndyou.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Colombia",
+            "title": "Ruah60+",
+            "description": "Especializado en ofrecer servicios para personas mayores, que pueden acceder a acompañamiento en el pago de facturas, diligencias bancarias, compras en línea, servicios de enfermería, entre otros",
+            "externalLink": "https://www.ruah60mas.co/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "EEUU",
+            "title": "Medisafe",
+            "description": "Los pacientes reciben una gestión completa del tratamiento a través de una combinación de tecnología avanzada y conocimiento experto. Conecte a los pacientes con una plataforma digital innovadora que impulsa el compromiso con la medicación, integra el apoyo humano y ofrece una experiencia de atención holística.",
+            "externalLink": "https://www.medisafe.com/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Chile",
+            "title": "Servisenior",
+            "description": "Mejora el servicio en las entregas conectándote con Despachadores Seniors, personas +50 años, comprometidos, responsables y muy puntuales, lo que además genera impacto social al brindarles ingresos que hoy son escasos en el mercado. oportunidades para que los Seniors pudieran seguir desarrollándose profesionalmente y generar ingresos. Hemos innovado con diferentes modelos de negocio para materializar estas oportunidades, creando soluciones únicas para empresas de varios rubros, quienes han elegido nuestros servicios.",
+            "externalLink": "https://www.servisenior.cl/"
+        },
+        {
+            "type": "Educación",
+            "country": "España",
+            "title": "Emancipatic",
+            "description": "Consultora especializada en asesorar proveedores de servicios digitales para considerar y ser más inclusivos con el segmento +50. También dan formación a adultos para el uso de la tecnología y asesoría legal para el acceso a servicios.",
+            "externalLink": "www.emancipatic.org"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "República Checa",
+            "title": "Big launcher",
+            "description": "BIG Launcher hace que el smartphone sea adecuado para personas mayores, niños y personas con enfermedades oculares, problemas motrices o legalmente ciegas. Los usuarios con problemas visuales y técnicos pueden utilizar la interfaz sencilla y fácil de leer con facilidad. No hay miedo a equivocarse y perderlo todo con una navegación sin estrés. Además, el botón SOS puede salvar vidas.",
+            "externalLink": "http://biglauncher.com/es/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Colombia",
+            "title": "Mi Tercer Hogar",
+            "description": "Un marketplace digital dirigido a personas mayores, cuidadores , familiares y hogares geriatrícos, que centraliza las necesidades de personas mayores. En su plataforma se pueden encontrar hogares geriátricos y residencias especializadas de alta calidad, servicios y productos orientados a la salud entre otros.",
+            "externalLink": "https://somos.mi3hogar.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "España",
+            "title": "Neki",
+            "description": "Tecnologías weareble para personas con riesgo de desorientarse. Tienen además una app de gestión y control de los dispositivos GPS.",
+            "externalLink": "https://neki.es/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "España",
+            "title": "Kuvu",
+            "description": "Plataforma para compartir la casa con personas de otras generaciones que buscan alojamiento, de manera completamente segura, sin preocupaciones y ganando un dinero extra. Combate la soledad no deseada.",
+            "externalLink": "https://kuvu.eu/"
+        },
+        {
+            "type": "Educación",
+            "country": "Perú",
+            "title": "Emprende UP (Universidad del Pacifico)",
+            "description": "Programa de capacitación y acompañamiento dirigido a personas de 50 años a más que desean emprender y/o emprendedores que desean enfocarse en el segmento plateado (adultos 50+). Desarrollado por la Universidad del Pacifico",
+            "externalLink": "https://ecosistemaplateado.pe/programas/emprende-50/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Chile",
+            "title": "Senior Talent",
+            "description": "Vinculan profesionales mayores de 50 años a emprendimientos en busca de talento con experiencia",
+            "externalLink": "https://seniortalent.cl/"
+        },
+        {
+            "type": "Educación",
+            "country": "Colombia",
+            "title": "Mayor vida",
+            "description": "Impulsan emprendimientos de personas mayores a traves de la plataforma emprende mayor",
+            "externalLink": "https://mayorvida.com/emprendimiento-social-emprende-mayor/"
+        },
+        {
+            "type": "Educación",
+            "country": "Chile",
+            "title": "Rocket Academy",
+            "description": "Forman y certifican de manera gratuita a trabajadores senior en cursos de automatización robótica de procesos (RPA)",
+            "externalLink": "https://rocketbot.com/es/"
+        },
+        {
+            "type": "Educación",
+            "country": "Colombia",
+            "title": "101 ideas",
+            "description": "Realizan investigaciones a la medida, que constituyen un insumo para innovar en el desarrollo de servicios.\nRealizan programas de sensibilización y transición a la jubilación para empresas. Combaten la dependencia económica y emocional que ha llevado a un gran porcentaje de personas mayores de 50 años a sumergirse en problemas de Depresión.",
+            "externalLink": "https://www.101ideas.co/"
+        },
+        {
+            "type": "Educación",
+            "country": "Chile",
+            "title": "Travesia 100",
+            "description": "Apoyar e incidir en el reconocimiento y empoderamiento de personas 60+, que decidan reinventarse y emprender con pasión y propósito.",
+            "externalLink": "https://travesia100.cl/"
+        },
+        {
+            "type": "Educación",
+            "country": "Uruguay",
+            "title": "Pyxis +50",
+            "description": "Reconvertir a personas mayores de 50 años, capacitándolos en tecnología para brindarles una segunda oportunidad en el mercado laboral.",
+            "externalLink": "https://pyxis.tech/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Argentina",
+            "title": "Asistente online",
+            "description": "Crear puestos de trabajo para personas que no se pueden reinsertar en el mercado laboral porque son mayores de 40 y personas con capacidades diferentes.",
+            "externalLink": "https://asistente-online.com/"
+        },
+        {
+            "type": "Educación",
+            "country": "Argentina",
+            "title": "SeniorITty",
+            "description": "Primer programa de reconversión laboral a la industria de las Tecnologías de la Información (IT) para profesionales senior.",
+            "externalLink": "http://www.senioritty.com/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Colombia",
+            "title": "Avista Colombia",
+            "description": "Cuentan con creditos digitales de libranza para pensionados",
+            "externalLink": "creditosavista.com"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "EEUU",
+            "title": "CFG - Dando",
+            "description": "Otorgan crédito 100% digital para pensionados",
+            "externalLink": "https://www.dando.co/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Colombia",
+            "title": "Excel Credit",
+            "description": "Fintech que apoya la inclusión financiera dando una segunda oportunidad a pensionados, docentes, policías y empleados gubernamentales, que por una razón u otra están reportados en centrales de riesgo.",
+            "externalLink": "https://excelcredit.co/formulario-leads?utm_source=search&utm_medium=google&utm_channel=google_form&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPaDl2HjM6BtQB40VtqDmsa21w4Qd6eShL-rhwwKlgSRAiOWGgAb_3oaAm2nEALw_wcB"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Colombia",
+            "title": "Finsocial",
+            "description": "Dan créditos de libre inversión y consumo dirigido a pensionados de la tercera edad digitales",
+            "externalLink": "https://www.finsocial.co/pensionado"
+        },
+        {
+            "type": "Educación",
+            "country": "EEUU",
+            "title": "Aging 2.0",
+            "description": "Red mundial de innovadores que utilizan la tecnología y el diseño para mejorar la vida de las personas mayores de todo el mundo.",
+            "externalLink": "https://www.aging2.com/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Perú",
+            "title": "BBVA",
+            "description": "Prestan servicios de cuenta de ahorros para mayores de 65 años, con tazas de rendimiento preferenciales, procesos virtuales.",
+            "externalLink": "https://www.bbva.pe/personas/productos/cuentas/ahorro/senior.html"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Chile",
+            "title": "Caja los Andes",
+            "description": "Ofrecen crédito social para pensionados servicios presenciales y minimamente digitales",
+            "externalLink": "https://www.cajalosandes.cl/pensionados/creditos/credito-social"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Chile",
+            "title": "PentaVida",
+            "description": "Apoyan a sus pensionados ofreciéndoles financiamiento para que puedan realizar sus proyectos. El proceso de solicitud de credito se realiza virtualmente",
+            "externalLink": "https://www.pentavida.cl/nuestros-productos/credito-de-consumo-pensionados/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Panamá",
+            "title": "Global bank",
+            "description": "Ofrecen prestamo protegido a personas pensionadas y jubiladas, ´proceso de solicitu de prestamos virtuales.",
+            "externalLink": "https://www.globalbank.com.pa/es/banca-personal/prestamos/prestamos-personales/jubilados-y-pensionados"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Colombia",
+            "title": "Financiera Comultrasan",
+            "description": "Ofrecen una línea financiera personas mayores, Cuenta de ahorros, CDAT, crédito para pensionados, Prestapronto, seguros y polizas. Solicitud de prestamos virtuales.",
+            "externalLink": "https://www.financieracomultrasan.com.co/es/personas/momentos-de-vida/adultos-solteros/financia-tus-necesidades-0"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "México",
+            "title": "AVU",
+            "description": "Hub de innovación para el envejecimiento, crean soluciones sostenibles y escalables que estén a la altura de los retos del envejecimiento con base en 2 ejes: 1.Atención a personas mayores 2. Envejecimiento regenerativo.",
+            "externalLink": "https://avu.mx/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "España",
+            "title": "Sensalus",
+            "description": "App específica para personas mayores de 50 años que tiene como objetivo el crear hábitos de cuidado de la salud más allá del mero foco en la mejora muscular. Abarca también otros aspectos básicos de la salud como son la nutrición, el descanso de calidad y el mindfulness.",
+            "externalLink": "https://sensalus.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "EEUU",
+            "title": "Ourtime",
+            "description": "Web de citas para personas de más de 50 que ayuda a mantener vida en pareja y ciriculo social",
+            "externalLink": "www.ourtime.es"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "EEUU",
+            "title": "Meetup",
+            "description": "Plataforma de las personas: donde los intereses se convierten en amistades. Aunque no tiene el foco para mayores de 60 años, pero cuentan con una importante presencia y actividad de este grupo de edad",
+            "externalLink": "Meetup.com"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "España",
+            "title": "Oroi",
+            "description": "Oroi es un canal de realidad virtual orientado a generar bienestar emocional y entrenar las funciones cognitivas en las personas mayores.",
+            "externalLink": "https://oroi.info/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Argentina",
+            "title": "Elliecare",
+            "description": "Promueve holísticamente el bienestar de las personas mayores. Ofrece múltiples beneficios y propuestas, todas ellas diseñadas y pensadas para que el día a dia sea más seguro, independiente y digno de ser disfrutado",
+            "externalLink": "http://www.elliecare.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Francia",
+            "title": "Famileo",
+            "description": "Una aplicación para crear una revista para los abuelos. Los familiares ingresan a la cuenta Famileo con el smartphone o en el ordenador y cada uno sube mensajes y fotos de su vida cotidiana.Famileo se encarga del resto reuniendo todas noticias y mensajes y las convierten en una revista de papel que envían por correo físico a los abuelos.",
+            "externalLink": "https://www.famileopro.com/es-es/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "España",
+            "title": "Adopta un abuelo",
+            "description": "Programa intergeneracional de compañía para la tercera edad con el objetivo de que los mayores se sientan escuchados, acompañados y queridos, mientras los jóvenes voluntarios visitan y aprenden experiencia y valores durante sus visitas.",
+            "externalLink": "https://adoptaunabuelo.org/"
+        },
+        {
+            "type": "Educación",
+            "country": "Brasil",
+            "title": "Veduca",
+            "description": "Plataforma de que busca influir positivamente en la vida de las personas difundiendo conocimientos a través de contenidos de calidad producidos de forma sostenible, colaborativa, transparente y horizontal, y ofrecidos de manera accesible y sencilla.",
+            "externalLink": "https://veduca.org/"
+        },
+        {
+            "type": "Educación",
+            "country": "Argentina",
+            "title": "PAMI",
+            "description": "Plataforma de cursos universitarios enfocados a personas mayores, con la facilidad de acceso por medio de un computador o celular",
+            "externalLink": "https://www.pami.org.ar/talleresycursos/cursos-upami"
+        },
+        {
+            "type": "Educación",
+            "country": "EEUU",
+            "title": "Seniornet",
+            "description": "SeniorNet es una organización sin fines de lucro, que se especializa en educación sobre computadoras e Internet para personas mayores de 55 años y personas necesitadas creando un puente entre las pesonas mayores y la tecnología",
+            "externalLink": "https://seniornet.or"
+        },
+        {
+            "type": "Educación",
+            "country": "Argentina",
+            "title": "Mayores conectados",
+            "description": "Capacita Personas Mayores sobre el uso de las nuevas tecnologías. Estos nuevos aprendizajes los acercan a sus nietos, hijos, familiares y amigos que están lejos a través de las redes sociales y herramientas de vídeo conferencia que les permiten mantenerse actualizados, comunicados y activos.",
+            "externalLink": "https://mayoresconectados.com.ar/"
+        },
+        {
+            "type": "Educación",
+            "country": "EEUU",
+            "title": "TechSoup",
+            "description": "TechSoup es una organización sin fines de lucro que ofrece recursos tecnológicos y capacitación a organizaciones y comunidades de todo el mundo. Ofrece cursos y programas de capacitación en línea, incluyendo capacitación para personas mayores de 50 años que viven en zonas rurales.",
+            "externalLink": "https://www.tsgn.org/en"
+        },
+        {
+            "type": "Educación",
+            "country": "EEUU",
+            "title": "Udemy",
+            "description": "Udemy es una plataforma de aprendizaje en línea que ofrece una amplia variedad de cursos en diferentes temas, incluyendo tecnología. Tiene cursos específicos para personas mayores y muchos de ellos están diseñados para ser accesibles para aquellos que tienen poca o ninguna experiencia en tecnología",
+            "externalLink": "https://www.udemy.com/"
+        },
+        {
+            "type": "Educación",
+            "country": "EEUU",
+            "title": "Generaciones en accion",
+            "description": "Esta organización ofrece programas de capacitación en línea y presenciales para personas mayores de 50 años, en temas como tecnología, salud, finanzas y emprendimiento. Está enfocado en comunidades rurales y desfavorecidas",
+            "externalLink": "https://www.generacionesenaccion.org/"
+        },
+        {
+            "type": "Educación",
+            "country": "Colombia",
+            "title": "El Bosque Senior (Universidad El Bosque)",
+            "description": "Crea entornos de enseñanza que facilitan el autoaprendizaje, estimulan la imaginación, la creatividad, la expresión artística y favorezcen la integración y la cooperación entre compañeros, docentes y agentes sociales. Cuenta con una oferta de 24 cursos virtuales cortos que se clasifican en cuatro categorías: Salud y Bienestar, Emprendimiento Senior y Prejubilación, Historia, Cultura y Sociedad, Hobbies y otros.",
+            "externalLink": "https://www.unbosque.edu.co/educacion-continuada/experiencias-bosque-senior"
+        },
+        {
+            "type": "Educación",
+            "country": "Uruguay",
+            "title": "Comunidad Silver UY",
+            "description": "Plataforma web de cursos para mayores de 50 años con profesionales en temas como desarrollo personal, introducción a la tecnología y escritura creativa.",
+            "externalLink": "https://comunidadsilveruy.com/"
+        },
+        {
+            "type": "Educación",
+            "country": "Colombia",
+            "title": "Arati",
+            "description": "Es de Sura. Servicios para personas mayores por medio de acompañantes para realizar actividades diarias y también con tutores en linea para enseñar el uso de herramientas digitales para realizar trámites.",
+            "externalLink": "https://arati.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "USA",
+            "title": "Life360",
+            "description": "A través de tecnología GPS, esta aplicación actúa como un localizador que permite saber en todo momento dónde está el usuario, muy útil en caso de personas mayores con demencia senil.",
+            "externalLink": "https://www.life360.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "España",
+            "title": "65ymas",
+            "description": "Diario digital para personas Mayores. Dice ser apolítico, informativo, divulgativo y entretenido. Cuenta con el asesoramiento permanente de personas mayores en sus contenidos a través de sus asociaciones más representativas. La empresa detrás se llama Agkam Strategies, SL.",
+            "externalLink": "https://www.65ymas.com/"
+        },
+        {
+            "type": "Salud y bienestar",
+            "country": "Malta",
+            "title": "Date My Age",
+            "description": "Plataforma digital donde las personas solteras mayores de todo el mundo pueden encontrarse y empezar una relación gracias a una serie de funciones de comunicación. Sus herramientas incluyen un espacio en línea para crear un pefil, buscador de bases de datos, chat en línea.",
+            "externalLink": "https://www.datemyage.com/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "EEUU",
+            "title": "Aging 2.0",
+            "description": "Red mundial de innovadores que utilizan la tecnología y el diseño para mejorar la vida de las personas mayores de todo el mundo.\nCuentan con un grupo interdisciplinar e intergeneracional de emprendedores, inversores, investigadores, tecnólogos, diseñadores y los propios adultos mayores que comparten valores comunes de innovación, colaboración y respeto por todas las edades.",
+            "externalLink": "https://www.aging2.com/"
+        },
+        {
+            "type": "Ingresos y finanzas",
+            "country": "Uruguay",
+            "title": "NudaProp",
+            "description": "Servicios para que las personas mayores propietarias obtengan dinero de su inmueble sin mudarse.\nEl propósito es contribuir a la mejora de la calidad de vida, posibilitando la venta del título de propiedad, así la persona mayor obtiene ingresos a la vez que conserva el derecho de seguir en su casa de por vida (plazo vitalicio) o hasta un plazo pactado.",
+            "externalLink": "https://nudaprop.com/"
+        },
+        {
+            "type": "Educación",
+            "country": "Uruguay",
+            "title": "Comunidad Silver Uy",
+            "description": "Es una plataforma virtual amigable que brinda cursos y talleres online. Está enfocado para personas seniors que quieren mantenerse mental-mente activos y desarrollar nuevas habilidades en un ambiente interactivo dirigido por profesionales.",
+            "externalLink": "https://comunidadsilveruy.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Argentina",
+            "title": "Negra digital",
+            "description": "Negra digital es una empresa de marketing digital que desarrolla productos de inserción digital en redes sociales como clases de Instagram y cursos de LinkedIn diseñados especialmente para adultos mayores de 50 años y profesionales migrantes digitales. Ofrecen clases prácticas, envío de e-books, y estrategias personalizadas de marketing digital incluyendo gestión de redes sociales, publicidad en Facebook e Instagram análisis de métricas, and community management.",
+            "externalLink": "https://www.negra.uy/"
+        },
+        {
+            "type": "Educación",
+            "country": "República Dominicana",
+            "title": "Ubicua",
+            "description": "Ubicua es una plataforma virtual de aprendizaje continuo para docentes, con el objetivo de certificar a 1 millón de docentes en habilidades de Inteligencia Artificial para 2030. Ofrece cursos cortos y prácticos en Herramientas de Productividad, Metodologías de Aprendizaje y Certificaciones Internacionales, disponibles siempre desde cualquier dispositivo conectado a internet. Promueve el aprendizaje ubicuo.",
+            "externalLink": "https://ubicuaeducacion.com/"
+        },
+        {
+            "type": "Educación",
+            "country": "México",
+            "title": "Wiser Hub",
+            "description": "WISER HUB es una comunidad colaborativa para expertos de más de 50 años. Ofrecen consultorías personalizadas, talleres especializados, y retos colaborativos para solucionar desafíos organizacionales mediante la interacción generacional y la experiencia acumulada de sus miembros.",
+            "externalLink": "www.wiserhub.com.mx"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Chile",
+            "title": "Activida. Powered by Nymbl Science",
+            "description": "Nymbl Science ofrece un programa digital de prevención de caídas que se implementa fácilmente sin complejas integraciones IT y cumple con las normas HIPAA para la protección de datos. Su sistema es eficaz y económico, mejorando las calificaciones de salud y la satisfacción del usuario, ideal para Medicare y Medicaid",
+            "externalLink": "https://nymblscience.com/"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Chile",
+            "title": "Circuloten",
+            "description": "Esta app busca ampliar el capital social de las personas, facilitando conexiones basadas en intereses comunes, valores y estilos de vida. Funciona como una \"frendship app\" donde los usuarios pueden encontrar amigos, parejas, o incluso un nuevo amor, además de organizar viajes y actividades divertidas.",
+            "externalLink": "https://linktr.ee/circuloten"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Uruguay",
+            "title": "Digitalis",
+            "description": "Digitalis es un software innovador que previene interacciones medicamentosas peligrosas mediante algoritmos avanzados que ofrecen recomendaciones en tiempo real. Asegura una gestión de medicación personalizada y segura mejorando la seguridad del paciente y los resultados de salud.",
+            "externalLink": "NA"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Argentina",
+            "title": "Ellie Care",
+            "description": "Ellie Care es la \"Age Tech\" de Latinoamérica dedicada a promover el bienestar holístico de los adultos mayores y sus familias. Ofrece soluciones como detección de caídas, botón de ayuda y monitoreo de salud. Busca asegurar salud, seguridad e independencia, fomentando un entorno amigable para los seniors a través de su plataforma de asistencia.",
+            "externalLink": "https://ellie.care/"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Uruguay",
+            "title": "Galeno_Sys",
+            "description": "Galeno Sys es una avanzada herramienta de telemedicina basada en eHealth y tecnología IoT para el monitoreo cardiológico remoto. Utiliza un dispositivo con electrodos que recoge datos electrocardiográficos enviados a un servidor y accesibles vía una plataforma web. Ofrece monitoreo en hospitales, domicilios o durante rehabilitación, asegurando la calidad y accesibilidad del cuidado cardiológico sin importar la ubicación geográfica del paciente",
+            "externalLink": "www.galenosys.com.uy"
+        },
+        {
+            "type": "Educación",
+            "country": "Chile",
+            "title": "Seniorpity. org",
+            "description": "Senioripity es un club virtual que utiliza la tecnología para mejorar la calidad de vida de los adultos mayores de 60 años. Organizan reuniones mensuales con profesionales para discutir diversas temáticas, ofrecen seguimiento personalizado y proporcionan materiales educativos para continuar el aprendizaje en casa.",
+            "externalLink": "https://www.senioripity.org/"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "México",
+            "title": "WiCare",
+            "description": "Senioripity es un club virtual que mejora la calidad de vida de los adultos mayores usando tecnología. Además de reuniones mensuales con profesionales sobre diversas temáticas y seguimiento personalizado, Senioripity ayuda a encontrar cuidadores de confianza mediante una plataforma digital que utiliza inteligencia artificial para seleccionar los mejores candidatos según las necesidades publicadas por los usuarios.",
+            "externalLink": "https://wicaremexico.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Uruguay",
+            "title": "Accede.uy",
+            "description": "Accede Soluciones en Accesibilidad es la primera empresa en Uruguay especializada en tecnología asistiva. Investigan, desarrollan, fabrican y comercializan equipamiento para mejorar la accesibilidad de personas con discapacidad temporal o permanente. El equipo incluye Terapeutas Ocupacionales, un Ingeniero Biomédico y un Diseñador Industrial.",
+            "externalLink": "https://accede.uy/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Uruguay",
+            "title": "Pills & Care",
+            "description": "Pills&Care ofrece un sistema integral para la gestión segura de medicamentos mediante un dispensador conectado a Internet, una APP, y dispositivos wearable como pulseras o smartwatches. Esta tecnología permite controlar la administración de medicación, monitorear la salud del paciente en tiempo real, detectar caídas, localizar al paciente, y emitir alertas automáticas. La APP asiste en la carga de medicamentos y ofrece información detallada sobre el consumo y almacenamiento de los mismos.",
+            "externalLink": "https://www.pillsandcare.com/"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Colombia",
+            "title": "TECuido",
+            "description": "TeCuido es una empresa que utiliza la tecnología móvil para mejorar la experiencia hospitalaria, conectando pacientes con sus familias sin importar la distancia. Ofrece servicios personalizados para promover la autonomía y seguridad de los mayores en su domicilio, y facilita el acercamiento y entendimiento familiar sobre el envejecimiento, creando una nueva visión sobre la vejez y la longevidad.",
+            "externalLink": "https://tecuido.com.co/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Uruguay",
+            "title": "60mas",
+            "description": "Esta agencia de publicidad y marketing está especializada en Silver Marketing, dedicada a las necesidades de las personas mayores. Ofrecen una amplia gama de servicios que incluyen creación de sitios web, contenido de marketing digital, fotografía de producto, videos profesionales, diseños gráficos 3D, y más. Además, son responsables de la producción del primer programa de televisión en Uruguay dirigido exclusivamente a personas mayores, \"Palabras Mayores",
+            "externalLink": "http://www.60mas.com/"
+        },
+        {
+            "type": "Tecnología y digitalización",
+            "country": "Brasil",
+            "title": "Data 8",
+            "description": "Data8 es líder en estudios sobre el comportamiento y hábitos de consumo de los brasileños mayores de 50 años. Especializados en el mercado de la longevidad, recopilan datos para descifrar las necesidades de esta demografía creciente. Ofrecen talleres, conferencias y estudios personalizados que ayudan a las marcas a conectar eficazmente con la audiencia madura y expandir sus mercados.",
+            "externalLink": "https://www.data8.com.br/quem-somos"
+        },
+        {
+            "type": "Salud y Bienestar",
+            "country": "Argentina",
+            "title": "No Pausa",
+            "description": "No Pausa es una startup que ofrece una plataforma integral dedicada al bienestar de la mujer menopáusica en LATAM. Con un enfoque holístico y multidisciplinario, proporciona desde diagnósticos con el MenoCheck hasta consultas personalizadas con especialistas en menopausia, pasando por eventos educativos y comunidades de apoyo. Esta organización también genera datos e insights cruciales para el desarrollo de soluciones en los sectores público y privado.",
+            "externalLink": "https://no-pausa.com/"
+        }
+    ]
+}

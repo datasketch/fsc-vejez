@@ -4,6 +4,7 @@ import TabSections from "@/components/TabSections";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import data from "@/data/servicios.json"
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -102,7 +103,7 @@ export default function Page() {
                 </h3>
               </div>
               <div className="mt-6">
-                <StackedBarChart />
+                <StackedBarChart data={data.categoria_servicio_pais.data} legend={data.categoria_servicio_pais.legend} />
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
@@ -135,20 +136,16 @@ export default function Page() {
                 sections={[
                   {
                     title: "Salud y bienestar",
-                    srcImage: "/images/servicios/words.svg",
+                    srcImage: "/images/servicios/words/service-health.png",
                   },
                   {
                     title: "Educación",
-                    srcImage: "/images/servicios/words.svg",
+                    srcImage: "/images/servicios/words/service-education.png",
                   },
                   {
                     title: "Ingresos y finanzas",
-                    srcImage: "/images/servicios/words.svg",
-                  },
-                  {
-                    title: "Tecnología y digitalización",
-                    srcImage: "/images/servicios/words.svg",
-                  },
+                    srcImage: "/images/servicios/words/service-finance.png",
+                  }
                 ]}
               />
             </div>
@@ -164,7 +161,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <ServicesClient />
+      <ServicesClient data={data.servicios} />
       <div className="u-container border-t border-t-dark-slate-gray pt-16">
         <div className="bg-banner-services bg-cover bg-center rounded-[20px] p-8 md:p-10 lg:p-12 xl:p-[60px]">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">

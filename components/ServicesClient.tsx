@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 
-const servicesData = [
+/* const servicesData = [
   {
     type: "Salud y bienestar",
     country: "Colombia",
@@ -67,9 +67,13 @@ const servicesData = [
       "Red mundial de innovadores que utilizan la tecnología y el diseño para mejorar la vida de las personas mayores de todo el mundo.",
     externalLink: "",
   },
-];
+]; */
 
-export default function ServicesClient() {
+interface ServicesClientProps {
+  data: any
+}
+
+export default function ServicesClient({ data }: ServicesClientProps) {
   const [filterBy, setFilterBy] = useState("");
   const [search, setSearch] = useState("");
   const [filterData, setFilterData] = useState([] as any);
@@ -88,7 +92,7 @@ export default function ServicesClient() {
   };
 
   useEffect(() => {
-    let newData = servicesData;
+    let newData = data;
 
     // if(filterBy) {
 
@@ -96,7 +100,7 @@ export default function ServicesClient() {
 
     if (search) {
       newData = newData.filter(
-        (item) =>
+        (item: { title: string; description: string; }) =>
           item.title.toLowerCase().includes(search.toLowerCase()) ||
           item.description.toLowerCase().includes(search.toLowerCase())
       );

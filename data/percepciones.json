@@ -87,35 +87,35 @@
         "distribucion_geografica": [
             {
                 "place": "Bogotá",
-                "value": "28%"
+                "value": "34,2%"
             },
             {
                 "place": "Manizales",
-                "value": "23%"
-            },
-            {
-                "place": "Pasto",
-                "value": "15%"
+                "value": "21,2%"
             },
             {
                 "place": "Quibdó",
-                "value": "13%"
-            },
-            {
-                "place": "",
-                "value": ""
+                "value": "16,3%"
             },
             {
                 "place": "B/quilla",
-                "value": "11%"
+                "value": "9,8%"
+            },
+            {
+                "place": "Pasto",
+                "value": "5,7%"
             },
             {
                 "place": "Tunja",
-                "value": "6%"
+                "value": "4,9%"
             },
             {
                 "place": "Ipiales",
-                "value": "4%"
+                "value": "3,3%"
+            },
+            {
+                "place": "Mitu",
+                "value": "1,6%"
             }
         ]
     }
