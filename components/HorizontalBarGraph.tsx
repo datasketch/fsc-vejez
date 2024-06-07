@@ -7,7 +7,8 @@ import {
   XAxis,
   YAxis,
   Legend,
-  Text
+  Text,
+  Tooltip
 } from "recharts";
 
 
@@ -17,11 +18,12 @@ const BAR_AXIS_SPACE = 10;
 interface HorizontalBarGraphProps {
   data: Array<Record<string, string | number>>
   legend: Array<Record<string, string>>
+  height?: number
 }
 
-export default function HorizontalBarGraph({ data, legend }: HorizontalBarGraphProps) {
+export default function HorizontalBarGraph({ data, legend, height = 550 }: HorizontalBarGraphProps) {
   return (
-    <ResponsiveContainer width={"80%"} height={550} debounce={50} className="mt-20 mx-auto">
+    <ResponsiveContainer width={"80%"} height={height} debounce={50} className="mt-20 mx-auto">
       <BarChart
         data={data}
         layout="vertical"
@@ -33,8 +35,10 @@ export default function HorizontalBarGraph({ data, legend }: HorizontalBarGraphP
           dataKey="name"
           type="category"
           tickLine={false}
+          width={150}
 
         />
+        <Tooltip />
         <Legend verticalAlign="top" />
         {
           legend.map((item, i) => {

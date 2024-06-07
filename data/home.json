@@ -1,0 +1,785 @@
+{
+    "mapa_tech": {
+        "frecuencia_internet": [
+            {
+                "cod_dpto": 5,
+                "Al menos una vez a la semana, pero no cada día": 9.26,
+                "Al menos una vez al año, pero no cada mes": 0.2,
+                "Al menos una vez al mes, pero no cada semana": 0.26,
+                "No utiliza internet": 68.95,
+                "Todos los días de la semana": 21.33
+            },
+            {
+                "cod_dpto": 8,
+                "Al menos una vez a la semana, pero no cada día": 8.31,
+                "Al menos una vez al año, pero no cada mes": 0.32,
+                "Al menos una vez al mes, pero no cada semana": 0.71,
+                "No utiliza internet": 66.23,
+                "Todos los días de la semana": 24.42
+            },
+            {
+                "cod_dpto": 11,
+                "Al menos una vez a la semana, pero no cada día": 11.27,
+                "Al menos una vez al año, pero no cada mes": 0.22,
+                "Al menos una vez al mes, pero no cada semana": 0.6,
+                "No utiliza internet": 53.36,
+                "Todos los días de la semana": 34.55
+            },
+            {
+                "cod_dpto": 13,
+                "Al menos una vez a la semana, pero no cada día": 9.66,
+                "Al menos una vez al año, pero no cada mes": 0.45,
+                "Al menos una vez al mes, pero no cada semana": 1.23,
+                "No utiliza internet": 75.7,
+                "Todos los días de la semana": 12.96
+            },
+            {
+                "cod_dpto": 15,
+                "Al menos una vez a la semana, pero no cada día": 6.66,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.82,
+                "No utiliza internet": 76.91,
+                "Todos los días de la semana": 15.61
+            },
+            {
+                "cod_dpto": 17,
+                "Al menos una vez a la semana, pero no cada día": 8.22,
+                "Al menos una vez al año, pero no cada mes": 0.07,
+                "Al menos una vez al mes, pero no cada semana": 0.84,
+                "No utiliza internet": 61.81,
+                "Todos los días de la semana": 29.06
+            },
+            {
+                "cod_dpto": 18,
+                "Al menos una vez a la semana, pero no cada día": 11.83,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.52,
+                "No utiliza internet": 75.73,
+                "Todos los días de la semana": 11.93
+            },
+            {
+                "cod_dpto": 19,
+                "Al menos una vez a la semana, pero no cada día": 8.65,
+                "Al menos una vez al año, pero no cada mes": 0.07,
+                "Al menos una vez al mes, pero no cada semana": 0.5,
+                "No utiliza internet": 77.3,
+                "Todos los días de la semana": 13.48
+            },
+            {
+                "cod_dpto": 20,
+                "Al menos una vez a la semana, pero no cada día": 7.36,
+                "Al menos una vez al año, pero no cada mes": 0.1,
+                "Al menos una vez al mes, pero no cada semana": 0.48,
+                "No utiliza internet": 76.48,
+                "Todos los días de la semana": 15.59
+            },
+            {
+                "cod_dpto": 23,
+                "Al menos una vez a la semana, pero no cada día": 4.42,
+                "Al menos una vez al año, pero no cada mes": 0.24,
+                "Al menos una vez al mes, pero no cada semana": 0.47,
+                "No utiliza internet": 81.6,
+                "Todos los días de la semana": 13.27
+            },
+            {
+                "cod_dpto": 25,
+                "Al menos una vez a la semana, pero no cada día": 8.81,
+                "Al menos una vez al año, pero no cada mes": 0.41,
+                "Al menos una vez al mes, pero no cada semana": 1.5,
+                "No utiliza internet": 64.46,
+                "Todos los días de la semana": 24.82
+            },
+            {
+                "cod_dpto": 27,
+                "Al menos una vez a la semana, pero no cada día": 6.94,
+                "Al menos una vez al año, pero no cada mes": 0.24,
+                "Al menos una vez al mes, pero no cada semana": 1.1,
+                "No utiliza internet": 77.1,
+                "Todos los días de la semana": 14.62
+            },
+            {
+                "cod_dpto": 41,
+                "Al menos una vez a la semana, pero no cada día": 9.85,
+                "Al menos una vez al año, pero no cada mes": 0.16,
+                "Al menos una vez al mes, pero no cada semana": 0.32,
+                "No utiliza internet": 68.82,
+                "Todos los días de la semana": 20.84
+            },
+            {
+                "cod_dpto": 44,
+                "Al menos una vez a la semana, pero no cada día": 4.93,
+                "Al menos una vez al año, pero no cada mes": 0.22,
+                "Al menos una vez al mes, pero no cada semana": 0.11,
+                "No utiliza internet": 81.19,
+                "Todos los días de la semana": 13.55
+            },
+            {
+                "cod_dpto": 47,
+                "Al menos una vez a la semana, pero no cada día": 8.36,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.46,
+                "No utiliza internet": 75.77,
+                "Todos los días de la semana": 15.41
+            },
+            {
+                "cod_dpto": 50,
+                "Al menos una vez a la semana, pero no cada día": 6.93,
+                "Al menos una vez al año, pero no cada mes": 0.28,
+                "Al menos una vez al mes, pero no cada semana": 1.02,
+                "No utiliza internet": 50.92,
+                "Todos los días de la semana": 40.85
+            },
+            {
+                "cod_dpto": 52,
+                "Al menos una vez a la semana, pero no cada día": 6.07,
+                "Al menos una vez al año, pero no cada mes": 0.07,
+                "Al menos una vez al mes, pero no cada semana": 0.56,
+                "No utiliza internet": 79.03,
+                "Todos los días de la semana": 14.27
+            },
+            {
+                "cod_dpto": 54,
+                "Al menos una vez a la semana, pero no cada día": 10.03,
+                "Al menos una vez al año, pero no cada mes": 0.08,
+                "Al menos una vez al mes, pero no cada semana": 0.67,
+                "No utiliza internet": 69.31,
+                "Todos los días de la semana": 19.9
+            },
+            {
+                "cod_dpto": 63,
+                "Al menos una vez a la semana, pero no cada día": 8.29,
+                "Al menos una vez al año, pero no cada mes": 0.06,
+                "Al menos una vez al mes, pero no cada semana": 0.28,
+                "No utiliza internet": 53.55,
+                "Todos los días de la semana": 37.82
+            },
+            {
+                "cod_dpto": 66,
+                "Al menos una vez a la semana, pero no cada día": 10.04,
+                "Al menos una vez al año, pero no cada mes": 0.06,
+                "Al menos una vez al mes, pero no cada semana": 1.42,
+                "No utiliza internet": 62.49,
+                "Todos los días de la semana": 25.99
+            },
+            {
+                "cod_dpto": 68,
+                "Al menos una vez a la semana, pero no cada día": 6.53,
+                "Al menos una vez al año, pero no cada mes": 0.07,
+                "Al menos una vez al mes, pero no cada semana": 0.21,
+                "No utiliza internet": 66.99,
+                "Todos los días de la semana": 26.19
+            },
+            {
+                "cod_dpto": 70,
+                "Al menos una vez a la semana, pero no cada día": 6.91,
+                "Al menos una vez al año, pero no cada mes": 0.07,
+                "Al menos una vez al mes, pero no cada semana": 0.14,
+                "No utiliza internet": 81.02,
+                "Todos los días de la semana": 11.86
+            },
+            {
+                "cod_dpto": 73,
+                "Al menos una vez a la semana, pero no cada día": 9.68,
+                "Al menos una vez al año, pero no cada mes": 0.27,
+                "Al menos una vez al mes, pero no cada semana": 1.02,
+                "No utiliza internet": 69.68,
+                "Todos los días de la semana": 19.35
+            },
+            {
+                "cod_dpto": 76,
+                "Al menos una vez a la semana, pero no cada día": 8.72,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 1.17,
+                "No utiliza internet": 54.98,
+                "Todos los días de la semana": 35.12
+            },
+            {
+                "cod_dpto": 81,
+                "Al menos una vez a la semana, pero no cada día": 6.04,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.14,
+                "No utiliza internet": 76.95,
+                "Todos los días de la semana": 16.87
+            },
+            {
+                "cod_dpto": 85,
+                "Al menos una vez a la semana, pero no cada día": 12.1,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 1.03,
+                "No utiliza internet": 70.14,
+                "Todos los días de la semana": 16.73
+            },
+            {
+                "cod_dpto": 86,
+                "Al menos una vez a la semana, pero no cada día": 5.26,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.88,
+                "No utiliza internet": 83.33,
+                "Todos los días de la semana": 10.53
+            },
+            {
+                "cod_dpto": 88,
+                "Al menos una vez a la semana, pero no cada día": 6.35,
+                "Al menos una vez al año, pero no cada mes": 0.2,
+                "Al menos una vez al mes, pero no cada semana": 1.59,
+                "No utiliza internet": 52.38,
+                "Todos los días de la semana": 39.48
+            },
+            {
+                "cod_dpto": 91,
+                "Al menos una vez a la semana, pero no cada día": 6.65,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.37,
+                "No utiliza internet": 80.04,
+                "Todos los días de la semana": 12.94
+            },
+            {
+                "cod_dpto": 94,
+                "Al menos una vez a la semana, pero no cada día": 4.19,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.52,
+                "No utiliza internet": 81.68,
+                "Todos los días de la semana": 13.61
+            },
+            {
+                "cod_dpto": 95,
+                "Al menos una vez a la semana, pero no cada día": 5.15,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 1.03,
+                "No utiliza internet": 78.12,
+                "Todos los días de la semana": 15.7
+            },
+            {
+                "cod_dpto": 97,
+                "Al menos una vez a la semana, pero no cada día": 3.21,
+                "Al menos una vez al año, pero no cada mes": 0.2,
+                "Al menos una vez al mes, pero no cada semana": 0,
+                "No utiliza internet": 86.14,
+                "Todos los días de la semana": 10.44
+            },
+            {
+                "cod_dpto": 99,
+                "Al menos una vez a la semana, pero no cada día": 3.88,
+                "Al menos una vez al año, pero no cada mes": 0,
+                "Al menos una vez al mes, pero no cada semana": 0.19,
+                "No utiliza internet": 86.05,
+                "Todos los días de la semana": 9.88
+            }
+        ],
+        "uso_dispositivos": [
+            {
+                "cod_dpto": 5,
+                "Computador de escritorio": 8.66,
+                "Computador portátil": 9.16,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 2.23,
+                "Teléfono celular": 72.9,
+                "Televisor inteligente": 7.05
+            },
+            {
+                "cod_dpto": 8,
+                "Computador de escritorio": 7.8,
+                "Computador portátil": 11.56,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.29,
+                "Teléfono celular": 74.71,
+                "Televisor inteligente": 5.64
+            },
+            {
+                "cod_dpto": 11,
+                "Computador de escritorio": 13.54,
+                "Computador portátil": 15.31,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 3.34,
+                "Teléfono celular": 59.67,
+                "Televisor inteligente": 8.15
+            },
+            {
+                "cod_dpto": 13,
+                "Computador de escritorio": 10.77,
+                "Computador portátil": 7.25,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.41,
+                "Teléfono celular": 74.95,
+                "Televisor inteligente": 6.63
+            },
+            {
+                "cod_dpto": 15,
+                "Computador de escritorio": 5.83,
+                "Computador portátil": 12.78,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.94,
+                "Teléfono celular": 78.76,
+                "Televisor inteligente": 1.69
+            },
+            {
+                "cod_dpto": 17,
+                "Computador de escritorio": 6.33,
+                "Computador portátil": 7.7,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 2.2,
+                "Teléfono celular": 74.55,
+                "Televisor inteligente": 9.22
+            },
+            {
+                "cod_dpto": 18,
+                "Computador de escritorio": 5.13,
+                "Computador portátil": 6.96,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 85.71,
+                "Televisor inteligente": 2.2
+            },
+            {
+                "cod_dpto": 19,
+                "Computador de escritorio": 10.14,
+                "Computador portátil": 10.6,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.92,
+                "Teléfono celular": 70.97,
+                "Televisor inteligente": 7.37
+            },
+            {
+                "cod_dpto": 20,
+                "Computador de escritorio": 6.6,
+                "Computador portátil": 7.64,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 83.33,
+                "Televisor inteligente": 2.43
+            },
+            {
+                "cod_dpto": 23,
+                "Computador de escritorio": 7.35,
+                "Computador portátil": 12.14,
+                "Consolas para juegos electrónicos": 0.32,
+                "Tableta": 0.32,
+                "Teléfono celular": 73.48,
+                "Televisor inteligente": 6.39
+            },
+            {
+                "cod_dpto": 25,
+                "Computador de escritorio": 7.45,
+                "Computador portátil": 8.14,
+                "Consolas para juegos electrónicos": 0.11,
+                "Tableta": 1.72,
+                "Teléfono celular": 77.41,
+                "Televisor inteligente": 5.16
+            },
+            {
+                "cod_dpto": 27,
+                "Computador de escritorio": 11.24,
+                "Computador portátil": 8.84,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.4,
+                "Teléfono celular": 74.3,
+                "Televisor inteligente": 5.22
+            },
+            {
+                "cod_dpto": 41,
+                "Computador de escritorio": 5.41,
+                "Computador portátil": 7.14,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.87,
+                "Teléfono celular": 82.9,
+                "Televisor inteligente": 3.68
+            },
+            {
+                "cod_dpto": 44,
+                "Computador de escritorio": 11.72,
+                "Computador portátil": 10.88,
+                "Consolas para juegos electrónicos": 0.42,
+                "Tableta": 0,
+                "Teléfono celular": 69.46,
+                "Televisor inteligente": 7.53
+            },
+            {
+                "cod_dpto": 47,
+                "Computador de escritorio": 8.04,
+                "Computador portátil": 10.12,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 1.49,
+                "Teléfono celular": 77.08,
+                "Televisor inteligente": 3.27
+            },
+            {
+                "cod_dpto": 50,
+                "Computador de escritorio": 4.59,
+                "Computador portátil": 5.25,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 1.15,
+                "Teléfono celular": 86.56,
+                "Televisor inteligente": 2.46
+            },
+            {
+                "cod_dpto": 52,
+                "Computador de escritorio": 14.99,
+                "Computador portátil": 13.76,
+                "Consolas para juegos electrónicos": 0.21,
+                "Tableta": 2.67,
+                "Teléfono celular": 59.14,
+                "Televisor inteligente": 9.24
+            },
+            {
+                "cod_dpto": 54,
+                "Computador de escritorio": 8.9,
+                "Computador portátil": 7.53,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.46,
+                "Teléfono celular": 82.42,
+                "Televisor inteligente": 0.68
+            },
+            {
+                "cod_dpto": 63,
+                "Computador de escritorio": 6.87,
+                "Computador portátil": 10.63,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 2.66,
+                "Teléfono celular": 74.06,
+                "Televisor inteligente": 5.77
+            },
+            {
+                "cod_dpto": 66,
+                "Computador de escritorio": 10.35,
+                "Computador portátil": 11.41,
+                "Consolas para juegos electrónicos": 0.24,
+                "Tableta": 1.29,
+                "Teléfono celular": 72.59,
+                "Televisor inteligente": 4.12
+            },
+            {
+                "cod_dpto": 68,
+                "Computador de escritorio": 8.19,
+                "Computador portátil": 9.36,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 1.34,
+                "Teléfono celular": 77.59,
+                "Televisor inteligente": 3.51
+            },
+            {
+                "cod_dpto": 70,
+                "Computador de escritorio": 7.06,
+                "Computador portátil": 12.15,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.28,
+                "Teléfono celular": 76.27,
+                "Televisor inteligente": 4.24
+            },
+            {
+                "cod_dpto": 73,
+                "Computador de escritorio": 9.23,
+                "Computador portátil": 7.24,
+                "Consolas para juegos electrónicos": 0.14,
+                "Tableta": 0.57,
+                "Teléfono celular": 79.69,
+                "Televisor inteligente": 3.13
+            },
+            {
+                "cod_dpto": 76,
+                "Computador de escritorio": 7.09,
+                "Computador portátil": 6.49,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 1.6,
+                "Teléfono celular": 79.72,
+                "Televisor inteligente": 5.09
+            },
+            {
+                "cod_dpto": 81,
+                "Computador de escritorio": 6.22,
+                "Computador portátil": 5.18,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 86.53,
+                "Televisor inteligente": 2.07
+            },
+            {
+                "cod_dpto": 85,
+                "Computador de escritorio": 10.63,
+                "Computador portátil": 9.97,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0.66,
+                "Teléfono celular": 76.74,
+                "Televisor inteligente": 1.99
+            },
+            {
+                "cod_dpto": 86,
+                "Computador de escritorio": 12.27,
+                "Computador portátil": 7.98,
+                "Consolas para juegos electrónicos": 0.61,
+                "Tableta": 0,
+                "Teléfono celular": 77.91,
+                "Televisor inteligente": 1.23
+            },
+            {
+                "cod_dpto": 88,
+                "Computador de escritorio": 10.43,
+                "Computador portátil": 11.04,
+                "Consolas para juegos electrónicos": 0.31,
+                "Tableta": 0.92,
+                "Teléfono celular": 70.25,
+                "Televisor inteligente": 7.06
+            },
+            {
+                "cod_dpto": 91,
+                "Computador de escritorio": 16.05,
+                "Computador portátil": 17.9,
+                "Consolas para juegos electrónicos": 0.62,
+                "Tableta": 0.62,
+                "Teléfono celular": 64.81,
+                "Televisor inteligente": 0
+            },
+            {
+                "cod_dpto": 94,
+                "Computador de escritorio": 6.02,
+                "Computador portátil": 13.25,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 80.72,
+                "Televisor inteligente": 0
+            },
+            {
+                "cod_dpto": 95,
+                "Computador de escritorio": 6.13,
+                "Computador portátil": 10.85,
+                "Consolas para juegos electrónicos": 0.47,
+                "Tableta": 0.94,
+                "Teléfono celular": 79.25,
+                "Televisor inteligente": 2.36
+            },
+            {
+                "cod_dpto": 97,
+                "Computador de escritorio": 12,
+                "Computador portátil": 24,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 64,
+                "Televisor inteligente": 0
+            },
+            {
+                "cod_dpto": 99,
+                "Computador de escritorio": 11.24,
+                "Computador portátil": 7.87,
+                "Consolas para juegos electrónicos": 0,
+                "Tableta": 0,
+                "Teléfono celular": 79.78,
+                "Televisor inteligente": 1.12
+            }
+        ]
+    },
+    "modalidad_transporte": {
+        "data": [
+            {
+                "name": "A pie (Mayores de 15 min)",
+                "Adultos (27-59 años)": 9542,
+                "Jóvenes (14-26 años)": 9877,
+                "Personas mayores (60 años o más)": 5513
+            },
+            {
+                "name": "A pie (Menores de 15 min)",
+                "Adultos (27-59 años)": 5064,
+                "Jóvenes (14-26 años)": 4808,
+                "Personas mayores (60 años o más)": 2520
+            },
+            {
+                "name": "Alimentador",
+                "Adultos (27-59 años)": 469,
+                "Jóvenes (14-26 años)": 395,
+                "Personas mayores (60 años o más)": 195
+            },
+            {
+                "name": "Auto alquilado",
+                "Adultos (27-59 años)": 94,
+                "Jóvenes (14-26 años)": 43,
+                "Personas mayores (60 años o más)": 40
+            },
+            {
+                "name": "Auto compartido",
+                "Adultos (27-59 años)": 264,
+                "Jóvenes (14-26 años)": 123,
+                "Personas mayores (60 años o más)": 124
+            },
+            {
+                "name": "Auto eléctrico",
+                "Adultos (27-59 años)": 17,
+                "Jóvenes (14-26 años)": 9,
+                "Personas mayores (60 años o más)": 4
+            },
+            {
+                "name": "Bicicleta con motor como conductor",
+                "Adultos (27-59 años)": 225,
+                "Jóvenes (14-26 años)": 75,
+                "Personas mayores (60 años o más)": 41
+            },
+            {
+                "name": "Bicicleta con motor como pasajero",
+                "Adultos (27-59 años)": 11,
+                "Jóvenes (14-26 años)": 9,
+                "Personas mayores (60 años o más)": 3
+            },
+            {
+                "name": "Bicicleta convencional como conductor",
+                "Adultos (27-59 años)": 3390,
+                "Jóvenes (14-26 años)": 1676,
+                "Personas mayores (60 años o más)": 560
+            },
+            {
+                "name": "Bicicleta convencional como pasajero",
+                "Adultos (27-59 años)": 12,
+                "Jóvenes (14-26 años)": 71,
+                "Personas mayores (60 años o más)": 2
+            },
+            {
+                "name": "Bicitaxi",
+                "Adultos (27-59 años)": 72,
+                "Jóvenes (14-26 años)": 64,
+                "Personas mayores (60 años o más)": 29
+            },
+            {
+                "name": "Bus Dual",
+                "Adultos (27-59 años)": 259,
+                "Jóvenes (14-26 años)": 66,
+                "Personas mayores (60 años o más)": 76
+            },
+            {
+                "name": "Bus privado/de empresa",
+                "Adultos (27-59 años)": 693,
+                "Jóvenes (14-26 años)": 466,
+                "Personas mayores (60 años o más)": 95
+            },
+            {
+                "name": "Bus/automóvil/Van informal o pirata",
+                "Adultos (27-59 años)": 304,
+                "Jóvenes (14-26 años)": 254,
+                "Personas mayores (60 años o más)": 106
+            },
+            {
+                "name": "Bus/Buseta/Microbús intermunicipal",
+                "Adultos (27-59 años)": 1840,
+                "Jóvenes (14-26 años)": 1112,
+                "Personas mayores (60 años o más)": 511
+            },
+            {
+                "name": "Camión/Volqueta /Tractomula",
+                "Adultos (27-59 años)": 120,
+                "Jóvenes (14-26 años)": 33,
+                "Personas mayores (60 años o más)": 27
+            },
+            {
+                "name": "Motocarro de pasajeros/ carga",
+                "Adultos (27-59 años)": 25,
+                "Jóvenes (14-26 años)": 4,
+                "Personas mayores (60 años o más)": 9
+            },
+            {
+                "name": "Motocicleta como conductor",
+                "Adultos (27-59 años)": 3929,
+                "Jóvenes (14-26 años)": 1443,
+                "Personas mayores (60 años o más)": 175
+            },
+            {
+                "name": "Motocicleta como pasajero",
+                "Adultos (27-59 años)": 377,
+                "Jóvenes (14-26 años)": 302,
+                "Personas mayores (60 años o más)": 21
+            },
+            {
+                "name": "Otro",
+                "Adultos (27-59 años)": 26,
+                "Jóvenes (14-26 años)": 0,
+                "Personas mayores (60 años o más)": 31
+            },
+            {
+                "name": "Patineta/Scooter",
+                "Adultos (27-59 años)": 72,
+                "Jóvenes (14-26 años)": 15,
+                "Personas mayores (60 años o más)": 0
+            },
+            {
+                "name": "Sistema de Bicicletas de Bogotá (Bicicleta pública)",
+                "Adultos (27-59 años)": 15,
+                "Jóvenes (14-26 años)": 9,
+                "Personas mayores (60 años o más)": 5
+            },
+            {
+                "name": "SITP – Urbano/ Complementario/Especial /Provisional",
+                "Adultos (27-59 años)": 6725,
+                "Jóvenes (14-26 años)": 3182,
+                "Personas mayores (60 años o más)": 2253
+            },
+            {
+                "name": "Taxi colectivo",
+                "Adultos (27-59 años)": 67,
+                "Jóvenes (14-26 años)": 16,
+                "Personas mayores (60 años o más)": 31
+            },
+            {
+                "name": "Taxi convencional",
+                "Adultos (27-59 años)": 930,
+                "Jóvenes (14-26 años)": 278,
+                "Personas mayores (60 años o más)": 1009
+            },
+            {
+                "name": "Taxi solicitado por app",
+                "Adultos (27-59 años)": 486,
+                "Jóvenes (14-26 años)": 162,
+                "Personas mayores (60 años o más)": 288
+            },
+            {
+                "name": "TransMicable",
+                "Adultos (27-59 años)": 19,
+                "Jóvenes (14-26 años)": 9,
+                "Personas mayores (60 años o más)": 0
+            },
+            {
+                "name": "TransMilenio",
+                "Adultos (27-59 años)": 6761,
+                "Jóvenes (14-26 años)": 3786,
+                "Personas mayores (60 años o más)": 1749
+            },
+            {
+                "name": "Transporte escolar",
+                "Adultos (27-59 años)": 54,
+                "Jóvenes (14-26 años)": 1991,
+                "Personas mayores (60 años o más)": 13
+            },
+            {
+                "name": "Transporte individual app móvil (placa blanca/amarilla)",
+                "Adultos (27-59 años)": 405,
+                "Jóvenes (14-26 años)": 174,
+                "Personas mayores (60 años o más)": 149
+            },
+            {
+                "name": "Vehículo de tracción humana/animal",
+                "Adultos (27-59 años)": 8,
+                "Jóvenes (14-26 años)": 0,
+                "Personas mayores (60 años o más)": 0
+            },
+            {
+                "name": "Vehículo privado como conductor",
+                "Adultos (27-59 años)": 5899,
+                "Jóvenes (14-26 años)": 592,
+                "Personas mayores (60 años o más)": 1619
+            },
+            {
+                "name": "Vehículo privado como pasajero",
+                "Adultos (27-59 años)": 1669,
+                "Jóvenes (14-26 años)": 989,
+                "Personas mayores (60 años o más)": 1100
+            }
+        ],
+        "legend": [
+            {
+                "key": "Jóvenes (14-26 años)",
+                "fill": "#1D5556"
+            },
+            {
+                "key": "Adultos (27-59 años)",
+                "fill": "#FAAA8D"
+            },
+            {
+                "key": "Personas mayores (60 años o más)",
+                "fill": "#B6174B"
+            }
+        ]
+    }
+}

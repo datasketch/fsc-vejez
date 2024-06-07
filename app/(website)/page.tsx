@@ -6,6 +6,8 @@ import WaffleHome from "@/components/WaffleHome";
 import type { Metadata } from "next";
 import Image from "next/image";
 import tasa_de_alfabetismo from "@/data/tasa_de_alfabetismo.json";
+import HorizontalBarGraph from "@/components/HorizontalBarGraph";
+import data from "@/data/home.json"
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -1066,23 +1068,8 @@ export default function Page() {
                 generalmente más cortas.
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-6">
-              <Image
-                className="mx-auto lg:mx-0"
-                width={520}
-                height={13}
-                src="/images/home/chart-details-6.svg"
-                alt="chart details 6"
-              />
-            </div>
-            <div className="mt-4 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
-              <Image
-                className="mx-auto"
-                width={1042}
-                height={668}
-                src="/images/home/chart-6.svg"
-                alt="chart 6"
-              />
+            <div className="col-span-12">
+              <HorizontalBarGraph data={data.modalidad_transporte.data} legend={data.modalidad_transporte.legend} height={3000} />
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
