@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import tasa_de_alfabetismo from "@/data/tasa_de_alfabetismo.json";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
-import data from "@/data/home.json"
+import data from "@/data/home.json";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -313,39 +313,8 @@ export default function Page() {
                 menor proporción.
               </p>
             </div>
-            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-start-2 lg:col-end-7">
+            <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <Map />
-            </div>
-            <div className="mt-4 lg:mt-20 xl:mt-24 col-span-4 lg:col-start-8 lg:col-end-13">
-              <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
-                <div>
-                  <Image
-                    width={382}
-                    height={215}
-                    src="/images/home/legend.svg"
-                    alt="legend"
-                  />
-                </div>
-                <div className="hidden lg:block my-10">
-                  <Image
-                    width={1920}
-                    height={1}
-                    src="/images/home/dashed.svg"
-                    alt="dashed"
-                  />
-                </div>
-                <div>
-                  <Image
-                    width={491}
-                    height={319}
-                    src="/images/home/stadistic-map.svg"
-                    alt="stadistic map"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
             </div>
           </div>
         </div>
@@ -1069,7 +1038,11 @@ export default function Page() {
               </p>
             </div>
             <div className="col-span-12">
-              <HorizontalBarGraph data={data.modalidad_transporte.data} legend={data.modalidad_transporte.legend} height={1000} />
+              <HorizontalBarGraph
+                data={data.modalidad_transporte.data}
+                legend={data.modalidad_transporte.legend}
+                height={3000}
+              />
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>
@@ -1089,12 +1062,10 @@ export default function Page() {
                 </span>
               </h3>
             </div>
-            <div className="mt-4 col-span-4 lg:col-span-12">
-              <Image
-                width={1267}
-                height={608}
-                src="/images/home/dashboard.svg"
-                alt="dashboard"
+            <div className="mt-6 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
+              <iframe
+                className="size-full aspect-video"
+                src="https://services.datasketch.co/fsc-vejez-app/"
               />
             </div>
           </div>
