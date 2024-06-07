@@ -1069,7 +1069,7 @@ export default function Page() {
               </p>
             </div>
             <div className="col-span-12">
-              <HorizontalBarGraph data={data.modalidad_transporte.data} legend={data.modalidad_transporte.legend} height={3000} />
+              <HorizontalBarGraph data={data.modalidad_transporte.data} legend={data.modalidad_transporte.legend} height={1000} />
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <p className="text-davys-gray">Fuente y fecha de actualización</p>

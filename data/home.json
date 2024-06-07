@@ -1,4 +1,195 @@
 {
+    "distribucion_poblacional": [
+        {
+            "rango": "0-9",
+            "Hombre": 3872847,
+            "Mujer": 3706426
+        },
+        {
+            "rango": "10-19",
+            "Hombre": 4072663,
+            "Mujer": 3910377
+        },
+        {
+            "rango": "20-29",
+            "Hombre": 4384121,
+            "Mujer": 4331865
+        },
+        {
+            "rango": "30-39",
+            "Hombre": 4012910,
+            "Mujer": 4118248
+        },
+        {
+            "rango": "40-49",
+            "Hombre": 3236319,
+            "Mujer": 3504281
+        },
+        {
+            "rango": "50-59",
+            "Hombre": 2632129,
+            "Mujer": 3022435
+        },
+        {
+            "rango": "60-69",
+            "Hombre": 1993201,
+            "Mujer": 2397769
+        },
+        {
+            "rango": "70-79",
+            "Hombre": 1054871,
+            "Mujer": 1340889
+        },
+        {
+            "rango": "80-89",
+            "Hombre": 374683,
+            "Mujer": 518571
+        },
+        {
+            "rango": "90-99",
+            "Hombre": 77897,
+            "Mujer": 115369
+        },
+        {
+            "rango": "100+",
+            "Hombre": 7199,
+            "Mujer": 10882
+        }
+    ],
+    "poblacion_departamento": [
+        {
+            "cod_dpto": 97,
+            "poblacion": 2907
+        },
+        {
+            "cod_dpto": 94,
+            "poblacion": 3532
+        },
+        {
+            "cod_dpto": 91,
+            "poblacion": 6655
+        },
+        {
+            "cod_dpto": 99,
+            "poblacion": 8904
+        },
+        {
+            "cod_dpto": 95,
+            "poblacion": 9630
+        },
+        {
+            "cod_dpto": 88,
+            "poblacion": 10571
+        },
+        {
+            "cod_dpto": 81,
+            "poblacion": 34205
+        },
+        {
+            "cod_dpto": 86,
+            "poblacion": 41481
+        },
+        {
+            "cod_dpto": 18,
+            "poblacion": 46049
+        },
+        {
+            "cod_dpto": 85,
+            "poblacion": 49519
+        },
+        {
+            "cod_dpto": 27,
+            "poblacion": 63409
+        },
+        {
+            "cod_dpto": 44,
+            "poblacion": 86450
+        },
+        {
+            "cod_dpto": 63,
+            "poblacion": 116664
+        },
+        {
+            "cod_dpto": 70,
+            "poblacion": 140567
+        },
+        {
+            "cod_dpto": 50,
+            "poblacion": 148682
+        },
+        {
+            "cod_dpto": 20,
+            "poblacion": 149234
+        },
+        {
+            "cod_dpto": 41,
+            "poblacion": 159736
+        },
+        {
+            "cod_dpto": 66,
+            "poblacion": 184505
+        },
+        {
+            "cod_dpto": 47,
+            "poblacion": 186938
+        },
+        {
+            "cod_dpto": 17,
+            "poblacion": 212538
+        },
+        {
+            "cod_dpto": 19,
+            "poblacion": 227675
+        },
+        {
+            "cod_dpto": 54,
+            "poblacion": 231625
+        },
+        {
+            "cod_dpto": 15,
+            "poblacion": 235265
+        },
+        {
+            "cod_dpto": 73,
+            "poblacion": 257937
+        },
+        {
+            "cod_dpto": 52,
+            "poblacion": 259442
+        },
+        {
+            "cod_dpto": 23,
+            "poblacion": 273427
+        },
+        {
+            "cod_dpto": 13,
+            "poblacion": 299917
+        },
+        {
+            "cod_dpto": 68,
+            "poblacion": 386772
+        },
+        {
+            "cod_dpto": 8,
+            "poblacion": 389160
+        },
+        {
+            "cod_dpto": 25,
+            "poblacion": 529601
+        },
+        {
+            "cod_dpto": 76,
+            "poblacion": 794778
+        },
+        {
+            "cod_dpto": 5,
+            "poblacion": 1120115
+        },
+        {
+            "cod_dpto": 11,
+            "poblacion": 1223441
+        }
+    ],
     "mapa_tech": {
         "frecuencia_internet": [
             {
@@ -566,205 +757,163 @@
             }
         ]
     },
+    "nivel_educativo": {
+        "data": [
+            {
+                "name": "Doctorado",
+                "Adultos": 705,
+                "Jóvenes": 9,
+                "Personas mayores": 204
+            },
+            {
+                "name": "Maestría",
+                "Adultos": 5854,
+                "Jóvenes": 221,
+                "Personas mayores": 1056
+            },
+            {
+                "name": "Especialización",
+                "Adultos": 12749,
+                "Jóvenes": 701,
+                "Personas mayores": 3737
+            },
+            {
+                "name": "Universitaria",
+                "Adultos": 56560,
+                "Jóvenes": 36467,
+                "Personas mayores": 11320
+            },
+            {
+                "name": "Tecnológica",
+                "Adultos": 14219,
+                "Jóvenes": 6294,
+                "Personas mayores": 1864
+            },
+            {
+                "name": "Técnica profesional",
+                "Adultos": 34424,
+                "Jóvenes": 13994,
+                "Personas mayores": 4394
+            },
+            {
+                "name": "Media técnica (Bachillerato técnico)",
+                "Adultos": 8229,
+                "Jóvenes": 5844,
+                "Personas mayores": 1338
+            },
+            {
+                "name": "Media académica (Bachillerato clásico)",
+                "Adultos": 116100,
+                "Jóvenes": 61802,
+                "Personas mayores": 22012
+            },
+            {
+                "name": "Básica secundaria (6o - 9o)",
+                "Adultos": 40600,
+                "Jóvenes": 45929,
+                "Personas mayores": 15902
+            },
+            {
+                "name": "Básica primaria (1o - 5o)",
+                "Adultos": 66602,
+                "Jóvenes": 7215,
+                "Personas mayores": 62162
+            },
+            {
+                "name": "Normalista",
+                "Adultos": 613,
+                "Jóvenes": 281,
+                "Personas mayores": 537
+            },
+            {
+                "name": "Preescolar",
+                "Adultos": 33,
+                "Jóvenes": 22,
+                "Personas mayores": 22
+            }
+        ],
+        "legend": [
+            {
+                "key": "Jóvenes",
+                "fill": "#1D5556"
+            },
+            {
+                "key": "Adultos",
+                "fill": "#FAAA8D"
+            },
+            {
+                "key": "Personas mayores",
+                "fill": "#B6174B"
+            }
+        ]
+    },
     "modalidad_transporte": {
         "data": [
             {
-                "name": "A pie (Mayores de 15 min)",
-                "Adultos (27-59 años)": 9542,
-                "Jóvenes (14-26 años)": 9877,
-                "Personas mayores (60 años o más)": 5513
-            },
-            {
-                "name": "A pie (Menores de 15 min)",
+                "name": "A Pie < 15 Min",
                 "Adultos (27-59 años)": 5064,
                 "Jóvenes (14-26 años)": 4808,
                 "Personas mayores (60 años o más)": 2520
             },
             {
-                "name": "Alimentador",
-                "Adultos (27-59 años)": 469,
-                "Jóvenes (14-26 años)": 395,
-                "Personas mayores (60 años o más)": 195
+                "name": "A Pie > 15 Min",
+                "Adultos (27-59 años)": 9542,
+                "Jóvenes (14-26 años)": 9877,
+                "Personas mayores (60 años o más)": 5513
             },
             {
-                "name": "Auto alquilado",
-                "Adultos (27-59 años)": 94,
-                "Jóvenes (14-26 años)": 43,
-                "Personas mayores (60 años o más)": 40
+                "name": "Auto",
+                "Adultos (27-59 años)": 7943,
+                "Jóvenes (14-26 años)": 1756,
+                "Personas mayores (60 años o más)": 2887
             },
             {
-                "name": "Auto compartido",
-                "Adultos (27-59 años)": 264,
-                "Jóvenes (14-26 años)": 123,
-                "Personas mayores (60 años o más)": 124
+                "name": "Bicicleta",
+                "Adultos (27-59 años)": 3653,
+                "Jóvenes (14-26 años)": 1840,
+                "Personas mayores (60 años o más)": 611
             },
             {
-                "name": "Auto eléctrico",
-                "Adultos (27-59 años)": 17,
-                "Jóvenes (14-26 años)": 9,
-                "Personas mayores (60 años o más)": 4
+                "name": "Especial Ocupado",
+                "Adultos (27-59 años)": 1098,
+                "Jóvenes (14-26 años)": 640,
+                "Personas mayores (60 años o más)": 244
             },
             {
-                "name": "Bicicleta con motor como conductor",
-                "Adultos (27-59 años)": 225,
-                "Jóvenes (14-26 años)": 75,
-                "Personas mayores (60 años o más)": 41
+                "name": "Informal",
+                "Adultos (27-59 años)": 401,
+                "Jóvenes (14-26 años)": 322,
+                "Personas mayores (60 años o más)": 144
             },
             {
-                "name": "Bicicleta con motor como pasajero",
-                "Adultos (27-59 años)": 11,
-                "Jóvenes (14-26 años)": 9,
-                "Personas mayores (60 años o más)": 3
-            },
-            {
-                "name": "Bicicleta convencional como conductor",
-                "Adultos (27-59 años)": 3390,
-                "Jóvenes (14-26 años)": 1676,
-                "Personas mayores (60 años o más)": 560
-            },
-            {
-                "name": "Bicicleta convencional como pasajero",
-                "Adultos (27-59 años)": 12,
-                "Jóvenes (14-26 años)": 71,
-                "Personas mayores (60 años o más)": 2
-            },
-            {
-                "name": "Bicitaxi",
-                "Adultos (27-59 años)": 72,
-                "Jóvenes (14-26 años)": 64,
-                "Personas mayores (60 años o más)": 29
-            },
-            {
-                "name": "Bus Dual",
-                "Adultos (27-59 años)": 259,
-                "Jóvenes (14-26 años)": 66,
-                "Personas mayores (60 años o más)": 76
-            },
-            {
-                "name": "Bus privado/de empresa",
-                "Adultos (27-59 años)": 693,
-                "Jóvenes (14-26 años)": 466,
-                "Personas mayores (60 años o más)": 95
-            },
-            {
-                "name": "Bus/automóvil/Van informal o pirata",
-                "Adultos (27-59 años)": 304,
-                "Jóvenes (14-26 años)": 254,
-                "Personas mayores (60 años o más)": 106
-            },
-            {
-                "name": "Bus/Buseta/Microbús intermunicipal",
-                "Adultos (27-59 años)": 1840,
-                "Jóvenes (14-26 años)": 1112,
-                "Personas mayores (60 años o más)": 511
-            },
-            {
-                "name": "Camión/Volqueta /Tractomula",
-                "Adultos (27-59 años)": 120,
-                "Jóvenes (14-26 años)": 33,
-                "Personas mayores (60 años o más)": 27
-            },
-            {
-                "name": "Motocarro de pasajeros/ carga",
-                "Adultos (27-59 años)": 25,
-                "Jóvenes (14-26 años)": 4,
-                "Personas mayores (60 años o más)": 9
-            },
-            {
-                "name": "Motocicleta como conductor",
-                "Adultos (27-59 años)": 3929,
-                "Jóvenes (14-26 años)": 1443,
-                "Personas mayores (60 años o más)": 175
-            },
-            {
-                "name": "Motocicleta como pasajero",
-                "Adultos (27-59 años)": 377,
-                "Jóvenes (14-26 años)": 302,
-                "Personas mayores (60 años o más)": 21
+                "name": "Moto",
+                "Adultos (27-59 años)": 4306,
+                "Jóvenes (14-26 años)": 1745,
+                "Personas mayores (60 años o más)": 196
             },
             {
                 "name": "Otro",
-                "Adultos (27-59 años)": 26,
-                "Jóvenes (14-26 años)": 0,
-                "Personas mayores (60 años o más)": 31
+                "Adultos (27-59 años)": 226,
+                "Jóvenes (14-26 años)": 48,
+                "Personas mayores (60 años o más)": 58
             },
             {
-                "name": "Patineta/Scooter",
-                "Adultos (27-59 años)": 72,
-                "Jóvenes (14-26 años)": 15,
-                "Personas mayores (60 años o más)": 0
+                "name": "Taxi Ocupado",
+                "Adultos (27-59 años)": 1483,
+                "Jóvenes (14-26 años)": 456,
+                "Personas mayores (60 años o más)": 1328
             },
             {
-                "name": "Sistema de Bicicletas de Bogotá (Bicicleta pública)",
-                "Adultos (27-59 años)": 15,
-                "Jóvenes (14-26 años)": 9,
-                "Personas mayores (60 años o más)": 5
-            },
-            {
-                "name": "SITP – Urbano/ Complementario/Especial /Provisional",
-                "Adultos (27-59 años)": 6725,
-                "Jóvenes (14-26 años)": 3182,
-                "Personas mayores (60 años o más)": 2253
-            },
-            {
-                "name": "Taxi colectivo",
-                "Adultos (27-59 años)": 67,
-                "Jóvenes (14-26 años)": 16,
-                "Personas mayores (60 años o más)": 31
-            },
-            {
-                "name": "Taxi convencional",
-                "Adultos (27-59 años)": 930,
-                "Jóvenes (14-26 años)": 278,
-                "Personas mayores (60 años o más)": 1009
-            },
-            {
-                "name": "Taxi solicitado por app",
-                "Adultos (27-59 años)": 486,
-                "Jóvenes (14-26 años)": 162,
-                "Personas mayores (60 años o más)": 288
-            },
-            {
-                "name": "TransMicable",
-                "Adultos (27-59 años)": 19,
-                "Jóvenes (14-26 años)": 9,
-                "Personas mayores (60 años o más)": 0
-            },
-            {
-                "name": "TransMilenio",
-                "Adultos (27-59 años)": 6761,
-                "Jóvenes (14-26 años)": 3786,
-                "Personas mayores (60 años o más)": 1749
-            },
-            {
-                "name": "Transporte escolar",
+                "name": "Transporte Escolar",
                 "Adultos (27-59 años)": 54,
                 "Jóvenes (14-26 años)": 1991,
                 "Personas mayores (60 años o más)": 13
             },
             {
-                "name": "Transporte individual app móvil (placa blanca/amarilla)",
-                "Adultos (27-59 años)": 405,
-                "Jóvenes (14-26 años)": 174,
-                "Personas mayores (60 años o más)": 149
-            },
-            {
-                "name": "Vehículo de tracción humana/animal",
-                "Adultos (27-59 años)": 8,
-                "Jóvenes (14-26 años)": 0,
-                "Personas mayores (60 años o más)": 0
-            },
-            {
-                "name": "Vehículo privado como conductor",
-                "Adultos (27-59 años)": 5899,
-                "Jóvenes (14-26 años)": 592,
-                "Personas mayores (60 años o más)": 1619
-            },
-            {
-                "name": "Vehículo privado como pasajero",
-                "Adultos (27-59 años)": 1669,
-                "Jóvenes (14-26 años)": 989,
-                "Personas mayores (60 años o más)": 1100
+                "name": "Transporte Público",
+                "Adultos (27-59 años)": 16073,
+                "Jóvenes (14-26 años)": 8550,
+                "Personas mayores (60 años o más)": 4784
             }
         ],
         "legend": [
