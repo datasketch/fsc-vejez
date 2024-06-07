@@ -8,20 +8,79 @@ import {
 } from "react-simple-maps";
 import ReactTooltip from "react-tooltip";
 import geoUrl from "@/data/colombia.json";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import markers from "@/data/markers.json";
+import data from "@/data/home.json";
+import departments from "@/data/departments.json";
+import { scaleQuantile } from "d3-scale";
 
-export default function MapContainer() {
-  const [tooltip, setTooltip] = useState("");
+interface MapContainerProps {
+  setSelectedDepartment: Dispatch<SetStateAction<number>>;
+}
+
+interface TooltipProps {
+  cod_dpto: number;
+  "Al menos una vez a la semana, pero no cada día": number;
+  "Al menos una vez al año, pero no cada mes": number;
+  "Al menos una vez al mes, pero no cada semana": number;
+  "No utiliza internet": number;
+  "Todos los días de la semana": number;
+}
+
+export default function MapContainer({
+  setSelectedDepartment,
+}: MapContainerProps) {
+  const [tooltip, setTooltip] = useState<TooltipProps | null>(null);
   const baseStyles = { outline: "none", strokeWidth: 1 };
+
+  function getDepartment(cod: number) {
+    // @ts-ignore
+    return departments.find((el) => +el.code === +cod).name;
+  }
+
+  function omit(key: string, obj: any) {
+    const { [key]: omitted, ...rest } = obj;
+    return rest;
+  }
 
   return (
     <>
       <ReactTooltip backgroundColor="#FFF" textColor="#1A1A1A">
         {tooltip && (
           <>
-            <h3 className="capitalize">{tooltip}</h3>
-            <p className="text-xl font-semibold">4,1% - 12,68%</p>
+            <h3 className="capitalize text-xl">
+              {getDepartment(tooltip.cod_dpto)}
+            </h3>
+            <p className="text-sm">
+              No utiliza internet:{" "}
+              <span className="font-semibold">
+                {tooltip["No utiliza internet"]}%
+              </span>
+            </p>
+            <p className="text-sm">
+              Al menos una vez al año, pero no cada mes:{" "}
+              <span className="font-semibold">
+                {tooltip["Al menos una vez al año, pero no cada mes"]}%
+              </span>
+            </p>
+            <p className="text-sm">
+              Al menos una vez al mes, pero no cada semana:{" "}
+              <span className="font-semibold">
+                {tooltip["Al menos una vez al mes, pero no cada semana"]}%
+              </span>
+            </p>
+            <p className="text-sm">
+              Al menos una vez a la semana, pero no cada día:{" "}
+              <span className="font-semibold">
+                {tooltip["Al menos una vez a la semana, pero no cada día"]}%
+              </span>
+            </p>
+            <p className="text-sm">
+              Todos los días de la semana:{" "}
+              <span className="font-semibold">
+                {tooltip["Todos los días de la semana"]}%
+              </span>
+            </p>
           </>
         )}
       </ReactTooltip>
@@ -31,7 +90,6 @@ export default function MapContainer() {
           projectionConfig={{
             center: [-74.2973, 4.5709],
             scale: 2000,
-            rotate: [-1.5, 1.5, 0],
           }}
           width={511}
           height={651.75}
@@ -39,31 +97,63 @@ export default function MapContainer() {
           <ZoomableGroup center={[0, 0]} maxZoom={0}>
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
-                geographies.map((geo) => (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    onMouseEnter={() => setTooltip(geo.properties.DPTO_NOMBRE)}
-                    onMouseLeave={() => setTooltip("")}
-                    style={{
-                      default: {
-                        ...baseStyles,
-                        stroke: "#FAFAFA",
-                        fill: "#77B769",
-                      },
-                      hover: {
-                        ...baseStyles,
-                        stroke: "#FAFAFA",
-                        fill: "#77B769",
-                      },
-                      pressed: {
-                        ...baseStyles,
-                        stroke: "#FAFAFA",
-                        fill: "#77B769",
-                      },
-                    }}
-                  />
-                ))
+                geographies.map((geo) => {
+                  const findDepartment =
+                    data.mapa_tech.frecuencia_internet.find(
+                      (el) => el.cod_dpto === +geo.properties.DPTO
+                    );
+
+                  const object = omit("cod_dpto", findDepartment);
+                  const values = Object.values(object).map((el: any) => el);
+                  const maxValue = Math.max(...values);
+
+                  const colorScale = scaleQuantile()
+                    .domain([0, 100])
+                    .range([
+                      "#215957",
+                      "#3B7C65",
+                      "#56A273",
+                      "#72C581",
+                      "#8CE98E",
+                    ] as string[] | any);
+
+                  return (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={() => {
+                        setTooltip(findDepartment || null);
+                      }}
+                      onMouseLeave={() => setTooltip(null)}
+                      onClick={() =>
+                        setSelectedDepartment(+geo.properties.DPTO)
+                      }
+                      style={{
+                        default: {
+                          ...baseStyles,
+                          stroke: "#FAFAFA",
+                          fill: findDepartment
+                            ? colorScale(maxValue) + ""
+                            : "#77B769",
+                        },
+                        hover: {
+                          ...baseStyles,
+                          stroke: "#FAFAFA",
+                          fill: findDepartment
+                            ? colorScale(maxValue) + ""
+                            : "#77B769",
+                        },
+                        pressed: {
+                          ...baseStyles,
+                          stroke: "#FAFAFA",
+                          fill: findDepartment
+                            ? colorScale(maxValue) + ""
+                            : "#77B769",
+                        },
+                      }}
+                    />
+                  );
+                })
               }
             </Geographies>
             {markers.map(({ name, coordinates }) => (

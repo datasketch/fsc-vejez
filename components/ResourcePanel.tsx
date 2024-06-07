@@ -141,7 +141,6 @@ export default function ResourcePanel({ data, isType = false, image = false, car
     }
 
     const handlePageClick = (event: any) => {
-        console.log(event);
         const newOffset = (event.selected * 5);
         setItemOffset(newOffset);
     }
