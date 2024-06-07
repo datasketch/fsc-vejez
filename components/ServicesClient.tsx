@@ -100,7 +100,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
 
     if (search) {
       newData = newData.filter(
-        (item) =>
+        (item: { title: string; description: string; }) =>
           item.title.toLowerCase().includes(search.toLowerCase()) ||
           item.description.toLowerCase().includes(search.toLowerCase())
       );

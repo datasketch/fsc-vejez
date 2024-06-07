@@ -152,17 +152,19 @@ export default function StackedBarChart({ data, legend }: StackedBarChartProps) 
           <YAxis />
           <Tooltip />
           <Legend verticalAlign="top" height={width >= 1024 ? 60 : 100} />
-          { legend.map( (item, i) => {
-            return (
-            <Bar
-              key={i}
-              barSize={40}
-              dataKey={item.key}
-              stackId="a"
-              fill={item.fill}
-            />
-          )
-          })}
+          {
+            // @ts-ignore
+            legend.map((item, i) => {
+              return (
+                <Bar
+                  key={i}
+                  barSize={40}
+                  dataKey={item.key}
+                  stackId="a"
+                  fill={item.fill}
+                />
+              )
+            })}
           {/* <Bar
             barSize={40}
             dataKey="Desarrollo de apps"
