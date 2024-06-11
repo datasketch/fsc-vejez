@@ -22,13 +22,12 @@ export default function Page() {
                 </TabList>
                 <TabPanels>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <ResourcePanel data={data.biblioteca} isType={true} image={true} cardTitle="Informe" />
+                        <ResourcePanel data={data.biblioteca} isType={true} image={true} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <ResourcePanel
                             // @ts-ignore
                             data={data.politicas}
-                            cardTitle="Política pública"
                             isType={false}
                             image={false} />
                     </TabPanel>
@@ -36,7 +35,6 @@ export default function Page() {
                         <ResourcePanel
                             // @ts-ignore
                             data={data.datos}
-                            cardTitle="Datos"
                             isType={false}
                             image={false} />
                     </TabPanel>

@@ -61,11 +61,10 @@ const optionsType:Array<{label: string, value: string}> = [
 interface ResourcePanelProps {
     data: any
     isType: boolean
-    image: boolean,
-    cardTitle: string
+    image: boolean
 }
 
-export default function ResourcePanel({ data, isType = false, image = false, cardTitle }: ResourcePanelProps) {
+export default function ResourcePanel({ data, isType = false, image = false }: ResourcePanelProps) {
     const [query, setQuery] = useState('')
     const [order, setOrder] = useState('AZ')
     const [selectedCategories, setSelectedCategories] = useState<string[]>([])
@@ -337,7 +336,7 @@ export default function ResourcePanel({ data, isType = false, image = false, car
                 {
                     filteredData.slice(itemOffset, endOffset).map((item: any, idx: any) => {
                         return (
-                            <ResourceCard key={idx} data={item} image={image} cardTitle={cardTitle} />
+                            <ResourceCard key={idx} data={item} image={image} cardTitle={item['tipo-de-publicacion']} />
 
                         )
                     })

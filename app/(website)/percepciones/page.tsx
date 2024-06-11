@@ -4,6 +4,7 @@ import data from "@/data/percepciones.json";
 import BarChart2 from "@/components/Barchart";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
 import TabSections from "@/components/TabSections";
+import WrapperChart from "@/components/WrapperChart";
 
 export const metadata: Metadata = {
   title: "Percepciones",
@@ -33,10 +34,7 @@ export default function Page() {
               <line y1="0.5" x2="60" y2="0.5" stroke="#1D5556" />
             </svg>
             <p className="text-eerie-black mt-5">
-              El programa evalúa la calidad de vida con la Encuesta de
-              Percepción Ciudadana, actualizada en 2022 con participación de
-              adultos de todos los niveles socioeconómicos en los municipios
-              encuestados.
+              Este programa evalúa la calidad de vida desde la Encuesta de Percepción Ciudadana actualizada en 2022, con participación de adultos de todos los niveles socioeconómicos en los municipios encuestados.
             </p>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14">
               Muestra de Ciudades Cómo Vamos
@@ -45,8 +43,7 @@ export default function Page() {
               17.255 habitantes
             </p>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-5">
-              Proporción de los participantes de 60 años o más en la encuesta
-              por sexo
+              Porcentaje de grupos focales según el rango de edad de sus participantes
             </h4>
             <BarChart2 data={data.ciudades_como_vamos.data_etario} />
           </div>
@@ -114,39 +111,38 @@ export default function Page() {
             </div>
             <div className="col-span-7 mt-5 lg:mt-0">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Los participantes de la Encuesta Ciudades Cómo Vamos describieron en una palabra aquello en lo que piensan cuando escuchan vejez. Las respuestas de las personas mayores se presentan en la siguiente nube de palabras.
               </p>
             </div>
           </div>
           <div className="flex h-screen w-full justify-center mt-16">
             <div className="w-full max-w-2xl">
-              <TabSections
-                sections={[
-                  {
-                    title: "Manizales",
-                    srcImage:
-                      "/images/percepciones/comovamos/percepcion-manizales.png",
-                  },
-                  {
-                    title: "Cartagena",
-                    srcImage:
-                      "/images/percepciones/comovamos/percepcion-cartagena.png",
-                  },
-                  {
-                    title: "Medellín",
-                    srcImage:
-                      "/images/percepciones/comovamos/percepcion-medellin.png",
-                  },
-                  {
-                    title: "Pereira",
-                    srcImage:
-                      "/images/percepciones/comovamos/percepcion-pereira.png",
-                  },
-                ]}
-              />
+              <WrapperChart description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022." >
+                <TabSections
+                  sections={[
+                    {
+                      title: "Manizales",
+                      srcImage:
+                        "/images/percepciones/comovamos/percepcion-manizales.png",
+                    },
+                    {
+                      title: "Cartagena",
+                      srcImage:
+                        "/images/percepciones/comovamos/percepcion-cartagena.png",
+                    },
+                    {
+                      title: "Medellín",
+                      srcImage:
+                        "/images/percepciones/comovamos/percepcion-medellin.png",
+                    },
+                    {
+                      title: "Pereira",
+                      srcImage:
+                        "/images/percepciones/comovamos/percepcion-pereira.png",
+                    },
+                  ]}
+                />
+              </WrapperChart>
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">
@@ -167,10 +163,12 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <HorizontalBarGraph
-            data={data.ciudades_como_vamos.data_finanzas.data}
-            legend={data.ciudades_como_vamos.data_finanzas.legend}
-          />
+          <WrapperChart description="La gráfica de barras clasifica en su eje vertical los diferentes ciclos de vida y muestra, mediante barras de colores, las respuestas de los encuestados sobre su nivel de acuerdo o desacuerdo respecto a su preparación financiera para la vejez. El eje horizontal de la gráfica permite conocer el número de personas que contestaron para cada una de las opciones de respuesta.">
+            <HorizontalBarGraph
+              data={data.ciudades_como_vamos.data_finanzas.data}
+              legend={data.ciudades_como_vamos.data_finanzas.legend}
+            />
+          </WrapperChart>
           <p className="text-vampire-gray mt-16 ">
             Fuente y fecha de actualización
           </p>
@@ -195,27 +193,29 @@ export default function Page() {
           </h2>
           <div className="flex h-screen w-full justify-center mt-16">
             <div className="w-full max-w-2xl">
-              <TabSections
-                sections={[
-                  {
-                    title: "Salud y bienestar",
-                    srcImage: "/images/percepciones/mision/mision-health.png",
-                  },
-                  {
-                    title: "Educación",
-                    srcImage:
-                      "/images/percepciones/mision/mision-education.png",
-                  },
-                  {
-                    title: "Ingresos y finanzas",
-                    srcImage: "/images/percepciones/mision/mision-finance.png",
-                  },
-                  {
-                    title: "Tecnología y digitalización",
-                    srcImage: "/images/percepciones/mision/mision-tech.png",
-                  },
-                ]}
-              />
+              <WrapperChart description="La nube de palabras está agrupada en categorías como salud y bienestar, educación e ingresos y finanzas. Las palabras visualizadas son aquellas que se destacan del conjunto de citas tomadas del Estudio. Utilice los filtros disponibles para explorar por los temas específicos. El tamaño de cada palabra refleja la frecuencia con que fue mencionada en las respuestas." >
+                <TabSections
+                  sections={[
+                    {
+                      title: "Salud y bienestar",
+                      srcImage: "/images/percepciones/mision/mision-health.png",
+                    },
+                    {
+                      title: "Educación",
+                      srcImage:
+                        "/images/percepciones/mision/mision-education.png",
+                    },
+                    {
+                      title: "Ingresos y finanzas",
+                      srcImage: "/images/percepciones/mision/mision-finance.png",
+                    },
+                    {
+                      title: "Tecnología y digitalización",
+                      srcImage: "/images/percepciones/mision/mision-tech.png",
+                    },
+                  ]}
+                />
+              </WrapperChart>
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">

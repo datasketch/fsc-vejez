@@ -24,7 +24,6 @@ export default function ResourceCard({ data, image = false, cardTitle }: Resourc
             </div>
             :
             <div className="text-blue-dianne z-10 px-5 pt-5 lg:pt-0 lg:px-0">
-                <h3 className="text-xl font-semibold">{cardTitle}</h3>
                 <h3 className="text-xl font-semibold mt-2">{data.law} {data.id}</h3>
                 <h5>{data.author}</h5>
                 <h4 className="text-eerie-black text-xl leading-[22px] font-semibold mt-7">{data.title}</h4>
