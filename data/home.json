@@ -757,6 +757,518 @@
             }
         ]
     },
+    "ingresos": {
+        "data": [
+            {
+                "name": "Adultos",
+                "Honorarios profesionales": 2743128.123,
+                "Ingresos o comisiones": 1024136.697,
+                "Salarios u honorarios": 2037980.705
+            },
+            {
+                "name": "Jóvenes",
+                "Honorarios profesionales": 1899384.704,
+                "Ingresos o comisiones": 765181.5826,
+                "Salarios u honorarios": 1008744.472
+            },
+            {
+                "name": "Personas mayores",
+                "Honorarios profesionales": 2938404.93,
+                "Ingresos o comisiones": 837773.09,
+                "Salarios u honorarios": 1504540.08
+            }
+        ],
+        "legend": [
+            {
+                "key": "Honorarios profesionales",
+                "fill": "#1D5556"
+            },
+            {
+                "key": "Ingresos o comisiones",
+                "fill": "#FAAA8D"
+            },
+            {
+                "key": "Salarios u honorarios",
+                "fill": "#B6174B"
+            }
+        ]
+    },
+    "capacidades": [
+        {
+            "id": "Entender, aprender, recordar o tomar decisiones por sí mismo(a)",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 210
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 592
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 2228
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 36568
+                }
+            ]
+        },
+        {
+            "id": "Oír, aun usando audífonos medicados",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 103
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 1266
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 4246
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 33983
+                }
+            ]
+        },
+        {
+            "id": "Agarrar o mover objetos con las manos",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 119
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 966
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 3673
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 34840
+                }
+            ]
+        },
+        {
+            "id": "Ver, aun usando lentes o gafas",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 178
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 2260
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 11053
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 26107
+                }
+            ]
+        },
+        {
+            "id": "Mover el cuerpo, caminar o subir y bajar escaleras",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 399
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 2365
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 6930
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 29904
+                }
+            ]
+        },
+        {
+            "id": "Comer, vestirse o bañarse por sí mismo(a)",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 327
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 630
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 2025
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 36616
+                }
+            ]
+        },
+        {
+            "id": "Relacionarse o interactuar con las demás personas",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 171
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 339
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 1214
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 37874
+                }
+            ]
+        },
+        {
+            "id": "Hablar o conversar",
+            "data": [
+                {
+                    "x": "No puede hacerlo",
+                    "y": 117
+                },
+                {
+                    "x": "Sí, con mucha dificultad",
+                    "y": 426
+                },
+                {
+                    "x": "Sí, con alguna dificultad",
+                    "y": 1644
+                },
+                {
+                    "x": "Sin dificultad",
+                    "y": 37411
+                }
+            ]
+        }
+    ],
+    "vivienda_composicion": {
+        "nodes": [
+            {
+                "id": "Hombre",
+                "nodeColor": "hsl(161, 70%, 50%)"
+            },
+            {
+                "id": "Mujer",
+                "nodeColor": "hsl(72, 70%, 50%)"
+            },
+            {
+                "id": "Apartamento",
+                "nodeColor": "hsl(215, 70%, 50%)"
+            },
+            {
+                "id": "Casa",
+                "nodeColor": "hsl(282, 70%, 50%)"
+            },
+            {
+                "id": "Cuarto (s) en inquilinato",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            },
+            {
+                "id": "Cuarto (s) en otro tipo de estructura",
+                "nodeColor": "hsl(49, 70%, 50%)"
+            },
+            {
+                "id": "Otra vivienda",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            },
+            {
+                "id": "Vivienda indígena",
+                "nodeColor": "hsl(49, 70%, 50%)"
+            },
+            {
+                "id": "En arriendo subarriendo",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            },
+            {
+                "id": "En usufructo",
+                "nodeColor": "hsl(49, 70%, 50%)"
+            },
+            {
+                "id": "Otra",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            },
+            {
+                "id": "Posesión sin título",
+                "nodeColor": "hsl(49, 70%, 50%)"
+            },
+            {
+                "id": "Propia, la están pagando",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            },
+            {
+                "id": "Propia, totalmente pagada",
+                "nodeColor": "hsl(49, 70%, 50%)"
+            },
+            {
+                "id": "Propiedad colectiva",
+                "nodeColor": "hsl(177, 70%, 50%)"
+            }
+        ],
+        "links": [
+            {
+                "source": "Hombre",
+                "target": "Apartamento",
+                "value": 21075
+            },
+            {
+                "source": "Hombre",
+                "target": "Casa",
+                "value": 38823
+            },
+            {
+                "source": "Hombre",
+                "target": "Cuarto (s) en inquilinato",
+                "value": 836
+            },
+            {
+                "source": "Hombre",
+                "target": "Cuarto (s) en otro tipo de estructura",
+                "value": 219
+            },
+            {
+                "source": "Hombre",
+                "target": "Otra vivienda",
+                "value": 14
+            },
+            {
+                "source": "Hombre",
+                "target": "Vivienda indígena",
+                "value": 146
+            },
+            {
+                "source": "Mujer",
+                "target": "Apartamento",
+                "value": 30372
+            },
+            {
+                "source": "Mujer",
+                "target": "Casa",
+                "value": 49128
+            },
+            {
+                "source": "Mujer",
+                "target": "Cuarto (s) en inquilinato",
+                "value": 453
+            },
+            {
+                "source": "Mujer",
+                "target": "Cuarto (s) en otro tipo de estructura",
+                "value": 106
+            },
+            {
+                "source": "Mujer",
+                "target": "Otra vivienda",
+                "value": 5
+            },
+            {
+                "source": "Mujer",
+                "target": "Vivienda indígena",
+                "value": 171
+            },
+            {
+                "source": "Apartamento",
+                "target": "En arriendo subarriendo",
+                "value": 16135
+            },
+            {
+                "source": "Apartamento",
+                "target": "En usufructo",
+                "value": 7536
+            },
+            {
+                "source": "Apartamento",
+                "target": "Otra",
+                "value": 337
+            },
+            {
+                "source": "Apartamento",
+                "target": "Posesión sin título",
+                "value": 681
+            },
+            {
+                "source": "Apartamento",
+                "target": "Propia, la están pagando",
+                "value": 1868
+            },
+            {
+                "source": "Apartamento",
+                "target": "Propia, totalmente pagada",
+                "value": 23690
+            },
+            {
+                "source": "Apartamento",
+                "target": "Propiedad colectiva",
+                "value": 1200
+            },
+            {
+                "source": "Casa",
+                "target": "En arriendo subarriendo",
+                "value": 11415
+            },
+            {
+                "source": "Casa",
+                "target": "En usufructo",
+                "value": 16662
+            },
+            {
+                "source": "Casa",
+                "target": "Otra",
+                "value": 417
+            },
+            {
+                "source": "Casa",
+                "target": "Posesión sin título",
+                "value": 4671
+            },
+            {
+                "source": "Casa",
+                "target": "Propia, la están pagando",
+                "value": 1865
+            },
+            {
+                "source": "Casa",
+                "target": "Propia, totalmente pagada",
+                "value": 50415
+            },
+            {
+                "source": "Casa",
+                "target": "Propiedad colectiva",
+                "value": 2506
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "En arriendo subarriendo",
+                "value": 866
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "En usufructo",
+                "value": 242
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "Otra",
+                "value": 2
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "Posesión sin título",
+                "value": 17
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "Propia, totalmente pagada",
+                "value": 147
+            },
+            {
+                "source": "Cuarto (s) en inquilinato",
+                "target": "Propiedad colectiva",
+                "value": 15
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "En arriendo subarriendo",
+                "value": 99
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "En usufructo",
+                "value": 120
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "Otra",
+                "value": 5
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "Posesión sin título",
+                "value": 31
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "Propia, la están pagando",
+                "value": 2
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "Propia, totalmente pagada",
+                "value": 57
+            },
+            {
+                "source": "Cuarto (s) en otro tipo de estructura",
+                "target": "Propiedad colectiva",
+                "value": 11
+            },
+            {
+                "source": "Otra vivienda",
+                "target": "En arriendo subarriendo",
+                "value": 3
+            },
+            {
+                "source": "Otra vivienda",
+                "target": "En usufructo",
+                "value": 1
+            },
+            {
+                "source": "Otra vivienda",
+                "target": "Posesión sin título",
+                "value": 9
+            },
+            {
+                "source": "Otra vivienda",
+                "target": "Propia, totalmente pagada",
+                "value": 6
+            },
+            {
+                "source": "Vivienda indígena",
+                "target": "En arriendo subarriendo",
+                "value": 2
+            },
+            {
+                "source": "Vivienda indígena",
+                "target": "En usufructo",
+                "value": 9
+            },
+            {
+                "source": "Vivienda indígena",
+                "target": "Posesión sin título",
+                "value": 153
+            },
+            {
+                "source": "Vivienda indígena",
+                "target": "Propia, totalmente pagada",
+                "value": 49
+            },
+            {
+                "source": "Vivienda indígena",
+                "target": "Propiedad colectiva",
+                "value": 104
+            }
+        ]
+    },
     "nivel_educativo": {
         "data": [
             {

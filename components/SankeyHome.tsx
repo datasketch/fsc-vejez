@@ -1,5 +1,5 @@
 "use client";
-import { DefaultLink, DefaultNode, ResponsiveSankey } from "@nivo/sankey";
+import { DefaultLink, DefaultNode, ResponsiveSankey, Sankey } from "@nivo/sankey";
 
 interface SankeyHomeProps {
   data: {
@@ -12,13 +12,13 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
   return (
     <ResponsiveSankey
       data={data}
-      margin={{ top: 40, right: 160, bottom: 40, left: 50 }}
+      margin={{ top: 40, right: 220, bottom: 40, left: 50 }}
       align="justify"
       colors={{ scheme: "category10" }}
       nodeOpacity={1}
       nodeHoverOthersOpacity={0.35}
-      nodeThickness={18}
-      nodeSpacing={24}
+      nodeThickness={40}
+      nodeSpacing={10}
       nodeBorderWidth={0}
       nodeBorderColor={{
         from: "color",
@@ -29,7 +29,7 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
       linkHoverOthersOpacity={0.1}
       linkContract={3}
       enableLinkGradient={true}
-      labelOrientation="vertical"
+      labelOrientation="horizontal"
       labelPadding={17}
       labelTextColor={{
         from: "color",
@@ -37,13 +37,13 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
       }}
       legends={[
         {
-          anchor: "bottom-right",
+          anchor: "right",
           direction: "column",
-          translateX: 130,
-          itemWidth: 100,
+          translateX: 230,
+          itemWidth: 50,
           itemHeight: 14,
           itemDirection: "right-to-left",
-          itemsSpacing: 2,
+          itemsSpacing: 4,
           itemTextColor: "#999",
           symbolSize: 14,
           effects: [

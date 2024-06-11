@@ -21,7 +21,7 @@ interface HorizontalBarGraphProps {
   height?: number
 }
 
-export default function HorizontalBarGraph({ data, legend, height = 550 }: HorizontalBarGraphProps) {
+export default function HorizontalStakedBarChart({ data, legend, height = 550 }: HorizontalBarGraphProps) {
   return (
     <ResponsiveContainer width={"80%"} height={height} debounce={50} className="mt-20 mx-auto">
       <BarChart
@@ -43,7 +43,7 @@ export default function HorizontalBarGraph({ data, legend, height = 550 }: Horiz
         <Legend verticalAlign="top" />
         {
           legend.map((item, i) => {
-            return (<Bar key={i} dataKey={item.key} fill={item.fill} />)
+            return (<Bar key={i} dataKey={item.key} fill={item.fill} stackId="a" />)
           })
         }
       </BarChart>

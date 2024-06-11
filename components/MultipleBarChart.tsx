@@ -17,7 +17,7 @@ interface StackedBarChartProps {
   legend: any
 }
 
-export default function StackedBarChart({ data, legend }: StackedBarChartProps) {
+export default function MultipleBarChart({ data, legend }: StackedBarChartProps) {
   const { width }: any = useWindowSize();
 
   return (
@@ -47,7 +47,6 @@ export default function StackedBarChart({ data, legend }: StackedBarChartProps) 
                   key={i}
                   barSize={40}
                   dataKey={item.key}
-                  stackId="a"
                   fill={item.fill}
                 />
               )

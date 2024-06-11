@@ -13,7 +13,7 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
   return (
     <ResponsiveHeatMap
       data={data}
-      margin={{ top: 60, right: 90, bottom: 60, left: 90 }}
+      margin={{ top: 60, right: 0, bottom: 60, left: 350 }}
       valueFormat=">-.2s"
       axisTop={{
         tickSize: 0,
@@ -23,27 +23,14 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
         legendOffset: 46,
         truncateTickAt: 0,
       }}
-      axisLeft={{
-        tickSize: 0,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: "country",
-        legendPosition: "middle",
-        legendOffset: -72,
-        truncateTickAt: 0,
-      }}
       colors={{
-        type: "diverging",
-        scheme: "red_yellow_blue",
-        divergeAt: 0.5,
-        minValue: -100000,
-        maxValue: 100000,
+        type: "quantize",
+        colors: ["#90EE90", "#77B769", "#679D5C", "#3F6C53", "#1D5556"],
+        steps: 5
       }}
       emptyColor="#555555"
-      borderColor={{
-        from: "color",
-        modifiers: [["darker", 0.8]],
-      }}
+      borderColor="white"
+      borderWidth={2}
       enableLabels={false}
       labelTextColor={{
         from: "color",
@@ -62,7 +49,7 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
           tickSpacing: 3,
           tickOverlap: false,
           tickFormat: ">-.2s",
-          title: "Value →",
+          title: "Cantidad de personas mayores →",
           titleAlign: "start",
           titleOffset: 4,
         },
