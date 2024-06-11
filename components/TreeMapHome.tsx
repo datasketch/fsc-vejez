@@ -11,7 +11,10 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
       data={data}
       identity="name"
       value="loc"
-      margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
+      margin={{ top: 0, right: 10, bottom: 100, left: 10 }}
+      valueFormat={(valueFormat) =>
+        new Intl.NumberFormat("es-CO").format(valueFormat)
+      }
       label={(e) =>
         e.id + " (" + ((e.data.loc / e.data.total) * 100).toFixed(1) + "%" + ")"
       }

@@ -30,6 +30,7 @@ const config: Config = {
         'banner-services': "url('/images/servicios/banner-services.svg')",
         'banner-home': "url('/images/home/banner.svg')",
         'banner-home-mobile': "url('/images/home/banner-mobile.svg')",
+        'banner-big': "url('/images/home/banner-big.svg')",
       },
     },
   },

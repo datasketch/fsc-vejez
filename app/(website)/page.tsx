@@ -2,7 +2,6 @@ import HeatMapHome from "@/components/HeatMapHome";
 import Map from "@/components/Map";
 import SankeyHome from "@/components/SankeyHome";
 import TreeMapHome from "@/components/TreeMapHome";
-import WaffleHome from "@/components/WaffleHome";
 import type { Metadata } from "next";
 import Image from "next/image";
 import tasa_de_alfabetismo from "@/data/tasa_de_alfabetismo.json";
@@ -10,6 +9,7 @@ import HorizontalBarGraph from "@/components/HorizontalBarGraph";
 import data from "@/data/home.json";
 import HorizontalStakedBarChart from "@/components/HorizontalStakedBarChart";
 import MultipleBarChart from "@/components/MultipleBarChart";
+import WrapperChart from "@/components/WrapperChart";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -165,7 +165,7 @@ export default function Page() {
                   alt="message 1"
                 />
               </div>
-              <div className="hidden lg:block absolute -top-20 xl:-top-16 -right-full z-20">
+              <div className="hidden lg:block absolute -top-24 -right-full z-20">
                 <Image
                   className="lg:w-10/12 xl:w-auto"
                   width={401}
@@ -220,7 +220,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="lg:-mt-[500px] relative pt-12 pb-24 lg:pt-20 lg:pb-40 xl:pt-32 xl:pb-64 bg-banner-home-mobile lg:bg-banner-home bg-cover bg-center">
+      <div className="lg:-mt-[500px] relative pt-12 pb-24 lg:pt-20 lg:pb-40 xl:pt-32 xl:pb-64 bg-banner-home-mobile lg:bg-banner-home 2xl:bg-banner-big bg-cover bg-center">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
@@ -256,7 +256,10 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-seasalt">Fuente y fecha de actualización</p>
+              <p className="text-seasalt">
+                Proyecciones del Censo Nacional de Población y Vivienda (CNPV),
+                2018, DANE
+              </p>
             </div>
           </div>
         </div>
@@ -354,10 +357,17 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <MultipleBarChart data={data.ingresos.data} legend={data.ingresos.legend} />
+              <WrapperChart description="lorem">
+                <MultipleBarChart
+                  data={data.ingresos.data}
+                  legend={data.ingresos.legend}
+                />
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+              </p>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -379,16 +389,20 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <Image
-                className="mx-auto"
-                width={822}
-                height={696}
-                src="/images/home/ticket.svg"
-                alt="ticket"
-              />
+              <WrapperChart description="lorem">
+                <Image
+                  className="mx-auto"
+                  width={822}
+                  height={696}
+                  src="/images/home/ticket.svg"
+                  alt="ticket"
+                />
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+              </p>
             </div>
           </div>
         </div>
@@ -431,14 +445,16 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <div className="h-[424px]">
-                <HeatMapHome
-                  data={data.capacidades}
-                />
-              </div>
+              <WrapperChart description="lorem">
+                <div className="h-[424px]">
+                  <HeatMapHome data={data.capacidades} />
+                </div>
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+              </p>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -461,14 +477,16 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <div className="h-[527.23px]">
-                <SankeyHome
-                  data={data.vivienda_composicion}
-                />
-              </div>
+              <WrapperChart description="lorem">
+                <div className="h-[527.23px]">
+                  <SankeyHome data={data.vivienda_composicion} />
+                </div>
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+              </p>
             </div>
           </div>
         </div>
@@ -508,17 +526,21 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <div className="h-[400px]">
-                <TreeMapHome
-                  data={{
-                    name: "Tasa de alfabetismo",
-                    children: literacyRateData,
-                  }}
-                />
-              </div>
+              <WrapperChart description="lorem">
+                <div className="h-[500px]">
+                  <TreeMapHome
+                    data={{
+                      name: "Tasa de alfabetismo",
+                      children: literacyRateData,
+                    }}
+                  />
+                </div>
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+              </p>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -539,10 +561,17 @@ export default function Page() {
               </p>
             </div>
             <div className="col-span-12">
-              <HorizontalStakedBarChart data={data.nivel_educativo.data} legend={data.nivel_educativo.legend} />
+              <WrapperChart description="lorem">
+                <HorizontalStakedBarChart
+                  data={data.nivel_educativo.data}
+                  legend={data.nivel_educativo.legend}
+                />
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+              </p>
             </div>
           </div>
         </div>
@@ -588,14 +617,18 @@ export default function Page() {
               </p>
             </div>
             <div className="col-span-12">
-              <HorizontalBarGraph
-                data={data.modalidad_transporte.data}
-                legend={data.modalidad_transporte.legend}
-                height={1000}
-              />
+              <WrapperChart description="lorem">
+                <HorizontalBarGraph
+                  data={data.modalidad_transporte.data}
+                  legend={data.modalidad_transporte.legend}
+                  height={1000}
+                />
+              </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">Fuente y fecha de actualización</p>
+              <p className="text-davys-gray">
+                Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
+              </p>
             </div>
           </div>
         </div>
