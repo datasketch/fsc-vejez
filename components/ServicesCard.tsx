@@ -33,7 +33,7 @@ export default function ServicesCard({
           <p className="text-lg lg:text-xl italic">{type}</p>
           <p>{country}</p>
           <h3 className="mt-2.5 text-lg lg:text-xl font-semibold">{title}</h3>
-          <p>{description}</p>
+          <p className="line-clamp-4">{description}</p>
           {externalLink && (
             <Link
               className="mt-6 inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px]"

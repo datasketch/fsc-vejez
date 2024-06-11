@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 /* import data from "@/static/data/percepciones.json" */
 import data from "@/data/percepciones.json";
 import BarChart2 from "@/components/Barchart";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
+import TabSections from "@/components/TabSections";
 
 export const metadata: Metadata = {
   title: "Percepciones",
@@ -123,48 +123,30 @@ export default function Page() {
           </div>
           <div className="flex h-screen w-full justify-center mt-16">
             <div className="w-full max-w-2xl">
-              <TabGroup>
-                <TabList className="flex gap-4 justify-center shadow-2xl">
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Manizales
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Cartagena
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Medellín
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Pereira
-                  </Tab>
-                </TabList>
-                <TabPanels>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/comovamos/percepcion-manizales.png"
-                      alt="map1"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/comovamos/percepcion-cartagena.png"
-                      alt="map2"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/comovamos/percepcion-medellin.png"
-                      alt="map3"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/comovamos/percepcion-pereira.png"
-                      alt="map4"
-                    />
-                  </TabPanel>
-                </TabPanels>
-              </TabGroup>
+              <TabSections
+                sections={[
+                  {
+                    title: "Manizales",
+                    srcImage:
+                      "/images/percepciones/comovamos/percepcion-manizales.png",
+                  },
+                  {
+                    title: "Cartagena",
+                    srcImage:
+                      "/images/percepciones/comovamos/percepcion-cartagena.png",
+                  },
+                  {
+                    title: "Medellín",
+                    srcImage:
+                      "/images/percepciones/comovamos/percepcion-medellin.png",
+                  },
+                  {
+                    title: "Pereira",
+                    srcImage:
+                      "/images/percepciones/comovamos/percepcion-pereira.png",
+                  },
+                ]}
+              />
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">
@@ -213,48 +195,27 @@ export default function Page() {
           </h2>
           <div className="flex h-screen w-full justify-center mt-16">
             <div className="w-full max-w-2xl">
-              <TabGroup>
-                <TabList className="flex gap-4 justify-center">
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Salud y bienestar
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Educación
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Ingresos y finanzas
-                  </Tab>
-                  <Tab className="rounded-full py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:text-dark-slate-gray data-[selected]:bg-[#698F3F]/40 data-[hover]:bg-[#698F3F]/40  data-[focus]:outline-1 data-[focus]:outline-white">
-                    Tecnología y digitalización
-                  </Tab>
-                </TabList>
-                <TabPanels>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/mision/mision-health.png"
-                      alt="health"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/mision/mision-education.png"
-                      alt="education"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/mision/mision-finance.png"
-                      alt="finance"
-                    />
-                  </TabPanel>
-                  <TabPanel className="flex justify-center mt-10">
-                    <img
-                      src="/images/percepciones/mision/mision-tech.png"
-                      alt="tech"
-                    />
-                  </TabPanel>
-                </TabPanels>
-              </TabGroup>
+              <TabSections
+                sections={[
+                  {
+                    title: "Salud y bienestar",
+                    srcImage: "/images/percepciones/mision/mision-health.png",
+                  },
+                  {
+                    title: "Educación",
+                    srcImage:
+                      "/images/percepciones/mision/mision-education.png",
+                  },
+                  {
+                    title: "Ingresos y finanzas",
+                    srcImage: "/images/percepciones/mision/mision-finance.png",
+                  },
+                  {
+                    title: "Tecnología y digitalización",
+                    srcImage: "/images/percepciones/mision/mision-tech.png",
+                  },
+                ]}
+              />
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">

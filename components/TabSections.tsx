@@ -27,13 +27,24 @@ export default function TabSections({ sections }: TabSectionProps) {
           })}
         </TabsList>
       </div>
-      {sections.map((section, i) => {
-        return (
-          <TabsContent className="flex justify-center" key={`section-content-${i + 1}`} value={section.title}>
-            <img src={section.srcImage} alt={`${section.title} image`} />
-          </TabsContent>
-        );
-      })}
+      <div className="mt-6 lg:mt-8 xl:mt-10">
+        {sections.map((section, i) => {
+          return (
+            <TabsContent
+              className="flex justify-center"
+              key={`section-content-${i + 1}`}
+              value={section.title}
+            >
+              <Image
+                width={600}
+                height={600}
+                src={section.srcImage}
+                alt={`${section.title} image`}
+              />
+            </TabsContent>
+          );
+        })}
+      </div>
     </Tabs>
   );
 }

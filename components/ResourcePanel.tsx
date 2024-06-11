@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import ResourceCard from "./ResourceCard"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { removeAccents } from "@/util"
 import ReactPaginate from 'react-paginate';
 import {
@@ -75,6 +75,8 @@ export default function ResourcePanel({ data, isType = false, image = false, car
     const [itemOffset, setItemOffset] = useState(0);
     const endOffset = itemOffset + 5;
 
+    const ref = useRef<HTMLDivElement>(null)
+
     // @ts-ignore
     const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b)
 
@@ -143,6 +145,7 @@ export default function ResourcePanel({ data, isType = false, image = false, car
     const handlePageClick = (event: any) => {
         const newOffset = (event.selected * 5);
         setItemOffset(newOffset);
+        ref.current?.scrollIntoView({behavior: 'smooth'})
     }
 
     const clearAll = () => {
@@ -154,7 +157,7 @@ export default function ResourcePanel({ data, isType = false, image = false, car
 
 
     return (
-        <div className="lg:grid grid-cols-12 u-container">
+        <div ref={ref} className="lg:grid grid-cols-12 u-container">
             <div className="col-span-4 mb-[15px]">
                 <div className="flex gap-4 lg:block">
                     <div className="lg:hidden">
