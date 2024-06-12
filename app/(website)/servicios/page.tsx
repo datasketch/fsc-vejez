@@ -122,7 +122,7 @@ export default function Page() {
             </div>
             <div className="mt-8 lg:mt-12 xl:mt-16 col-span-4 lg:col-start-1 lg:col-end-5">
               <h2 className="text-2xl lg:text-[31px] font-semibold">
-                Servicios tecnológicos diseñados para
+                Servicios tecnológicos diseñados para {" "}
                 <span className="italic text-dark-slate-gray">
                   personas mayores
                 </span>

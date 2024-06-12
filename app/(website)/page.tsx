@@ -358,12 +358,22 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El gráfico representa las proporciones de las fuentes de
-                ingresos que reciben las personas mayores.
+                Los honorarios profesionales son la remuneración por ejercer la
+                profesión de manera independiente, los salarios son los pagos en
+                dinero o especie que reciben los empleados y los ingresos son
+                las ganancias por obra, pieza, comisión u oficio, sin
+                deducciones.
+              </p>
+              <p className="mt-4">
+                Los honorarios profesionales son una fuente principal de
+                ingresos, especialmente a medida que las personas envejecen. El
+                promedio de honorarios de personas mayores es el más alto en
+                comparación con los otros ingresos que obtienen y respecto a los
+                ingresos de los otros ciclos de vida.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="La visualización es un gráfico de waffle compuesto por una cuadrícula de celdas. Las celdas están coloreadas en diferentes tonos para representar distintos valores o categorías.">
+              <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los ciclos de vida de juventud, adultez y personas mayores. Los datos son representados en barras verticales. Para los jóvenes, los honorarios profesionales son la mayor fuente de ingresos con alrededor de 2 millones de pesos. Los salarios u honorarios e ingresos o comisiones son menores, con aproximadamente 1 millón y 500 mil pesos, respectivamente. Para los adultos, los honorarios profesionales alcanzan 2.5 millones, seguidos por los salarios u honorarios con 2 millones y los ingresos o comisiones con 1 millón. En las personas mayores, los honorarios profesionales llegan a 3 millones, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
                 <MultipleBarChart
                   data={data.ingresos.data}
                   legend={data.ingresos.legend}
@@ -520,9 +530,9 @@ export default function Page() {
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Tasa de{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  alfabetismo
+                Personas que saben
+                <span className="block italic font-normal text-dark-slate-gray">
+                  leer y escribir
                 </span>
               </h3>
             </div>

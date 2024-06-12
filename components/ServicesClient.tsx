@@ -11,64 +11,6 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 
-/* const servicesData = [
-  {
-    type: "Salud y bienestar",
-    country: "Colombia",
-    title: "Vital-e",
-    description:
-      "Es de Sura.Transfoma la atención en salud integrando la comodidad de una consulta virtual y la calidad de una presencial, facilitando a los médicos la realización de diagnósticos precisos desde cualquier lugar, por medio de dispositivos IoT logrando una experiencia diferencial.",
-    externalLink: "",
-  },
-  {
-    type: "Educación",
-    country: "EEUU",
-    title: "Aging 2.0",
-    description:
-      "Red mundial de innovadores que utilizan la tecnología y el diseño para mejorar la vida de las personas mayores de todo el mundo.",
-    externalLink: "",
-  },
-  {
-    type: "Ingresos y finanzas",
-    country: "Perú",
-    title: "BBVA",
-    description:
-      "Prestan servicios de cuenta de ahorros para mayores de 65 años, con tazas de rendimiento preferenciales, procesos virtuales.",
-    externalLink: "",
-  },
-  {
-    type: "Ingresos y finanzas",
-    country: "Uruguay",
-    title: "NudaProp",
-    description:
-      "Servicios para que las personas mayores propietarias obtengan dinero de su inmueble sin mudarse.El propósito es contribuir a la mejora de la calidad de vida, posibilitando la venta del título de propiedad, así la persona mayor obtiene ingresos a la vez que conserva el derecho de seguir en su casa de por vida (plazo vitalicio) o hasta un plazo pactado.",
-    externalLink: "",
-  },
-  {
-    type: "Tecnología y digitalización",
-    country: "España",
-    title: "65ymas",
-    description:
-      "Diario digital para personas Mayores. Dice ser apolítico, informativo, divulgativo y entretenido. Cuenta con el asesoramiento permanente de personas mayores en sus contenidos a través de sus asociaciones más representativas. La empresa detrás se llama Agkam Strategies, SL.",
-    externalLink: "",
-  },
-  {
-    type: "Salud y bienestar",
-    country: "España",
-    title: "Sensalus",
-    description: "lorem ipsum",
-    externalLink: "https://example.com/",
-  },
-  {
-    type: "Educación",
-    country: "Brasil",
-    title: "Veduca",
-    description:
-      "Red mundial de innovadores que utilizan la tecnología y el diseño para mejorar la vida de las personas mayores de todo el mundo.",
-    externalLink: "",
-  },
-]; */
-
 interface ServicesClientProps {
   data: any
 }
