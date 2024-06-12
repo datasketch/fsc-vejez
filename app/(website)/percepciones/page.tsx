@@ -71,9 +71,10 @@ export default function Page() {
               personas mayores y entrevistas a profundidad a 12 expertos en 7
               ciudades.
             </p>
-            <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px]">
+            <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-7">
               Grupos focales por género de participantes
             </h4>
+            <img src="/images/percepciones/icon-grupos-focales.png" alt="focales" />
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px]">
               Distribución geográfica de los participantes
             </h4>
@@ -94,7 +95,7 @@ export default function Page() {
           </div>
         </div>
         <p className="text-vampire-gray mt-16 ">
-          Fuente y fecha de actualización
+          Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha, PROESA y DANE, 2023
         </p>
       </div>
       <div className="bg-white w-full rounded-[40px] my-10">
@@ -146,7 +147,7 @@ export default function Page() {
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">
-            Fuente y fecha de actualización
+            Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
           </p>
           <div className="lg:grid grid-cols-12 gap-5 mt-20">
             <div className="col-span-5">
@@ -170,7 +171,7 @@ export default function Page() {
             />
           </WrapperChart>
           <p className="text-vampire-gray mt-16 ">
-            Fuente y fecha de actualización
+            Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
           </p>
         </div>
       </div>
@@ -219,7 +220,7 @@ export default function Page() {
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">
-            Fuente y fecha de actualización
+            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha, PROESA y DANE, 2023
           </p>
         </div>
       </div>
