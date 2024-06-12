@@ -48,8 +48,8 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
         {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
             <h3 className="font-semibold">
-              ¿Cuáles de los siguientes dispositivos utiliza para acceder a
-              internet?
+              ¿Cuáles dispositivos utilizan las personas de 60 años o más para
+              acceder a internet?
             </h3>
             <div className="mt-6 space-y-4">
               {Object.entries(devicesUsage).map(([key, value]: any, i) => {

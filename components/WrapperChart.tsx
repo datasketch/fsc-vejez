@@ -11,7 +11,7 @@ import { useState } from "react";
 
 interface WrapperChartProps {
   children: React.ReactNode;
-  description: string;
+  description: string | string[];
 }
 
 export default function WrapperChart({
@@ -46,7 +46,17 @@ export default function WrapperChart({
               </div>
             )}
           </PopoverTrigger>
-          <PopoverContent side="right">{description}</PopoverContent>
+          <PopoverContent side="right">
+            {!Array.isArray(description) ? (
+              <p>{description}</p>
+            ) : (
+              <div className="space-y-2">
+                {description.map((el, i) => (
+                  <p key={i}>{el}</p>
+                ))}
+              </div>
+            )}
+          </PopoverContent>
         </Popover>
       </div>
     </div>

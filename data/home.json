@@ -1,1446 +1,1446 @@
 {
-    "distribucion_poblacional": [
-        {
-            "rango": "0-9",
-            "Hombre": 3872847,
-            "Mujer": 3706426
-        },
-        {
-            "rango": "10-19",
-            "Hombre": 4072663,
-            "Mujer": 3910377
-        },
-        {
-            "rango": "20-29",
-            "Hombre": 4384121,
-            "Mujer": 4331865
-        },
-        {
-            "rango": "30-39",
-            "Hombre": 4012910,
-            "Mujer": 4118248
-        },
-        {
-            "rango": "40-49",
-            "Hombre": 3236319,
-            "Mujer": 3504281
-        },
-        {
-            "rango": "50-59",
-            "Hombre": 2632129,
-            "Mujer": 3022435
-        },
-        {
-            "rango": "60-69",
-            "Hombre": 1993201,
-            "Mujer": 2397769
-        },
-        {
-            "rango": "70-79",
-            "Hombre": 1054871,
-            "Mujer": 1340889
-        },
-        {
-            "rango": "80-89",
-            "Hombre": 374683,
-            "Mujer": 518571
-        },
-        {
-            "rango": "90-99",
-            "Hombre": 77897,
-            "Mujer": 115369
-        },
-        {
-            "rango": "100+",
-            "Hombre": 7199,
-            "Mujer": 10882
-        }
-    ],
-    "poblacion_departamento": [
-        {
-            "cod_dpto": 97,
-            "poblacion": 2907
-        },
-        {
-            "cod_dpto": 94,
-            "poblacion": 3532
-        },
-        {
-            "cod_dpto": 91,
-            "poblacion": 6655
-        },
-        {
-            "cod_dpto": 99,
-            "poblacion": 8904
-        },
-        {
-            "cod_dpto": 95,
-            "poblacion": 9630
-        },
-        {
-            "cod_dpto": 88,
-            "poblacion": 10571
-        },
-        {
-            "cod_dpto": 81,
-            "poblacion": 34205
-        },
-        {
-            "cod_dpto": 86,
-            "poblacion": 41481
-        },
-        {
-            "cod_dpto": 18,
-            "poblacion": 46049
-        },
-        {
-            "cod_dpto": 85,
-            "poblacion": 49519
-        },
-        {
-            "cod_dpto": 27,
-            "poblacion": 63409
-        },
-        {
-            "cod_dpto": 44,
-            "poblacion": 86450
-        },
-        {
-            "cod_dpto": 63,
-            "poblacion": 116664
-        },
-        {
-            "cod_dpto": 70,
-            "poblacion": 140567
-        },
-        {
-            "cod_dpto": 50,
-            "poblacion": 148682
-        },
-        {
-            "cod_dpto": 20,
-            "poblacion": 149234
-        },
-        {
-            "cod_dpto": 41,
-            "poblacion": 159736
-        },
-        {
-            "cod_dpto": 66,
-            "poblacion": 184505
-        },
-        {
-            "cod_dpto": 47,
-            "poblacion": 186938
-        },
-        {
-            "cod_dpto": 17,
-            "poblacion": 212538
-        },
-        {
-            "cod_dpto": 19,
-            "poblacion": 227675
-        },
-        {
-            "cod_dpto": 54,
-            "poblacion": 231625
-        },
-        {
-            "cod_dpto": 15,
-            "poblacion": 235265
-        },
-        {
-            "cod_dpto": 73,
-            "poblacion": 257937
-        },
-        {
-            "cod_dpto": 52,
-            "poblacion": 259442
-        },
-        {
-            "cod_dpto": 23,
-            "poblacion": 273427
-        },
-        {
-            "cod_dpto": 13,
-            "poblacion": 299917
-        },
-        {
-            "cod_dpto": 68,
-            "poblacion": 386772
-        },
-        {
-            "cod_dpto": 8,
-            "poblacion": 389160
-        },
-        {
-            "cod_dpto": 25,
-            "poblacion": 529601
-        },
-        {
-            "cod_dpto": 76,
-            "poblacion": 794778
-        },
-        {
-            "cod_dpto": 5,
-            "poblacion": 1120115
-        },
-        {
-            "cod_dpto": 11,
-            "poblacion": 1223441
-        }
-    ],
-    "mapa_tech": {
-        "frecuencia_internet": [
-            {
-                "cod_dpto": 5,
-                "Al menos una vez a la semana, pero no cada día": 9.26,
-                "Al menos una vez al año, pero no cada mes": 0.2,
-                "Al menos una vez al mes, pero no cada semana": 0.26,
-                "No utiliza internet": 68.95,
-                "Todos los días de la semana": 21.33
-            },
-            {
-                "cod_dpto": 8,
-                "Al menos una vez a la semana, pero no cada día": 8.31,
-                "Al menos una vez al año, pero no cada mes": 0.32,
-                "Al menos una vez al mes, pero no cada semana": 0.71,
-                "No utiliza internet": 66.23,
-                "Todos los días de la semana": 24.42
-            },
-            {
-                "cod_dpto": 11,
-                "Al menos una vez a la semana, pero no cada día": 11.27,
-                "Al menos una vez al año, pero no cada mes": 0.22,
-                "Al menos una vez al mes, pero no cada semana": 0.6,
-                "No utiliza internet": 53.36,
-                "Todos los días de la semana": 34.55
-            },
-            {
-                "cod_dpto": 13,
-                "Al menos una vez a la semana, pero no cada día": 9.66,
-                "Al menos una vez al año, pero no cada mes": 0.45,
-                "Al menos una vez al mes, pero no cada semana": 1.23,
-                "No utiliza internet": 75.7,
-                "Todos los días de la semana": 12.96
-            },
-            {
-                "cod_dpto": 15,
-                "Al menos una vez a la semana, pero no cada día": 6.66,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.82,
-                "No utiliza internet": 76.91,
-                "Todos los días de la semana": 15.61
-            },
-            {
-                "cod_dpto": 17,
-                "Al menos una vez a la semana, pero no cada día": 8.22,
-                "Al menos una vez al año, pero no cada mes": 0.07,
-                "Al menos una vez al mes, pero no cada semana": 0.84,
-                "No utiliza internet": 61.81,
-                "Todos los días de la semana": 29.06
-            },
-            {
-                "cod_dpto": 18,
-                "Al menos una vez a la semana, pero no cada día": 11.83,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.52,
-                "No utiliza internet": 75.73,
-                "Todos los días de la semana": 11.93
-            },
-            {
-                "cod_dpto": 19,
-                "Al menos una vez a la semana, pero no cada día": 8.65,
-                "Al menos una vez al año, pero no cada mes": 0.07,
-                "Al menos una vez al mes, pero no cada semana": 0.5,
-                "No utiliza internet": 77.3,
-                "Todos los días de la semana": 13.48
-            },
-            {
-                "cod_dpto": 20,
-                "Al menos una vez a la semana, pero no cada día": 7.36,
-                "Al menos una vez al año, pero no cada mes": 0.1,
-                "Al menos una vez al mes, pero no cada semana": 0.48,
-                "No utiliza internet": 76.48,
-                "Todos los días de la semana": 15.59
-            },
-            {
-                "cod_dpto": 23,
-                "Al menos una vez a la semana, pero no cada día": 4.42,
-                "Al menos una vez al año, pero no cada mes": 0.24,
-                "Al menos una vez al mes, pero no cada semana": 0.47,
-                "No utiliza internet": 81.6,
-                "Todos los días de la semana": 13.27
-            },
-            {
-                "cod_dpto": 25,
-                "Al menos una vez a la semana, pero no cada día": 8.81,
-                "Al menos una vez al año, pero no cada mes": 0.41,
-                "Al menos una vez al mes, pero no cada semana": 1.5,
-                "No utiliza internet": 64.46,
-                "Todos los días de la semana": 24.82
-            },
-            {
-                "cod_dpto": 27,
-                "Al menos una vez a la semana, pero no cada día": 6.94,
-                "Al menos una vez al año, pero no cada mes": 0.24,
-                "Al menos una vez al mes, pero no cada semana": 1.1,
-                "No utiliza internet": 77.1,
-                "Todos los días de la semana": 14.62
-            },
-            {
-                "cod_dpto": 41,
-                "Al menos una vez a la semana, pero no cada día": 9.85,
-                "Al menos una vez al año, pero no cada mes": 0.16,
-                "Al menos una vez al mes, pero no cada semana": 0.32,
-                "No utiliza internet": 68.82,
-                "Todos los días de la semana": 20.84
-            },
-            {
-                "cod_dpto": 44,
-                "Al menos una vez a la semana, pero no cada día": 4.93,
-                "Al menos una vez al año, pero no cada mes": 0.22,
-                "Al menos una vez al mes, pero no cada semana": 0.11,
-                "No utiliza internet": 81.19,
-                "Todos los días de la semana": 13.55
-            },
-            {
-                "cod_dpto": 47,
-                "Al menos una vez a la semana, pero no cada día": 8.36,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.46,
-                "No utiliza internet": 75.77,
-                "Todos los días de la semana": 15.41
-            },
-            {
-                "cod_dpto": 50,
-                "Al menos una vez a la semana, pero no cada día": 6.93,
-                "Al menos una vez al año, pero no cada mes": 0.28,
-                "Al menos una vez al mes, pero no cada semana": 1.02,
-                "No utiliza internet": 50.92,
-                "Todos los días de la semana": 40.85
-            },
-            {
-                "cod_dpto": 52,
-                "Al menos una vez a la semana, pero no cada día": 6.07,
-                "Al menos una vez al año, pero no cada mes": 0.07,
-                "Al menos una vez al mes, pero no cada semana": 0.56,
-                "No utiliza internet": 79.03,
-                "Todos los días de la semana": 14.27
-            },
-            {
-                "cod_dpto": 54,
-                "Al menos una vez a la semana, pero no cada día": 10.03,
-                "Al menos una vez al año, pero no cada mes": 0.08,
-                "Al menos una vez al mes, pero no cada semana": 0.67,
-                "No utiliza internet": 69.31,
-                "Todos los días de la semana": 19.9
-            },
-            {
-                "cod_dpto": 63,
-                "Al menos una vez a la semana, pero no cada día": 8.29,
-                "Al menos una vez al año, pero no cada mes": 0.06,
-                "Al menos una vez al mes, pero no cada semana": 0.28,
-                "No utiliza internet": 53.55,
-                "Todos los días de la semana": 37.82
-            },
-            {
-                "cod_dpto": 66,
-                "Al menos una vez a la semana, pero no cada día": 10.04,
-                "Al menos una vez al año, pero no cada mes": 0.06,
-                "Al menos una vez al mes, pero no cada semana": 1.42,
-                "No utiliza internet": 62.49,
-                "Todos los días de la semana": 25.99
-            },
-            {
-                "cod_dpto": 68,
-                "Al menos una vez a la semana, pero no cada día": 6.53,
-                "Al menos una vez al año, pero no cada mes": 0.07,
-                "Al menos una vez al mes, pero no cada semana": 0.21,
-                "No utiliza internet": 66.99,
-                "Todos los días de la semana": 26.19
-            },
-            {
-                "cod_dpto": 70,
-                "Al menos una vez a la semana, pero no cada día": 6.91,
-                "Al menos una vez al año, pero no cada mes": 0.07,
-                "Al menos una vez al mes, pero no cada semana": 0.14,
-                "No utiliza internet": 81.02,
-                "Todos los días de la semana": 11.86
-            },
-            {
-                "cod_dpto": 73,
-                "Al menos una vez a la semana, pero no cada día": 9.68,
-                "Al menos una vez al año, pero no cada mes": 0.27,
-                "Al menos una vez al mes, pero no cada semana": 1.02,
-                "No utiliza internet": 69.68,
-                "Todos los días de la semana": 19.35
-            },
-            {
-                "cod_dpto": 76,
-                "Al menos una vez a la semana, pero no cada día": 8.72,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 1.17,
-                "No utiliza internet": 54.98,
-                "Todos los días de la semana": 35.12
-            },
-            {
-                "cod_dpto": 81,
-                "Al menos una vez a la semana, pero no cada día": 6.04,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.14,
-                "No utiliza internet": 76.95,
-                "Todos los días de la semana": 16.87
-            },
-            {
-                "cod_dpto": 85,
-                "Al menos una vez a la semana, pero no cada día": 12.1,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 1.03,
-                "No utiliza internet": 70.14,
-                "Todos los días de la semana": 16.73
-            },
-            {
-                "cod_dpto": 86,
-                "Al menos una vez a la semana, pero no cada día": 5.26,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.88,
-                "No utiliza internet": 83.33,
-                "Todos los días de la semana": 10.53
-            },
-            {
-                "cod_dpto": 88,
-                "Al menos una vez a la semana, pero no cada día": 6.35,
-                "Al menos una vez al año, pero no cada mes": 0.2,
-                "Al menos una vez al mes, pero no cada semana": 1.59,
-                "No utiliza internet": 52.38,
-                "Todos los días de la semana": 39.48
-            },
-            {
-                "cod_dpto": 91,
-                "Al menos una vez a la semana, pero no cada día": 6.65,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.37,
-                "No utiliza internet": 80.04,
-                "Todos los días de la semana": 12.94
-            },
-            {
-                "cod_dpto": 94,
-                "Al menos una vez a la semana, pero no cada día": 4.19,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.52,
-                "No utiliza internet": 81.68,
-                "Todos los días de la semana": 13.61
-            },
-            {
-                "cod_dpto": 95,
-                "Al menos una vez a la semana, pero no cada día": 5.15,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 1.03,
-                "No utiliza internet": 78.12,
-                "Todos los días de la semana": 15.7
-            },
-            {
-                "cod_dpto": 97,
-                "Al menos una vez a la semana, pero no cada día": 3.21,
-                "Al menos una vez al año, pero no cada mes": 0.2,
-                "Al menos una vez al mes, pero no cada semana": 0,
-                "No utiliza internet": 86.14,
-                "Todos los días de la semana": 10.44
-            },
-            {
-                "cod_dpto": 99,
-                "Al menos una vez a la semana, pero no cada día": 3.88,
-                "Al menos una vez al año, pero no cada mes": 0,
-                "Al menos una vez al mes, pero no cada semana": 0.19,
-                "No utiliza internet": 86.05,
-                "Todos los días de la semana": 9.88
-            }
-        ],
-        "uso_dispositivos": [
-            {
-                "cod_dpto": 5,
-                "Computador de escritorio": 8.66,
-                "Computador portátil": 9.16,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 2.23,
-                "Teléfono celular": 72.9,
-                "Televisor inteligente": 7.05
-            },
-            {
-                "cod_dpto": 8,
-                "Computador de escritorio": 7.8,
-                "Computador portátil": 11.56,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.29,
-                "Teléfono celular": 74.71,
-                "Televisor inteligente": 5.64
-            },
-            {
-                "cod_dpto": 11,
-                "Computador de escritorio": 13.54,
-                "Computador portátil": 15.31,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 3.34,
-                "Teléfono celular": 59.67,
-                "Televisor inteligente": 8.15
-            },
-            {
-                "cod_dpto": 13,
-                "Computador de escritorio": 10.77,
-                "Computador portátil": 7.25,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.41,
-                "Teléfono celular": 74.95,
-                "Televisor inteligente": 6.63
-            },
-            {
-                "cod_dpto": 15,
-                "Computador de escritorio": 5.83,
-                "Computador portátil": 12.78,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.94,
-                "Teléfono celular": 78.76,
-                "Televisor inteligente": 1.69
-            },
-            {
-                "cod_dpto": 17,
-                "Computador de escritorio": 6.33,
-                "Computador portátil": 7.7,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 2.2,
-                "Teléfono celular": 74.55,
-                "Televisor inteligente": 9.22
-            },
-            {
-                "cod_dpto": 18,
-                "Computador de escritorio": 5.13,
-                "Computador portátil": 6.96,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 85.71,
-                "Televisor inteligente": 2.2
-            },
-            {
-                "cod_dpto": 19,
-                "Computador de escritorio": 10.14,
-                "Computador portátil": 10.6,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.92,
-                "Teléfono celular": 70.97,
-                "Televisor inteligente": 7.37
-            },
-            {
-                "cod_dpto": 20,
-                "Computador de escritorio": 6.6,
-                "Computador portátil": 7.64,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 83.33,
-                "Televisor inteligente": 2.43
-            },
-            {
-                "cod_dpto": 23,
-                "Computador de escritorio": 7.35,
-                "Computador portátil": 12.14,
-                "Consolas para juegos electrónicos": 0.32,
-                "Tableta": 0.32,
-                "Teléfono celular": 73.48,
-                "Televisor inteligente": 6.39
-            },
-            {
-                "cod_dpto": 25,
-                "Computador de escritorio": 7.45,
-                "Computador portátil": 8.14,
-                "Consolas para juegos electrónicos": 0.11,
-                "Tableta": 1.72,
-                "Teléfono celular": 77.41,
-                "Televisor inteligente": 5.16
-            },
-            {
-                "cod_dpto": 27,
-                "Computador de escritorio": 11.24,
-                "Computador portátil": 8.84,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.4,
-                "Teléfono celular": 74.3,
-                "Televisor inteligente": 5.22
-            },
-            {
-                "cod_dpto": 41,
-                "Computador de escritorio": 5.41,
-                "Computador portátil": 7.14,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.87,
-                "Teléfono celular": 82.9,
-                "Televisor inteligente": 3.68
-            },
-            {
-                "cod_dpto": 44,
-                "Computador de escritorio": 11.72,
-                "Computador portátil": 10.88,
-                "Consolas para juegos electrónicos": 0.42,
-                "Tableta": 0,
-                "Teléfono celular": 69.46,
-                "Televisor inteligente": 7.53
-            },
-            {
-                "cod_dpto": 47,
-                "Computador de escritorio": 8.04,
-                "Computador portátil": 10.12,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 1.49,
-                "Teléfono celular": 77.08,
-                "Televisor inteligente": 3.27
-            },
-            {
-                "cod_dpto": 50,
-                "Computador de escritorio": 4.59,
-                "Computador portátil": 5.25,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 1.15,
-                "Teléfono celular": 86.56,
-                "Televisor inteligente": 2.46
-            },
-            {
-                "cod_dpto": 52,
-                "Computador de escritorio": 14.99,
-                "Computador portátil": 13.76,
-                "Consolas para juegos electrónicos": 0.21,
-                "Tableta": 2.67,
-                "Teléfono celular": 59.14,
-                "Televisor inteligente": 9.24
-            },
-            {
-                "cod_dpto": 54,
-                "Computador de escritorio": 8.9,
-                "Computador portátil": 7.53,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.46,
-                "Teléfono celular": 82.42,
-                "Televisor inteligente": 0.68
-            },
-            {
-                "cod_dpto": 63,
-                "Computador de escritorio": 6.87,
-                "Computador portátil": 10.63,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 2.66,
-                "Teléfono celular": 74.06,
-                "Televisor inteligente": 5.77
-            },
-            {
-                "cod_dpto": 66,
-                "Computador de escritorio": 10.35,
-                "Computador portátil": 11.41,
-                "Consolas para juegos electrónicos": 0.24,
-                "Tableta": 1.29,
-                "Teléfono celular": 72.59,
-                "Televisor inteligente": 4.12
-            },
-            {
-                "cod_dpto": 68,
-                "Computador de escritorio": 8.19,
-                "Computador portátil": 9.36,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 1.34,
-                "Teléfono celular": 77.59,
-                "Televisor inteligente": 3.51
-            },
-            {
-                "cod_dpto": 70,
-                "Computador de escritorio": 7.06,
-                "Computador portátil": 12.15,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.28,
-                "Teléfono celular": 76.27,
-                "Televisor inteligente": 4.24
-            },
-            {
-                "cod_dpto": 73,
-                "Computador de escritorio": 9.23,
-                "Computador portátil": 7.24,
-                "Consolas para juegos electrónicos": 0.14,
-                "Tableta": 0.57,
-                "Teléfono celular": 79.69,
-                "Televisor inteligente": 3.13
-            },
-            {
-                "cod_dpto": 76,
-                "Computador de escritorio": 7.09,
-                "Computador portátil": 6.49,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 1.6,
-                "Teléfono celular": 79.72,
-                "Televisor inteligente": 5.09
-            },
-            {
-                "cod_dpto": 81,
-                "Computador de escritorio": 6.22,
-                "Computador portátil": 5.18,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 86.53,
-                "Televisor inteligente": 2.07
-            },
-            {
-                "cod_dpto": 85,
-                "Computador de escritorio": 10.63,
-                "Computador portátil": 9.97,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0.66,
-                "Teléfono celular": 76.74,
-                "Televisor inteligente": 1.99
-            },
-            {
-                "cod_dpto": 86,
-                "Computador de escritorio": 12.27,
-                "Computador portátil": 7.98,
-                "Consolas para juegos electrónicos": 0.61,
-                "Tableta": 0,
-                "Teléfono celular": 77.91,
-                "Televisor inteligente": 1.23
-            },
-            {
-                "cod_dpto": 88,
-                "Computador de escritorio": 10.43,
-                "Computador portátil": 11.04,
-                "Consolas para juegos electrónicos": 0.31,
-                "Tableta": 0.92,
-                "Teléfono celular": 70.25,
-                "Televisor inteligente": 7.06
-            },
-            {
-                "cod_dpto": 91,
-                "Computador de escritorio": 16.05,
-                "Computador portátil": 17.9,
-                "Consolas para juegos electrónicos": 0.62,
-                "Tableta": 0.62,
-                "Teléfono celular": 64.81,
-                "Televisor inteligente": 0
-            },
-            {
-                "cod_dpto": 94,
-                "Computador de escritorio": 6.02,
-                "Computador portátil": 13.25,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 80.72,
-                "Televisor inteligente": 0
-            },
-            {
-                "cod_dpto": 95,
-                "Computador de escritorio": 6.13,
-                "Computador portátil": 10.85,
-                "Consolas para juegos electrónicos": 0.47,
-                "Tableta": 0.94,
-                "Teléfono celular": 79.25,
-                "Televisor inteligente": 2.36
-            },
-            {
-                "cod_dpto": 97,
-                "Computador de escritorio": 12,
-                "Computador portátil": 24,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 64,
-                "Televisor inteligente": 0
-            },
-            {
-                "cod_dpto": 99,
-                "Computador de escritorio": 11.24,
-                "Computador portátil": 7.87,
-                "Consolas para juegos electrónicos": 0,
-                "Tableta": 0,
-                "Teléfono celular": 79.78,
-                "Televisor inteligente": 1.12
-            }
-        ]
+  "distribucion_poblacional": [
+    {
+      "rango": "0-9",
+      "Hombre": 3872847,
+      "Mujer": 3706426
     },
-    "ingresos": {
-        "data": [
-            {
-                "name": "Adultos",
-                "Honorarios profesionales": 2743128.123,
-                "Ingresos o comisiones": 1024136.697,
-                "Salarios u honorarios": 2037980.705
-            },
-            {
-                "name": "Jóvenes",
-                "Honorarios profesionales": 1899384.704,
-                "Ingresos o comisiones": 765181.5826,
-                "Salarios u honorarios": 1008744.472
-            },
-            {
-                "name": "Personas mayores",
-                "Honorarios profesionales": 2938404.93,
-                "Ingresos o comisiones": 837773.09,
-                "Salarios u honorarios": 1504540.08
-            }
-        ],
-        "legend": [
-            {
-                "key": "Honorarios profesionales",
-                "fill": "#1D5556"
-            },
-            {
-                "key": "Ingresos o comisiones",
-                "fill": "#FAAA8D"
-            },
-            {
-                "key": "Salarios u honorarios",
-                "fill": "#B6174B"
-            }
-        ]
+    {
+      "rango": "10-19",
+      "Hombre": 4072663,
+      "Mujer": 3910377
     },
-    "capacidades": [
-        {
-            "id": "Entender, aprender, recordar o tomar decisiones por sí mismo(a)",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 210
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 592
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 2228
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 36568
-                }
-            ]
-        },
-        {
-            "id": "Oír, aun usando audífonos medicados",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 103
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 1266
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 4246
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 33983
-                }
-            ]
-        },
-        {
-            "id": "Agarrar o mover objetos con las manos",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 119
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 966
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 3673
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 34840
-                }
-            ]
-        },
-        {
-            "id": "Ver, aun usando lentes o gafas",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 178
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 2260
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 11053
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 26107
-                }
-            ]
-        },
-        {
-            "id": "Mover el cuerpo, caminar o subir y bajar escaleras",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 399
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 2365
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 6930
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 29904
-                }
-            ]
-        },
-        {
-            "id": "Comer, vestirse o bañarse por sí mismo(a)",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 327
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 630
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 2025
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 36616
-                }
-            ]
-        },
-        {
-            "id": "Relacionarse o interactuar con las demás personas",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 171
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 339
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 1214
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 37874
-                }
-            ]
-        },
-        {
-            "id": "Hablar o conversar",
-            "data": [
-                {
-                    "x": "No puede hacerlo",
-                    "y": 117
-                },
-                {
-                    "x": "Sí, con mucha dificultad",
-                    "y": 426
-                },
-                {
-                    "x": "Sí, con alguna dificultad",
-                    "y": 1644
-                },
-                {
-                    "x": "Sin dificultad",
-                    "y": 37411
-                }
-            ]
-        }
-    ],
-    "vivienda_composicion": {
-        "nodes": [
-            {
-                "id": "Hombre",
-                "nodeColor": "hsl(161, 70%, 50%)"
-            },
-            {
-                "id": "Mujer",
-                "nodeColor": "hsl(72, 70%, 50%)"
-            },
-            {
-                "id": "Apartamento",
-                "nodeColor": "hsl(215, 70%, 50%)"
-            },
-            {
-                "id": "Casa",
-                "nodeColor": "hsl(282, 70%, 50%)"
-            },
-            {
-                "id": "Cuarto (s) en inquilinato",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            },
-            {
-                "id": "Cuarto (s) en otro tipo de estructura",
-                "nodeColor": "hsl(49, 70%, 50%)"
-            },
-            {
-                "id": "Otra vivienda",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            },
-            {
-                "id": "Vivienda indígena",
-                "nodeColor": "hsl(49, 70%, 50%)"
-            },
-            {
-                "id": "En arriendo subarriendo",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            },
-            {
-                "id": "En usufructo",
-                "nodeColor": "hsl(49, 70%, 50%)"
-            },
-            {
-                "id": "Otra",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            },
-            {
-                "id": "Posesión sin título",
-                "nodeColor": "hsl(49, 70%, 50%)"
-            },
-            {
-                "id": "Propia, la están pagando",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            },
-            {
-                "id": "Propia, totalmente pagada",
-                "nodeColor": "hsl(49, 70%, 50%)"
-            },
-            {
-                "id": "Propiedad colectiva",
-                "nodeColor": "hsl(177, 70%, 50%)"
-            }
-        ],
-        "links": [
-            {
-                "source": "Hombre",
-                "target": "Apartamento",
-                "value": 21075
-            },
-            {
-                "source": "Hombre",
-                "target": "Casa",
-                "value": 38823
-            },
-            {
-                "source": "Hombre",
-                "target": "Cuarto (s) en inquilinato",
-                "value": 836
-            },
-            {
-                "source": "Hombre",
-                "target": "Cuarto (s) en otro tipo de estructura",
-                "value": 219
-            },
-            {
-                "source": "Hombre",
-                "target": "Otra vivienda",
-                "value": 14
-            },
-            {
-                "source": "Hombre",
-                "target": "Vivienda indígena",
-                "value": 146
-            },
-            {
-                "source": "Mujer",
-                "target": "Apartamento",
-                "value": 30372
-            },
-            {
-                "source": "Mujer",
-                "target": "Casa",
-                "value": 49128
-            },
-            {
-                "source": "Mujer",
-                "target": "Cuarto (s) en inquilinato",
-                "value": 453
-            },
-            {
-                "source": "Mujer",
-                "target": "Cuarto (s) en otro tipo de estructura",
-                "value": 106
-            },
-            {
-                "source": "Mujer",
-                "target": "Otra vivienda",
-                "value": 5
-            },
-            {
-                "source": "Mujer",
-                "target": "Vivienda indígena",
-                "value": 171
-            },
-            {
-                "source": "Apartamento",
-                "target": "En arriendo subarriendo",
-                "value": 16135
-            },
-            {
-                "source": "Apartamento",
-                "target": "En usufructo",
-                "value": 7536
-            },
-            {
-                "source": "Apartamento",
-                "target": "Otra",
-                "value": 337
-            },
-            {
-                "source": "Apartamento",
-                "target": "Posesión sin título",
-                "value": 681
-            },
-            {
-                "source": "Apartamento",
-                "target": "Propia, la están pagando",
-                "value": 1868
-            },
-            {
-                "source": "Apartamento",
-                "target": "Propia, totalmente pagada",
-                "value": 23690
-            },
-            {
-                "source": "Apartamento",
-                "target": "Propiedad colectiva",
-                "value": 1200
-            },
-            {
-                "source": "Casa",
-                "target": "En arriendo subarriendo",
-                "value": 11415
-            },
-            {
-                "source": "Casa",
-                "target": "En usufructo",
-                "value": 16662
-            },
-            {
-                "source": "Casa",
-                "target": "Otra",
-                "value": 417
-            },
-            {
-                "source": "Casa",
-                "target": "Posesión sin título",
-                "value": 4671
-            },
-            {
-                "source": "Casa",
-                "target": "Propia, la están pagando",
-                "value": 1865
-            },
-            {
-                "source": "Casa",
-                "target": "Propia, totalmente pagada",
-                "value": 50415
-            },
-            {
-                "source": "Casa",
-                "target": "Propiedad colectiva",
-                "value": 2506
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "En arriendo subarriendo",
-                "value": 866
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "En usufructo",
-                "value": 242
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "Otra",
-                "value": 2
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "Posesión sin título",
-                "value": 17
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "Propia, totalmente pagada",
-                "value": 147
-            },
-            {
-                "source": "Cuarto (s) en inquilinato",
-                "target": "Propiedad colectiva",
-                "value": 15
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "En arriendo subarriendo",
-                "value": 99
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "En usufructo",
-                "value": 120
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "Otra",
-                "value": 5
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "Posesión sin título",
-                "value": 31
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "Propia, la están pagando",
-                "value": 2
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "Propia, totalmente pagada",
-                "value": 57
-            },
-            {
-                "source": "Cuarto (s) en otro tipo de estructura",
-                "target": "Propiedad colectiva",
-                "value": 11
-            },
-            {
-                "source": "Otra vivienda",
-                "target": "En arriendo subarriendo",
-                "value": 3
-            },
-            {
-                "source": "Otra vivienda",
-                "target": "En usufructo",
-                "value": 1
-            },
-            {
-                "source": "Otra vivienda",
-                "target": "Posesión sin título",
-                "value": 9
-            },
-            {
-                "source": "Otra vivienda",
-                "target": "Propia, totalmente pagada",
-                "value": 6
-            },
-            {
-                "source": "Vivienda indígena",
-                "target": "En arriendo subarriendo",
-                "value": 2
-            },
-            {
-                "source": "Vivienda indígena",
-                "target": "En usufructo",
-                "value": 9
-            },
-            {
-                "source": "Vivienda indígena",
-                "target": "Posesión sin título",
-                "value": 153
-            },
-            {
-                "source": "Vivienda indígena",
-                "target": "Propia, totalmente pagada",
-                "value": 49
-            },
-            {
-                "source": "Vivienda indígena",
-                "target": "Propiedad colectiva",
-                "value": 104
-            }
-        ]
+    {
+      "rango": "20-29",
+      "Hombre": 4384121,
+      "Mujer": 4331865
     },
-    "nivel_educativo": {
-        "data": [
-            {
-                "name": "Doctorado",
-                "Adultos": 705,
-                "Jóvenes": 9,
-                "Personas mayores": 204
-            },
-            {
-                "name": "Maestría",
-                "Adultos": 5854,
-                "Jóvenes": 221,
-                "Personas mayores": 1056
-            },
-            {
-                "name": "Especialización",
-                "Adultos": 12749,
-                "Jóvenes": 701,
-                "Personas mayores": 3737
-            },
-            {
-                "name": "Universitaria",
-                "Adultos": 56560,
-                "Jóvenes": 36467,
-                "Personas mayores": 11320
-            },
-            {
-                "name": "Tecnológica",
-                "Adultos": 14219,
-                "Jóvenes": 6294,
-                "Personas mayores": 1864
-            },
-            {
-                "name": "Técnica profesional",
-                "Adultos": 34424,
-                "Jóvenes": 13994,
-                "Personas mayores": 4394
-            },
-            {
-                "name": "Media técnica (Bachillerato técnico)",
-                "Adultos": 8229,
-                "Jóvenes": 5844,
-                "Personas mayores": 1338
-            },
-            {
-                "name": "Media académica (Bachillerato clásico)",
-                "Adultos": 116100,
-                "Jóvenes": 61802,
-                "Personas mayores": 22012
-            },
-            {
-                "name": "Básica secundaria (6o - 9o)",
-                "Adultos": 40600,
-                "Jóvenes": 45929,
-                "Personas mayores": 15902
-            },
-            {
-                "name": "Básica primaria (1o - 5o)",
-                "Adultos": 66602,
-                "Jóvenes": 7215,
-                "Personas mayores": 62162
-            },
-            {
-                "name": "Normalista",
-                "Adultos": 613,
-                "Jóvenes": 281,
-                "Personas mayores": 537
-            },
-            {
-                "name": "Preescolar",
-                "Adultos": 33,
-                "Jóvenes": 22,
-                "Personas mayores": 22
-            }
-        ],
-        "legend": [
-            {
-                "key": "Jóvenes",
-                "fill": "#1D5556"
-            },
-            {
-                "key": "Adultos",
-                "fill": "#FAAA8D"
-            },
-            {
-                "key": "Personas mayores",
-                "fill": "#B6174B"
-            }
-        ]
+    {
+      "rango": "30-39",
+      "Hombre": 4012910,
+      "Mujer": 4118248
     },
-    "modalidad_transporte": {
-        "data": [
-            {
-                "name": "A Pie < 15 Min",
-                "Adultos (27-59 años)": 5064,
-                "Jóvenes (14-26 años)": 4808,
-                "Personas mayores (60 años o más)": 2520
-            },
-            {
-                "name": "A Pie > 15 Min",
-                "Adultos (27-59 años)": 9542,
-                "Jóvenes (14-26 años)": 9877,
-                "Personas mayores (60 años o más)": 5513
-            },
-            {
-                "name": "Auto",
-                "Adultos (27-59 años)": 7943,
-                "Jóvenes (14-26 años)": 1756,
-                "Personas mayores (60 años o más)": 2887
-            },
-            {
-                "name": "Bicicleta",
-                "Adultos (27-59 años)": 3653,
-                "Jóvenes (14-26 años)": 1840,
-                "Personas mayores (60 años o más)": 611
-            },
-            {
-                "name": "Especial Ocupado",
-                "Adultos (27-59 años)": 1098,
-                "Jóvenes (14-26 años)": 640,
-                "Personas mayores (60 años o más)": 244
-            },
-            {
-                "name": "Informal",
-                "Adultos (27-59 años)": 401,
-                "Jóvenes (14-26 años)": 322,
-                "Personas mayores (60 años o más)": 144
-            },
-            {
-                "name": "Moto",
-                "Adultos (27-59 años)": 4306,
-                "Jóvenes (14-26 años)": 1745,
-                "Personas mayores (60 años o más)": 196
-            },
-            {
-                "name": "Otro",
-                "Adultos (27-59 años)": 226,
-                "Jóvenes (14-26 años)": 48,
-                "Personas mayores (60 años o más)": 58
-            },
-            {
-                "name": "Taxi Ocupado",
-                "Adultos (27-59 años)": 1483,
-                "Jóvenes (14-26 años)": 456,
-                "Personas mayores (60 años o más)": 1328
-            },
-            {
-                "name": "Transporte Escolar",
-                "Adultos (27-59 años)": 54,
-                "Jóvenes (14-26 años)": 1991,
-                "Personas mayores (60 años o más)": 13
-            },
-            {
-                "name": "Transporte Público",
-                "Adultos (27-59 años)": 16073,
-                "Jóvenes (14-26 años)": 8550,
-                "Personas mayores (60 años o más)": 4784
-            }
-        ],
-        "legend": [
-            {
-                "key": "Jóvenes (14-26 años)",
-                "fill": "#1D5556"
-            },
-            {
-                "key": "Adultos (27-59 años)",
-                "fill": "#FAAA8D"
-            },
-            {
-                "key": "Personas mayores (60 años o más)",
-                "fill": "#B6174B"
-            }
-        ]
+    {
+      "rango": "40-49",
+      "Hombre": 3236319,
+      "Mujer": 3504281
+    },
+    {
+      "rango": "50-59",
+      "Hombre": 2632129,
+      "Mujer": 3022435
+    },
+    {
+      "rango": "60-69",
+      "Hombre": 1993201,
+      "Mujer": 2397769
+    },
+    {
+      "rango": "70-79",
+      "Hombre": 1054871,
+      "Mujer": 1340889
+    },
+    {
+      "rango": "80-89",
+      "Hombre": 374683,
+      "Mujer": 518571
+    },
+    {
+      "rango": "90-99",
+      "Hombre": 77897,
+      "Mujer": 115369
+    },
+    {
+      "rango": "100+",
+      "Hombre": 7199,
+      "Mujer": 10882
     }
+  ],
+  "poblacion_departamento": [
+    {
+      "cod_dpto": 97,
+      "poblacion": 2907
+    },
+    {
+      "cod_dpto": 94,
+      "poblacion": 3532
+    },
+    {
+      "cod_dpto": 91,
+      "poblacion": 6655
+    },
+    {
+      "cod_dpto": 99,
+      "poblacion": 8904
+    },
+    {
+      "cod_dpto": 95,
+      "poblacion": 9630
+    },
+    {
+      "cod_dpto": 88,
+      "poblacion": 10571
+    },
+    {
+      "cod_dpto": 81,
+      "poblacion": 34205
+    },
+    {
+      "cod_dpto": 86,
+      "poblacion": 41481
+    },
+    {
+      "cod_dpto": 18,
+      "poblacion": 46049
+    },
+    {
+      "cod_dpto": 85,
+      "poblacion": 49519
+    },
+    {
+      "cod_dpto": 27,
+      "poblacion": 63409
+    },
+    {
+      "cod_dpto": 44,
+      "poblacion": 86450
+    },
+    {
+      "cod_dpto": 63,
+      "poblacion": 116664
+    },
+    {
+      "cod_dpto": 70,
+      "poblacion": 140567
+    },
+    {
+      "cod_dpto": 50,
+      "poblacion": 148682
+    },
+    {
+      "cod_dpto": 20,
+      "poblacion": 149234
+    },
+    {
+      "cod_dpto": 41,
+      "poblacion": 159736
+    },
+    {
+      "cod_dpto": 66,
+      "poblacion": 184505
+    },
+    {
+      "cod_dpto": 47,
+      "poblacion": 186938
+    },
+    {
+      "cod_dpto": 17,
+      "poblacion": 212538
+    },
+    {
+      "cod_dpto": 19,
+      "poblacion": 227675
+    },
+    {
+      "cod_dpto": 54,
+      "poblacion": 231625
+    },
+    {
+      "cod_dpto": 15,
+      "poblacion": 235265
+    },
+    {
+      "cod_dpto": 73,
+      "poblacion": 257937
+    },
+    {
+      "cod_dpto": 52,
+      "poblacion": 259442
+    },
+    {
+      "cod_dpto": 23,
+      "poblacion": 273427
+    },
+    {
+      "cod_dpto": 13,
+      "poblacion": 299917
+    },
+    {
+      "cod_dpto": 68,
+      "poblacion": 386772
+    },
+    {
+      "cod_dpto": 8,
+      "poblacion": 389160
+    },
+    {
+      "cod_dpto": 25,
+      "poblacion": 529601
+    },
+    {
+      "cod_dpto": 76,
+      "poblacion": 794778
+    },
+    {
+      "cod_dpto": 5,
+      "poblacion": 1120115
+    },
+    {
+      "cod_dpto": 11,
+      "poblacion": 1223441
+    }
+  ],
+  "mapa_tech": {
+    "frecuencia_internet": [
+      {
+        "cod_dpto": 5,
+        "Al menos una vez a la semana, pero no cada día": 9.26,
+        "Al menos una vez al año, pero no cada mes": 0.2,
+        "Al menos una vez al mes, pero no cada semana": 0.26,
+        "No utiliza internet": 68.95,
+        "Todos los días de la semana": 21.33
+      },
+      {
+        "cod_dpto": 8,
+        "Al menos una vez a la semana, pero no cada día": 8.31,
+        "Al menos una vez al año, pero no cada mes": 0.32,
+        "Al menos una vez al mes, pero no cada semana": 0.71,
+        "No utiliza internet": 66.23,
+        "Todos los días de la semana": 24.42
+      },
+      {
+        "cod_dpto": 11,
+        "Al menos una vez a la semana, pero no cada día": 11.27,
+        "Al menos una vez al año, pero no cada mes": 0.22,
+        "Al menos una vez al mes, pero no cada semana": 0.6,
+        "No utiliza internet": 53.36,
+        "Todos los días de la semana": 34.55
+      },
+      {
+        "cod_dpto": 13,
+        "Al menos una vez a la semana, pero no cada día": 9.66,
+        "Al menos una vez al año, pero no cada mes": 0.45,
+        "Al menos una vez al mes, pero no cada semana": 1.23,
+        "No utiliza internet": 75.7,
+        "Todos los días de la semana": 12.96
+      },
+      {
+        "cod_dpto": 15,
+        "Al menos una vez a la semana, pero no cada día": 6.66,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.82,
+        "No utiliza internet": 76.91,
+        "Todos los días de la semana": 15.61
+      },
+      {
+        "cod_dpto": 17,
+        "Al menos una vez a la semana, pero no cada día": 8.22,
+        "Al menos una vez al año, pero no cada mes": 0.07,
+        "Al menos una vez al mes, pero no cada semana": 0.84,
+        "No utiliza internet": 61.81,
+        "Todos los días de la semana": 29.06
+      },
+      {
+        "cod_dpto": 18,
+        "Al menos una vez a la semana, pero no cada día": 11.83,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.52,
+        "No utiliza internet": 75.73,
+        "Todos los días de la semana": 11.93
+      },
+      {
+        "cod_dpto": 19,
+        "Al menos una vez a la semana, pero no cada día": 8.65,
+        "Al menos una vez al año, pero no cada mes": 0.07,
+        "Al menos una vez al mes, pero no cada semana": 0.5,
+        "No utiliza internet": 77.3,
+        "Todos los días de la semana": 13.48
+      },
+      {
+        "cod_dpto": 20,
+        "Al menos una vez a la semana, pero no cada día": 7.36,
+        "Al menos una vez al año, pero no cada mes": 0.1,
+        "Al menos una vez al mes, pero no cada semana": 0.48,
+        "No utiliza internet": 76.48,
+        "Todos los días de la semana": 15.59
+      },
+      {
+        "cod_dpto": 23,
+        "Al menos una vez a la semana, pero no cada día": 4.42,
+        "Al menos una vez al año, pero no cada mes": 0.24,
+        "Al menos una vez al mes, pero no cada semana": 0.47,
+        "No utiliza internet": 81.6,
+        "Todos los días de la semana": 13.27
+      },
+      {
+        "cod_dpto": 25,
+        "Al menos una vez a la semana, pero no cada día": 8.81,
+        "Al menos una vez al año, pero no cada mes": 0.41,
+        "Al menos una vez al mes, pero no cada semana": 1.5,
+        "No utiliza internet": 64.46,
+        "Todos los días de la semana": 24.82
+      },
+      {
+        "cod_dpto": 27,
+        "Al menos una vez a la semana, pero no cada día": 6.94,
+        "Al menos una vez al año, pero no cada mes": 0.24,
+        "Al menos una vez al mes, pero no cada semana": 1.1,
+        "No utiliza internet": 77.1,
+        "Todos los días de la semana": 14.62
+      },
+      {
+        "cod_dpto": 41,
+        "Al menos una vez a la semana, pero no cada día": 9.85,
+        "Al menos una vez al año, pero no cada mes": 0.16,
+        "Al menos una vez al mes, pero no cada semana": 0.32,
+        "No utiliza internet": 68.82,
+        "Todos los días de la semana": 20.84
+      },
+      {
+        "cod_dpto": 44,
+        "Al menos una vez a la semana, pero no cada día": 4.93,
+        "Al menos una vez al año, pero no cada mes": 0.22,
+        "Al menos una vez al mes, pero no cada semana": 0.11,
+        "No utiliza internet": 81.19,
+        "Todos los días de la semana": 13.55
+      },
+      {
+        "cod_dpto": 47,
+        "Al menos una vez a la semana, pero no cada día": 8.36,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.46,
+        "No utiliza internet": 75.77,
+        "Todos los días de la semana": 15.41
+      },
+      {
+        "cod_dpto": 50,
+        "Al menos una vez a la semana, pero no cada día": 6.93,
+        "Al menos una vez al año, pero no cada mes": 0.28,
+        "Al menos una vez al mes, pero no cada semana": 1.02,
+        "No utiliza internet": 50.92,
+        "Todos los días de la semana": 40.85
+      },
+      {
+        "cod_dpto": 52,
+        "Al menos una vez a la semana, pero no cada día": 6.07,
+        "Al menos una vez al año, pero no cada mes": 0.07,
+        "Al menos una vez al mes, pero no cada semana": 0.56,
+        "No utiliza internet": 79.03,
+        "Todos los días de la semana": 14.27
+      },
+      {
+        "cod_dpto": 54,
+        "Al menos una vez a la semana, pero no cada día": 10.03,
+        "Al menos una vez al año, pero no cada mes": 0.08,
+        "Al menos una vez al mes, pero no cada semana": 0.67,
+        "No utiliza internet": 69.31,
+        "Todos los días de la semana": 19.9
+      },
+      {
+        "cod_dpto": 63,
+        "Al menos una vez a la semana, pero no cada día": 8.29,
+        "Al menos una vez al año, pero no cada mes": 0.06,
+        "Al menos una vez al mes, pero no cada semana": 0.28,
+        "No utiliza internet": 53.55,
+        "Todos los días de la semana": 37.82
+      },
+      {
+        "cod_dpto": 66,
+        "Al menos una vez a la semana, pero no cada día": 10.04,
+        "Al menos una vez al año, pero no cada mes": 0.06,
+        "Al menos una vez al mes, pero no cada semana": 1.42,
+        "No utiliza internet": 62.49,
+        "Todos los días de la semana": 25.99
+      },
+      {
+        "cod_dpto": 68,
+        "Al menos una vez a la semana, pero no cada día": 6.53,
+        "Al menos una vez al año, pero no cada mes": 0.07,
+        "Al menos una vez al mes, pero no cada semana": 0.21,
+        "No utiliza internet": 66.99,
+        "Todos los días de la semana": 26.19
+      },
+      {
+        "cod_dpto": 70,
+        "Al menos una vez a la semana, pero no cada día": 6.91,
+        "Al menos una vez al año, pero no cada mes": 0.07,
+        "Al menos una vez al mes, pero no cada semana": 0.14,
+        "No utiliza internet": 81.02,
+        "Todos los días de la semana": 11.86
+      },
+      {
+        "cod_dpto": 73,
+        "Al menos una vez a la semana, pero no cada día": 9.68,
+        "Al menos una vez al año, pero no cada mes": 0.27,
+        "Al menos una vez al mes, pero no cada semana": 1.02,
+        "No utiliza internet": 69.68,
+        "Todos los días de la semana": 19.35
+      },
+      {
+        "cod_dpto": 76,
+        "Al menos una vez a la semana, pero no cada día": 8.72,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 1.17,
+        "No utiliza internet": 54.98,
+        "Todos los días de la semana": 35.12
+      },
+      {
+        "cod_dpto": 81,
+        "Al menos una vez a la semana, pero no cada día": 6.04,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.14,
+        "No utiliza internet": 76.95,
+        "Todos los días de la semana": 16.87
+      },
+      {
+        "cod_dpto": 85,
+        "Al menos una vez a la semana, pero no cada día": 12.1,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 1.03,
+        "No utiliza internet": 70.14,
+        "Todos los días de la semana": 16.73
+      },
+      {
+        "cod_dpto": 86,
+        "Al menos una vez a la semana, pero no cada día": 5.26,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.88,
+        "No utiliza internet": 83.33,
+        "Todos los días de la semana": 10.53
+      },
+      {
+        "cod_dpto": 88,
+        "Al menos una vez a la semana, pero no cada día": 6.35,
+        "Al menos una vez al año, pero no cada mes": 0.2,
+        "Al menos una vez al mes, pero no cada semana": 1.59,
+        "No utiliza internet": 52.38,
+        "Todos los días de la semana": 39.48
+      },
+      {
+        "cod_dpto": 91,
+        "Al menos una vez a la semana, pero no cada día": 6.65,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.37,
+        "No utiliza internet": 80.04,
+        "Todos los días de la semana": 12.94
+      },
+      {
+        "cod_dpto": 94,
+        "Al menos una vez a la semana, pero no cada día": 4.19,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.52,
+        "No utiliza internet": 81.68,
+        "Todos los días de la semana": 13.61
+      },
+      {
+        "cod_dpto": 95,
+        "Al menos una vez a la semana, pero no cada día": 5.15,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 1.03,
+        "No utiliza internet": 78.12,
+        "Todos los días de la semana": 15.7
+      },
+      {
+        "cod_dpto": 97,
+        "Al menos una vez a la semana, pero no cada día": 3.21,
+        "Al menos una vez al año, pero no cada mes": 0.2,
+        "Al menos una vez al mes, pero no cada semana": 0,
+        "No utiliza internet": 86.14,
+        "Todos los días de la semana": 10.44
+      },
+      {
+        "cod_dpto": 99,
+        "Al menos una vez a la semana, pero no cada día": 3.88,
+        "Al menos una vez al año, pero no cada mes": 0,
+        "Al menos una vez al mes, pero no cada semana": 0.19,
+        "No utiliza internet": 86.05,
+        "Todos los días de la semana": 9.88
+      }
+    ],
+    "uso_dispositivos": [
+      {
+        "cod_dpto": 5,
+        "Computador": 8.66,
+        "Portátil": 9.16,
+        "Consolas": 0,
+        "Tablet": 2.23,
+        "Celular": 72.9,
+        "Smart TV": 7.05
+      },
+      {
+        "cod_dpto": 8,
+        "Computador": 7.8,
+        "Portátil": 11.56,
+        "Consolas": 0,
+        "Tablet": 0.29,
+        "Celular": 74.71,
+        "Smart TV": 5.64
+      },
+      {
+        "cod_dpto": 11,
+        "Computador": 13.54,
+        "Portátil": 15.31,
+        "Consolas": 0,
+        "Tablet": 3.34,
+        "Celular": 59.67,
+        "Smart TV": 8.15
+      },
+      {
+        "cod_dpto": 13,
+        "Computador": 10.77,
+        "Portátil": 7.25,
+        "Consolas": 0,
+        "Tablet": 0.41,
+        "Celular": 74.95,
+        "Smart TV": 6.63
+      },
+      {
+        "cod_dpto": 15,
+        "Computador": 5.83,
+        "Portátil": 12.78,
+        "Consolas": 0,
+        "Tablet": 0.94,
+        "Celular": 78.76,
+        "Smart TV": 1.69
+      },
+      {
+        "cod_dpto": 17,
+        "Computador": 6.33,
+        "Portátil": 7.7,
+        "Consolas": 0,
+        "Tablet": 2.2,
+        "Celular": 74.55,
+        "Smart TV": 9.22
+      },
+      {
+        "cod_dpto": 18,
+        "Computador": 5.13,
+        "Portátil": 6.96,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 85.71,
+        "Smart TV": 2.2
+      },
+      {
+        "cod_dpto": 19,
+        "Computador": 10.14,
+        "Portátil": 10.6,
+        "Consolas": 0,
+        "Tablet": 0.92,
+        "Celular": 70.97,
+        "Smart TV": 7.37
+      },
+      {
+        "cod_dpto": 20,
+        "Computador": 6.6,
+        "Portátil": 7.64,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 83.33,
+        "Smart TV": 2.43
+      },
+      {
+        "cod_dpto": 23,
+        "Computador": 7.35,
+        "Portátil": 12.14,
+        "Consolas": 0.32,
+        "Tablet": 0.32,
+        "Celular": 73.48,
+        "Smart TV": 6.39
+      },
+      {
+        "cod_dpto": 25,
+        "Computador": 7.45,
+        "Portátil": 8.14,
+        "Consolas": 0.11,
+        "Tablet": 1.72,
+        "Celular": 77.41,
+        "Smart TV": 5.16
+      },
+      {
+        "cod_dpto": 27,
+        "Computador": 11.24,
+        "Portátil": 8.84,
+        "Consolas": 0,
+        "Tablet": 0.4,
+        "Celular": 74.3,
+        "Smart TV": 5.22
+      },
+      {
+        "cod_dpto": 41,
+        "Computador": 5.41,
+        "Portátil": 7.14,
+        "Consolas": 0,
+        "Tablet": 0.87,
+        "Celular": 82.9,
+        "Smart TV": 3.68
+      },
+      {
+        "cod_dpto": 44,
+        "Computador": 11.72,
+        "Portátil": 10.88,
+        "Consolas": 0.42,
+        "Tablet": 0,
+        "Celular": 69.46,
+        "Smart TV": 7.53
+      },
+      {
+        "cod_dpto": 47,
+        "Computador": 8.04,
+        "Portátil": 10.12,
+        "Consolas": 0,
+        "Tablet": 1.49,
+        "Celular": 77.08,
+        "Smart TV": 3.27
+      },
+      {
+        "cod_dpto": 50,
+        "Computador": 4.59,
+        "Portátil": 5.25,
+        "Consolas": 0,
+        "Tablet": 1.15,
+        "Celular": 86.56,
+        "Smart TV": 2.46
+      },
+      {
+        "cod_dpto": 52,
+        "Computador": 14.99,
+        "Portátil": 13.76,
+        "Consolas": 0.21,
+        "Tablet": 2.67,
+        "Celular": 59.14,
+        "Smart TV": 9.24
+      },
+      {
+        "cod_dpto": 54,
+        "Computador": 8.9,
+        "Portátil": 7.53,
+        "Consolas": 0,
+        "Tablet": 0.46,
+        "Celular": 82.42,
+        "Smart TV": 0.68
+      },
+      {
+        "cod_dpto": 63,
+        "Computador": 6.87,
+        "Portátil": 10.63,
+        "Consolas": 0,
+        "Tablet": 2.66,
+        "Celular": 74.06,
+        "Smart TV": 5.77
+      },
+      {
+        "cod_dpto": 66,
+        "Computador": 10.35,
+        "Portátil": 11.41,
+        "Consolas": 0.24,
+        "Tablet": 1.29,
+        "Celular": 72.59,
+        "Smart TV": 4.12
+      },
+      {
+        "cod_dpto": 68,
+        "Computador": 8.19,
+        "Portátil": 9.36,
+        "Consolas": 0,
+        "Tablet": 1.34,
+        "Celular": 77.59,
+        "Smart TV": 3.51
+      },
+      {
+        "cod_dpto": 70,
+        "Computador": 7.06,
+        "Portátil": 12.15,
+        "Consolas": 0,
+        "Tablet": 0.28,
+        "Celular": 76.27,
+        "Smart TV": 4.24
+      },
+      {
+        "cod_dpto": 73,
+        "Computador": 9.23,
+        "Portátil": 7.24,
+        "Consolas": 0.14,
+        "Tablet": 0.57,
+        "Celular": 79.69,
+        "Smart TV": 3.13
+      },
+      {
+        "cod_dpto": 76,
+        "Computador": 7.09,
+        "Portátil": 6.49,
+        "Consolas": 0,
+        "Tablet": 1.6,
+        "Celular": 79.72,
+        "Smart TV": 5.09
+      },
+      {
+        "cod_dpto": 81,
+        "Computador": 6.22,
+        "Portátil": 5.18,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 86.53,
+        "Smart TV": 2.07
+      },
+      {
+        "cod_dpto": 85,
+        "Computador": 10.63,
+        "Portátil": 9.97,
+        "Consolas": 0,
+        "Tablet": 0.66,
+        "Celular": 76.74,
+        "Smart TV": 1.99
+      },
+      {
+        "cod_dpto": 86,
+        "Computador": 12.27,
+        "Portátil": 7.98,
+        "Consolas": 0.61,
+        "Tablet": 0,
+        "Celular": 77.91,
+        "Smart TV": 1.23
+      },
+      {
+        "cod_dpto": 88,
+        "Computador": 10.43,
+        "Portátil": 11.04,
+        "Consolas": 0.31,
+        "Tablet": 0.92,
+        "Celular": 70.25,
+        "Smart TV": 7.06
+      },
+      {
+        "cod_dpto": 91,
+        "Computador": 16.05,
+        "Portátil": 17.9,
+        "Consolas": 0.62,
+        "Tablet": 0.62,
+        "Celular": 64.81,
+        "Smart TV": 0
+      },
+      {
+        "cod_dpto": 94,
+        "Computador": 6.02,
+        "Portátil": 13.25,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 80.72,
+        "Smart TV": 0
+      },
+      {
+        "cod_dpto": 95,
+        "Computador": 6.13,
+        "Portátil": 10.85,
+        "Consolas": 0.47,
+        "Tablet": 0.94,
+        "Celular": 79.25,
+        "Smart TV": 2.36
+      },
+      {
+        "cod_dpto": 97,
+        "Computador": 12,
+        "Portátil": 24,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 64,
+        "Smart TV": 0
+      },
+      {
+        "cod_dpto": 99,
+        "Computador": 11.24,
+        "Portátil": 7.87,
+        "Consolas": 0,
+        "Tablet": 0,
+        "Celular": 79.78,
+        "Smart TV": 1.12
+      }
+    ]
+  },
+  "ingresos": {
+    "data": [
+      {
+        "name": "Adultos",
+        "Honorarios profesionales": 2743128.123,
+        "Ingresos o comisiones": 1024136.697,
+        "Salarios u honorarios": 2037980.705
+      },
+      {
+        "name": "Jóvenes",
+        "Honorarios profesionales": 1899384.704,
+        "Ingresos o comisiones": 765181.5826,
+        "Salarios u honorarios": 1008744.472
+      },
+      {
+        "name": "Personas mayores",
+        "Honorarios profesionales": 2938404.93,
+        "Ingresos o comisiones": 837773.09,
+        "Salarios u honorarios": 1504540.08
+      }
+    ],
+    "legend": [
+      {
+        "key": "Honorarios profesionales",
+        "fill": "#1D5556"
+      },
+      {
+        "key": "Ingresos o comisiones",
+        "fill": "#FAAA8D"
+      },
+      {
+        "key": "Salarios u honorarios",
+        "fill": "#B6174B"
+      }
+    ]
+  },
+  "capacidades": [
+    {
+      "id": "Entender, aprender, recordar o tomar decisiones por sí mismo(a)",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 210
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 592
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 2228
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 36568
+        }
+      ]
+    },
+    {
+      "id": "Oír, aun usando audífonos medicados",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 103
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 1266
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 4246
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 33983
+        }
+      ]
+    },
+    {
+      "id": "Agarrar o mover objetos con las manos",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 119
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 966
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 3673
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 34840
+        }
+      ]
+    },
+    {
+      "id": "Ver, aun usando lentes o gafas",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 178
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 2260
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 11053
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 26107
+        }
+      ]
+    },
+    {
+      "id": "Mover el cuerpo, caminar o subir y bajar escaleras",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 399
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 2365
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 6930
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 29904
+        }
+      ]
+    },
+    {
+      "id": "Comer, vestirse o bañarse por sí mismo(a)",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 327
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 630
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 2025
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 36616
+        }
+      ]
+    },
+    {
+      "id": "Relacionarse o interactuar con las demás personas",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 171
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 339
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 1214
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 37874
+        }
+      ]
+    },
+    {
+      "id": "Hablar o conversar",
+      "data": [
+        {
+          "x": "No puede hacerlo",
+          "y": 117
+        },
+        {
+          "x": "Sí, con mucha dificultad",
+          "y": 426
+        },
+        {
+          "x": "Sí, con alguna dificultad",
+          "y": 1644
+        },
+        {
+          "x": "Sin dificultad",
+          "y": 37411
+        }
+      ]
+    }
+  ],
+  "vivienda_composicion": {
+    "nodes": [
+      {
+        "id": "Hombre",
+        "nodeColor": "hsl(161, 70%, 50%)"
+      },
+      {
+        "id": "Mujer",
+        "nodeColor": "hsl(72, 70%, 50%)"
+      },
+      {
+        "id": "Apartamento",
+        "nodeColor": "hsl(215, 70%, 50%)"
+      },
+      {
+        "id": "Casa",
+        "nodeColor": "hsl(282, 70%, 50%)"
+      },
+      {
+        "id": "Cuarto (s) en inquilinato",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      },
+      {
+        "id": "Cuarto (s) en otro tipo de estructura",
+        "nodeColor": "hsl(49, 70%, 50%)"
+      },
+      {
+        "id": "Otra vivienda",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      },
+      {
+        "id": "Vivienda indígena",
+        "nodeColor": "hsl(49, 70%, 50%)"
+      },
+      {
+        "id": "En arriendo subarriendo",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      },
+      {
+        "id": "En usufructo",
+        "nodeColor": "hsl(49, 70%, 50%)"
+      },
+      {
+        "id": "Otra",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      },
+      {
+        "id": "Posesión sin título",
+        "nodeColor": "hsl(49, 70%, 50%)"
+      },
+      {
+        "id": "Propia, la están pagando",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      },
+      {
+        "id": "Propia, totalmente pagada",
+        "nodeColor": "hsl(49, 70%, 50%)"
+      },
+      {
+        "id": "Propiedad colectiva",
+        "nodeColor": "hsl(177, 70%, 50%)"
+      }
+    ],
+    "links": [
+      {
+        "source": "Hombre",
+        "target": "Apartamento",
+        "value": 21075
+      },
+      {
+        "source": "Hombre",
+        "target": "Casa",
+        "value": 38823
+      },
+      {
+        "source": "Hombre",
+        "target": "Cuarto (s) en inquilinato",
+        "value": 836
+      },
+      {
+        "source": "Hombre",
+        "target": "Cuarto (s) en otro tipo de estructura",
+        "value": 219
+      },
+      {
+        "source": "Hombre",
+        "target": "Otra vivienda",
+        "value": 14
+      },
+      {
+        "source": "Hombre",
+        "target": "Vivienda indígena",
+        "value": 146
+      },
+      {
+        "source": "Mujer",
+        "target": "Apartamento",
+        "value": 30372
+      },
+      {
+        "source": "Mujer",
+        "target": "Casa",
+        "value": 49128
+      },
+      {
+        "source": "Mujer",
+        "target": "Cuarto (s) en inquilinato",
+        "value": 453
+      },
+      {
+        "source": "Mujer",
+        "target": "Cuarto (s) en otro tipo de estructura",
+        "value": 106
+      },
+      {
+        "source": "Mujer",
+        "target": "Otra vivienda",
+        "value": 5
+      },
+      {
+        "source": "Mujer",
+        "target": "Vivienda indígena",
+        "value": 171
+      },
+      {
+        "source": "Apartamento",
+        "target": "En arriendo subarriendo",
+        "value": 16135
+      },
+      {
+        "source": "Apartamento",
+        "target": "En usufructo",
+        "value": 7536
+      },
+      {
+        "source": "Apartamento",
+        "target": "Otra",
+        "value": 337
+      },
+      {
+        "source": "Apartamento",
+        "target": "Posesión sin título",
+        "value": 681
+      },
+      {
+        "source": "Apartamento",
+        "target": "Propia, la están pagando",
+        "value": 1868
+      },
+      {
+        "source": "Apartamento",
+        "target": "Propia, totalmente pagada",
+        "value": 23690
+      },
+      {
+        "source": "Apartamento",
+        "target": "Propiedad colectiva",
+        "value": 1200
+      },
+      {
+        "source": "Casa",
+        "target": "En arriendo subarriendo",
+        "value": 11415
+      },
+      {
+        "source": "Casa",
+        "target": "En usufructo",
+        "value": 16662
+      },
+      {
+        "source": "Casa",
+        "target": "Otra",
+        "value": 417
+      },
+      {
+        "source": "Casa",
+        "target": "Posesión sin título",
+        "value": 4671
+      },
+      {
+        "source": "Casa",
+        "target": "Propia, la están pagando",
+        "value": 1865
+      },
+      {
+        "source": "Casa",
+        "target": "Propia, totalmente pagada",
+        "value": 50415
+      },
+      {
+        "source": "Casa",
+        "target": "Propiedad colectiva",
+        "value": 2506
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "En arriendo subarriendo",
+        "value": 866
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "En usufructo",
+        "value": 242
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "Otra",
+        "value": 2
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "Posesión sin título",
+        "value": 17
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "Propia, totalmente pagada",
+        "value": 147
+      },
+      {
+        "source": "Cuarto (s) en inquilinato",
+        "target": "Propiedad colectiva",
+        "value": 15
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "En arriendo subarriendo",
+        "value": 99
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "En usufructo",
+        "value": 120
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "Otra",
+        "value": 5
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "Posesión sin título",
+        "value": 31
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "Propia, la están pagando",
+        "value": 2
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "Propia, totalmente pagada",
+        "value": 57
+      },
+      {
+        "source": "Cuarto (s) en otro tipo de estructura",
+        "target": "Propiedad colectiva",
+        "value": 11
+      },
+      {
+        "source": "Otra vivienda",
+        "target": "En arriendo subarriendo",
+        "value": 3
+      },
+      {
+        "source": "Otra vivienda",
+        "target": "En usufructo",
+        "value": 1
+      },
+      {
+        "source": "Otra vivienda",
+        "target": "Posesión sin título",
+        "value": 9
+      },
+      {
+        "source": "Otra vivienda",
+        "target": "Propia, totalmente pagada",
+        "value": 6
+      },
+      {
+        "source": "Vivienda indígena",
+        "target": "En arriendo subarriendo",
+        "value": 2
+      },
+      {
+        "source": "Vivienda indígena",
+        "target": "En usufructo",
+        "value": 9
+      },
+      {
+        "source": "Vivienda indígena",
+        "target": "Posesión sin título",
+        "value": 153
+      },
+      {
+        "source": "Vivienda indígena",
+        "target": "Propia, totalmente pagada",
+        "value": 49
+      },
+      {
+        "source": "Vivienda indígena",
+        "target": "Propiedad colectiva",
+        "value": 104
+      }
+    ]
+  },
+  "nivel_educativo": {
+    "data": [
+      {
+        "name": "Doctorado",
+        "Adultos": 705,
+        "Jóvenes": 9,
+        "Personas mayores": 204
+      },
+      {
+        "name": "Maestría",
+        "Adultos": 5854,
+        "Jóvenes": 221,
+        "Personas mayores": 1056
+      },
+      {
+        "name": "Especialización",
+        "Adultos": 12749,
+        "Jóvenes": 701,
+        "Personas mayores": 3737
+      },
+      {
+        "name": "Universitaria",
+        "Adultos": 56560,
+        "Jóvenes": 36467,
+        "Personas mayores": 11320
+      },
+      {
+        "name": "Tecnológica",
+        "Adultos": 14219,
+        "Jóvenes": 6294,
+        "Personas mayores": 1864
+      },
+      {
+        "name": "Técnica profesional",
+        "Adultos": 34424,
+        "Jóvenes": 13994,
+        "Personas mayores": 4394
+      },
+      {
+        "name": "Media técnica (Bachillerato técnico)",
+        "Adultos": 8229,
+        "Jóvenes": 5844,
+        "Personas mayores": 1338
+      },
+      {
+        "name": "Media académica (Bachillerato clásico)",
+        "Adultos": 116100,
+        "Jóvenes": 61802,
+        "Personas mayores": 22012
+      },
+      {
+        "name": "Básica secundaria (6o - 9o)",
+        "Adultos": 40600,
+        "Jóvenes": 45929,
+        "Personas mayores": 15902
+      },
+      {
+        "name": "Básica primaria (1o - 5o)",
+        "Adultos": 66602,
+        "Jóvenes": 7215,
+        "Personas mayores": 62162
+      },
+      {
+        "name": "Normalista",
+        "Adultos": 613,
+        "Jóvenes": 281,
+        "Personas mayores": 537
+      },
+      {
+        "name": "Preescolar",
+        "Adultos": 33,
+        "Jóvenes": 22,
+        "Personas mayores": 22
+      }
+    ],
+    "legend": [
+      {
+        "key": "Jóvenes",
+        "fill": "#1D5556"
+      },
+      {
+        "key": "Adultos",
+        "fill": "#FAAA8D"
+      },
+      {
+        "key": "Personas mayores",
+        "fill": "#B6174B"
+      }
+    ]
+  },
+  "modalidad_transporte": {
+    "data": [
+      {
+        "name": "A Pie < 15 Min",
+        "Adultos (27-59 años)": 5064,
+        "Jóvenes (14-26 años)": 4808,
+        "Personas mayores (60 años o más)": 2520
+      },
+      {
+        "name": "A Pie > 15 Min",
+        "Adultos (27-59 años)": 9542,
+        "Jóvenes (14-26 años)": 9877,
+        "Personas mayores (60 años o más)": 5513
+      },
+      {
+        "name": "Auto",
+        "Adultos (27-59 años)": 7943,
+        "Jóvenes (14-26 años)": 1756,
+        "Personas mayores (60 años o más)": 2887
+      },
+      {
+        "name": "Bicicleta",
+        "Adultos (27-59 años)": 3653,
+        "Jóvenes (14-26 años)": 1840,
+        "Personas mayores (60 años o más)": 611
+      },
+      {
+        "name": "Especial Ocupado",
+        "Adultos (27-59 años)": 1098,
+        "Jóvenes (14-26 años)": 640,
+        "Personas mayores (60 años o más)": 244
+      },
+      {
+        "name": "Informal",
+        "Adultos (27-59 años)": 401,
+        "Jóvenes (14-26 años)": 322,
+        "Personas mayores (60 años o más)": 144
+      },
+      {
+        "name": "Moto",
+        "Adultos (27-59 años)": 4306,
+        "Jóvenes (14-26 años)": 1745,
+        "Personas mayores (60 años o más)": 196
+      },
+      {
+        "name": "Otro",
+        "Adultos (27-59 años)": 226,
+        "Jóvenes (14-26 años)": 48,
+        "Personas mayores (60 años o más)": 58
+      },
+      {
+        "name": "Taxi Ocupado",
+        "Adultos (27-59 años)": 1483,
+        "Jóvenes (14-26 años)": 456,
+        "Personas mayores (60 años o más)": 1328
+      },
+      {
+        "name": "Transporte Escolar",
+        "Adultos (27-59 años)": 54,
+        "Jóvenes (14-26 años)": 1991,
+        "Personas mayores (60 años o más)": 13
+      },
+      {
+        "name": "Transporte Público",
+        "Adultos (27-59 años)": 16073,
+        "Jóvenes (14-26 años)": 8550,
+        "Personas mayores (60 años o más)": 4784
+      }
+    ],
+    "legend": [
+      {
+        "key": "Jóvenes (14-26 años)",
+        "fill": "#1D5556"
+      },
+      {
+        "key": "Adultos (27-59 años)",
+        "fill": "#FAAA8D"
+      },
+      {
+        "key": "Personas mayores (60 años o más)",
+        "fill": "#B6174B"
+      }
+    ]
+  }
 }

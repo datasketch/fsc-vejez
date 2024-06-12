@@ -55,13 +55,15 @@ export default function Page() {
       <div className="pt-16 pb-16 lg:pb-[600px] relative">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
-            <div className="col-span-4 lg:col-start-4 lg:col-end-10 order-1">
-              <h1 className="text-[49px] lg:text-5xl xl:text-[61px] lg:font-semibold leading-none">
-                +60{" "}
-                <span className="-mt-2 lg:mt-0 block lg:inline-block text-[39px] lg:text-5xl xl:text-[61px] italic text-dark-slate-gray">
-                  Datos plateados
-                </span>
-              </h1>
+            <div className="col-span-4 lg:col-span-12 order-1">
+              <div className="text-center">
+                <h1 className="text-[49px] lg:text-5xl xl:text-[61px] lg:font-semibold leading-none">
+                  +60{" "}
+                  <span className="-mt-2 lg:mt-0 block lg:inline-block text-[39px] lg:text-5xl xl:text-[61px] italic text-dark-slate-gray font-normal">
+                    Datos plateados
+                  </span>
+                </h1>
+              </div>
             </div>
             <div className="mt-14 lg:mt-40 xl:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
               <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
@@ -307,15 +309,13 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El mapa muestra la distribución geográfica del acceso a internet
-                por departamento en Colombia, esto con base en los datos
-                suministrados por la Encuesta Nacional de Calidad de Vida 2022
-                sobre frecuencia en el uso de internet desde cualquier lugar y
-                dispositivo. El mapa usa una escala de colores para representar
-                los rangos de cobertura. los departamentos en tonos más oscuros
-                tienen una mayor proporción de hogares con acceso a internet,
-                mientras que los departamentos en tonos más claros tienen una
-                menor proporción.
+                El mapa muestra la frecuencia de utilización de internet a cargo
+                de personas mayores en los departamentos de Colombia, de acuerdo
+                con la Encuesta Nacional de Calidad de Vida 2022. El mapa usa
+                una escala de colores para representar los rangos de frecuencia.
+                Los departamentos en tonos más oscuros tienen más frecuencia de
+                uso de internet, mientras que los departamentos en tonos más
+                claros tienen una menor frecuencia.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -351,13 +351,12 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El gráfico representa proporcionalmente los tipos de ingresos
-                que reciben las personas mayores junto con las fuentes de las
-                cuales provienen
+                El gráfico representa las proporciones de las fuentes de
+                ingresos que reciben las personas mayores.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="La visualización es un gráfico de waffle compuesto por una cuadrícula de celdas. Las celdas están coloreadas en diferentes tonos para representar distintos valores o categorías.">
                 <MultipleBarChart
                   data={data.ingresos.data}
                   legend={data.ingresos.legend}
@@ -380,16 +379,15 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El gráfico presentado es un gráfico de barras horizontal apilado
-                que ilustra el uso de productos financieros en las personas de
-                60 años o más. Los productos incluidos son: Cuenta corriente,
-                Cuenta de ahorros, CDT, Préstamo para compra de vivienda,
-                Préstamo para compra de vehículo, Préstamo de libre inversión,
-                Tarjeta de crédito, Otro, Ninguno.
+                El gráfico de barras apilado ilustra el uso de productos
+                financieros en las personas de 60 años o más. Los productos
+                incluidos son cuenta corriente, cuenta de ahorros, CDT, préstamo
+                para compra de vivienda, préstamo para compra de vehículo,
+                préstamo de libre inversión, tarjeta de crédito, otro o ninguno.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="La gráfica de barra apilada tiene la forma de un billete de $50.000, con la efigie del escritor Gabriel García Márquez, representando a una persona mayor. Cada barra tiene un tamaño y color diferente, correspondiente a los productos financieros que usan las personas mayores con su respectivo porcentaje de uso.">
                 <Image
                   className="mx-auto"
                   width={822}
@@ -432,20 +430,14 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                La gráfica describe el nivel de desarrollo que tienen las
-                personas mayores para capacidades como oír aun usando audífonos
-                medicados. hablar o conversar, ver aun usando lentes o gafas,
-                mover el cuerpo, caminar o subir y bajar escaleras, agarrar o
-                mover objetos con las manos, entender, aprender, recordar o
-                tomar decisiones por sí mismo(a), comer, vestirse o bañarse por
-                sí mismo(a), relacionarse o interactuar con las demás personas.
-                La gráfica además de hacer un conteo por categoría, cuenta con
-                una escala para indicar en qué medida se posibilita o se
-                dificulta llevar a cabo cada actividad.
+                La gráfica muestra el nivel de dificultad que tienen las
+                personas mayores respecto a la satisfacción de sus necesidades
+                básicas en capacidades como oír, hablar, ver, mover el cuerpo,
+                entre otras.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="La gráfica de mapa de calor muestra el porcentaje de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan cuatro niveles de capacidad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el porcentaje de personas para cada nivel de capacidad: oír, aún usando audífonos medicados; hablar o conversar; ver, aun usando lentes o gafas; mover el cuerpo, caminar o subir y bajar escaleras, agarrar o mover objetos con las manos, entender, aprender, recordar o tomar decisiones por sí mismo(a); comer, vestirse o bañarse por sí mismo(a) y relacionarse o interactuar con las demás personas.">
                 <div className="h-[424px]">
                   <HeatMapHome data={data.capacidades} />
                 </div>
@@ -468,16 +460,20 @@ export default function Page() {
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El gráfico está dividido en tres secciones principales, la
-                primera corresponde a los grupos demográficos según sexo
-                (femenino, masculino). En la segunda sección se relacionan los
-                tipos de vivienda y la tercera sección se identifican las
-                condiciones de tenencia de vivienda. De esta manera se
-                relacionan en conjunto los datos según los respectivos cruces de
-                información.
+                primera corresponde a los grupos demográficos según el género.
+                En la segunda sección se relacionan los tipos de vivienda, y en
+                la tercera sección se identifican las condiciones de tenencia de
+                vivienda. De esta manera, se relacionan en conjunto los datos
+                según los respectivos cruces de información.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart
+                description={[
+                  "El diagrama de Sankey muestra la distribución entre el género de las personas, los tipos de vivienda en los que residen y las condiciones de tenencia de las viviendas. Los flujos están representados por bandas de colores que varían en grosor, indicando la cantidad de personas que pertenecen a cada categoría.",
+                  "Los hombres y las mujeres están ubicados en la primera columna del diagrama, los tipos de vivienda se encuentran en la segunda columna, mientras que la condición de tenencia corresponde a la tercera columna. Las bandas de colores fluyen desde las categorías de género hacia los diferentes tipos de vivienda y condiciones de tenencia, mostrando visualmente la distribución de la población según estas variables.",
+                ]}
+              >
                 <div className="h-[527.23px]">
                   <SankeyHome data={data.vivienda_composicion} />
                 </div>
@@ -519,14 +515,16 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                De acuerdo con la Gran Encuesta Integrada de Hogares - 2022,
-                esta es la proporción de personas mayores que afirmaron saber
-                leer y escribir, en comparación con las respuestas frente al
-                mismo aspecto de las poblaciones de 14 - 26 años y 27 - 59 años.
+                El treemap muestra la proporción de personas mayores que
+                afirmaron saber leer y escribir según la Gran Encuesta Integrada
+                de Hogares del 2022. Los jóvenes son quienes más respondieron de
+                manera afirmativa, seguidos de los adultos y las personas
+                mayores. 11.6% de las personas de 60 años o más reportaron no
+                saben leer ni escribir.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los ciclos vitales (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
                 <div className="h-[500px]">
                   <TreeMapHome
                     data={{
@@ -553,15 +551,13 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                De acuerdo con la Gran Encuesta Integrada de Hogares - 2023, de
-                las personas mayores reportadas en el archivo de datos.
-                &quot;x&quot; completaron la primaria, &quot;y&quot; culminaron
-                el bachillerato, &quot;z&quot; alcanzaron un título
-                universitario.
+                El archivo de datos de la Gran Encuesta Integrada de Hogares -
+                2023 muestra el número de personas que completaron la primaria,
+                el bachillerato o alcanzaron un título universitario.
               </p>
             </div>
             <div className="col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="El gráfico de barras apiladas muestra el número de personas por nivel educativo alcanzado en cada barra, dividida a su vez por colores que representan diferentes ciclos vitales: jóvenes, adultos y personas mayores. El tamaño del área ocupada por cada color indica la proporción de personas de un ciclo vital que tienen cierto nivel educativo alcanzado. El gráfico permite la comparación entre niveles educativos alcanzados y el número de personas por ciclo vital.">
                 <HorizontalStakedBarChart
                   data={data.nivel_educativo.data}
                   legend={data.nivel_educativo.legend}
@@ -604,20 +600,19 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                &quot;A Pie&quot; es la modalidad de transporte más utilizada
-                entre los diferentes grupos etarios. La siguiente modalidad más
-                popular varía según la edad, pero parece ser el &quot;Auto&quot;
-                para los grupos de 26 años o más. Es notable que ciertas
-                modalidades de transporte, como &quot;Cable&quot;,
-                &quot;Transporte Escolar&quot; y &quot;Patineta&quot;, son
-                utilizadas en menor medida comparativamente. Además, el grupo
-                etario de &quot;Más de 60&quot; parece utilizar menos el
-                transporte en comparación con otros grupos etarios, con barras
-                generalmente más cortas.
+                En la ciudad de Bogotá. “Transporte Público” es la modalidad de
+                transporte más utilizada entre los diferentes grupos etarios. La
+                siguiente modalidad más popular es “A Pie” en recorridos
+                superiores a 15 minutos. Es notable que ciertas modalidades de
+                transporte, como “Informal”, “Especial Ocupado” son utilizadas
+                en menor medida comparativamente. Además el grupo etario de
+                Personas mayores (60 años o más), hace un menor uso del
+                transporte en las diferentes categorías en comparación con otros
+                grupos etarios, con barras generalmente más cortas.
               </p>
             </div>
             <div className="col-span-12">
-              <WrapperChart description="lorem">
+              <WrapperChart description="La gráfica de barras apiladas muestra los modos de transporte utilizados en Bogotá, Colombia, por diferentes rangos etarios. Cada barra representa un modo de transporte, y los segmentos de colores dentro de las barras indican la distribución de usuarios por grupos de edad.">
                 <HorizontalBarGraph
                   data={data.modalidad_transporte.data}
                   legend={data.modalidad_transporte.legend}

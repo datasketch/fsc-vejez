@@ -4,7 +4,8 @@ import TabSections from "@/components/TabSections";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/servicios.json"
+import data from "@/data/servicios.json";
+import WrapperChart from "@/components/WrapperChart";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -28,12 +29,12 @@ export default function Page() {
                   </span>
                 </h1>
                 <p className="mt-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Iaculis at erat pellentesque adipiscing commodo elit at
-                  imperdiet. Arcu cursus euismod quis viverra nibh cras pulvinar
-                  mattis. Vitae semper quis lectus nulla at volutpat diam ut.
-                  Mattis aliquam faucibus purus in massa tempor nec feugiat.
+                  Esta sección destaca servicios digitales especializados para
+                  personas de 60 años o más. Aquí encontrará ejemplos e
+                  información sobre los avances en soluciones tecnológicas a
+                  nivel global dirigidos a este grupo demográfico. También
+                  incluye un recurso de búsqueda para explorar fácilmente estos
+                  servicios.
                 </p>
               </div>
             </div>
@@ -58,7 +59,7 @@ export default function Page() {
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Fuente y fecha de actualización
+                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
                   </p>
                 </div>
                 <div className="w-full max-w-[797px]">
@@ -87,13 +88,12 @@ export default function Page() {
             </div>
             <div className="mt-2 lg:mt-0 col-span-4 lg:col-start-6 lg:col-end-13 lg:-translate-x-5">
               <p>
-                Mientras que en Latinoamerica hay una especialización por los
-                servicios de E-Learning y la Telemedicina; España y Estados
-                Unidos han desarrollado servicios en realidad virtual,
-                inteligencia artificial, wearable, pero no cuentan con ningún
-                aporte desde la Telemedicina a diferencia de Latinoamerica. De
-                igual forma, la mayor cantidad de servicios de E-Learning en la
-                totalidad de países comparados registra en Estados Unidos.
+                Mientras que en Latinoamérica hay una especialización por los
+                servicios tecnológicos enfocados en brindar soluciones
+                educativas y de salud; España y Estados Unidos han diversificado
+                su oferta consiguiendo que las soluciones tecnológicas
+                involucren a las necesidades financieras de las personas
+                mayores.
               </p>
             </div>
             <div className="mt-10 col-span-4 lg:col-span-12">
@@ -103,14 +103,19 @@ export default function Page() {
                 </h3>
               </div>
               <div className="mt-6">
-                <StackedBarChart data={data.categoria_servicio_pais.data} legend={data.categoria_servicio_pais.legend} />
+                <WrapperChart description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
+                  <StackedBarChart
+                    data={data.categoria_servicio_pais.data}
+                    legend={data.categoria_servicio_pais.legend}
+                  />
+                </WrapperChart>
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Fuente y fecha de actualización
+                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
                   </p>
                 </div>
               </div>
@@ -125,35 +130,38 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 xl:mt-16 col-span-4 lg:col-start-6 lg:col-end-13 lg:-translate-x-5">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                La siguiente visualización destaca algunas palabras clave con
+                las que las empresas han descrito sus servicios tecnológicos.
+                Esta información está clasificada según el énfasis de los
+                servicios tecnológicos en cuanto a Salud y bienestar, Educación
+                e Ingresos y finanzas
               </p>
             </div>
             <div className="mt-8 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
-              <TabSections
-                sections={[
-                  {
-                    title: "Salud y bienestar",
-                    srcImage: "/images/servicios/words/service-health.png",
-                  },
-                  {
-                    title: "Educación",
-                    srcImage: "/images/servicios/words/service-education.png",
-                  },
-                  {
-                    title: "Ingresos y finanzas",
-                    srcImage: "/images/servicios/words/service-finance.png",
-                  }
-                ]}
-              />
+              <WrapperChart description="La siguiente visualización destaca algunas palabras clave con las que las empresas han descrito sus servicios tecnológicos. Esta información está clasificada según los tipos de servicios tecnológicos en cuanto a Salud y bienestar, Educación e Ingresos y finanzas.">
+                <TabSections
+                  sections={[
+                    {
+                      title: "Salud y bienestar",
+                      srcImage: "/images/servicios/words/service-health.png",
+                    },
+                    {
+                      title: "Educación",
+                      srcImage: "/images/servicios/words/service-education.png",
+                    },
+                    {
+                      title: "Ingresos y finanzas",
+                      srcImage: "/images/servicios/words/service-finance.png",
+                    },
+                  ]}
+                />
+              </WrapperChart>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Fuente y fecha de actualización
+                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
                   </p>
                 </div>
               </div>
