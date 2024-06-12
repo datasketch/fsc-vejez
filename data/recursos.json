@@ -74,8 +74,8 @@
       "abstract": "",
       "type": "form",
       "category": "health",
-      "tipo-de-publicacion": "Informe",
-      "image": "/images/recursos/biblioteca/índice de pobreza multidimensional.png",
+      "tipo-de-publicacion": "Informe",      
+      "image": "/images/recursos/biblioteca/Actualización de la línea base.png",
       "portada-drive": "Índice de pobreza multidimensional.png"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "Orden": 5,
-      "title": "Reporte Estudio Silvereconomía Colpensiones",
+      "title": "Revolución Silver el poder de una generación",
       "link": "https://web.archive.org/web/20231022085012/https://www.colpensiones.gov.co/info/rpm/media/Flash_Report_Estudio_Silvereconomia.pdf",
       "author": "Colpensiones, Universidad Javeriana",
       "year": 2022,
@@ -114,7 +114,7 @@
       "type": "report",
       "category": "finance",
       "tipo-de-publicacion": "Reporte",
-      "image": "/images/recursos/biblioteca/Nota Estadística_Personas mayores en Colombia.png",
+      "image": "/images/recursos/biblioteca/Colpensiones Revolcuión Silver.png",
       "portada-drive": "Nota Estad�stica_Personas mayores en Colombia.png"
     },
     {
@@ -126,8 +126,8 @@
       "abstract": "",
       "type": "form",
       "category": "finance",
-      "tipo-de-publicacion": "Informe",
-      "image": "/images/recursos/biblioteca/Colpensiones Revolcuión Silver.png",
+      "tipo-de-publicacion": "Informe",      
+      "image": "/images/recursos/biblioteca/Finanzas plateadas zona de no exclusión financiera.png",
       "portada-drive": "Colpensiones Revolcui�n Silver.png"
     },
     {
@@ -166,20 +166,20 @@
       "type": "form",
       "category": "health",
       "tipo-de-publicacion": "Informe",
-      "image": "/images/recursos/biblioteca/Actualización de la línea base.png",
+      "image": "/images/recursos/biblioteca/índice de pobreza multidimensional.png",
       "portada-drive": "Actualizaci�n de la l�nea base.png"
     },
     {
       "Orden": 8,
       "title": "Nota Estadística Personas Mayores en Colombia",
-      "link": "https://www.dane.gov.co/index.php/servicios-al-ciudadano/servicios-informacion/serie-notas-estadisticas",
+      "link": "https://www.dane.gov.co/files/investigaciones/notas-estadisticas/oct-2022-nota-estadistica-personas-mayores-en-colombia.pdf",
       "author": "Fundación Saldarriaga Concha, DANE",
       "year": 2021,
       "abstract": "",
       "type": "note",
       "category": "sociodemograph",
-      "tipo-de-publicacion": "Nota Estadística",
-      "image": "/images/recursos/biblioteca/Economía plateada_envejecimiento como oportunidad para la innovación y el emprendimiento y la inclusión.png",
+      "tipo-de-publicacion": "Nota Estadística",      
+      "image": "/images/recursos/biblioteca/Nota Estadística_Personas mayores en Colombia.png",
       "portada-drive": "Econom�a plateada_envejecimiento como oportunidad para la innovaci�n y el emprendimiento y la inclusi�n.png"
     },
     {
@@ -205,7 +205,7 @@
       "type": "form",
       "category": "finance",
       "tipo-de-publicacion": "Informe",
-      "image": "/images/recursos/biblioteca/Finanzas plateadas zona de no exclusión financiera.png",
+      "image": "/images/recursos/biblioteca/Economía plateada_envejecimiento como oportunidad para la innovación y el emprendimiento y la inclusión.png",
       "portada-drive": "Finanzas plateadas zona de no exclusi�n financiera.png"
     },
     {
@@ -224,7 +224,7 @@
     {
       "Orden": 13,
       "title": "El papel de la sociedad civil en el proceso de firma y ratificación de la Convención Interamericana sobre la Protección de los Derechos Humanos de las Personas Mayores (CIPDHPM). Un estudio de caso: Argentina, Bolivia, Chile, Costa Rica, El Salvador y Uruguay (Adjunto)",
-      "link": "https://www.helpagela.org/silo/files/estudio-sociedad-civil-y-convencion-interamericana.pdf",
+      "link": "https://web.archive.org/web/20220531175300/https://www.helpagela.org/silo/files/estudio-sociedad-civil-y-convencion-interamericana.pdf",
       "author": "Fundación Saldarriaga Concha, Help Age International",
       "year": 2018,
       "abstract": "",
@@ -519,7 +519,7 @@
       "secciones relevantes para personas mayores": "ARTÍCULO 106° (SN de Cuidado)\n ARTÍCULO 202°. FORTALECIMIENTO DE LAS COMISARÍAS DE FAMILIA.",
       "Contenido relevante para personas mayores": "ARTÍCULO 106°. [...]Sistema Nacional de Cuidado, creará, fortalecerá e integrará una oferta de servicios para la formación, el bienestar, la generación de ingresos, fortalecimiento de capacidades para personas cuidadoras remuneradas y no remuneradas así como servicios de cuidado y de desarrollo de capacidades para las personas que requieren cuidado o apoyo, a saber: niños, niñas y adolescentes, personas con discapacidad, personas mayores y demás poblaciones definidas por el Ministerio de la Igualdad y la Equidad. \n ARTÍCULO 202°. FORTALECIMIENTO DE LAS COMISARÍAS DE FAMILIA.",
       "Notas": "Otros temas considerados en las Bases del PND",
-      "link": "Texto conciliado Ley https://colaboracion.dnp.gov.co/CDT/portalDNP/PND-2023/2023-05-05-texto-conciliado-PND.pdf\n Plan plurianual de inversiones: https://colaboracion.dnp.gov.co/CDT/portalDNP/PND-2023/2023-05-04-plan-plurianual-de-inversiones-2023-2026.pdf\n Bases https://colaboracion.dnp.gov.co/CDT/portalDNP/PND-2023/2023-05-04-bases-plan-nacional-de-inversiones-2022-2026.pdf"
+      "link": "https://leyes.senado.gov.co/proyectos/index.php/textos-radicados-senado/p-ley-2022-2024/2862-proyecto-de-ley-274-de-2023"
     },
     {
       "Orden": 16,
@@ -538,7 +538,7 @@
       "secciones relevantes para personas mayores": ">TÍTULO. I DISPOSICIONES GENERALES\n >TÍTULO. II DERECHOS DE LAS VÍCTIMAS DENTRO DE LOS PROCESOS JUDICIALES\n > TÍTULO. III AYUDA HUMANITARIA, ATENCIÓN Y ASISTENCIA\n > TÍTULO. IV REPARACIÓN DE LAS VÍCTIMAS\n > TÍTULO. V DE LA INSTITUCIONALIDAD PARA LA ATENCIÓN Y REPARACIÓN A LAS VÍCTIMAS",
       "Contenido relevante para personas mayores": "ARTÍCULO 13. ENFOQUE DIFERENCIAL. El principio de enfoque diferencial reconoce que hay poblaciones con características particulares en razón de su edad [...] Por tal razón, las medidas de ayuda humanitaria, atención, asistencia y reparación integral que se establecen en la presente ley, contarán con dicho enfoque. El Estado ofrecerá especiales garantías y medidas de protección a los grupos expuestos a mayor riesgo [... adultos mayores...] \n ARTÍCULO 51. MEDIDAS EN MATERIA DE EDUCACIÓN [...] En educación superior, las instituciones [...], en el marco de su autonomía, establecerán los procesos de selección, admisión y matrícula que posibiliten que las víctimas en los términos de la presente ley, puedan acceder a sus programas académicos [...]\n ARTÍCULO 136. [...] El acompañamiento psicosocial deberá ser transversal al proceso de reparación [...]",
       "Notas": "",
-      "link": "personas en situación de discapacidad"
+      "link": "https://www.unidadvictimas.gov.co/es/documentos_bibliotec/ley-1448-de-2011-2/"
     }
   ],
   "datos": [

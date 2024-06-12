@@ -72,7 +72,7 @@ export default function Page() {
               </h3>
               <div className="mt-4 flex gap-x-2.5">
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
-                  5.8M
+                  7.8M
                 </p>
                 <p>de personas de 60 años o más en Colombia</p>
               </div>
@@ -95,7 +95,7 @@ export default function Page() {
                 </div>
                 <div className="w-5/12">
                   <p className="font-semibold text-dark-slate-gray">
-                    equivale al 13,2% de la población
+                    equivale al 14,9% de la población
                   </p>
                 </div>
               </div>
@@ -228,8 +228,7 @@ export default function Page() {
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
               <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
-                Distribución de la población en Colombia por grupo de edad en
-                2024
+                Distribución de la población en Colombia por grupo de edad en 2024 (post COVID-19)
               </h3>
               <div className="mt-6">
                 <Image
@@ -245,9 +244,7 @@ export default function Page() {
                 Departamentos con más personas mayores
               </h3>
               <p className="mt-5 text-seasalt">
-                Las personas mayores se concentran en el Eje Cafetero (Quindío,
-                Caldas y Risaralda), contrario a los departamentos en el
-                suroriente (Vaupés, Guainía, Vichada y Amazonas).
+                Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos de la región Andina (Santander y Antioquia) tienen mayor porcentaje de personas mayores en Colombia.
               </p>
               <div className="mt-6">
                 <Image

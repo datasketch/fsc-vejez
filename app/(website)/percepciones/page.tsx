@@ -48,7 +48,7 @@ export default function Page() {
             <BarChart2 data={data.ciudades_como_vamos.data_etario} />
           </div>
           <div className="col-span-6 flex justify-center my-20 lg:my-0 mx-3">
-            <img src="/images/mapa-percepciones-1.png" alt="map1" />
+            <img src="/images/mapa-percepciones-1.png" alt="map1" className="h-auto max-w-min" />
           </div>
           <div className="col-span-3 lg:text-right ">
             <h3 className="text-2xl font-semibold text-dark-slate-gray mb-1">
@@ -74,7 +74,9 @@ export default function Page() {
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-7">
               Grupos focales por género de participantes
             </h4>
-            <img src="/images/percepciones/icon-grupos-focales.png" alt="focales" />
+            <div className="flex lg:justify-end">
+              <img src="/images/percepciones/icon-grupos-focales.png" alt="focales" />
+            </div>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px]">
               Distribución geográfica de los participantes
             </h4>
