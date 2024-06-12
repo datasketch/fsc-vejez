@@ -10,6 +10,8 @@ import data from "@/data/home.json";
 import HorizontalStakedBarChart from "@/components/HorizontalStakedBarChart";
 import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
+import NavHome from "@/components/NavHome";
+import { useRef } from "react";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -22,7 +24,6 @@ export default function Page() {
   ).reduce((prev: any, curr: any) => {
     const [key, value] = curr;
     const total = value[0].si + value[0].no;
-
     return [
       ...prev,
       {
@@ -282,7 +283,10 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="-mt-16 lg:-mt-32 xl:-mt-56 py-20 bg-seasalt rounded-[40px] relative">
+      <div
+        id="tecnologia-digitalizacion"
+        className="-mt-16 lg:-mt-32 xl:-mt-56 py-20 bg-seasalt rounded-[40px] relative"
+      >
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
@@ -324,7 +328,10 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10">
+      <div
+        id="ingresos-finanzas"
+        className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10"
+      >
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
@@ -406,7 +413,10 @@ export default function Page() {
         </div>
       </div>
       {/*  */}
-      <div className="-mt-12 py-20 bg-seasalt rounded-[40px] relative">
+      <div
+        id="salud-bienestar"
+        className="-mt-12 py-20 bg-seasalt rounded-[40px] relative"
+      >
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
@@ -488,7 +498,10 @@ export default function Page() {
         </div>
       </div>
       {/*  */}
-      <div className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10">
+      <div
+        id="educacion"
+        className="py-20 rounded-[40px] relative bg-anti-flash-white -mt-10"
+      >
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
@@ -573,7 +586,10 @@ export default function Page() {
         </div>
       </div>
       {/*  */}
-      <div className="-mt-12 py-20 bg-seasalt rounded-[40px] relative">
+      <div
+        id="movilidad-transporte"
+        className="-mt-12 py-20 bg-seasalt rounded-[40px] relative"
+      >
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-6">
@@ -649,6 +665,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <NavHome />
     </>
   );
 }

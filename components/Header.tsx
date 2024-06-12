@@ -2,12 +2,35 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        navRef.current?.classList.remove("pt-10");
+        navRef.current?.classList.add("bg-seasalt", "py-5", "u-shadow-1");
+      } else {
+        navRef.current?.classList.add("pt-10");
+        navRef.current?.classList.remove("bg-seasalt", "py-5", "u-shadow-1");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="pt-10">
+    <header
+      ref={navRef}
+      className="pt-10 sticky top-0 left-0 w-full z-50 duration-300"
+    >
       <div className="u-container">
         <nav className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
           <ul className="col-span-4 lg:col-start-5 justify-center gap-x-[22px] lg:col-end-9 flex lg:justify-between lg:gap-x-10">
