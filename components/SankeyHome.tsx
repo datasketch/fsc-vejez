@@ -14,7 +14,20 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
       data={data}
       margin={{ top: 40, right: 220, bottom: 40, left: 50 }}
       align="justify"
-      colors={["#FAAA8D", "#B76A75", "#732A5D", "#5B064E", "#850E4D", "#AE154B", "#92436B", "#657994", "#3E9FAD", "#308089", "#236164", "#2F6251", "#4C7948", "#698F3F"]}
+      colors={[ "#bc6e77",
+        "#7d3361",
+        "#53044f",
+        "#790c4d",
+        "#9f134c",
+        "#a52b5a",
+        "#7c5e7f",
+        "#5291a5",
+        "#3994a0",
+        "#2c777e",
+        "#205b5d",
+        "#33664f",
+        "#4e7a47",
+        "#698f3f"]}
       nodeOpacity={1}
       nodeHoverOthersOpacity={0.35}
       nodeThickness={40}
