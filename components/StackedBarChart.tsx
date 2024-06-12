@@ -13,12 +13,34 @@ import {
 } from "recharts";
 
 interface StackedBarChartProps {
-  data: any
-  legend: any
+  data: any;
+  legend: any;
 }
 
-export default function StackedBarChart({ data, legend }: StackedBarChartProps) {
+export default function StackedBarChart({
+  data,
+  legend,
+}: StackedBarChartProps) {
   const { width }: any = useWindowSize();
+
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-white p-3 border">
+          <p className="label">{`${label}`}</p>
+          {payload.map((entry: any, index: any) => (
+            <p key={`item-${index}`} style={{ color: entry.color }}>
+              {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
+                entry.value
+              )}`}
+            </p>
+          ))}
+        </div>
+      );
+    }
+
+    return null;
+  };
 
   return (
     <div className="h-[475px]">
@@ -37,7 +59,7 @@ export default function StackedBarChart({ data, legend }: StackedBarChartProps) 
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend verticalAlign="top" height={width >= 1024 ? 60 : 100} />
           {
             // @ts-ignore
@@ -50,8 +72,9 @@ export default function StackedBarChart({ data, legend }: StackedBarChartProps) 
                   stackId="a"
                   fill={item.fill}
                 />
-              )
-            })}
+              );
+            })
+          }
         </BarChart>
       </ResponsiveContainer>
     </div>
