@@ -23,6 +23,8 @@ export default function StackedBarChart({
 }: StackedBarChartProps) {
   const { width }: any = useWindowSize();
 
+  console.log(data);
+
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
       return (
@@ -53,12 +55,18 @@ export default function StackedBarChart({
             top: 20,
             right: 30,
             left: 20,
-            bottom: 5,
+            bottom: 70,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis
+            dataKey="name"
+            className="text-xs"
+            interval={0}
+            angle={-45}
+            textAnchor="end"
+          />
+          <YAxis className="text-xs" />
           <Tooltip content={<CustomTooltip />} />
           <Legend verticalAlign="top" height={width >= 1024 ? 60 : 100} />
           {
