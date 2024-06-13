@@ -30,7 +30,7 @@ export default function MultipleBarChart({
           <p className="label">{`${label}`}</p>
           {payload.map((entry: any, index: any) => (
             <p key={`item-${index}`} style={{ color: entry.color }}>
-              {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
+              {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
             </p>

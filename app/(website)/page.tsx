@@ -228,7 +228,8 @@ export default function Page() {
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
               <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
-                Distribución de la población en Colombia por grupo de edad en 2024 (post COVID-19)
+                Distribución de la población en Colombia por grupo de edad en
+                2024 (post COVID-19)
               </h3>
               <div className="mt-6">
                 <Image
@@ -244,7 +245,9 @@ export default function Page() {
                 Departamentos con más personas mayores
               </h3>
               <p className="mt-5 text-seasalt">
-                Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos de la región Andina (Santander y Antioquia) tienen mayor porcentaje de personas mayores en Colombia.
+                Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos
+                de la región Andina (Santander y Antioquia) tienen mayor
+                porcentaje de personas mayores en Colombia.
               </p>
               <div className="mt-6">
                 <Image
@@ -312,11 +315,10 @@ export default function Page() {
               <p>
                 El mapa muestra la frecuencia de utilización de internet a cargo
                 de personas mayores en los departamentos de Colombia, de acuerdo
-                con la Encuesta Nacional de Calidad de Vida 2022. El mapa usa
-                una escala de colores para representar los rangos de frecuencia.
-                Los departamentos en tonos más oscuros tienen más frecuencia de
-                uso de internet, mientras que los departamentos en tonos más
-                claros tienen una menor frecuencia.
+                con la Encuesta Nacional de Calidad de Vida 2022. Predomina la
+                no utilización de internet en los departamentos, pero el uso
+                diario es mayor en los departamentos que están en el centro del
+                país.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -359,14 +361,11 @@ export default function Page() {
                 profesión de manera independiente, los salarios son los pagos en
                 dinero o especie que reciben los empleados y los ingresos son
                 las ganancias por obra, pieza, comisión u oficio, sin
-                deducciones.
-              </p>
-              <p className="mt-4">
-                Los honorarios profesionales son una fuente principal de
-                ingresos, especialmente a medida que las personas envejecen. El
-                promedio de honorarios de personas mayores es el más alto en
-                comparación con los otros ingresos que obtienen y respecto a los
-                ingresos de los otros ciclos de vida.
+                deducciones. Los honorarios profesionales son una fuente
+                principal de ingresos, especialmente a medida que las personas
+                envejecen. El promedio de honorarios de personas mayores es el
+                más alto en comparación con los otros ingresos que obtienen y
+                respecto a los ingresos de los otros ciclos de vida.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -447,14 +446,16 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                La gráfica muestra el nivel de dificultad que tienen las
-                personas mayores respecto a la satisfacción de sus necesidades
-                básicas en capacidades como oír, hablar, ver, mover el cuerpo,
-                entre otras.
+                Oír, hablar, ver, mover el cuerpo, entre otras, son capacidades
+                que ayudan a satisfacer las necesidades básicas. Aunque la
+                mayoría de las personas mayores manifestaron no tener
+                impedimentos en realizar las actividades, presentan alguna o
+                mucha dificultad en ver; mover el cuerpo, caminar o usar
+                escaleras y oír.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="La gráfica de mapa de calor muestra el porcentaje de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan cuatro niveles de capacidad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el porcentaje de personas para cada nivel de capacidad: oír, aún usando audífonos medicados; hablar o conversar; ver, aun usando lentes o gafas; mover el cuerpo, caminar o subir y bajar escaleras, agarrar o mover objetos con las manos, entender, aprender, recordar o tomar decisiones por sí mismo(a); comer, vestirse o bañarse por sí mismo(a) y relacionarse o interactuar con las demás personas.">
+              <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
                 <div className="h-[424px]">
                   <HeatMapHome data={data.capacidades} />
                 </div>
@@ -476,12 +477,14 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El gráfico está dividido en tres secciones principales, la
-                primera corresponde a los grupos demográficos según el género.
-                En la segunda sección se relacionan los tipos de vivienda, y en
-                la tercera sección se identifican las condiciones de tenencia de
-                vivienda. De esta manera, se relacionan en conjunto los datos
-                según los respectivos cruces de información.
+                Tanto hombres como mujeres muestran patrones de vivienda
+                similares. Los apartamentos y casas son los tipos de vivienda
+                más comunes para ambos géneros. La propiedad totalmente pagada y
+                el arriendo/subarriendo son las condiciones de tenencia más
+                comunes para los apartamentos. En cambio, las casas tienen una
+                distribución más diversa en cuanto a tenencia, pero priman la
+                propiedad totalmente pagada, en usufructo y en
+                arriendo/subarriendo.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -572,8 +575,12 @@ export default function Page() {
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El archivo de datos de la Gran Encuesta Integrada de Hogares -
-                2023 muestra el número de personas que completaron la primaria,
-                el bachillerato o alcanzaron un título universitario.
+                2023 brinda información del último nivel educativo alcanzado. La
+                mayor parte de las personas mayores estudió hasta básica
+                primaria, seguida de media académica y básica secundaria. Salvo
+                básica primaria, normalista y doctorado, las personas mayores
+                son la etapa del ciclo de vida con menos personas en los demás
+                niveles educativos.
               </p>
             </div>
             <div className="col-span-12">
@@ -615,7 +622,7 @@ export default function Page() {
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Número de viajes de grupos etarios por modalidad de{" "}
+                Número de viajes de los grupos etarios por modalidad de{" "}
                 <span className="italic font-normal text-dark-slate-gray">
                   transporte en Bogotá
                 </span>
@@ -623,19 +630,16 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                En la ciudad de Bogotá. “Transporte Público” es la modalidad de
-                transporte más utilizada entre los diferentes grupos etarios. La
-                siguiente modalidad más popular es “A Pie” en recorridos
-                superiores a 15 minutos. Es notable que ciertas modalidades de
-                transporte, como “Informal”, “Especial Ocupado” son utilizadas
-                en menor medida comparativamente. Además el grupo etario de
-                Personas mayores (60 años o más), hace un menor uso del
-                transporte en las diferentes categorías en comparación con otros
-                grupos etarios, con barras generalmente más cortas.
+                El transporte público es el modo de transporte más utilizado
+                entre los diferentes grupos etarios. El siguiente modo más
+                popular es a pie, en recorridos superiores a 15 minutos. Las
+                personas mayores (60 años o más) hacen un menor uso del
+                transporte en las diferentes categorías en comparación con otras
+                etapas ciclo de vida, con barras generalmente más cortas.
               </p>
             </div>
             <div className="col-span-12">
-              <WrapperChart description="La gráfica de barras apiladas muestra los modos de transporte utilizados en Bogotá, Colombia, por diferentes rangos etarios. Cada barra representa un modo de transporte, y los segmentos de colores dentro de las barras indican la distribución de usuarios por grupos de edad.">
+              <WrapperChart description="La gráfica de barras agrupadas muestra los modos de transporte utilizados en Bogotá, Colombia, por las diferentes etapas del ciclo de vida. Cada barra representa un modo de transporte, y las barras de colores en cada grupo indican la distribución de usuarios por etapas del ciclo vital.">
                 <HorizontalBarGraph
                   data={data.modalidad_transporte.data}
                   legend={data.modalidad_transporte.legend}

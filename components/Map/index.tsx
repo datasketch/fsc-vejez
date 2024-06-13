@@ -12,7 +12,7 @@ export default function Map() {
     <>
       <div className="flex flex-col lg:flex-row lg:justify-between">
         <div className="lg:w-5/12 relative">
-          <WrapperChart description="El mapa muestra la frecuencia de utilización de internet a cargo de personas mayores en los departamentos de Colombia, de acuerdo con la Encuesta Nacional de Calidad de Vida 2022. El mapa usa una escala de colores para representar los rangos de frecuencia. Los departamentos en tonos más oscuros tienen más frecuencia de uso de internet, mientras que los departamentos en tonos más claros tienen una menor frecuencia.">
+          <WrapperChart description="La escala de tonalidades de verde en el mapa representa la frecuencia de uso de internet. A mayor frecuencia, el verde es más oscuro y viceversa. Las categorías se ordenan de la siguiente manera: uso diario de internet (tono de verde más oscuro), uso semanal pero no diario, uso mensual pero no semanal, uso anual pero no mensual, y no utiliza internet (tono de verde más claro).">
             <MapContainer setSelectedDepartment={setSelectedDepartment} />
           </WrapperChart>
         </div>
