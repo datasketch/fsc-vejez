@@ -1,5 +1,10 @@
 "use client";
-import { DefaultLink, DefaultNode, ResponsiveSankey, Sankey } from "@nivo/sankey";
+import {
+  DefaultLink,
+  DefaultNode,
+  ResponsiveSankey,
+  Sankey,
+} from "@nivo/sankey";
 
 interface SankeyHomeProps {
   data: {
@@ -14,20 +19,14 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
       data={data}
       margin={{ top: 40, right: 220, bottom: 40, left: 50 }}
       align="justify"
-      colors={[ "#bc6e77",
-        "#7d3361",
-        "#53044f",
-        "#790c4d",
-        "#9f134c",
-        "#a52b5a",
-        "#7c5e7f",
-        "#5291a5",
-        "#3994a0",
-        "#2c777e",
-        "#205b5d",
-        "#33664f",
-        "#4e7a47",
-        "#698f3f"]}
+      colors={[
+        "#FAAA8D",
+        "#4B034F",
+        "#B6174B",
+        "#41A5B4",
+        "#1D5556",
+        "#698F3F",
+      ]}
       nodeOpacity={1}
       nodeHoverOthersOpacity={0.35}
       nodeThickness={40}

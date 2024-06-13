@@ -194,7 +194,7 @@ export default function Page() {
                 />
               </div>
               <h3 className="mt-14 relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
-                Proyecciones de la población por rangos de edad a 2050
+                Proyecciones de la población por grupos etarios a 2050
               </h3>
               <div className="mt-5">
                 <Image
@@ -318,9 +318,8 @@ export default function Page() {
                 El mapa muestra la frecuencia de utilización de internet a cargo
                 de personas mayores en los departamentos de Colombia, de acuerdo
                 con la Encuesta Nacional de Calidad de Vida 2022. Predomina la
-                no utilización de internet en los departamentos, pero el uso
-                diario es mayor en los departamentos que están en el centro del
-                país.
+                no utilización de internet, pero el uso diario es mayor en los
+                departamentos que están en el centro del país.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -367,11 +366,11 @@ export default function Page() {
                 principal de ingresos, especialmente a medida que las personas
                 envejecen. El promedio de honorarios de personas mayores es el
                 más alto en comparación con los otros ingresos que obtienen y
-                respecto a los ingresos de los otros ciclos de vida.
+                respecto a los ingresos de las otras etapas del ciclo de vida.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los ciclos de vida de juventud, adultez y personas mayores. Los datos son representados en barras verticales. Para los jóvenes, los honorarios profesionales son la mayor fuente de ingresos con alrededor de 2 millones de pesos. Los salarios u honorarios e ingresos o comisiones son menores, con aproximadamente 1 millón y 500 mil pesos, respectivamente. Para los adultos, los honorarios profesionales alcanzan 2.5 millones, seguidos por los salarios u honorarios con 2 millones y los ingresos o comisiones con 1 millón. En las personas mayores, los honorarios profesionales llegan a 3 millones, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
+              <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los grupos etarios de juventud, adultez y personas mayores. Los datos son representados en barras verticales para compararlos. En las personas mayores, los honorarios profesionales llegan a 3 millones de pesos, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
                 <MultipleBarChart
                   data={data.ingresos.data}
                   legend={data.ingresos.legend}
@@ -394,15 +393,16 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El gráfico de barras apilado ilustra el uso de productos
-                financieros en las personas de 60 años o más. Los productos
-                incluidos son cuenta corriente, cuenta de ahorros, CDT, préstamo
-                para compra de vivienda, préstamo para compra de vehículo,
-                préstamo de libre inversión, tarjeta de crédito, otro o ninguno.
+                El gráfico de barra apilada ilustra el uso de productos
+                financieros en las personas de 60 años o más. La cuenta de
+                ahorros es el producto más común, representando más de la mitad
+                de las respuestas (53.06%). Un porcentaje significativo (27.95%)
+                de las personas respondieron no tener ningún producto
+                financiero.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="La gráfica de barra apilada tiene la forma de un billete de $50.000, con la efigie del escritor Gabriel García Márquez, representando a una persona mayor. Cada barra tiene un tamaño y color diferente, correspondiente a los productos financieros que usan las personas mayores con su respectivo porcentaje de uso.">
+              <WrapperChart description="La gráfica de barra apilada tiene la forma de un billete de $50.000, con la efigie del escritor Gabriel García Márquez, representando a una persona mayor. Cada barra tiene un tamaño y un color diferente, correspondiente a los productos financieros que usan las personas mayores con su respectivo porcentaje de uso.">
                 <Image
                   className="mx-auto"
                   width={822}
@@ -480,12 +480,12 @@ export default function Page() {
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 Tanto hombres como mujeres muestran patrones de vivienda
-                similares. Los apartamentos y casas son los tipos de vivienda
-                más comunes para ambos géneros. La propiedad totalmente pagada y
-                el arriendo/subarriendo son las condiciones de tenencia más
-                comunes para los apartamentos. En cambio, las casas tienen una
-                distribución más diversa en cuanto a tenencia, pero priman la
-                propiedad totalmente pagada, en usufructo y en
+                similares. Los apartamentos y las casas son los tipos de
+                vivienda más comunes para ambos géneros. La propiedad totalmente
+                pagada y el arriendo/subarriendo son las condiciones de tenencia
+                más comunes para los apartamentos. En cambio, las casas tienen
+                una distribución más diversa en cuanto a tenencia, pero priman
+                la propiedad totalmente pagada, en usufructo y en
                 arriendo/subarriendo.
               </p>
             </div>
@@ -549,7 +549,7 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los ciclos vitales (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
+              <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
                 <div className="h-[500px]">
                   <TreeMapHome
                     data={{
@@ -585,7 +585,7 @@ export default function Page() {
               </p>
             </div>
             <div className="col-span-4 lg:col-span-12">
-              <WrapperChart description="El gráfico de barras apiladas muestra el número de personas por nivel educativo alcanzado en cada barra, dividida a su vez por colores que representan diferentes ciclos vitales: jóvenes, adultos y personas mayores. El tamaño del área ocupada por cada color indica la proporción de personas de un ciclo vital que tienen cierto nivel educativo alcanzado. El gráfico permite la comparación entre niveles educativos alcanzados y el número de personas por ciclo vital.">
+              <WrapperChart description="El gráfico de barras apiladas muestra el número de personas por nivel educativo alcanzado en cada barra, dividida a su vez por colores que representan diferentes etapas del ciclo vital: jóvenes, adultos y personas mayores. El tamaño del área ocupada por cada color indica la proporción de personas de un grupo etario que tienen cierto nivel educativo alcanzado. El gráfico permite la comparación entre niveles educativos alcanzados y el número de personas por grupo etario.">
                 <HorizontalStakedBarChart
                   data={data.nivel_educativo.data}
                   legend={data.nivel_educativo.legend}

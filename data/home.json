@@ -760,16 +760,16 @@
   "ingresos": {
     "data": [
       {
-        "name": "Adultos",
-        "Honorarios profesionales": 2743128.123,
-        "Ingresos o comisiones": 1024136.697,
-        "Salarios u honorarios": 2037980.705
-      },
-      {
         "name": "Jóvenes",
         "Honorarios profesionales": 1899384.704,
         "Ingresos o comisiones": 765181.5826,
         "Salarios u honorarios": 1008744.472
+      },
+      {
+        "name": "Adultos",
+        "Honorarios profesionales": 2743128.123,
+        "Ingresos o comisiones": 1024136.697,
+        "Salarios u honorarios": 2037980.705
       },
       {
         "name": "Personas mayores",
