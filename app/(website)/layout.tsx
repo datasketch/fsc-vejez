@@ -19,7 +19,7 @@ export default function WebsiteLayout({
           onClick={() =>
             window.scrollTo({ behavior: "smooth", top: 0, left: 0 })
           }
-          className="absolute bottom-8 right-20"
+          className="absolute bottom-4 xl:bottom-8 right-10 lg:right-20"
         >
           <button>
             <Image

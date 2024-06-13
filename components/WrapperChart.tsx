@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-  PopoverClose,
-} from "@/components/Popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -46,7 +41,10 @@ export default function WrapperChart({
               </div>
             )}
           </PopoverTrigger>
-          <PopoverContent side="right">
+          <PopoverContent
+            className="z-50 w-[351px] absolute shadow bottom-0 left-0 bg-alabaster p-5 leading-[20.8px] text-eerie-black rounded-t-[10px] rounded-br-[10px]"
+            side="right"
+          >
             {!Array.isArray(description) ? (
               <p>{description}</p>
             ) : (

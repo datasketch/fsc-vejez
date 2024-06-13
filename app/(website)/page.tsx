@@ -11,7 +11,7 @@ import HorizontalStakedBarChart from "@/components/HorizontalStakedBarChart";
 import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
 import NavHome from "@/components/NavHome";
-import { useRef } from "react";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -53,7 +53,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="pt-16 pb-16 lg:pb-[600px] relative">
+      <div className="pt-16 pb-16 lg:pb-[600px] relative -z-0">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-12 order-1">
@@ -74,7 +74,9 @@ export default function Page() {
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
                   7.8M
                 </p>
-                <p>de personas de 60 años o más en Colombia</p>
+                <p>
+                  de personas de 60 años o más <br /> en 2024
+                </p>
               </div>
               <div className="my-4">
                 <Image
@@ -676,6 +678,7 @@ export default function Page() {
         </div>
       </div>
       <NavHome />
+      <Disclaimer />
     </>
   );
 }
