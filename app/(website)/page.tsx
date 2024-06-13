@@ -529,7 +529,7 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
+              <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
                 Personas que saben
                 <span className="block italic font-normal text-dark-slate-gray">
                   leer y escribir
@@ -563,7 +563,6 @@ export default function Page() {
                 Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
               </p>
             </div>
-            {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
                 Nivel educativo{" "}
@@ -583,7 +582,7 @@ export default function Page() {
                 niveles educativos.
               </p>
             </div>
-            <div className="col-span-12">
+            <div className="col-span-4 lg:col-span-12">
               <WrapperChart description="El gráfico de barras apiladas muestra el número de personas por nivel educativo alcanzado en cada barra, dividida a su vez por colores que representan diferentes ciclos vitales: jóvenes, adultos y personas mayores. El tamaño del área ocupada por cada color indica la proporción de personas de un ciclo vital que tienen cierto nivel educativo alcanzado. El gráfico permite la comparación entre niveles educativos alcanzados y el número de personas por ciclo vital.">
                 <HorizontalStakedBarChart
                   data={data.nivel_educativo.data}
@@ -638,7 +637,7 @@ export default function Page() {
                 etapas ciclo de vida, con barras generalmente más cortas.
               </p>
             </div>
-            <div className="col-span-12">
+            <div className="col-span-4 lg:col-span-12">
               <WrapperChart description="La gráfica de barras agrupadas muestra los modos de transporte utilizados en Bogotá, Colombia, por las diferentes etapas del ciclo de vida. Cada barra representa un modo de transporte, y las barras de colores en cada grupo indican la distribución de usuarios por etapas del ciclo vital.">
                 <HorizontalBarGraph
                   data={data.modalidad_transporte.data}
