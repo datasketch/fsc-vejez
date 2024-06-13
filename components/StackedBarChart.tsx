@@ -23,8 +23,6 @@ export default function StackedBarChart({
 }: StackedBarChartProps) {
   const { width }: any = useWindowSize();
 
-  console.log(data);
-
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
       return (
