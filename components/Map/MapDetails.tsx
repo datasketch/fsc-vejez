@@ -73,7 +73,18 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
             </div>
           </div>
         ) : (
-          <p>Selecciona un departamento</p>
+          <div className="w-full h-[319px] grid place-items-center border border-eerie-black/40 rounded-[20px]">
+            <div className="flex flex-col items-start justify-center gap-y-3.5 text-center">
+              <Image
+                className="mx-auto"
+                width={33}
+                height={33}
+                src="/images/icons/cursor.svg"
+                alt="cursor icon"
+              />
+              <p className="font-semibold">Selecciona un departamento</p>
+            </div>
+          </div>
         )}
       </div>
     </div>
