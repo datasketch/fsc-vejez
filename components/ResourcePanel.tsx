@@ -81,9 +81,7 @@ export default function ResourcePanel({
   const ref = useRef<HTMLDivElement>(null);
 
   // @ts-ignore
-  const years = Array.from(new Set(data.map((item: any) => item.year))).sort(
-    (a, b) => a - b
-  );
+  const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b);
 
   function filterBySearch(item: any) {
     if (!query) return true;
@@ -237,9 +235,7 @@ export default function ResourcePanel({
                         {years.map((option, i) => {
                           return (
                             // @ts-ignore
-                            <option key={i} value={option}>
-                              {option}
-                            </option>
+                            <option key={i} value={option}>{option}</option>
                           );
                         })}
                       </select>
@@ -340,9 +336,7 @@ export default function ResourcePanel({
               {years.map((option, i) => {
                 return (
                   // @ts-ignore
-                  <option key={i} value={option}>
-                    {option}
-                  </option>
+                  <option key={i} value={option}>{option} </option>
                 );
               })}
             </select>
