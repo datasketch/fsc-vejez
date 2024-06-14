@@ -5,6 +5,7 @@ import BarChart2 from "@/components/Barchart";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
 import TabSections from "@/components/TabSections";
 import WrapperChart from "@/components/WrapperChart";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Percepciones",
@@ -34,7 +35,10 @@ export default function Page() {
               <line y1="0.5" x2="60" y2="0.5" stroke="#1D5556" />
             </svg>
             <p className="text-eerie-black mt-5">
-              Este programa evalúa la calidad de vida desde la Encuesta de Percepción Ciudadana actualizada en 2022, con participación de adultos de todos los niveles socioeconómicos en los municipios encuestados.
+              Este programa evalúa la calidad de vida desde la Encuesta de
+              Percepción Ciudadana actualizada en 2022, con participación de
+              adultos de todos los niveles socioeconómicos en los municipios
+              encuestados.
             </p>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14">
               Muestra de Ciudades Cómo Vamos
@@ -43,12 +47,18 @@ export default function Page() {
               17.255 habitantes
             </p>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-5">
-              Porcentaje de grupos focales según el rango de edad de sus participantes
+              Proporción de los participantes en la encuesta por rangos de edad
+              y sexo
             </h4>
             <BarChart2 data={data.ciudades_como_vamos.data_etario} />
           </div>
           <div className="col-span-6 flex justify-center my-20 lg:my-0 mx-3">
-            <img src="/images/mapa-percepciones-1.png" alt="map1" className="h-auto max-w-min" />
+            <Image
+              width={488.5}
+              height={569}
+              src="/images/mapa-percepciones-1.svg"
+              alt="map1"
+            />
           </div>
           <div className="col-span-3 lg:text-right ">
             <h3 className="text-2xl font-semibold text-dark-slate-gray mb-1">
@@ -72,10 +82,16 @@ export default function Page() {
               ciudades.
             </p>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px] mb-7">
-              Grupos focales por género de participantes
+              Porcentaje de grupos focales según el rango de edad de sus
+              participantes
             </h4>
             <div className="flex lg:justify-end">
-              <img src="/images/percepciones/icon-grupos-focales.png" alt="focales" />
+              <Image
+                width={287}
+                height={149}
+                src="/images/percepciones/icon-grupos-focales.svg"
+                alt="focales"
+              />
             </div>
             <h4 className="text-xl font-semibold text-dark-slate-gray mt-14 leading-[22px]">
               Distribución geográfica de los participantes
@@ -97,7 +113,8 @@ export default function Page() {
           </div>
         </div>
         <p className="text-vampire-gray mt-16 ">
-          Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha, PROESA y DANE, 2023
+          Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha,
+          PROESA y DANE, 2023
         </p>
       </div>
       <div className="bg-white w-full rounded-[40px] my-10">
@@ -114,13 +131,16 @@ export default function Page() {
             </div>
             <div className="col-span-7 mt-5 lg:mt-0">
               <p>
-                Los participantes de la Encuesta Ciudades Cómo Vamos describieron en una palabra aquello en lo que piensan cuando escuchan vejez. Las respuestas de las personas mayores se presentan en la siguiente nube de palabras.
+                Los participantes de la Encuesta Ciudades Cómo Vamos
+                describieron en una palabra aquello en lo que piensan cuando
+                escuchan “vejez”. Las respuestas de las personas mayores se
+                presentan en la siguiente nube de palabras.
               </p>
             </div>
           </div>
           <div className="flex h-screen w-full justify-center mt-16">
-            <div className="w-full max-w-2xl">
-              <WrapperChart description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022." >
+            <div className="w-full">
+              <WrapperChart description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la frecuencia de las respuestas.">
                 <TabSections
                   sections={[
                     {
@@ -195,8 +215,8 @@ export default function Page() {
             Percepciones Misión Colombia Envejece
           </h2>
           <div className="flex h-screen w-full justify-center mt-16">
-            <div className="w-full max-w-2xl">
-              <WrapperChart description="La nube de palabras está agrupada en categorías como salud y bienestar, educación e ingresos y finanzas. Las palabras visualizadas son aquellas que se destacan del conjunto de citas tomadas del Estudio. Utilice los filtros disponibles para explorar por los temas específicos. El tamaño de cada palabra refleja la frecuencia con que fue mencionada en las respuestas." >
+            <div className="w-full">
+              <WrapperChart description="La nube de palabras está agrupada en categorías como salud y bienestar, educación e ingresos y finanzas. Las palabras visualizadas son aquellas que se destacan del conjunto de citas tomadas del Estudio. Utilice los filtros disponibles para explorar por los temas específicos. El tamaño de cada palabra refleja la frecuencia con que fue mencionada en las respuestas.">
                 <TabSections
                   sections={[
                     {
@@ -210,7 +230,8 @@ export default function Page() {
                     },
                     {
                       title: "Ingresos y finanzas",
-                      srcImage: "/images/percepciones/mision/mision-finance.png",
+                      srcImage:
+                        "/images/percepciones/mision/mision-finance.png",
                     },
                     {
                       title: "Tecnología y digitalización",
@@ -222,7 +243,8 @@ export default function Page() {
             </div>
           </div>
           <p className="text-vampire-gray mt-16 ">
-            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha, PROESA y DANE, 2023
+            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
+            Concha, PROESA y DANE, 2023
           </p>
         </div>
       </div>

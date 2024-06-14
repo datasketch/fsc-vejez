@@ -17,8 +17,8 @@ export default function Disclaimer() {
   return (
     <div
       className={clsx("fixed bottom-1/2 duration-500 z-50", {
-        "right-6 md:right-10": open,
-        "right-2 md:right-4": !open,
+        "left-6 md:left-10": open,
+        "left-2 md:left-4": !open,
       })}
     >
       <Popover open={open} onOpenChange={(open) => setIsOpen(open)}>
@@ -40,8 +40,8 @@ export default function Disclaimer() {
           )}
         </PopoverTrigger>
         <PopoverContent
-          className="bg-seasalt p-5 pl-6 u-shadow-1 max-w-[400px] md:max-w-[695px] w-full rounded-[5px] before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-[6px] before:bg-dark-slate-gray before:rounded-tl-[5px] before:rounded-bl-[5px]"
-          align="end"
+          className="bg-seasalt p-5 pr-6 u-shadow-1 max-w-[400px] md:max-w-[695px] w-full rounded-[5px] before:content-[''] before:absolute before:top-0 before:right-0 before:h-full before:w-[6px] before:bg-dark-slate-gray before:rounded-tr-[5px] before:rounded-br-[5px]"
+          align="start"
           side="bottom"
           sideOffset={10}
         >
