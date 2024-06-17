@@ -261,10 +261,12 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-seasalt">
-                Proyecciones del Censo Nacional de Población y Vivienda (CNPV),
-                2018, DANE
-              </p>
+              <a href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106">
+                <p className="text-seasalt">
+                  Proyecciones del Censo Nacional de Población y Vivienda (CNPV),
+                  2018, DANE
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -378,9 +380,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata">
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -413,9 +417,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata">
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -464,9 +470,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata">
+                <p className="text-davys-gray">
+                  Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -502,9 +510,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata">
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -561,9 +571,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata">
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             <div className="mt-12 lg:mt-20 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
@@ -593,9 +605,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata">
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -649,9 +663,11 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
-              </p>
+              <a href="https://www.simur.gov.co/encuestas-de-movilidad">
+                <p className="text-davys-gray">
+                  Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>

@@ -8,17 +8,11 @@ import { useEffect, useState } from "react";
 export default function Disclaimer() {
   const [open, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsOpen(true);
-    }, 300);
-  }, []);
-
   return (
     <div
-      className={clsx("fixed bottom-1/2 duration-500 z-50", {
-        "left-6 md:left-10": open,
-        "left-2 md:left-4": !open,
+      className={clsx("fixed bottom-8 duration-500 z-50", {
+        "left-[95%] md:left-[95%]": open,
+        "left-[93%] md:left-[95%]": !open,
       })}
     >
       <Popover open={open} onOpenChange={(open) => setIsOpen(open)}>
