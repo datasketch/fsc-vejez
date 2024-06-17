@@ -41,7 +41,7 @@ const TabsContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
-    ref={ref}
+    ref={ref}    
     className={clsx("", className)}
     {...props}
   />
