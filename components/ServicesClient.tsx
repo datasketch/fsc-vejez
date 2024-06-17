@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import * as XLSX from 'xlsx'
 import { useEffect, useRef, useState } from "react";
 import ServicesCard from "./ServicesCard";
 import ReactPaginate from "react-paginate";
@@ -34,8 +35,8 @@ export default function ServicesClient({ data }: ServicesClientProps) {
   const servicesRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const categoryOptions = Array.from(new Set(data.map((el: any) => el.type)));
-  const countryOptions = Array.from(new Set(data.map((el: any) => el.country)));
+  const categoryOptions = Array.from(new Set(data.map((el: any) => el.categoria))).sort();
+  const countryOptions = Array.from(new Set(data.map((el: any) => el.pais_de_origen))).sort();
 
   const handlePageClick = (event: any) => {
     const newOffset = (event.selected * itemsPerPage) % filterData.length;
@@ -44,33 +45,43 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const downloadServicesData = () => {
+    const workbook = XLSX.utils.book_new();
+    // TODO: remove rcd___id header and values
+    const records: Array<Array<string>> = data.map((record: Record<string, unknown>) => Object.values(record))
+    records.unshift(Object.keys(data[0]))
+    const worksheet = XLSX.utils.aoa_to_sheet(records)
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'servicios')
+    XLSX.writeFile(workbook, "datos-servicios.xlsx")
+  }
+
   useEffect(() => {
     let newData = data;
 
     if (category) {
       newData = newData.filter(
-        (item: { type: string }) => item.type === category
+        (item: { categoria: string }) => item.categoria === category
       );
     }
 
     if (country) {
       newData = newData.filter(
-        (item: { country: string }) => item.country === country
+        (item: { pais_de_origen: string }) => item.pais_de_origen === country
       );
     }
 
     if (search) {
       newData = newData.filter(
-        (item: { title: string; description: string }) =>
-          item.title.toLowerCase().includes(search.toLowerCase()) ||
-          item.description.toLowerCase().includes(search.toLowerCase())
+        (item: { nombre: string; descripcion_del_servicio: string }) =>
+          item.nombre.toLowerCase().includes(search.toLowerCase()) ||
+          item.descripcion_del_servicio.toLowerCase().includes(search.toLowerCase())
       );
     }
 
     setItemOffset(0);
     setCurrentPage(0);
     setFilterData(newData);
-  }, [category, country, search]);
+  }, [data, category, country, search]);
 
   return (
     <div ref={servicesRef} className="py-16">
@@ -84,7 +95,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               </h2>
               <TooltipProvider delayDuration={0}>
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger asChild>
                     <button className="grid place-items-center">
                       <Image
                         src="/images/icons/information.svg"
@@ -109,14 +120,13 @@ export default function ServicesClient({ data }: ServicesClientProps) {
             </div>
           </div>
           <div className="lg:hidden mt-8 col-span-12">
-            <Link
+            <button
               className="inline-block py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold w-full text-center"
-              href="/files/03_fsc_services.xlsx"
-              download
-              target="_blank"
+              type="button"
+              onClick={downloadServicesData}
             >
               Descargar base de datos
-            </Link>
+            </button>
           </div>
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-1 lg:col-end-3">
             <select
@@ -249,14 +259,13 @@ export default function ServicesClient({ data }: ServicesClientProps) {
           </div>
           <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-10 lg:col-end-13">
             <div className="flex justify-start lg:justify-end">
-              <Link
+              <button
                 className="inline-block py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold"
-                href="/files/03_fsc_services.xlsx"
-                download
-                target="_blank"
+                type="button"
+                onClick={downloadServicesData}
               >
                 Descargar base de datos
-              </Link>
+              </button>
             </div>
           </div>
           <div className="mt-4 lg:mt-12 col-span-12">

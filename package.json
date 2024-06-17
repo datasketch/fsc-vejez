@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.598.0",
     "@headlessui/react": "^2.0.3",
     "@nivo/heatmap": "^0.87.0",
     "@nivo/sankey": "^0.87.0",
@@ -30,7 +31,8 @@
     "react-simple-maps": "^3.0.0",
     "react-tooltip": "^4.5.0",
     "recharts": "^2.12.7",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",

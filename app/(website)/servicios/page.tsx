@@ -1,4 +1,3 @@
-import ServicesClient from "@/components/ServicesClient";
 import StackedBarChart from "@/components/StackedBarChart";
 import TabSections from "@/components/TabSections";
 import type { Metadata } from "next";
@@ -6,10 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/servicios.json";
 import WrapperChart from "@/components/WrapperChart";
+import { Suspense } from "react";
+import Services from "@/components/Services";
 
 export const metadata: Metadata = {
   title: "Servicios",
-  description: "Lorem ipsum",
+  description: "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
 };
 
 export default function Page() {
@@ -169,7 +170,9 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <ServicesClient data={data.servicios} />
+      <Suspense fallback={<p>Cargando servicios</p>}>
+        <Services />
+      </Suspense>
       <div className="u-container border-t border-t-dark-slate-gray pt-16">
         <div className="bg-banner-services bg-cover bg-center rounded-[20px] p-8 md:p-10 lg:p-12 xl:p-[60px]">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
