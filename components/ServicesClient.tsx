@@ -121,6 +121,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-1 lg:col-end-3">
             <select
               name="category"
+              aria-label="opciones categoria"
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCategory(e.target.value)}
             >
@@ -135,6 +136,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-3 lg:col-end-5">
             <select
               name="country"
+              aria-label="opciones paises"
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCountry(e.target.value)}
             >
@@ -308,6 +310,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                   pageCount={pageCount}
                   renderOnZeroPageCount={null}
                   forcePage={currentPage}
+                  
                 />
               </div>
             )}

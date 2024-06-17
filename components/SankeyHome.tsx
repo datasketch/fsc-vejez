@@ -18,6 +18,7 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
     <ResponsiveSankey
       data={data}
       margin={{ top: 40, right: 220, bottom: 40, left: 50 }}
+      ariaLabel="sankey-vivienda"
       align="justify"
       colors={[
         "#FAAA8D",
