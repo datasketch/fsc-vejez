@@ -5,7 +5,9 @@ import omit from "lodash.omit";
 
 async function getServices(): Promise<Array<Record<string, unknown>>> {
     try {
-        const s3Client = new S3Client({})
+        const s3Client = new S3Client({
+            region: 'us-east-1'
+        })
         const bucket = process.env.BUCKET
     
         const cmd = new GetObjectCommand({
