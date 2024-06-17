@@ -17,7 +17,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/Tooltip";
-import Link from "next/link";
 
 interface ServicesClientProps {
   data: any;
