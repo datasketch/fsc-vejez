@@ -1,6 +1,7 @@
 import ServicesClient from "./ServicesClient";
 
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
+import omit from "lodash.omit";
 
 async function getServices(): Promise<Array<Record<string, unknown>>> {
     try {
@@ -18,7 +19,8 @@ async function getServices(): Promise<Array<Record<string, unknown>>> {
     
         const data = content ? JSON.parse(content) : []
     
-        return data
+        // rcd___id is a field appended to data when uploaded to Datasketch SaaS
+        return data.map((item: Record<string, unknown>) => omit(item, ['rcd___id']))
     } catch (error) {
         console.error(error)
         return []

@@ -46,7 +46,6 @@ export default function ServicesClient({ data }: ServicesClientProps) {
 
   const downloadServicesData = () => {
     const workbook = XLSX.utils.book_new();
-    // TODO: remove rcd___id header and values
     const records: Array<Array<string>> = data.map((record: Record<string, unknown>) => Object.values(record))
     records.unshift(Object.keys(data[0]))
     const worksheet = XLSX.utils.aoa_to_sheet(records)
