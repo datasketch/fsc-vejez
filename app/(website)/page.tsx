@@ -68,9 +68,9 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-14 lg:mt-40 xl:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
-              <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Las personas mayores en Colombia
-              </h3>
+              </h2>
               <div className="mt-4 flex gap-x-2.5">
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
                   7.8M
@@ -103,9 +103,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="mt-12 lg:mt-4">
-                <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+                <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                   Distribución en áreas geográficas
-                </h3>
+                </h2>
                 <div className="mt-6">
                   <Image
                     width={363}
@@ -182,9 +182,9 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-14 lg:mt-60 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-4">
-              <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Distribución población de 60 años o más en Colombia por sexo
-              </h3>
+              </h2>
               <div className="mt-5">
                 <Image
                   className="mx-auto"
@@ -194,9 +194,9 @@ export default function Page() {
                   alt="human figure 2"
                 />
               </div>
-              <h3 className="mt-14 relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="mt-14 relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Proyecciones de la población por grupos etarios a 2050
-              </h3>
+              </h2>
               <div className="mt-5">
                 <Image
                   className="mx-auto"
@@ -230,10 +230,10 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
-              <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
+              <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
                 Distribución de la población en Colombia por grupo de edad en
                 2024 (post COVID-19)
-              </h3>
+              </h2>
               <div className="mt-6">
                 <Image
                   width={1920}
@@ -244,9 +244,9 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-14 lg:mt-0 col-span-4 md:col-span-2 lg:col-start-8 lg:col-end-13">
-              <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt">
+              <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt">
                 Departamentos con más personas mayores
-              </h3>
+              </h2>
               <p className="mt-5 text-seasalt">
                 Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos
                 de la región Andina (Santander y Antioquia) tienen mayor
@@ -662,17 +662,18 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
+              <h2 className="text-2xl lg:text-[31px] font-semibold">
                 Explora los{" "}
                 <span className="italic font-normal text-dark-slate-gray">
                   datos
                 </span>
-              </h3>
+              </h2>
             </div>
             <div className="mt-6 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
               <iframe
                 className="size-full aspect-video"
                 src="https://services.datasketch.co/fsc-vejez-app/"
+                title="Explora los datos relacionados con la pagina"
               />
             </div>
           </div>

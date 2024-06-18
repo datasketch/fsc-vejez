@@ -210,6 +210,7 @@ export default function Page() {
           <iframe
             className="size-full aspect-video"
             src="https://services.datasketch.co/content/2a4bce5c-cddd-4464-8e32-0f3318613bd9/"
+            title="Dashboard para poder cruzar informacion"
           />
         </div>
       </div>
