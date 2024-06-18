@@ -12,6 +12,7 @@ import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
 import NavHome from "@/components/NavHome";
 import Disclaimer from "@/components/Disclaimer";
+import WordCloud from "@/components/WordCloud";
 
 export const metadata: Metadata = {
   title: "Inicio",

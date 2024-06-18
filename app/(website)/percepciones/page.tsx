@@ -1,11 +1,19 @@
-import type { Metadata } from "next";
-/* import data from "@/static/data/percepciones.json" */
+import type { Metadata } from "next"; 
 import data from "@/data/percepciones.json";
 import BarChart2 from "@/components/Barchart";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
 import TabSections from "@/components/TabSections";
 import WrapperChart from "@/components/WrapperChart";
 import Image from "next/image";
+import WordCloud from "@/components/WordCloud";
+import manizalesWordsData from "@/data/perception/manizales.json";
+import cartagenaWordsData from "@/data/perception/cartagena.json";
+import medellinWordsData from "@/data/perception/medellin.json";
+import pereiraWordsData from "@/data/perception/pereira.json";
+import healthWordsData from "@/data/mision/health.json";
+import educationWordsData from "@/data/mision/education.json";
+import financesWordsData from "@/data/mision/finances.json";
+import techWordsData from "@/data/mision/technology.json";
 
 export const metadata: Metadata = {
   title: "Percepciones",
@@ -138,30 +146,26 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="flex h-screen w-full justify-center mt-16">
+          <div className="flex w-full justify-center mt-16">
             <div className="w-full">
               <WrapperChart description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la frecuencia de las respuestas.">
                 <TabSections
                   sections={[
                     {
                       title: "Manizales",
-                      srcImage:
-                        "/images/percepciones/comovamos/percepcion-manizales.png",
+                      wordCloud: <WordCloud words={manizalesWordsData} />,
                     },
                     {
                       title: "Cartagena",
-                      srcImage:
-                        "/images/percepciones/comovamos/percepcion-cartagena.png",
+                      wordCloud: <WordCloud words={cartagenaWordsData} />,
                     },
                     {
                       title: "Medellín",
-                      srcImage:
-                        "/images/percepciones/comovamos/percepcion-medellin.png",
+                      wordCloud: <WordCloud words={medellinWordsData} />,
                     },
                     {
                       title: "Pereira",
-                      srcImage:
-                        "/images/percepciones/comovamos/percepcion-pereira.png",
+                      wordCloud: <WordCloud words={pereiraWordsData} />,
                     },
                   ]}
                 />
@@ -214,28 +218,26 @@ export default function Page() {
           <h2 className="text-center text-4xl  text-dark-slate-gray font-semibold ">
             Percepciones Misión Colombia Envejece
           </h2>
-          <div className="flex h-screen w-full justify-center mt-16">
+          <div className="flex w-full justify-center mt-16">
             <div className="w-full">
               <WrapperChart description="La nube de palabras está agrupada en categorías como salud y bienestar, educación e ingresos y finanzas. Las palabras visualizadas son aquellas que se destacan del conjunto de citas tomadas del Estudio. Utilice los filtros disponibles para explorar por los temas específicos. El tamaño de cada palabra refleja la frecuencia con que fue mencionada en las respuestas.">
                 <TabSections
                   sections={[
                     {
                       title: "Salud y bienestar",
-                      srcImage: "/images/percepciones/mision/mision-health.png",
+                      wordCloud: <WordCloud words={healthWordsData} />,
                     },
                     {
                       title: "Educación",
-                      srcImage:
-                        "/images/percepciones/mision/mision-education.png",
+                      wordCloud: <WordCloud words={educationWordsData} size={16} />,
                     },
                     {
                       title: "Ingresos y finanzas",
-                      srcImage:
-                        "/images/percepciones/mision/mision-finance.png",
+                      wordCloud: <WordCloud words={financesWordsData} size={10} />,
                     },
                     {
                       title: "Tecnología y digitalización",
-                      srcImage: "/images/percepciones/mision/mision-tech.png",
+                      wordCloud: <WordCloud words={techWordsData} size={20} />,
                     },
                   ]}
                 />
