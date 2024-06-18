@@ -982,32 +982,12 @@
         "nodeColor": "hsl(282, 70%, 50%)"
       },
       {
-        "id": "Cuarto (s) en inquilinato",
-        "nodeColor": "hsl(177, 70%, 50%)"
-      },
-      {
-        "id": "Cuarto (s) en otro tipo de estructura",
-        "nodeColor": "hsl(49, 70%, 50%)"
-      },
-      {
-        "id": "Otra vivienda",
-        "nodeColor": "hsl(177, 70%, 50%)"
-      },
-      {
-        "id": "Vivienda indígena",
-        "nodeColor": "hsl(49, 70%, 50%)"
-      },
-      {
         "id": "En arriendo subarriendo",
         "nodeColor": "hsl(177, 70%, 50%)"
       },
       {
         "id": "En usufructo",
         "nodeColor": "hsl(49, 70%, 50%)"
-      },
-      {
-        "id": "Otra",
-        "nodeColor": "hsl(177, 70%, 50%)"
       },
       {
         "id": "Posesión sin título",
@@ -1038,26 +1018,6 @@
         "value": 38823
       },
       {
-        "source": "Hombre",
-        "target": "Cuarto (s) en inquilinato",
-        "value": 836
-      },
-      {
-        "source": "Hombre",
-        "target": "Cuarto (s) en otro tipo de estructura",
-        "value": 219
-      },
-      {
-        "source": "Hombre",
-        "target": "Otra vivienda",
-        "value": 14
-      },
-      {
-        "source": "Hombre",
-        "target": "Vivienda indígena",
-        "value": 146
-      },
-      {
         "source": "Mujer",
         "target": "Apartamento",
         "value": 30372
@@ -1068,26 +1028,6 @@
         "value": 49128
       },
       {
-        "source": "Mujer",
-        "target": "Cuarto (s) en inquilinato",
-        "value": 453
-      },
-      {
-        "source": "Mujer",
-        "target": "Cuarto (s) en otro tipo de estructura",
-        "value": 106
-      },
-      {
-        "source": "Mujer",
-        "target": "Otra vivienda",
-        "value": 5
-      },
-      {
-        "source": "Mujer",
-        "target": "Vivienda indígena",
-        "value": 171
-      },
-      {
         "source": "Apartamento",
         "target": "En arriendo subarriendo",
         "value": 16135
@@ -1096,11 +1036,6 @@
         "source": "Apartamento",
         "target": "En usufructo",
         "value": 7536
-      },
-      {
-        "source": "Apartamento",
-        "target": "Otra",
-        "value": 337
       },
       {
         "source": "Apartamento",
@@ -1134,11 +1069,6 @@
       },
       {
         "source": "Casa",
-        "target": "Otra",
-        "value": 417
-      },
-      {
-        "source": "Casa",
         "target": "Posesión sin título",
         "value": 4671
       },
@@ -1156,116 +1086,6 @@
         "source": "Casa",
         "target": "Propiedad colectiva",
         "value": 2506
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "En arriendo subarriendo",
-        "value": 866
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "En usufructo",
-        "value": 242
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "Otra",
-        "value": 2
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "Posesión sin título",
-        "value": 17
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "Propia, totalmente pagada",
-        "value": 147
-      },
-      {
-        "source": "Cuarto (s) en inquilinato",
-        "target": "Propiedad colectiva",
-        "value": 15
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "En arriendo subarriendo",
-        "value": 99
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "En usufructo",
-        "value": 120
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "Otra",
-        "value": 5
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "Posesión sin título",
-        "value": 31
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "Propia, la están pagando",
-        "value": 2
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "Propia, totalmente pagada",
-        "value": 57
-      },
-      {
-        "source": "Cuarto (s) en otro tipo de estructura",
-        "target": "Propiedad colectiva",
-        "value": 11
-      },
-      {
-        "source": "Otra vivienda",
-        "target": "En arriendo subarriendo",
-        "value": 3
-      },
-      {
-        "source": "Otra vivienda",
-        "target": "En usufructo",
-        "value": 1
-      },
-      {
-        "source": "Otra vivienda",
-        "target": "Posesión sin título",
-        "value": 9
-      },
-      {
-        "source": "Otra vivienda",
-        "target": "Propia, totalmente pagada",
-        "value": 6
-      },
-      {
-        "source": "Vivienda indígena",
-        "target": "En arriendo subarriendo",
-        "value": 2
-      },
-      {
-        "source": "Vivienda indígena",
-        "target": "En usufructo",
-        "value": 9
-      },
-      {
-        "source": "Vivienda indígena",
-        "target": "Posesión sin título",
-        "value": 153
-      },
-      {
-        "source": "Vivienda indígena",
-        "target": "Propia, totalmente pagada",
-        "value": 49
-      },
-      {
-        "source": "Vivienda indígena",
-        "target": "Propiedad colectiva",
-        "value": 104
       }
     ]
   },
@@ -1308,25 +1128,25 @@
         "Personas mayores": 4394
       },
       {
-        "name": "Media técnica (Bachillerato técnico)",
+        "name": "Bachillerato técnico",
         "Adultos": 8229,
         "Jóvenes": 5844,
         "Personas mayores": 1338
       },
       {
-        "name": "Media académica (Bachillerato clásico)",
+        "name": "Bachillerato clásico",
         "Adultos": 116100,
         "Jóvenes": 61802,
         "Personas mayores": 22012
       },
       {
-        "name": "Básica secundaria (6o - 9o)",
+        "name": "Básica secundaria",
         "Adultos": 40600,
         "Jóvenes": 45929,
         "Personas mayores": 15902
       },
       {
-        "name": "Básica primaria (1o - 5o)",
+        "name": "Básica primaria",
         "Adultos": 66602,
         "Jóvenes": 7215,
         "Personas mayores": 62162

@@ -40,17 +40,17 @@ export default function Page() {
                     </TabPanel>
                 </TabPanels>
             </TabGroup>
-            <div className="u-container mt-20 flex justify-between">
+            <div className="u-container mt-20 lg:flex justify-between">
                 <div>
-                    <h2 className=" text-5xl font-bold text-blue-dianne">¿Quieres agregar un recurso sobre personas mayores?</h2>
+                    <h2 className="text-3xl lg:text-5xl font-bold text-blue-dianne">¿Quieres agregar un recurso sobre personas mayores?</h2>
                     <Link
-                        className="inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px] mt-10"
+                        className="inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px] mt-10 mx-auto"
                         href="/"
                     >
                         <p className="text-nowrap">Envíanos tu información</p>
                     </Link>
                 </div>
-                <img src="/images/recursos/icon-info-add-resource.png" alt="info" />
+                <img src="/images/recursos/icon-info-add-resource.png" alt="info" className="mx-auto mt-10 lg:mt-0" />
             </div>
             <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
         </div>

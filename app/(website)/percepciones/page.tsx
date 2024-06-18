@@ -112,7 +112,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <a href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
+        <a target="_blank" href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
           <p className="text-vampire-gray mt-16 ">
             Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha,
             PROESA y DANE, 2023
@@ -170,7 +170,7 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <a href="https://redcomovamos.org/biblioteca-rccv/">
+          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
             <p className="text-vampire-gray mt-16 ">
               Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
             </p>
@@ -196,7 +196,7 @@ export default function Page() {
               legend={data.ciudades_como_vamos.data_finanzas.legend}
             />
           </WrapperChart>
-          <a href="https://redcomovamos.org/biblioteca-rccv/">
+          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
             <p className="text-vampire-gray mt-16 ">
               Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
             </p>
@@ -249,7 +249,7 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <a href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
+          <a target="_blank" href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
             <p className="text-vampire-gray mt-16 ">
               Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
               Concha, PROESA y DANE, 2023

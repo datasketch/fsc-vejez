@@ -51,15 +51,15 @@ export default function StackedBarChart({
           data={data}
           margin={{
             top: 20,
-            right: 30,
-            left: 20,
-            bottom: 70,
+            right: 50,
+            left: 80,
+            bottom: 100,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="name"
-            className="text-xs"
+            className="text-base"
             interval={0}
             angle={-45}
             textAnchor="end"
