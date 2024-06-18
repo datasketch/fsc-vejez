@@ -4,7 +4,6 @@ import {
   HeatMapSerie,
   ResponsiveHeatMap,
 } from "@nivo/heatmap";
-import { text } from "stream/consumers";
 
 interface HeatMapHomeProps {
   data: HeatMapSerie<DefaultHeatMapDatum, Record<string, never>>[] | any;
@@ -27,7 +26,7 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
       colors={{
         type: "quantize",
         colors: ["#90EE90", "#77B769", "#679D5C", "#3F6C53", "#1D5556"],
-        steps: 5
+        steps: 5,
       }}
       emptyColor="#555555"
       borderColor="white"
@@ -38,18 +37,9 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
         modifiers: [["darker", 2]],
       }}
       theme={{
-        labels: {
-          text: {
-            fontSize: 24
-          }
+        text: {
+          fontSize: 14,
         },
-        axis: {
-          legend: {
-            text: {
-              fontSize: 24
-            }
-          },
-        }
       }}
       legends={[
         {

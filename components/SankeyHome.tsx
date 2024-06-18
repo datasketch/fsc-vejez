@@ -48,27 +48,11 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
         from: "color",
         modifiers: [["darker", 1]],
       }}
-      /* legends={[
-        {
-          anchor: "right",
-          direction: "column",
-          translateX: 230,
-          itemWidth: 50,
-          itemHeight: 14,
-          itemDirection: "right-to-left",
-          itemsSpacing: 4,
-          itemTextColor: "#999",
-          symbolSize: 14,
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemTextColor: "#000",
-              },
-            },
-          ],
+      theme={{
+        text: {
+          fontSize: 18
         },
-      ]} */
+      }}
     />
   );
 }

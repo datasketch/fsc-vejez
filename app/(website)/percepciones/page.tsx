@@ -112,10 +112,14 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <a target="_blank" href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
-          <p className="text-vampire-gray mt-16 ">
-            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha,
-            PROESA y DANE, 2023
+        <a
+          target="_blank"
+          href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
+        >
+          <p className="text-vampire-gray mt-16 lg:w-1/2">
+            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
+            Concha, PROESA y DANE, 2023 y Encuesta de Percepción Ciudadana, Red
+            de Ciudades Cómo Vamos, 2022
           </p>
         </a>
       </div>
@@ -249,7 +253,10 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <a target="_blank" href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/">
+          <a
+            target="_blank"
+            href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
+          >
             <p className="text-vampire-gray mt-16 ">
               Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
               Concha, PROESA y DANE, 2023
