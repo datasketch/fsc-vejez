@@ -26,7 +26,7 @@ export default function WordCloud({
   useEffect(() => {
     if (width && height) {
       const layout = cloud()
-        .size([width, 600])
+        .size([(width * 0.85), 600])
         .words(
           words.map((word) => ({
             text: word.text,
