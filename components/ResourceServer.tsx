@@ -3,8 +3,9 @@ import ServicesClient from "./ServicesClient";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
 import { Credentials } from "aws-sdk"
 import omit from "lodash.omit";
+import ResourcePanel from "./ResourcePanel";
 
-async function getServices(): Promise<Array<Record<string, unknown>>> {
+async function getResources(): Promise<Array<Record<string, unknown>>> {
     try {
         const s3Client = new S3Client({
             region: 'us-east-1',
@@ -17,11 +18,13 @@ async function getServices(): Promise<Array<Record<string, unknown>>> {
     
         const cmd = new GetObjectCommand({
             Bucket: bucket,
-            Key: 'fundacion-saldarriaga-concha/datos-plateados/servicios.json'
+            Key: 'fundacion-saldarriaga-concha/datos-plateados/recursos-biblioteca.json'
         })
     
+        
         const { Body } = await s3Client.send(cmd)
-    
+        console.log(Body)
+
         const content = await Body?.transformToString()
     
         const data = content ? JSON.parse(content) : []
@@ -34,10 +37,10 @@ async function getServices(): Promise<Array<Record<string, unknown>>> {
     }
 }
 
-export default async function Services() {
-    const data = await getServices()
+export default async function ResourceServer({data_tmp, isType, image}:any) {
+    const data = await getResources()
 
     console.log(data)
 
-    return <ServicesClient data={data} />
+    return <ResourcePanel data={data_tmp} isType={isType} image={image} />
 }

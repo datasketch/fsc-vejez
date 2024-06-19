@@ -3,6 +3,8 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import ResourcePanel from "@/components/ResourcePanel";
 import data from "@/data/recursos.json"
 import Link from "next/link";
+import { Suspense } from "react";
+import ResourceServer from "@/components/ResourceServer";
 
 
 export const metadata: Metadata = {
@@ -22,6 +24,9 @@ export default function Page() {
                 </TabList>
                 <TabPanels>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
+                        <Suspense fallback={<p>Cargando servicios</p>}>
+                            <ResourceServer data_tmp={data.biblioteca} isType={true} image={true} />
+                        </Suspense>
                         <ResourcePanel data={data.biblioteca} isType={true} image={true} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
