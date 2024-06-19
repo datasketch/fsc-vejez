@@ -21,7 +21,7 @@ export default function Map() {
         </div>
       </div>
       <div className="mt-12 lg:mt-16">
-        <a href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata">
+        <a target="_blank" href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata">
           <p className="text-davys-gray">
             Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
           </p>

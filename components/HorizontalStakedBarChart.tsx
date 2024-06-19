@@ -7,7 +7,6 @@ import {
   XAxis,
   YAxis,
   Legend,
-  Text,
   Tooltip,
 } from "recharts";
 
