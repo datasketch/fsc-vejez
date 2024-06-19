@@ -1,15 +1,54 @@
 import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import Link from "next/link";
-import { Suspense } from "react";
-import ResourceServer from "@/components/ResourceServer";
+import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
+import { Credentials } from "aws-sdk"
+import omit from "lodash.omit";
+import ResourcePanel from "@/components/ResourcePanel";
+
 
 export const metadata: Metadata = {
     title: "Recursos",
     description: "Lorem ipsum",
 };
 
-export default function Page() {
+async function getResources( panel: string ): Promise<Array<Record<string, unknown>>> {
+    try {
+        const s3Client = new S3Client({
+            region: 'us-east-1',
+            credentials: new Credentials({
+                accessKeyId: process.env.ACCESS_KEY_ID || '',
+                secretAccessKey: process.env.SECRET_ACCESS_KEY || '',
+            })
+        })
+        const bucket = process.env.BUCKET
+
+        const cmd = new GetObjectCommand({
+            Bucket: bucket,
+            Key: `fundacion-saldarriaga-concha/datos-plateados/recursos-${panel}.json`
+        })
+
+
+        const { Body } = await s3Client.send(cmd)
+
+        const content = await Body?.transformToString()
+
+        const data = content ? JSON.parse(content) : []
+
+        // rcd___id is a field appended to data when uploaded to Datasketch SaaS
+        return data.map((item: Record<string, unknown>) => omit(item, ['rcd___id']))
+    } catch (error) {
+        console.error(error)
+        return []
+    }
+}
+
+
+export default async function Page() {
+    const dataBiblioteca = await getResources("biblioteca")
+    const dataPoliticas = await getResources("politicas-publicas")
+    const dataDatos = await getResources("datos")
+
     return (
         <div className="bg-alabaster font-proxima-nova">
             <h1 className="text-4xl lg:text-6xl font-semibold text-dark-slate-gray text-center my-20">Recursos</h1>
@@ -21,28 +60,22 @@ export default function Page() {
                 </TabList>
                 <TabPanels>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <Suspense fallback={<p>Cargando recursos</p>}>
-                            <ResourceServer
-                                panel="biblioteca"
-                                isType={true}
-                                image={true} />
-                        </Suspense>
+                        <ResourcePanel
+                            data={dataBiblioteca}
+                            isType={true}
+                            image={true} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <Suspense fallback={<p>Cargando recursos</p>}>
-                            <ResourceServer
-                                panel="politicas-publicas"
-                                isType={false}
-                                image={false} />
-                        </Suspense>
+                        <ResourcePanel
+                            data={dataPoliticas}
+                            isType={false}
+                            image={false} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <Suspense fallback={<p>Cargando recursos</p>}>
-                            <ResourceServer
-                                panel="datos"
-                                isType={false}
-                                image={false} />
-                        </Suspense>
+                        <ResourcePanel
+                            data={dataDatos}
+                            isType={false}
+                            image={false} />
                     </TabPanel>
                 </TabPanels>
             </TabGroup>
