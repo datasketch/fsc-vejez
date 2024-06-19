@@ -43,7 +43,7 @@ export default async function Services() {
     return <ServicesClient data={data} />
 }
 
-export async function ServicesBarChartData({dataTmp, legendTmp}: any) {
+export async function ServicesBarChartData() {
     const data = await getServices()
 
     const legend = [

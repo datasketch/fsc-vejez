@@ -1,9 +1,7 @@
-import StackedBarChart from "@/components/StackedBarChart";
 import TabSections from "@/components/TabSections";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/servicios.json";
 import WrapperChart from "@/components/WrapperChart";
 import { Suspense } from "react";
 import Services, { ServicesBarChartData } from "@/components/Services";
@@ -114,13 +112,9 @@ export default function Page() {
               <div className="mt-6">
                 <WrapperChart description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
                   <Suspense fallback={<p>Cargando servicios</p>}>
-                    <ServicesBarChartData dataTmp={data.categoria_servicio_pais.data} legendTmp={data.categoria_servicio_pais.legend} />
+                    <ServicesBarChartData />
                   </Suspense>
                 </WrapperChart>
-                  {/* <StackedBarChart 
-                    data={data.categoria_servicio_pais.data}
-                    legend={data.categoria_servicio_pais.legend}
-                  /> */}
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
