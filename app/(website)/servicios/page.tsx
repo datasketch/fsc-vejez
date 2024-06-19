@@ -10,6 +10,7 @@ import healthWordsData from "@/data/service/health.json";
 import educationWordsData from "@/data/service/education.json";
 import financeWordsData from "@/data/service/finances.json";
 import WordCloud from "@/components/WordCloud";
+import MapServices from "@/components/MapServices";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -49,15 +50,9 @@ export default function Page() {
                   alrededor del mundo
                 </h3>
               </div>
-              <Image
-                className="mt-6 mx-auto"
-                src="/images/servicios/map.svg"
-                alt="map servicios"
-                width={1042}
-                height={520}
-                objectFit="cover"
-                objectPosition="center"
-              />
+              <div className="mt-6">
+                <MapServices />
+              </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
