@@ -38,7 +38,10 @@ export default function Page() {
                   información sobre los avances en soluciones tecnológicas a
                   nivel global dirigidos a este grupo demográfico. También
                   incluye un recurso de búsqueda para explorar fácilmente estos
-                  servicios.
+                  servicios. La recopilación de información es un ejercicio en
+                  construcción, que se complementará constantemente para
+                  presentar más servicios de acuerdo con las temáticas de
+                  interés y de más países.
                 </p>
               </div>
             </div>

@@ -17,7 +17,7 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
   return (
     <ResponsiveSankey
       data={data}
-      margin={{ top: 40, right: 220, bottom: 40, left: 50 }}
+      margin={{ top: 40, right: 20, bottom: 40, left: 50 }}
       ariaLabel="sankey-vivienda"
       align="justify"
       colors={[
@@ -48,27 +48,11 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
         from: "color",
         modifiers: [["darker", 1]],
       }}
-      legends={[
-        {
-          anchor: "right",
-          direction: "column",
-          translateX: 230,
-          itemWidth: 50,
-          itemHeight: 14,
-          itemDirection: "right-to-left",
-          itemsSpacing: 4,
-          itemTextColor: "#999",
-          symbolSize: 14,
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemTextColor: "#000",
-              },
-            },
-          ],
+      theme={{
+        text: {
+          fontSize: 18
         },
-      ]}
+      }}
     />
   );
 }

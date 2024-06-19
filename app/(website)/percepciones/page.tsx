@@ -124,10 +124,16 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <p className="text-vampire-gray mt-16 ">
-          Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga Concha,
-          PROESA y DANE, 2023
-        </p>
+        <a
+          target="_blank"
+          href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
+        >
+          <p className="text-vampire-gray mt-16 lg:w-1/2">
+            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
+            Concha, PROESA y DANE, 2023 y Encuesta de Percepción Ciudadana, Red
+            de Ciudades Cómo Vamos, 2022
+          </p>
+        </a>
       </div>
       <div className="bg-white w-full rounded-[40px] my-10">
         <div className="u-container font-proxima-nova pb-10">
@@ -192,9 +198,11 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <p className="text-vampire-gray mt-16 ">
-            Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
-          </p>
+          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+            <p className="text-vampire-gray mt-16 ">
+              Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
+            </p>
+          </a>
           <div className="lg:grid grid-cols-12 gap-5 mt-20">
             <div className="col-span-5">
               <h3 className="text-2xl lg:text-4xl font-semibold">
@@ -216,9 +224,11 @@ export default function Page() {
               legend={data.ciudades_como_vamos.data_finanzas.legend}
             />
           </WrapperChart>
-          <p className="text-vampire-gray mt-16 ">
-            Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
-          </p>
+          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+            <p className="text-vampire-gray mt-16 ">
+              Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
+            </p>
+          </a>
         </div>
       </div>
       <div className="u-container mt-20 font-proxima-nova">
@@ -269,10 +279,15 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <p className="text-vampire-gray mt-16 ">
-            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
-            Concha, PROESA y DANE, 2023
-          </p>
+          <a
+            target="_blank"
+            href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
+          >
+            <p className="text-vampire-gray mt-16 ">
+              Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
+              Concha, PROESA y DANE, 2023
+            </p>
+          </a>
         </div>
       </div>
     </>

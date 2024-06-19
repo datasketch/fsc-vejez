@@ -27,6 +27,11 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
       nodeOpacity={1}
       colors={["#1D5556", "#FAAA8D", "#B6174B", "#4B034F", "#41A5B4"]}
       borderColor="#ffffff"
+      theme={{
+        text: {
+          fontSize: 18,
+        },
+      }}
     />
   );
 }
