@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import data from "@/data/recursos.json"
 import Link from "next/link";
 import { Suspense } from "react";
 import ResourceServer from "@/components/ResourceServer";
 
 export const metadata: Metadata = {
-  title: "Recursos",
-  description: "Lorem ipsum",
+    title: "Recursos",
+    description: "Lorem ipsum",
 };
 
 export default function Page() {
@@ -24,7 +23,6 @@ export default function Page() {
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <Suspense fallback={<p>Cargando recursos</p>}>
                             <ResourceServer
-                                data_tmp={data.biblioteca}
                                 panel="biblioteca"
                                 isType={true}
                                 image={true} />
@@ -33,7 +31,6 @@ export default function Page() {
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <Suspense fallback={<p>Cargando recursos</p>}>
                             <ResourceServer
-                                data_tmp={data.politicas}
                                 panel="politicas-publicas"
                                 isType={false}
                                 image={false} />
@@ -42,7 +39,6 @@ export default function Page() {
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <Suspense fallback={<p>Cargando recursos</p>}>
                             <ResourceServer
-                                data_tmp={data.datos}
                                 panel="datos"
                                 isType={false}
                                 image={false} />
@@ -64,9 +60,5 @@ export default function Page() {
             </div>
             <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
         </div>
-        <img src="/images/recursos/icon-info-add-resource.png" alt="info" />
-      </div>
-      <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
-    </div>
-  );
+    );
 }

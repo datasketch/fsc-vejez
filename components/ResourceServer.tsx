@@ -37,7 +37,7 @@ async function getResources({ panel }: any): Promise<Array<Record<string, unknow
     }
 }
 
-export default async function ResourceServer({ data_tmp, panel, isType, image }: any) {
+export default async function ResourceServer({ panel, isType, image }: any) {
     const data = await getResources(panel={panel})
 
     return <ResourcePanel data={data} isType={isType} image={image} />
