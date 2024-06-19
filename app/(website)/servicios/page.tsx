@@ -3,20 +3,106 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import WrapperChart from "@/components/WrapperChart";
-import { Suspense } from "react";
-import Services, { ServicesBarChartData } from "@/components/Services";
 import healthWordsData from "@/data/service/health.json";
 import educationWordsData from "@/data/service/education.json";
 import financeWordsData from "@/data/service/finances.json";
 import WordCloud from "@/components/WordCloud";
 
+import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
+import { Credentials } from "aws-sdk"
+import omit from "lodash.omit";
+import ServicesClient from "@/components/ServicesClient";
+import StackedBarChart from "@/components/StackedBarChart";
 
 export const metadata: Metadata = {
   title: "Servicios",
   description: "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
 };
 
-export default function Page() {
+interface ServicesData {
+  services: Array<Record<string, unknown>>,
+  barChartData: {
+    legend: Array<{key: string, fill: string}>,
+    data: Array<Record<string, unknown>>
+  }
+}
+
+function getServicesByCountry(data: Array<Record<string, unknown>>) {
+  const legend = [
+    {
+      "key": "Educación",
+      "fill": "#1D5556"
+    },
+    {
+      "key": "Ingresos y finanzas",
+      "fill": "#FAAA8D"
+    },
+    {
+      "key": "Salud y bienestar",
+      "fill": "#B6174B"
+    }
+  ]
+
+  const groupedData = data.reduce((result, item) => {
+    const { pais_de_origen: country, categoria: cat } = item
+    if (!result[country as string]) {
+      result[country as string] = {
+        [cat as string]: 1
+      }
+    } else {
+      const record = result[country as string] as Record<string, string | number>
+      record[cat as string] = record[cat as string] ? +record[cat as string] + 1 : 1
+    }
+    return result
+  }, {})
+
+  return {
+    legend,
+    data: Object.entries(groupedData).map(([key, value]) => ({
+      ...(value as Record<string, number>),
+      name: key,
+      total: Object.values(value as Record<string, number>).reduce((a, b) => a + b)
+    }))
+  }
+}
+
+async function getServices(): Promise<ServicesData | {}> {
+  try {
+    const s3Client = new S3Client({
+      region: 'us-east-1',
+      credentials: new Credentials({
+        accessKeyId: process.env.ACCESS_KEY_ID || '',
+        secretAccessKey: process.env.SECRET_ACCESS_KEY || '',
+      })
+    })
+    const bucket = process.env.BUCKET
+
+    const cmd = new GetObjectCommand({
+      Bucket: bucket,
+      Key: 'fundacion-saldarriaga-concha/datos-plateados/servicios.json'
+    })
+
+    const { Body } = await s3Client.send(cmd)
+
+    const content = await Body?.transformToString()
+
+    const data = content ? JSON.parse(content) : []
+
+    const barChartData = getServicesByCountry(data)
+
+    // rcd___id is a field appended to data when uploaded to Datasketch SaaS
+    return {
+      services: data.map((item: Record<string, unknown>) => omit(item, ['rcd___id'])),
+      barChartData
+    }
+  } catch (error) {
+    console.error(error)
+    return {}
+  }
+}
+
+export default async function Page() {
+  const data = await getServices()
   return (
     <>
       <div className="py-16">
@@ -111,9 +197,7 @@ export default function Page() {
               </div>
               <div className="mt-6">
                 <WrapperChart description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
-                  <Suspense fallback={<p>Cargando servicios</p>}>
-                    <ServicesBarChartData />
-                  </Suspense>
+                  <StackedBarChart data={(data as ServicesData).barChartData.data} legend={(data as ServicesData).barChartData.legend} />
                 </WrapperChart>
               </div>
             </div>
@@ -193,9 +277,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Suspense fallback={<p>Cargando servicios</p>}>
-        <Services />
-      </Suspense>
+      <ServicesClient data={(data as ServicesData).services} />
       <div className="u-container border-t border-t-dark-slate-gray pt-16">
         <div className="bg-banner-services bg-cover bg-center rounded-[20px] p-8 md:p-10 lg:p-12 xl:p-[60px]">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
