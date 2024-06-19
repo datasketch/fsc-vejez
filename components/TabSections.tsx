@@ -6,7 +6,7 @@ import Image from "next/image";
 interface TabSectionProps {
   sections: {
     title: string;
-    srcImage: string;
+    wordCloud: React.ReactNode;
   }[];
 }
 
@@ -35,12 +35,7 @@ export default function TabSections({ sections }: TabSectionProps) {
               key={`section-content-${i + 1}`}
               value={section.title}
             >
-              <Image
-                width={600}
-                height={600}
-                src={section.srcImage}
-                alt={`${section.title} image`}
-              />
+              {section.wordCloud}
             </TabsContent>
           );
         })}
