@@ -1,1 +1,402 @@
-[{"word":"sabiduría","n":19},{"word":"vejez","n":19},{"word":"etapa","n":16},{"word":"adulta","n":12},{"word":"madurez","n":9},{"word":"tristeza","n":9},{"word":"muerte","n":8},{"word":"sabe","n":6},{"word":"vulnerable","n":6},{"word":"arrugas","n":5},{"word":"fin","n":5},{"word":"falta","n":4},{"word":"inútil","n":4},{"word":"adultez","n":3},{"word":"alegría","n":3},{"word":"buena","n":3},{"word":"culmina","n":3},{"word":"discriminación","n":3},{"word":"dura","n":3},{"word":"mamá","n":3},{"word":"paz","n":3},{"word":"vivir","n":3},{"word":"acabó","n":2},{"word":"bastón","n":2},{"word":"dependencia","n":2},{"word":"mira","n":2},{"word":"nadie","n":2},{"word":"ninguna","n":2},{"word":"pesar","n":2},{"word":"plata","n":2},{"word":"ternura","n":2},{"word":"triste","n":2},{"word":"última","n":2},{"word":"abuela","n":1},{"word":"acción","n":1},{"word":"aceptable","n":1},{"word":"actitud","n":1},{"word":"aguante","n":1},{"word":"alegar","n":1},{"word":"alta","n":1},{"word":"arrugitas","n":1},{"word":"belleza","n":1},{"word":"bien","n":1},{"word":"bienestar","n":1},{"word":"canas","n":1},{"word":"cesante","n":1},{"word":"critica","n":1},{"word":"culminó","n":1},{"word":"cumple","n":1},{"word":"cumplir","n":1},{"word":"defenderse","n":1},{"word":"deficiencias","n":1},{"word":"depender","n":1},{"word":"dependiente","n":1},{"word":"diferente","n":1},{"word":"dificultad","n":1},{"word":"energía","n":1},{"word":"enferma","n":1},{"word":"especial","n":1},{"word":"existe","n":1},{"word":"existir","n":1},{"word":"familia","n":1},{"word":"familiar","n":1},{"word":"fea","n":1},{"word":"final","n":1},{"word":"fuerza","n":1},{"word":"grecia","n":1},{"word":"incapaz","n":1},{"word":"injusticia","n":1},{"word":"jubilación","n":1},{"word":"juven","n":1},{"word":"limitación","n":1},{"word":"llegué","n":1},{"word":"llegó","n":1},{"word":"madura","n":1},{"word":"mente","n":1},{"word":"meta","n":1},{"word":"mire","n":1},{"word":"nacer","n":1},{"word":"natural","n":1},{"word":"padecer","n":1},{"word":"papas","n":1},{"word":"perdón","n":1},{"word":"regular","n":1},{"word":"rest","n":1},{"word":"risa","n":1},{"word":"saben","n":1},{"word":"saber","n":1},{"word":"salud","n":1},{"word":"termina","n":1},{"word":"terrible","n":1},{"word":"tumba","n":1},{"word":"viaja","n":1},{"word":"vunerables","n":1}]
+[
+  {
+    "text": "persona",
+    "value": 94
+  },
+  {
+    "text": "mayor",
+    "value": 89
+  },
+  {
+    "text": "edad",
+    "value": 71
+  },
+  {
+    "text": "viejo",
+    "value": 62
+  },
+  {
+    "text": "adulto",
+    "value": 46
+  },
+  {
+    "text": "experiencia",
+    "value": 42
+  },
+  {
+    "text": "viejito",
+    "value": 40
+  },
+  {
+    "text": "soledad",
+    "value": 38
+  },
+  {
+    "text": "vida",
+    "value": 30
+  },
+  {
+    "text": "anciano",
+    "value": 28
+  },
+  {
+    "text": "tercera",
+    "value": 23
+  },
+  {
+    "text": "respeto",
+    "value": 22
+  },
+  {
+    "text": "abandono",
+    "value": 20
+  },
+  {
+    "text": "años",
+    "value": 20
+  },
+  {
+    "text": "sabiduría",
+    "value": 19
+  },
+  {
+    "text": "vejez",
+    "value": 19
+  },
+  {
+    "text": "enfermedad",
+    "value": 18
+  },
+  {
+    "text": "etapa",
+    "value": 16
+  },
+  {
+    "text": "tranquilidad",
+    "value": 16
+  },
+  {
+    "text": "personas",
+    "value": 13
+  },
+  {
+    "text": "adulta",
+    "value": 12
+  },
+  {
+    "text": "vieja",
+    "value": 12
+  },
+  {
+    "text": "avanzada",
+    "value": 11
+  },
+  {
+    "text": "discapacidad",
+    "value": 10
+  },
+  {
+    "text": "mayores",
+    "value": 10
+  },
+  {
+    "text": "miedo",
+    "value": 10
+  },
+  {
+    "text": "pensión",
+    "value": 10
+  },
+  {
+    "text": "tristeza",
+    "value": 10
+  },
+  {
+    "text": "incapacidad",
+    "value": 9
+  },
+  {
+    "text": "madurez",
+    "value": 9
+  },
+  {
+    "text": "viejos",
+    "value": 9
+  },
+  {
+    "text": "abuelo",
+    "value": 8
+  },
+  {
+    "text": "ayuda",
+    "value": 8
+  },
+  {
+    "text": "muerte",
+    "value": 8
+  },
+  {
+    "text": "vamos",
+    "value": 8
+  },
+  {
+    "text": "viejitos",
+    "value": 8
+  },
+  {
+    "text": "mucha",
+    "value": 7
+  },
+  {
+    "text": "tiempo",
+    "value": 7
+  },
+  {
+    "text": "vulnerabilidad",
+    "value": 7
+  },
+  {
+    "text": "ciclo",
+    "value": 6
+  },
+  {
+    "text": "dignidad",
+    "value": 6
+  },
+  {
+    "text": "enfermedades",
+    "value": 6
+  },
+  {
+    "text": "llegar",
+    "value": 6
+  },
+  {
+    "text": "más",
+    "value": 6
+  },
+  {
+    "text": "sabe",
+    "value": 6
+  },
+  {
+    "text": "alguien",
+    "value": 5
+  },
+  {
+    "text": "ancianato",
+    "value": 5
+  },
+  {
+    "text": "ancianos",
+    "value": 5
+  },
+  {
+    "text": "arrugas",
+    "value": 5
+  },
+  {
+    "text": "cansancio",
+    "value": 5
+  },
+  {
+    "text": "desprotección",
+    "value": 5
+  },
+  {
+    "text": "fin",
+    "value": 5
+  },
+  {
+    "text": "hacer",
+    "value": 5
+  },
+  {
+    "text": "viejita",
+    "value": 5
+  },
+  {
+    "text": "vulnerable",
+    "value": 5
+  },
+  {
+    "text": "abuelito",
+    "value": 4
+  },
+  {
+    "text": "cuidado",
+    "value": 4
+  },
+  {
+    "text": "falta",
+    "value": 4
+  },
+  {
+    "text": "futuro",
+    "value": 4
+  },
+  {
+    "text": "gobierno",
+    "value": 4
+  },
+  {
+    "text": "inútil",
+    "value": 4
+  },
+  {
+    "text": "abuelitos",
+    "value": 3
+  },
+  {
+    "text": "abuelos",
+    "value": 3
+  },
+  {
+    "text": "adultez",
+    "value": 3
+  },
+  {
+    "text": "alegría",
+    "value": 3
+  },
+  {
+    "text": "allá",
+    "value": 3
+  },
+  {
+    "text": "bastón",
+    "value": 3
+  },
+  {
+    "text": "buena",
+    "value": 3
+  },
+  {
+    "text": "culmina",
+    "value": 3
+  },
+  {
+    "text": "desamparo",
+    "value": 3
+  },
+  {
+    "text": "descanso",
+    "value": 3
+  },
+  {
+    "text": "desprecio",
+    "value": 3
+  },
+  {
+    "text": "dificultades",
+    "value": 3
+  },
+  {
+    "text": "discriminación",
+    "value": 3
+  },
+  {
+    "text": "dura",
+    "value": 3
+  },
+  {
+    "text": "duro",
+    "value": 3
+  },
+  {
+    "text": "gente",
+    "value": 3
+  },
+  {
+    "text": "indefenso",
+    "value": 3
+  },
+  {
+    "text": "invalidez",
+    "value": 3
+  },
+  {
+    "text": "llega",
+    "value": 3
+  },
+  {
+    "text": "mamá",
+    "value": 3
+  },
+  {
+    "text": "mayoría",
+    "value": 3
+  },
+  {
+    "text": "palabra",
+    "value": 3
+  },
+  {
+    "text": "paz",
+    "value": 3
+  },
+  {
+    "text": "temor",
+    "value": 3
+  },
+  {
+    "text": "termino",
+    "value": 3
+  },
+  {
+    "text": "trabajo",
+    "value": 3
+  },
+  {
+    "text": "vivir",
+    "value": 3
+  },
+  {
+    "text": "voy",
+    "value": 3
+  },
+  {
+    "text": "acabó",
+    "value": 2
+  },
+  {
+    "text": "amor",
+    "value": 2
+  },
+  {
+    "text": "apoyo",
+    "value": 2
+  },
+  {
+    "text": "arrumado",
+    "value": 2
+  },
+  {
+    "text": "bueno",
+    "value": 2
+  },
+  {
+    "text": "calidad",
+    "value": 2
+  },
+  {
+    "text": "conocimiento",
+    "value": 2
+  },
+  {
+    "text": "cuidar",
+    "value": 2
+  },
+  {
+    "text": "debilidad",
+    "value": 2
+  },
+  {
+    "text": "dependencia",
+    "value": 2
+  },
+  {
+    "text": "descuido",
+    "value": 2
+  }
+]

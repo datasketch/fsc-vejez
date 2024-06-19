@@ -15,9 +15,9 @@ export default function WrapperChart({
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
-    <div className="relative">
+    <div className="flex flex-col gap-y-4">
       <div>{children}</div>
-      <div className="absolute bottom-0 left-0">
+      <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>
             {!open ? (
