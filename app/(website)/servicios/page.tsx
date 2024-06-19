@@ -7,6 +7,11 @@ import data from "@/data/servicios.json";
 import WrapperChart from "@/components/WrapperChart";
 import { Suspense } from "react";
 import Services, { ServicesBarChartData } from "@/components/Services";
+import healthWordsData from "@/data/service/health.json";
+import educationWordsData from "@/data/service/education.json";
+import financeWordsData from "@/data/service/finances.json";
+import WordCloud from "@/components/WordCloud";
+
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -35,7 +40,10 @@ export default function Page() {
                   información sobre los avances en soluciones tecnológicas a
                   nivel global dirigidos a este grupo demográfico. También
                   incluye un recurso de búsqueda para explorar fácilmente estos
-                  servicios.
+                  servicios. La recopilación de información es un ejercicio en
+                  construcción, que se complementará constantemente para
+                  presentar más servicios de acuerdo con las temáticas de
+                  interés y de más países.
                 </p>
               </div>
             </div>
@@ -147,15 +155,33 @@ export default function Page() {
                   sections={[
                     {
                       title: "Salud y bienestar",
-                      srcImage: "/images/servicios/words/service-health.png",
+                      wordCloud: (
+                        <WordCloud
+                          words={healthWordsData}
+                          size={10}
+                          color="#FAFAFA"
+                        />
+                      ),
                     },
                     {
                       title: "Educación",
-                      srcImage: "/images/servicios/words/service-education.png",
+                      wordCloud: (
+                        <WordCloud
+                          words={educationWordsData}
+                          size={16}
+                          color="#FAFAFA"
+                        />
+                      ),
                     },
                     {
                       title: "Ingresos y finanzas",
-                      srcImage: "/images/servicios/words/service-finance.png",
+                      wordCloud: (
+                        <WordCloud
+                          words={financeWordsData}
+                          size={16}
+                          color="#FAFAFA"
+                        />
+                      ),
                     },
                   ]}
                 />

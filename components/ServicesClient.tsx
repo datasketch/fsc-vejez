@@ -44,6 +44,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+
   const downloadServicesData = () => {
     const workbook = XLSX.utils.book_new();
     const records: Array<Array<string>> = data.map((record: Record<string, unknown>) => Object.values(record))
@@ -52,6 +53,15 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     XLSX.utils.book_append_sheet(workbook, worksheet, 'servicios')
     XLSX.writeFile(workbook, "datos-servicios.xlsx")
   }
+
+  const resetFilters = () => {
+    setCategory("");
+    setCountry("");
+    setSearch("");
+    setItemOffset(0);
+    setCurrentPage(0);
+  };
+
 
   useEffect(() => {
     let newData = data;
@@ -129,6 +139,8 @@ export default function ServicesClient({ data }: ServicesClientProps) {
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-1 lg:col-end-3">
             <select
               name="category"
+              aria-label="opciones categoria"
+              value={category}
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCategory(e.target.value)}
             >
@@ -143,6 +155,8 @@ export default function ServicesClient({ data }: ServicesClientProps) {
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-3 lg:col-end-5">
             <select
               name="country"
+              aria-label="opciones paises"
+              value={country}
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCountry(e.target.value)}
             >
@@ -154,6 +168,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               ))}
             </select>
           </div>
+
           <div className="mt-4 lg:hidden col-span-4">
             <Dialog>
               <DialogTrigger>
@@ -217,10 +232,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                     <div className="flex items-center justify-between">
                       <DialogClose>
                         <button
-                          onClick={() => {
-                            setCategory("");
-                            setCountry("");
-                          }}
+                          onClick={() => resetFilters()}
                           className="text-[13px] text-dark-slate-gray underline"
                         >
                           Reestablecer filtros
@@ -244,6 +256,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                 className="py-2 pl-10 pr-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
                 type="text"
                 placeholder="Buscar por palabra clave"
+                value={search}
               />
               <div className="absolute top-1/2 left-4 -translate-y-1/2">
                 <Image
@@ -255,7 +268,15 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               </div>
             </div>
           </div>
-          <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-10 lg:col-end-13">
+          <div className="mt-14 hidden lg:block col-span-2">
+            <button
+              onClick={() => resetFilters()}
+              className="text-[13px] text-dark-slate-gray underline"
+            >
+              Reestablecer filtros
+            </button>
+          </div>
+          <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-11 lg:col-end-13">
             <div className="flex justify-start lg:justify-end">
               <button
                 className="inline-block py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold"

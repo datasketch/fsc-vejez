@@ -1,1 +1,402 @@
-[{"word":"adulta","n":28},{"word":"sabiduría","n":24},{"word":"madurez","n":21},{"word":"vejez","n":14},{"word":"muerte","n":7},{"word":"etapa","n":5},{"word":"final","n":5},{"word":"bien","n":4},{"word":"inútil","n":4},{"word":"vivió","n":4},{"word":"abuelita","n":3},{"word":"mamá","n":3},{"word":"abuela","n":2},{"word":"adultez","n":2},{"word":"alegría","n":2},{"word":"canas","n":2},{"word":"etapas","n":2},{"word":"paciencia","n":2},{"word":"padres","n":2},{"word":"paz","n":2},{"word":"salir","n":2},{"word":"salud","n":2},{"word":"vivir","n":2},{"word":"adultas","n":1},{"word":"alta","n":1},{"word":"amar","n":1},{"word":"amargura","n":1},{"word":"antigua","n":1},{"word":"atenderá","n":1},{"word":"bastón","n":1},{"word":"buen","n":1},{"word":"burla","n":1},{"word":"cana","n":1},{"word":"carencia","n":1},{"word":"cerca","n":1},{"word":"cumple","n":1},{"word":"denigran","n":1},{"word":"dependencia","n":1},{"word":"dicha","n":1},{"word":"dificultad","n":1},{"word":"digna","n":1},{"word":"discriminación","n":1},{"word":"disfrute","n":1},{"word":"emprender","n":1},{"word":"energias","n":1},{"word":"enferma","n":1},{"word":"estara","n":1},{"word":"existe","n":1},{"word":"familia","n":1},{"word":"fin","n":1},{"word":"fuerza","n":1},{"word":"fuerzas","n":1},{"word":"fácil","n":1},{"word":"hija","n":1},{"word":"incapaz","n":1},{"word":"intelectual","n":1},{"word":"justicia","n":1},{"word":"libertad","n":1},{"word":"llegó","n":1},{"word":"madre","n":1},{"word":"madres","n":1},{"word":"madura","n":1},{"word":"mal","n":1},{"word":"mama","n":1},{"word":"mente","n":1},{"word":"merecen","n":1},{"word":"murió","n":1},{"word":"ninguna","n":1},{"word":"nivel","n":1},{"word":"padre","n":1},{"word":"papá","n":1},{"word":"patilla","n":1},{"word":"próximamente","n":1},{"word":"pude","n":1},{"word":"quién","n":1},{"word":"regular","n":1},{"word":"respetar","n":1},{"word":"respete","n":1},{"word":"sabe","n":1},{"word":"sabisuria","n":1},{"word":"sabría","n":1},{"word":"sbiduria","n":1},{"word":"sentirse","n":1},{"word":"tercer","n":1},{"word":"terminar","n":1},{"word":"tristeza","n":1},{"word":"trsteza","n":1},{"word":"util","n":1},{"word":"vehez","n":1},{"word":"viajó","n":1},{"word":"vijita","n":1},{"word":"vive","n":1},{"word":"vuejita","n":1},{"word":"vuler","n":1},{"word":"vulnerable","n":1},{"word":"última","n":1},{"word":"útil","n":1}]
+[
+  {
+    "text": "viejo",
+    "value": 190
+  },
+  {
+    "text": "edad",
+    "value": 124
+  },
+  {
+    "text": "anciano",
+    "value": 106
+  },
+  {
+    "text": "mayor",
+    "value": 104
+  },
+  {
+    "text": "persona",
+    "value": 79
+  },
+  {
+    "text": "adulto",
+    "value": 65
+  },
+  {
+    "text": "experiencia",
+    "value": 56
+  },
+  {
+    "text": "respeto",
+    "value": 40
+  },
+  {
+    "text": "vieja",
+    "value": 35
+  },
+  {
+    "text": "tercera",
+    "value": 32
+  },
+  {
+    "text": "adulta",
+    "value": 28
+  },
+  {
+    "text": "años",
+    "value": 26
+  },
+  {
+    "text": "viejito",
+    "value": 25
+  },
+  {
+    "text": "sabiduría",
+    "value": 24
+  },
+  {
+    "text": "avanzada",
+    "value": 21
+  },
+  {
+    "text": "madurez",
+    "value": 21
+  },
+  {
+    "text": "vida",
+    "value": 21
+  },
+  {
+    "text": "vejez",
+    "value": 14
+  },
+  {
+    "text": "abuelo",
+    "value": 12
+  },
+  {
+    "text": "adultos",
+    "value": 12
+  },
+  {
+    "text": "experiencias",
+    "value": 11
+  },
+  {
+    "text": "soledad",
+    "value": 11
+  },
+  {
+    "text": "ancianos",
+    "value": 10
+  },
+  {
+    "text": "llegar",
+    "value": 10
+  },
+  {
+    "text": "mayores",
+    "value": 10
+  },
+  {
+    "text": "personas",
+    "value": 10
+  },
+  {
+    "text": "tiempo",
+    "value": 10
+  },
+  {
+    "text": "anciana",
+    "value": 9
+  },
+  {
+    "text": "señor",
+    "value": 9
+  },
+  {
+    "text": "abandono",
+    "value": 8
+  },
+  {
+    "text": "antiguo",
+    "value": 7
+  },
+  {
+    "text": "muerte",
+    "value": 7
+  },
+  {
+    "text": "poniendo",
+    "value": 7
+  },
+  {
+    "text": "viejita",
+    "value": 7
+  },
+  {
+    "text": "viejos",
+    "value": 7
+  },
+  {
+    "text": "cansancio",
+    "value": 6
+  },
+  {
+    "text": "enfermedad",
+    "value": 6
+  },
+  {
+    "text": "envejecimiento",
+    "value": 6
+  },
+  {
+    "text": "pasado",
+    "value": 6
+  },
+  {
+    "text": "tranquilidad",
+    "value": 6
+  },
+  {
+    "text": "antigüedad",
+    "value": 5
+  },
+  {
+    "text": "avanzado",
+    "value": 5
+  },
+  {
+    "text": "deterioro",
+    "value": 5
+  },
+  {
+    "text": "dios",
+    "value": 5
+  },
+  {
+    "text": "etapa",
+    "value": 5
+  },
+  {
+    "text": "final",
+    "value": 5
+  },
+  {
+    "text": "inservible",
+    "value": 5
+  },
+  {
+    "text": "mayoría",
+    "value": 5
+  },
+  {
+    "text": "sirve",
+    "value": 5
+  },
+  {
+    "text": "bastante",
+    "value": 4
+  },
+  {
+    "text": "bien",
+    "value": 4
+  },
+  {
+    "text": "ciclo",
+    "value": 4
+  },
+  {
+    "text": "inútil",
+    "value": 4
+  },
+  {
+    "text": "mamá",
+    "value": 4
+  },
+  {
+    "text": "mucha",
+    "value": 4
+  },
+  {
+    "text": "trabajar",
+    "value": 4
+  },
+  {
+    "text": "trabajo",
+    "value": 4
+  },
+  {
+    "text": "vivió",
+    "value": 4
+  },
+  {
+    "text": "abuelita",
+    "value": 3
+  },
+  {
+    "text": "abuelitos",
+    "value": 3
+  },
+  {
+    "text": "abuelos",
+    "value": 3
+  },
+  {
+    "text": "acabado",
+    "value": 3
+  },
+  {
+    "text": "alguien",
+    "value": 3
+  },
+  {
+    "text": "callejón",
+    "value": 3
+  },
+  {
+    "text": "cuidado",
+    "value": 3
+  },
+  {
+    "text": "descanso",
+    "value": 3
+  },
+  {
+    "text": "estorbo",
+    "value": 3
+  },
+  {
+    "text": "futuro",
+    "value": 3
+  },
+  {
+    "text": "incapacidad",
+    "value": 3
+  },
+  {
+    "text": "llega",
+    "value": 3
+  },
+  {
+    "text": "pensión",
+    "value": 3
+  },
+  {
+    "text": "solo",
+    "value": 3
+  },
+  {
+    "text": "viejitos",
+    "value": 3
+  },
+  {
+    "text": "abuela",
+    "value": 2
+  },
+  {
+    "text": "aceptar",
+    "value": 2
+  },
+  {
+    "text": "adultez",
+    "value": 2
+  },
+  {
+    "text": "ala",
+    "value": 2
+  },
+  {
+    "text": "alegría",
+    "value": 2
+  },
+  {
+    "text": "amor",
+    "value": 2
+  },
+  {
+    "text": "bendiciones",
+    "value": 2
+  },
+  {
+    "text": "canas",
+    "value": 2
+  },
+  {
+    "text": "debe",
+    "value": 2
+  },
+  {
+    "text": "desamparo",
+    "value": 2
+  },
+  {
+    "text": "descuido",
+    "value": 2
+  },
+  {
+    "text": "discriminación",
+    "value": 2
+  },
+  {
+    "text": "envejecer",
+    "value": 2
+  },
+  {
+    "text": "envejeciendo",
+    "value": 2
+  },
+  {
+    "text": "espontánea",
+    "value": 2
+  },
+  {
+    "text": "etapas",
+    "value": 2
+  },
+  {
+    "text": "hacer",
+    "value": 2
+  },
+  {
+    "text": "incapacitado",
+    "value": 2
+  },
+  {
+    "text": "llegue",
+    "value": 2
+  },
+  {
+    "text": "mental",
+    "value": 2
+  },
+  {
+    "text": "modo",
+    "value": 2
+  },
+  {
+    "text": "más",
+    "value": 2
+  },
+  {
+    "text": "normal",
+    "value": 2
+  },
+  {
+    "text": "paciencia",
+    "value": 2
+  },
+  {
+    "text": "padres",
+    "value": 2
+  },
+  {
+    "text": "pasa",
+    "value": 2
+  },
+  {
+    "text": "pasos",
+    "value": 2
+  }
+]

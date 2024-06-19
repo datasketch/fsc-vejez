@@ -332,6 +332,7 @@ export default function ResourcePanel({
             <select
               className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
               name=""
+              aria-label="opciones año"
               id={selectedYear}
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}
@@ -353,6 +354,7 @@ export default function ResourcePanel({
           <select
             className="h-10 w-full lg:w-min overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
             name=""
+            aria-label="opciones de ordenamiento"
             id={order}
             value={order}
             onChange={(e) => setOrder(e.target.value)}

@@ -26,7 +26,7 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
       colors={{
         type: "quantize",
         colors: ["#90EE90", "#77B769", "#679D5C", "#3F6C53", "#1D5556"],
-        steps: 5
+        steps: 5,
       }}
       emptyColor="#555555"
       borderColor="white"
@@ -35,6 +35,11 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
       labelTextColor={{
         from: "color",
         modifiers: [["darker", 2]],
+      }}
+      theme={{
+        text: {
+          fontSize: 14,
+        },
       }}
       legends={[
         {

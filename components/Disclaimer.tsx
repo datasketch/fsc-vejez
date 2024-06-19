@@ -8,17 +8,11 @@ import { useEffect, useState } from "react";
 export default function Disclaimer() {
   const [open, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsOpen(true);
-    }, 300);
-  }, []);
-
   return (
     <div
-      className={clsx("fixed bottom-1/2 duration-500 z-50", {
-        "left-6 md:left-10": open,
-        "left-2 md:left-4": !open,
+      className={clsx("fixed bottom-8 duration-500 z-50", {
+        "left-[95%] md:left-[95%]": open,
+        "left-[93%] md:left-[95%]": !open,
       })}
     >
       <Popover open={open} onOpenChange={(open) => setIsOpen(open)}>
@@ -40,10 +34,10 @@ export default function Disclaimer() {
           )}
         </PopoverTrigger>
         <PopoverContent
-          className="bg-seasalt p-5 pr-6 u-shadow-1 max-w-[400px] md:max-w-[695px] w-full rounded-[5px] before:content-[''] before:absolute before:top-0 before:right-0 before:h-full before:w-[6px] before:bg-dark-slate-gray before:rounded-tr-[5px] before:rounded-br-[5px]"
-          align="start"
-          side="bottom"
-          sideOffset={10}
+          className="bg-seasalt p-5 pl-6 u-shadow-1 max-w-[400px] md:max-w-[695px] w-full rounded-[5px] before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-[6px] before:bg-dark-slate-gray before:rounded-tl-[5px] before:rounded-bl-[5px]"
+          align="end"
+          side="top"
+          sideOffset={20}
         >
           <p className="leading-[20.8px]">
             Las bases de datos utilizadas fueron filtradas y procesadas con un

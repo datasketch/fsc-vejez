@@ -5,10 +5,9 @@ import Link from "next/link";
 import { Suspense } from "react";
 import ResourceServer from "@/components/ResourceServer";
 
-
 export const metadata: Metadata = {
-    title: "Recursos",
-    description: "Lorem ipsum",
+  title: "Recursos",
+  description: "Lorem ipsum",
 };
 
 export default function Page() {
@@ -65,6 +64,9 @@ export default function Page() {
             </div>
             <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
         </div>
-
-    )
+        <img src="/images/recursos/icon-info-add-resource.png" alt="info" />
+      </div>
+      <hr className="u-container bg-blue-dianne h-[2px] mb-14" />
+    </div>
+  );
 }

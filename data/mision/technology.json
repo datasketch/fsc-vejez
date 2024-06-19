@@ -1,1 +1,19 @@
-[{"word":"ver","n":3},{"word":"difícil","n":2},{"word":"familia","n":2},{"word":"llamar","n":2},{"word":"pudieran","n":2},{"word":"apenas","n":1},{"word":"aprender","n":1},{"word":"barreras","n":1},{"word":"celulares","n":1},{"word":"chatear","n":1},{"word":"cámara","n":1},{"word":"dejar","n":1},{"word":"detrás","n":1},{"word":"entendían","n":1},{"word":"hablara","n":1},{"word":"magnitud","n":1},{"word":"maneja","n":1}]
+[
+  { "text": "ver", "value": 3 },
+  { "text": "difícil", "value": 2 },
+  { "text": "familia", "value": 2 },
+  { "text": "llamar", "value": 2 },
+  { "text": "pudieran", "value": 2 },
+  { "text": "apenas", "value": 1 },
+  { "text": "aprender", "value": 1 },
+  { "text": "barreras", "value": 1 },
+  { "text": "celulares", "value": 1 },
+  { "text": "chatear", "value": 1 },
+  { "text": "cámara", "value": 1 },
+  { "text": "dejar", "value": 1 },
+  { "text": "detrás", "value": 1 },
+  { "text": "entendían", "value": 1 },
+  { "text": "hablara", "value": 1 },
+  { "text": "magnitud", "value": 1 },
+  { "text": "maneja", "value": 1 }
+]

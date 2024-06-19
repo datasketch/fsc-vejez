@@ -64,12 +64,20 @@ export default function Page() {
                     Datos plateados
                   </span>
                 </h1>
+                <p className="w-2/3 text-center mt-5 mx-auto">
+                  +60 Datos plateados es una plataforma de información sobre
+                  necesidades y oportunidades de la población de 60 años o más
+                  en distintas temáticas. Los datos que proporcionamos buscan
+                  enriquecer la toma de decisiones en contextos de
+                  participación, investigación, programas y servicios dirigidos
+                  a las personas mayores.
+                </p>
               </div>
             </div>
             <div className="mt-14 lg:mt-40 xl:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
-              <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Las personas mayores en Colombia
-              </h3>
+              </h2>
               <div className="mt-4 flex gap-x-2.5">
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
                   7.8M
@@ -102,9 +110,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="mt-12 lg:mt-4">
-                <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+                <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                   Distribución en áreas geográficas
-                </h3>
+                </h2>
                 <div className="mt-6">
                   <Image
                     width={363}
@@ -181,9 +189,9 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-14 lg:mt-60 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-4">
-              <h3 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Distribución población de 60 años o más en Colombia por sexo
-              </h3>
+              </h2>
               <div className="mt-5">
                 <Image
                   className="mx-auto"
@@ -193,9 +201,9 @@ export default function Page() {
                   alt="human figure 2"
                 />
               </div>
-              <h3 className="mt-14 relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
+              <h2 className="mt-14 relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Proyecciones de la población por grupos etarios a 2050
-              </h3>
+              </h2>
               <div className="mt-5">
                 <Image
                   className="mx-auto"
@@ -229,10 +237,10 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 md:col-span-2 lg:col-span-5">
-              <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
+              <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
                 Distribución de la población en Colombia por grupo de edad en
                 2024 (post COVID-19)
-              </h3>
+              </h2>
               <div className="mt-6">
                 <Image
                   width={1920}
@@ -243,9 +251,9 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-14 lg:mt-0 col-span-4 md:col-span-2 lg:col-start-8 lg:col-end-13">
-              <h3 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt">
+              <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt">
                 Departamentos con más personas mayores
-              </h3>
+              </h2>
               <p className="mt-5 text-seasalt">
                 Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos
                 de la región Andina (Santander y Antioquia) tienen mayor
@@ -261,10 +269,15 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-seasalt">
-                Proyecciones del Censo Nacional de Población y Vivienda (CNPV),
-                2018, DANE
-              </p>
+              <a
+                target="_blank"
+                href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106"
+              >
+                <p className="text-seasalt">
+                  Proyecciones del Censo Nacional de Población y Vivienda
+                  (CNPV), 2018, DANE
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -378,9 +391,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -413,9 +431,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -464,9 +487,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -486,7 +514,9 @@ export default function Page() {
                 más comunes para los apartamentos. En cambio, las casas tienen
                 una distribución más diversa en cuanto a tenencia, pero priman
                 la propiedad totalmente pagada, en usufructo y en
-                arriendo/subarriendo.
+                arriendo/subarriendo. La gráfica filtra los valores
+                predominantes. Para conocer todos los resultados, diríjase a
+                “Explora los datos”, al final de la página de inicio.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -502,9 +532,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -561,9 +596,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             <div className="mt-12 lg:mt-20 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
@@ -593,9 +633,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -649,9 +694,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://www.simur.gov.co/encuestas-de-movilidad"
+              >
+                <p className="text-davys-gray">
+                  Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -661,17 +711,18 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
+              <h2 className="text-2xl lg:text-[31px] font-semibold">
                 Explora los{" "}
                 <span className="italic font-normal text-dark-slate-gray">
                   datos
                 </span>
-              </h3>
+              </h2>
             </div>
             <div className="mt-6 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
               <iframe
                 className="size-full aspect-video"
                 src="https://services.datasketch.co/fsc-vejez-app/"
+                title="Explora los datos relacionados con la pagina"
               />
             </div>
           </div>
