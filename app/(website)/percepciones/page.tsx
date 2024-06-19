@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; 
+import type { Metadata } from "next";
 import data from "@/data/percepciones.json";
 import BarChart2 from "@/components/Barchart";
 import HorizontalBarGraph from "@/components/HorizontalBarGraph";
@@ -10,6 +10,10 @@ import manizalesWordsData from "@/data/perception/manizales.json";
 import cartagenaWordsData from "@/data/perception/cartagena.json";
 import medellinWordsData from "@/data/perception/medellin.json";
 import pereiraWordsData from "@/data/perception/pereira.json";
+import armeniaWordsData from "@/data/perception/armenia.json";
+import barranquillaWordsData from "@/data/perception/barranquilla.json";
+import bogotaWordsData from "@/data/perception/bogota.json";
+import caliWordsData from "@/data/perception/cali.json";
 import healthWordsData from "@/data/mision/health.json";
 import educationWordsData from "@/data/mision/education.json";
 import financesWordsData from "@/data/mision/finances.json";
@@ -167,6 +171,22 @@ export default function Page() {
                       title: "Pereira",
                       wordCloud: <WordCloud words={pereiraWordsData} />,
                     },
+                    {
+                      title: "Armenia",
+                      wordCloud: <WordCloud words={armeniaWordsData} />,
+                    },
+                    {
+                      title: "Barranquilla",
+                      wordCloud: <WordCloud words={barranquillaWordsData} />,
+                    },
+                    {
+                      title: "Bogotá",
+                      wordCloud: <WordCloud words={bogotaWordsData} />,
+                    },
+                    {
+                      title: "Cali",
+                      wordCloud: <WordCloud words={caliWordsData} />,
+                    },
                   ]}
                 />
               </WrapperChart>
@@ -230,11 +250,15 @@ export default function Page() {
                     },
                     {
                       title: "Educación",
-                      wordCloud: <WordCloud words={educationWordsData} size={16} />,
+                      wordCloud: (
+                        <WordCloud words={educationWordsData} size={16} />
+                      ),
                     },
                     {
                       title: "Ingresos y finanzas",
-                      wordCloud: <WordCloud words={financesWordsData} size={10} />,
+                      wordCloud: (
+                        <WordCloud words={financesWordsData} size={10} />
+                      ),
                     },
                     {
                       title: "Tecnología y digitalización",

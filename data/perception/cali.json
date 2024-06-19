@@ -1,0 +1,402 @@
+[
+  {
+    "text": "viejo",
+    "value": 129
+  },
+  {
+    "text": "mayor",
+    "value": 103
+  },
+  {
+    "text": "persona",
+    "value": 99
+  },
+  {
+    "text": "adulto",
+    "value": 70
+  },
+  {
+    "text": "experiencia",
+    "value": 68
+  },
+  {
+    "text": "edad",
+    "value": 66
+  },
+  {
+    "text": "años",
+    "value": 40
+  },
+  {
+    "text": "anciano",
+    "value": 33
+  },
+  {
+    "text": "viejito",
+    "value": 33
+  },
+  {
+    "text": "soledad",
+    "value": 32
+  },
+  {
+    "text": "vieja",
+    "value": 30
+  },
+  {
+    "text": "sabiduría",
+    "value": 27
+  },
+  {
+    "text": "pensión",
+    "value": 26
+  },
+  {
+    "text": "tiempo",
+    "value": 26
+  },
+  {
+    "text": "enfermedades",
+    "value": 25
+  },
+  {
+    "text": "vejez",
+    "value": 25
+  },
+  {
+    "text": "salud",
+    "value": 24
+  },
+  {
+    "text": "vida",
+    "value": 23
+  },
+  {
+    "text": "adulta",
+    "value": 22
+  },
+  {
+    "text": "muerte",
+    "value": 22
+  },
+  {
+    "text": "enfermedad",
+    "value": 21
+  },
+  {
+    "text": "miedo",
+    "value": 19
+  },
+  {
+    "text": "deterioro",
+    "value": 18
+  },
+  {
+    "text": "tranquilidad",
+    "value": 17
+  },
+  {
+    "text": "adultos",
+    "value": 16
+  },
+  {
+    "text": "longevidad",
+    "value": 16
+  },
+  {
+    "text": "llegar",
+    "value": 15
+  },
+  {
+    "text": "tercera",
+    "value": 15
+  },
+  {
+    "text": "madurez",
+    "value": 14
+  },
+  {
+    "text": "anciana",
+    "value": 13
+  },
+  {
+    "text": "normal",
+    "value": 13
+  },
+  {
+    "text": "sirve",
+    "value": 13
+  },
+  {
+    "text": "tristeza",
+    "value": 13
+  },
+  {
+    "text": "abandono",
+    "value": 12
+  },
+  {
+    "text": "etapa",
+    "value": 12
+  },
+  {
+    "text": "mayores",
+    "value": 12
+  },
+  {
+    "text": "viejos",
+    "value": 12
+  },
+  {
+    "text": "arrugas",
+    "value": 11
+  },
+  {
+    "text": "canas",
+    "value": 11
+  },
+  {
+    "text": "descanso",
+    "value": 11
+  },
+  {
+    "text": "incapacidad",
+    "value": 10
+  },
+  {
+    "text": "viejitos",
+    "value": 10
+  },
+  {
+    "text": "ancianos",
+    "value": 9
+  },
+  {
+    "text": "cansancio",
+    "value": 9
+  },
+  {
+    "text": "cuidado",
+    "value": 9
+  },
+  {
+    "text": "voy",
+    "value": 9
+  },
+  {
+    "text": "abuelos",
+    "value": 8
+  },
+  {
+    "text": "allá",
+    "value": 8
+  },
+  {
+    "text": "hacer",
+    "value": 8
+  },
+  {
+    "text": "juventud",
+    "value": 8
+  },
+  {
+    "text": "personas",
+    "value": 8
+  },
+  {
+    "text": "puede",
+    "value": 8
+  },
+  {
+    "text": "alguien",
+    "value": 7
+  },
+  {
+    "text": "oportunidades",
+    "value": 7
+  },
+  {
+    "text": "ser",
+    "value": 7
+  },
+  {
+    "text": "abuelo",
+    "value": 6
+  },
+  {
+    "text": "apoyo",
+    "value": 6
+  },
+  {
+    "text": "cucho",
+    "value": 6
+  },
+  {
+    "text": "dios",
+    "value": 6
+  },
+  {
+    "text": "solo",
+    "value": 6
+  },
+  {
+    "text": "tener",
+    "value": 6
+  },
+  {
+    "text": "vamos",
+    "value": 6
+  },
+  {
+    "text": "adultas",
+    "value": 5
+  },
+  {
+    "text": "ciclo",
+    "value": 5
+  },
+  {
+    "text": "cuerpo",
+    "value": 5
+  },
+  {
+    "text": "desprotección",
+    "value": 5
+  },
+  {
+    "text": "deteriorado",
+    "value": 5
+  },
+  {
+    "text": "falta",
+    "value": 5
+  },
+  {
+    "text": "niño",
+    "value": 5
+  },
+  {
+    "text": "olvido",
+    "value": 5
+  },
+  {
+    "text": "poder",
+    "value": 5
+  },
+  {
+    "text": "respeto",
+    "value": 5
+  },
+  {
+    "text": "sabe",
+    "value": 5
+  },
+  {
+    "text": "señor",
+    "value": 5
+  },
+  {
+    "text": "viejita",
+    "value": 5
+  },
+  {
+    "text": "abuelitos",
+    "value": 4
+  },
+  {
+    "text": "acabó",
+    "value": 4
+  },
+  {
+    "text": "ancianato",
+    "value": 4
+  },
+  {
+    "text": "avanzada",
+    "value": 4
+  },
+  {
+    "text": "casa",
+    "value": 4
+  },
+  {
+    "text": "conocimiento",
+    "value": 4
+  },
+  {
+    "text": "dolor",
+    "value": 4
+  },
+  {
+    "text": "humano",
+    "value": 4
+  },
+  {
+    "text": "incertidumbre",
+    "value": 4
+  },
+  {
+    "text": "inservible",
+    "value": 4
+  },
+  {
+    "text": "mal",
+    "value": 4
+  },
+  {
+    "text": "mucha",
+    "value": 4
+  },
+  {
+    "text": "muchas",
+    "value": 4
+  },
+  {
+    "text": "más",
+    "value": 4
+  },
+  {
+    "text": "pasa",
+    "value": 4
+  },
+  {
+    "text": "paso",
+    "value": 4
+  },
+  {
+    "text": "pobreza",
+    "value": 4
+  },
+  {
+    "text": "temor",
+    "value": 4
+  },
+  {
+    "text": "tranquila",
+    "value": 4
+  },
+  {
+    "text": "vivida",
+    "value": 4
+  },
+  {
+    "text": "vivir",
+    "value": 4
+  },
+  {
+    "text": "abuela",
+    "value": 3
+  },
+  {
+    "text": "acabado",
+    "value": 3
+  },
+  {
+    "text": "achaques",
+    "value": 3
+  },
+  {
+    "text": "avanzado",
+    "value": 3
+  }
+]
