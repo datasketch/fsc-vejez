@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import ResourcePanel from "@/components/ResourcePanel";
 import data from "@/data/recursos.json"
 import Link from "next/link";
 import { Suspense } from "react";
@@ -24,24 +23,31 @@ export default function Page() {
                 </TabList>
                 <TabPanels>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <Suspense fallback={<p>Cargando servicios</p>}>
-                            <ResourceServer data_tmp={data.biblioteca} isType={true} image={true} />
+                        <Suspense fallback={<p>Cargando recursos</p>}>
+                            <ResourceServer
+                                data_tmp={data.biblioteca}
+                                panel="biblioteca"
+                                isType={true}
+                                image={true} />
                         </Suspense>
-                        <ResourcePanel data={data.biblioteca} isType={true} image={true} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <ResourcePanel
-                            // @ts-ignore
-                            data={data.politicas}
-                            isType={false}
-                            image={false} />
+                        <Suspense fallback={<p>Cargando recursos</p>}>
+                            <ResourceServer
+                                data_tmp={data.politicas}
+                                panel="politicas-publicas"
+                                isType={false}
+                                image={false} />
+                        </Suspense>
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
-                        <ResourcePanel
-                            // @ts-ignore
-                            data={data.datos}
-                            isType={false}
-                            image={false} />
+                        <Suspense fallback={<p>Cargando recursos</p>}>
+                            <ResourceServer
+                                data_tmp={data.datos}
+                                panel="datos"
+                                isType={false}
+                                image={false} />
+                        </Suspense>
                     </TabPanel>
                 </TabPanels>
             </TabGroup>

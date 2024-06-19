@@ -15,46 +15,46 @@ import {
 const optionsCategory: Array<{ label: string; value: string }> = [
   {
     label: "Tecnología y digitalización",
-    value: "tech",
+    value: "Tecnología y digitalización",
   },
   {
     label: "Ingresos y finanzas",
-    value: "finance",
+    value: "Ingresos y finanzas",
   },
   {
     label: "Salud y bienestar",
-    value: "health",
+    value: "Salud y bienestar",
   },
   {
     label: "Educación",
-    value: "education",
+    value: "Educación",
   },
   {
     label: "Información sociodemográfica",
-    value: "sociodemograph",
+    value: "Información sociodemográfica",
   },
 ];
 
 const optionsType: Array<{ label: string; value: string }> = [
   {
     label: "Informe",
-    value: "form",
+    value: "Informe",
   },
   {
     label: "Presentaciones",
-    value: "presentations",
+    value: "Presentaciones",
   },
   {
     label: "Nota estadística",
-    value: "note",
+    value: "Nota estadística",
   },
   {
     label: "Reporte",
-    value: "report",
+    value: "Reporte",
   },
   {
     label: "Presentación",
-    value: "presentation",
+    value: "Presentación",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function ResourcePanel({
   const ref = useRef<HTMLDivElement>(null);
 
   // @ts-ignore
-  const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b);
+  const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b);
 
   function filterBySearch(item: any) {
     if (!query) return true;
@@ -93,14 +93,14 @@ export default function ResourcePanel({
 
   function filterByCategory(item: any) {
     if (selectedCategories.length > 0) {
-      return selectedCategories.includes(item.category);
+      return selectedCategories.includes(item.categoria);
     }
     return true;
   }
 
   function filterByType(item: any) {
     if (selectedType.length > 0) {
-      return selectedType.includes(item.type);
+      return selectedType.includes(item.tipo_de_publicacion);
     }
     return true;
   }
@@ -119,9 +119,13 @@ export default function ResourcePanel({
     // @ts-ignore
     .sort((a, b) => {
       if (order === "AZ") {
-        return a.title.localeCompare(b.title);
+        const tmpA = a.nombre || a.titulo_de_ley
+        const tmpB = b.nombre || b.titulo_de_ley
+        return tmpA.localeCompare(tmpB);
       } else if (order === "ZA") {
-        return b.title.localeCompare(a.title);
+        const tmpA = a.nombre || a.titulo_de_ley
+        const tmpB = b.nombre || b.titulo_de_ley
+        return tmpB.localeCompare(tmpA);
       }
     });
 
@@ -365,7 +369,7 @@ export default function ResourcePanel({
                 key={idx}
                 data={item}
                 image={image}
-                cardTitle={item["tipo-de-publicacion"]}
+                cardTitle={item["tipo_de_publicacion"]}
                 isLibrary
               />
             );
