@@ -246,7 +246,7 @@ export default function Page() {
                   sections={[
                     {
                       title: "Salud y bienestar",
-                      wordCloud: <WordCloud words={healthWordsData} />,
+                      wordCloud: <WordCloud words={healthWordsData} size={8} />,
                     },
                     {
                       title: "Educación",

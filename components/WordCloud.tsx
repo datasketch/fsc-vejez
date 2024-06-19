@@ -17,7 +17,7 @@ interface WordCloudProps {
 export default function WordCloud({
   words,
   color = "#fff",
-  size = 8,
+  size = 1,
 }: WordCloudProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
