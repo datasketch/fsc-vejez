@@ -57,7 +57,8 @@ export default function ResourcePanel({
   function filterBySearch(item: any) {
     if (!query) return true;
 
-    return removeAccents(item.title.toLowerCase()).includes(
+    const tmpTitle = item.nombre || item.titulo_de_ley
+    return removeAccents(tmpTitle.toLowerCase()).includes(
       removeAccents(query.toLowerCase())
     );
   }
