@@ -12,56 +12,11 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 
-const optionsCategory: Array<{ label: string; value: string }> = [
-  {
-    label: "Tecnología y digitalización",
-    value: "tech",
-  },
-  {
-    label: "Ingresos y finanzas",
-    value: "finance",
-  },
-  {
-    label: "Salud y bienestar",
-    value: "health",
-  },
-  {
-    label: "Educación",
-    value: "education",
-  },
-  {
-    label: "Información sociodemográfica",
-    value: "sociodemograph",
-  },
-];
-
-const optionsType: Array<{ label: string; value: string }> = [
-  {
-    label: "Informe",
-    value: "form",
-  },
-  {
-    label: "Presentaciones",
-    value: "presentations",
-  },
-  {
-    label: "Nota estadística",
-    value: "note",
-  },
-  {
-    label: "Reporte",
-    value: "report",
-  },
-  {
-    label: "Presentación",
-    value: "presentation",
-  },
-];
 
 interface ResourcePanelProps {
   data: any;
-  isType: boolean;
-  image: boolean;
+  isType?: boolean;
+  image?: boolean;
 }
 
 export default function ResourcePanel({
@@ -81,26 +36,43 @@ export default function ResourcePanel({
   const ref = useRef<HTMLDivElement>(null);
 
   // @ts-ignore
-  const years = Array.from(new Set(data.map((item: any) => item.year))).sort((a, b) => a - b);
+  const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b)
+
+  // @ts-ignore
+  const optionsCategory: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.categoria ))).sort((a, b) => a - b).filter(item => item).map(item => {
+    return {
+      label: item,
+      value: item,
+    }
+  })
+
+  // @ts-ignore
+  const optionsType: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.tipo_de_publicacion ))).sort((a, b) => a - b).filter(item => item).map(item => {
+    return {
+      label: item,
+      value: item,
+    }
+  })
 
   function filterBySearch(item: any) {
     if (!query) return true;
 
-    return removeAccents(item.title.toLowerCase()).includes(
+    const tmpTitle = item.nombre || item.titulo_de_ley
+    return removeAccents(tmpTitle.toLowerCase()).includes(
       removeAccents(query.toLowerCase())
     );
   }
 
   function filterByCategory(item: any) {
     if (selectedCategories.length > 0) {
-      return selectedCategories.includes(item.category);
+      return selectedCategories.includes(item.categoria);
     }
     return true;
   }
 
   function filterByType(item: any) {
     if (selectedType.length > 0) {
-      return selectedType.includes(item.type);
+      return selectedType.includes(item.tipo_de_publicacion);
     }
     return true;
   }
@@ -119,9 +91,13 @@ export default function ResourcePanel({
     // @ts-ignore
     .sort((a, b) => {
       if (order === "AZ") {
-        return a.title.localeCompare(b.title);
+        const tmpA = a.nombre || a.titulo_de_ley
+        const tmpB = b.nombre || b.titulo_de_ley
+        return tmpA.localeCompare(tmpB);
       } else if (order === "ZA") {
-        return b.title.localeCompare(a.title);
+        const tmpA = a.nombre || a.titulo_de_ley
+        const tmpB = b.nombre || b.titulo_de_ley
+        return tmpB.localeCompare(tmpA);
       }
     });
 
@@ -367,7 +343,7 @@ export default function ResourcePanel({
                 key={idx}
                 data={item}
                 image={image}
-                cardTitle={item["tipo-de-publicacion"]}
+                cardTitle={item["tipo_de_publicacion"]}
                 isLibrary
               />
             );

@@ -15,7 +15,7 @@ import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Inicio",
-  description: "Lorem ipsum",
+  description: "+60 Datos plateados es una plataforma de información sobre necesidades y oportunidades de la población de 60 años o más en distintas temáticas. Los datos que proporcionamos buscan enriquecer la toma de decisiones en contextos de participación, investigación, programas y servicios dirigidos a las personas mayores.",
 };
 
 export default function Page() {
@@ -64,6 +64,14 @@ export default function Page() {
                     Datos plateados
                   </span>
                 </h1>
+                <p className="w-2/3 text-center mt-5 mx-auto">
+                  +60 Datos plateados es una plataforma de información sobre
+                  necesidades y oportunidades de la población de 60 años o más
+                  en distintas temáticas. Los datos que proporcionamos buscan
+                  enriquecer la toma de decisiones en contextos de
+                  participación, investigación, programas y servicios dirigidos
+                  a las personas mayores.
+                </p>
               </div>
             </div>
             <div className="mt-14 lg:mt-40 xl:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
@@ -261,10 +269,15 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-seasalt">
-                Proyecciones del Censo Nacional de Población y Vivienda (CNPV),
-                2018, DANE
-              </p>
+              <a
+                target="_blank"
+                href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106"
+              >
+                <p className="text-seasalt">
+                  Proyecciones del Censo Nacional de Población y Vivienda
+                  (CNPV), 2018, DANE
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -378,9 +391,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -413,9 +431,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -464,9 +487,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+                </p>
+              </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
@@ -486,7 +514,9 @@ export default function Page() {
                 más comunes para los apartamentos. En cambio, las casas tienen
                 una distribución más diversa en cuanto a tenencia, pero priman
                 la propiedad totalmente pagada, en usufructo y en
-                arriendo/subarriendo.
+                arriendo/subarriendo. La gráfica filtra los valores
+                predominantes. Para conocer todos los resultados, diríjase a
+                “Explora los datos”, al final de la página de inicio.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -502,9 +532,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -561,9 +596,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
             <div className="mt-12 lg:mt-20 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
@@ -593,9 +633,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
+              >
+                <p className="text-davys-gray">
+                  Gran Encuesta Integrada de Hogares (GEIH), DANE, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -649,9 +694,14 @@ export default function Page() {
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
-              <p className="text-davys-gray">
-                Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
-              </p>
+              <a
+                target="_blank"
+                href="https://www.simur.gov.co/encuestas-de-movilidad"
+              >
+                <p className="text-davys-gray">
+                  Encuesta de Movilidad, Secretaría Distrital de Movilidad, 2023
+                </p>
+              </a>
             </div>
           </div>
         </div>

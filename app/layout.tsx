@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import "./globals.css";
 
 import localFont from "next/font/local";
@@ -78,6 +79,13 @@ const proximaNovaAltFont = localFont({
     },
   ],
 });
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | +60 Datos plateados',
+    default: '+60 Datos plateados'
+  }
+}
 
 export default function RootLayout({
   children,

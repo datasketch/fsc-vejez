@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import * as XLSX from 'xlsx'
 import { useEffect, useRef, useState } from "react";
 import ServicesCard from "./ServicesCard";
 import ReactPaginate from "react-paginate";
@@ -16,7 +17,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/Tooltip";
-import Link from "next/link";
 
 interface ServicesClientProps {
   data: any;
@@ -34,8 +34,8 @@ export default function ServicesClient({ data }: ServicesClientProps) {
   const servicesRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const categoryOptions = Array.from(new Set(data.map((el: any) => el.type)));
-  const countryOptions = Array.from(new Set(data.map((el: any) => el.country)));
+  const categoryOptions = Array.from(new Set(data.map((el: any) => el.categoria))).sort();
+  const countryOptions = Array.from(new Set(data.map((el: any) => el.pais_de_origen))).sort();
 
   const handlePageClick = (event: any) => {
     const newOffset = (event.selected * itemsPerPage) % filterData.length;
@@ -44,33 +44,52 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+
+  const downloadServicesData = () => {
+    const workbook = XLSX.utils.book_new();
+    const records: Array<Array<string>> = data.map((record: Record<string, unknown>) => Object.values(record))
+    records.unshift(Object.keys(data[0]))
+    const worksheet = XLSX.utils.aoa_to_sheet(records)
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'servicios')
+    XLSX.writeFile(workbook, "datos-servicios.xlsx")
+  }
+
+  const resetFilters = () => {
+    setCategory("");
+    setCountry("");
+    setSearch("");
+    setItemOffset(0);
+    setCurrentPage(0);
+  };
+
+
   useEffect(() => {
     let newData = data;
 
     if (category) {
       newData = newData.filter(
-        (item: { type: string }) => item.type === category
+        (item: { categoria: string }) => item.categoria === category
       );
     }
 
     if (country) {
       newData = newData.filter(
-        (item: { country: string }) => item.country === country
+        (item: { pais_de_origen: string }) => item.pais_de_origen === country
       );
     }
 
     if (search) {
       newData = newData.filter(
-        (item: { title: string; description: string }) =>
-          item.title.toLowerCase().includes(search.toLowerCase()) ||
-          item.description.toLowerCase().includes(search.toLowerCase())
+        (item: { nombre: string; descripcion_del_servicio: string }) =>
+          item.nombre.toLowerCase().includes(search.toLowerCase()) ||
+          item.descripcion_del_servicio.toLowerCase().includes(search.toLowerCase())
       );
     }
 
     setItemOffset(0);
     setCurrentPage(0);
     setFilterData(newData);
-  }, [category, country, search]);
+  }, [data, category, country, search]);
 
   return (
     <div ref={servicesRef} className="py-16">
@@ -84,7 +103,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               </h2>
               <TooltipProvider delayDuration={0}>
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger asChild>
                     <button className="grid place-items-center">
                       <Image
                         src="/images/icons/information.svg"
@@ -109,19 +128,19 @@ export default function ServicesClient({ data }: ServicesClientProps) {
             </div>
           </div>
           <div className="lg:hidden mt-8 col-span-12">
-            <Link
+            <button
               className="inline-block py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold w-full text-center"
-              href="/files/03_fsc_services.xlsx"
-              download
-              target="_blank"
+              type="button"
+              onClick={downloadServicesData}
             >
               Descargar base de datos
-            </Link>
+            </button>
           </div>
           <div className="hidden lg:block lg:mt-12 col-span-12 lg:col-start-1 lg:col-end-3">
             <select
               name="category"
               aria-label="opciones categoria"
+              value={category}
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCategory(e.target.value)}
             >
@@ -137,6 +156,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
             <select
               name="country"
               aria-label="opciones paises"
+              value={country}
               className="py-2 px-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
               onChange={(e) => setCountry(e.target.value)}
             >
@@ -148,6 +168,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               ))}
             </select>
           </div>
+
           <div className="mt-4 lg:hidden col-span-4">
             <Dialog>
               <DialogTrigger>
@@ -211,10 +232,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                     <div className="flex items-center justify-between">
                       <DialogClose>
                         <button
-                          onClick={() => {
-                            setCategory("");
-                            setCountry("");
-                          }}
+                          onClick={() => resetFilters()}
                           className="text-[13px] text-dark-slate-gray underline"
                         >
                           Reestablecer filtros
@@ -238,6 +256,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                 className="py-2 pl-10 pr-5 rounded-[20px] w-full bg-seasalt border border-eerie-black/40"
                 type="text"
                 placeholder="Buscar por palabra clave"
+                value={search}
               />
               <div className="absolute top-1/2 left-4 -translate-y-1/2">
                 <Image
@@ -249,16 +268,23 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               </div>
             </div>
           </div>
-          <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-10 lg:col-end-13">
+          <div className="mt-14 hidden lg:block col-span-2">
+            <button
+              onClick={() => resetFilters()}
+              className="text-[13px] text-dark-slate-gray underline"
+            >
+              Reestablecer filtros
+            </button>
+          </div>
+          <div className="hidden lg:block mt-4 lg:mt-12 lg:col-start-11 lg:col-end-13">
             <div className="flex justify-start lg:justify-end">
-              <Link
+              <button
                 className="inline-block py-2 px-5 rounded-[20px] bg-asparagus/40 text-dark-slate-gray font-semibold"
-                href="/files/03_fsc_services.xlsx"
-                download
-                target="_blank"
+                type="button"
+                onClick={downloadServicesData}
               >
                 Descargar base de datos
-              </Link>
+              </button>
             </div>
           </div>
           <div className="mt-4 lg:mt-12 col-span-12">
@@ -310,7 +336,6 @@ export default function ServicesClient({ data }: ServicesClientProps) {
                   pageCount={pageCount}
                   renderOnZeroPageCount={null}
                   forcePage={currentPage}
-                  
                 />
               </div>
             )}
