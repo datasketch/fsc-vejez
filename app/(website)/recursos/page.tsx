@@ -45,9 +45,7 @@ async function getResources( panel: string ): Promise<Array<Record<string, unkno
 
 
 export default async function Page() {
-    const dataBiblioteca = await getResources("biblioteca")
-    const dataPoliticas = await getResources("politicas-publicas")
-    const dataDatos = await getResources("datos")
+    const [libraryData, politicsData, dataData] = await Promise.all([getResources("biblioteca"), getResources("politicas-publicas"), getResources("datos")])
 
     return (
         <div className="bg-alabaster font-proxima-nova">
@@ -61,21 +59,17 @@ export default async function Page() {
                 <TabPanels>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <ResourcePanel
-                            data={dataBiblioteca}
-                            isType={true}
-                            image={true} />
+                            data={libraryData}
+                            isType
+                            image />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <ResourcePanel
-                            data={dataPoliticas}
-                            isType={false}
-                            image={false} />
+                            data={politicsData} />
                     </TabPanel>
                     <TabPanel className="bg-white w-full rounded-[40px] py-16">
                         <ResourcePanel
-                            data={dataDatos}
-                            isType={false}
-                            image={false} />
+                            data={dataData} />
                     </TabPanel>
                 </TabPanels>
             </TabGroup>

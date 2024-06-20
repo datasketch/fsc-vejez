@@ -12,56 +12,11 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 
-const optionsCategory: Array<{ label: string; value: string }> = [
-  {
-    label: "Tecnología y digitalización",
-    value: "Tecnología y digitalización",
-  },
-  {
-    label: "Ingresos y finanzas",
-    value: "Ingresos y finanzas",
-  },
-  {
-    label: "Salud y bienestar",
-    value: "Salud y bienestar",
-  },
-  {
-    label: "Educación",
-    value: "Educación",
-  },
-  {
-    label: "Información sociodemográfica",
-    value: "Información sociodemográfica",
-  },
-];
-
-const optionsType: Array<{ label: string; value: string }> = [
-  {
-    label: "Informe",
-    value: "Informe",
-  },
-  {
-    label: "Presentaciones",
-    value: "Presentaciones",
-  },
-  {
-    label: "Nota estadística",
-    value: "Nota estadística",
-  },
-  {
-    label: "Reporte",
-    value: "Reporte",
-  },
-  {
-    label: "Presentación",
-    value: "Presentación",
-  },
-];
 
 interface ResourcePanelProps {
   data: any;
-  isType: boolean;
-  image: boolean;
+  isType?: boolean;
+  image?: boolean;
 }
 
 export default function ResourcePanel({
@@ -81,7 +36,23 @@ export default function ResourcePanel({
   const ref = useRef<HTMLDivElement>(null);
 
   // @ts-ignore
-  const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b);
+  const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b)
+
+  // @ts-ignore
+  const optionsCategory: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.categoria ))).sort((a, b) => a - b).filter(item => item).map(item => {
+    return {
+      label: item,
+      value: item,
+    }
+  })
+
+  // @ts-ignore
+  const optionsType: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.tipo_de_publicacion ))).sort((a, b) => a - b).filter(item => item).map(item => {
+    return {
+      label: item,
+      value: item,
+    }
+  })
 
   function filterBySearch(item: any) {
     if (!query) return true;
