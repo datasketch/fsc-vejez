@@ -27,6 +27,7 @@ interface ServicesData {
     legend: Array<{ key: string, fill: string }>,
     data: Array<Record<string, unknown>>
   }
+  mapData: Array<{ city_code: string, lng: string, lat: string, population: string }>
 }
 
 function getServicesByCountry(data: Array<Record<string, unknown>>) {
@@ -165,7 +166,7 @@ export default async function Page() {
                 </h3>
               </div>
               <div className="mt-6">
-                <MapServices dataMap={data.mapData} />
+                <MapServices dataMap={(data as ServicesData).mapData} />
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
