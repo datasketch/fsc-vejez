@@ -8,6 +8,7 @@ import educationWordsData from "@/data/service/education.json";
 import financeWordsData from "@/data/service/finances.json";
 import WordCloud from "@/components/WordCloud";
 import MapServices from "@/components/MapServices";
+import countriesCode from "@/data/country.json"
 
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
 import { Credentials } from "aws-sdk"
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 interface ServicesData {
   services: Array<Record<string, unknown>>,
   barChartData: {
-    legend: Array<{key: string, fill: string}>,
+    legend: Array<{ key: string, fill: string }>,
     data: Array<Record<string, unknown>>
   }
 }
@@ -91,10 +92,34 @@ async function getServices(): Promise<ServicesData | {}> {
 
     const barChartData = getServicesByCountry(data)
 
+    const cmd2 = new GetObjectCommand({
+      Bucket: bucket,
+      Key: 'fundacion-saldarriaga-concha/datos-plateados/paises-1.json'
+    })
+
+    const countries = await s3Client.send(cmd2)
+
+    const content2 = await countries.Body?.transformToString()
+
+    const data2 = content2 ? JSON.parse(content2) : []
+
+    const mapData = barChartData.data.map((country) => {
+      const cod = data2.find((item: { nombre: string; }): any => item.nombre === country.name)
+
+      const info = countriesCode.ref_country_codes.find((item) => item.alpha3 === cod.codigo)
+      return {
+        city_code: cod.codigo,
+        lng: info?.longitude,
+        lat: info?.latitude,
+        population: country.total
+      }
+    })
+
     // rcd___id is a field appended to data when uploaded to Datasketch SaaS
     return {
       services: data.map((item: Record<string, unknown>) => omit(item, ['rcd___id'])),
-      barChartData
+      barChartData,
+      mapData
     }
   } catch (error) {
     console.error(error)
@@ -140,7 +165,7 @@ export default async function Page() {
                 </h3>
               </div>
               <div className="mt-6">
-                <MapServices />
+                <MapServices dataMap={data.mapData} />
               </div>
             </div>
             <div className="mt-6 col-span-4 lg:col-span-12">
