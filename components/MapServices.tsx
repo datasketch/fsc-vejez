@@ -17,7 +17,7 @@ export default function MapServices({ dataMap }: any) {
   const [maxValue, setMaxValue] = useState(0);
 
   const popScale = useMemo(
-    () => scaleLinear().domain([0, maxValue]).range([0, 30]),
+    () => scaleLinear().domain([0, maxValue]).range([0, 20]),
     [maxValue]
   );
 
@@ -29,7 +29,7 @@ export default function MapServices({ dataMap }: any) {
 
   return (
     <div>
-      <ComposableMap>
+      <ComposableMap height={450}>
         <Geographies geography={worldData} >
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -65,7 +65,7 @@ export default function MapServices({ dataMap }: any) {
             <Marker key={city_code} coordinates={[lng, lat]}>
               <circle
                 style={{ fill: "#1D5556", fillOpacity: "0.8" }}
-                r={popScale(population + 3)}
+                r={popScale(population + 5)}
               />
               <text
                 style={{ fill: "#FAFAFA", fontSize: "12px" }}

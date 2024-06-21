@@ -27,21 +27,13 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
   }, [selectedDepartment]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
-      <div>
+    <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12 justify-center h-full">
+      <div className="mb-20">
         <Image
           width={1000}
           height={215}
           src="/images/home/legend.svg"
           alt="legend"
-        />
-      </div>
-      <div className="hidden lg:block my-10">
-        <Image
-          width={1920}
-          height={1}
-          src="/images/home/dashed.svg"
-          alt="dashed"
         />
       </div>
       <div>
