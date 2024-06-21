@@ -106,7 +106,6 @@ export default function MapContainer({
                   const object = omit("cod_dpto", findDepartment);
                   const values = Object.values(object).map((el: any) => el);
                   const maxValue = Math.max(...values);
-
                   const colorScale = scaleQuantile()
                     .domain([0, 100])
                     .range([

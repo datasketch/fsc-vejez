@@ -30,7 +30,7 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
     <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12">
       <div>
         <Image
-          width={382}
+          width={1000}
           height={215}
           src="/images/home/legend.svg"
           alt="legend"

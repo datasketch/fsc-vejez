@@ -65,7 +65,7 @@ export default function MapServices({ dataMap }: any) {
             <Marker key={city_code} coordinates={[lng, lat]}>
               <circle
                 style={{ fill: "#1D5556", fillOpacity: "0.8" }}
-                r={popScale(population)}
+                r={popScale(population + 3)}
               />
               <text
                 style={{ fill: "#FAFAFA", fontSize: "12px" }}
