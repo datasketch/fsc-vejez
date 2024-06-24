@@ -7,7 +7,7 @@ import {
   Marker,
 } from "react-simple-maps";
 import worldData from "@/data/world.json";
-import { scaleLinear, scaleSqrt } from "d3-scale";
+import { scaleSqrt } from "d3-scale";
 import { useMemo } from "react";
 
 
