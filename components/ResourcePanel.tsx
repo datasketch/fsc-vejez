@@ -60,7 +60,7 @@ export default function ResourcePanel({
     const tmpTitle = item.nombre || item.titulo_de_ley
     return removeAccents(tmpTitle.toLowerCase()).includes(
       removeAccents(query.toLowerCase())
-    );
+    ) || removeAccents((item.identificacion || "").toLowerCase()).includes(removeAccents(query.toLowerCase()))
   }
 
   function filterByCategory(item: any) {
@@ -79,8 +79,9 @@ export default function ResourcePanel({
 
   function filterByYear(item: any) {
     if (!selectedYear) return true;
+    const tmp = item.anio || item.anio_de_publicacion
 
-    return item.year.toString() === selectedYear;
+    return tmp.toString() === selectedYear;
   }
 
   const filteredData = data
