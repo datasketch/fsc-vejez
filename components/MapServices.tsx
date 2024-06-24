@@ -7,77 +7,67 @@ import {
   Marker,
 } from "react-simple-maps";
 import worldData from "@/data/world.json";
-import { scaleLinear } from "d3-scale";
-import { useEffect, useMemo, useState } from "react";
-import sortBy from "lodash.sortby";
+import { scaleLinear, scaleSqrt } from "d3-scale";
+import { useMemo } from "react";
 
 
-export default function MapServices({ dataMap }: any) {
-  const [data, setData] = useState([] as any);
-  const [maxValue, setMaxValue] = useState(0);
+export default function MapServices({ dataMap: data }: any) {
+  const maxValue = Math.max(...data.map((item: { population: number }) => item.population))
 
   const popScale = useMemo(
-    () => scaleLinear().domain([0, maxValue]).range([0, 20]),
+    () => scaleSqrt().domain([0, maxValue]).range([3, 20]),
     [maxValue]
   );
 
-  useEffect(() => {
-    const sortedCities = sortBy(dataMap, (o) => -o.population);
-    setMaxValue(sortedCities[0].population);
-    setData(sortedCities);
-  }, []);
-
   return (
-    <div>
-      <ComposableMap height={450}>
-        <Geographies geography={worldData} >
-          {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                style={{
-                  default: {
-                    outline: "none",
-                    stroke: "#41A5B4",
-                    strokeWidth: 1,
-                    fill: "#41A5B4",
-                  },
-                  hover: {
-                    outline: "none",
-                    stroke: "#41A5B4",
-                    strokeWidth: 1,
-                    fill: "#41A5B4",
-                  },
-                  pressed: {
-                    outline: "none",
-                    stroke: "#41A5B4",
-                    strokeWidth: 1,
-                    fill: "#41A5B4",
-                  },
-                }}
-              />
-            ))
-          }
-        </Geographies>
-        {data.map(({ city_code, lng, lat, population }: any) => {
-          return (
-            <Marker key={city_code} coordinates={[lng, lat]}>
-              <circle
-                style={{ fill: "#1D5556", fillOpacity: "0.8" }}
-                r={popScale(population + 5)}
-              />
-              <text
-                style={{ fill: "#FAFAFA", fontSize: "12px" }}
-                textAnchor="middle"
-                dy=".3em"
-              >
-                {population}
-              </text>
-            </Marker>
-          );
-        })}
-      </ComposableMap>
-    </div>
+    <ComposableMap height={450}>
+      <Geographies geography={worldData} >
+        {({ geographies }) =>
+          geographies.map((geo) => (
+            <Geography
+              key={geo.rsmKey}
+              geography={geo}
+              style={{
+                default: {
+                  outline: "none",
+                  stroke: "#41A5B4",
+                  strokeWidth: 1,
+                  fill: "#41A5B4",
+                },
+                hover: {
+                  outline: "none",
+                  stroke: "#41A5B4",
+                  strokeWidth: 1,
+                  fill: "#41A5B4",
+                },
+                pressed: {
+                  outline: "none",
+                  stroke: "#41A5B4",
+                  strokeWidth: 1,
+                  fill: "#41A5B4",
+                },
+              }}
+            />
+          ))
+        }
+      </Geographies>
+      {data.map(({ city_code, lng, lat, population }: any) => {
+        return (
+          <Marker key={city_code} coordinates={[lng, lat]}>
+            <circle
+              style={{ fill: "#1D5556", fillOpacity: "0.8" }}
+              r={popScale(population)}
+            />
+            <text
+              style={{ fill: "#FAFAFA", fontSize: "8px" }}
+              textAnchor="middle"
+              dy=".325em"
+            >
+              {population}
+            </text>
+          </Marker>
+        );
+      })}
+    </ComposableMap>
   );
 }
