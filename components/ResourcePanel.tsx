@@ -39,7 +39,7 @@ export default function ResourcePanel({
   const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b)
 
   // @ts-ignore
-  const optionsCategory: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.categoria ))).sort((a, b) => a - b).filter(item => item).map(item => {
+  const optionsCategory: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.categoria))).sort((a, b) => a - b).filter(item => item).map(item => {
     return {
       label: item,
       value: item,
@@ -47,7 +47,7 @@ export default function ResourcePanel({
   })
 
   // @ts-ignore
-  const optionsType: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.tipo_de_publicacion ))).sort((a, b) => a - b).filter(item => item).map(item => {
+  const optionsType: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.tipo_de_publicacion))).sort((a, b) => a - b).filter(item => item).map(item => {
     return {
       label: item,
       value: item,
@@ -79,7 +79,7 @@ export default function ResourcePanel({
 
   function filterByYear(item: any) {
     if (!selectedYear) return true;
-    const tmp = item.anio || item.anio_de_publicacion
+    const tmp = item.anio || item.anio_de_publicacion || ''
 
     return tmp.toString() === selectedYear;
   }
@@ -322,66 +322,74 @@ export default function ResourcePanel({
         </div>
       </div>
       <div className="col-span-8">
-        <div className="flex lg:justify-end items-center gap-4 mb-10 lg:mb-0">
-          <h2 className="text-xl font-semibold hidden lg:block">Ordenar por</h2>
-          <select
-            className="h-10 w-full lg:w-min overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
-            name=""
-            aria-label="opciones de ordenamiento"
-            id={order}
-            value={order}
-            onChange={(e) => setOrder(e.target.value)}
-          >
-            <option value="AZ">De la A a Z</option>
-            <option value="ZA">De la Z a A</option>
-          </select>
-        </div>
-        {filteredData
-          .slice(itemOffset, endOffset)
-          .map((item: any, idx: any) => {
-            return (
-              <ResourceCard
-                key={idx}
-                data={item}
-                image={image}
-                cardTitle={item["tipo_de_publicacion"]}
-                isLibrary
-              />
-            );
-          })}
-        <div className="flex items-center justify-center lg:col-span-8 lg:col-start-5 mt-14 shado font-normal w-full">
-          <ReactPaginate
-            className="flex items-center gap-x-8"
-            breakLabel="..."
-            onPageChange={handlePageClick}
-            pageCount={pageCount}
-            disabledLinkClassName="opacity-60 font-normal"
-            pageLinkClassName="block rounded-full grid place-items-center w-10 h-10"
-            activeLinkClassName="bg-true-blue text-dark-slate-gray shadow-lg rounded-full font-bold"
-            previousLabel={
-              <button className="flex items-center font-bold text-dark-slate-gray gap-x-2.5 py-3 px-5 bg-white rounded-[20px] u-shadow-1">
-                <Image
-                  width={5}
-                  height={10}
-                  src="/images/icons/arrow-left.svg"
-                  alt="arrow left icon"
+        {filteredData.length > 0 &&
+          <div className="flex lg:justify-end items-center gap-4 mb-10 lg:mb-0">
+            <h2 className="text-xl font-semibold hidden lg:block">Ordenar por</h2>
+            <select
+              className="h-10 w-full lg:w-min overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
+              name=""
+              aria-label="opciones de ordenamiento"
+              id={order}
+              value={order}
+              onChange={(e) => setOrder(e.target.value)}
+            >
+              <option value="AZ">De la A a Z</option>
+              <option value="ZA">De la Z a A</option>
+            </select>
+          </div>
+        }
+        {filteredData.length > 0 ?
+          filteredData
+            .slice(itemOffset, endOffset)
+            .map((item: any, idx: any) => {
+              return (
+                <ResourceCard
+                  key={idx}
+                  data={item}
+                  image={image}
+                  cardTitle={item["tipo_de_publicacion"]}
+                  isLibrary
                 />
-                <p>Anterior</p>
-              </button>
-            }
-            nextLabel={
-              <button className="flex items-center font-bold text-dark-slate-gray gap-x-2.5 py-3 px-5 bg-white rounded-[20px] u-shadow-1">
-                <p>Siguiente</p>
-                <Image
-                  width={5}
-                  height={10}
-                  src="/images/icons/arrow-right.svg"
-                  alt="arrow right icon"
-                />
-              </button>
-            }
-          />
-        </div>
+              );
+            })
+          :
+          <p>No existen resultados</p>
+        }
+        {filteredData.length > 0 &&
+          <div className="flex items-center justify-center lg:col-span-8 lg:col-start-5 mt-14 shado font-normal w-full">
+            <ReactPaginate
+              className="flex items-center gap-x-8"
+              breakLabel="..."
+              onPageChange={handlePageClick}
+              pageCount={pageCount}
+              disabledLinkClassName="opacity-60 font-normal"
+              pageLinkClassName="block rounded-full grid place-items-center w-10 h-10"
+              activeLinkClassName="bg-true-blue text-dark-slate-gray shadow-lg rounded-full font-bold"
+              previousLabel={
+                <button className="flex items-center font-bold text-dark-slate-gray gap-x-2.5 py-3 px-5 bg-white rounded-[20px] u-shadow-1">
+                  <Image
+                    width={5}
+                    height={10}
+                    src="/images/icons/arrow-left.svg"
+                    alt="arrow left icon"
+                  />
+                  <p>Anterior</p>
+                </button>
+              }
+              nextLabel={
+                <button className="flex items-center font-bold text-dark-slate-gray gap-x-2.5 py-3 px-5 bg-white rounded-[20px] u-shadow-1">
+                  <p>Siguiente</p>
+                  <Image
+                    width={5}
+                    height={10}
+                    src="/images/icons/arrow-right.svg"
+                    alt="arrow right icon"
+                  />
+                </button>
+              }
+            />
+          </div>
+        }
       </div>
     </div>
   );
