@@ -15,7 +15,8 @@ import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Inicio",
-  description: "+60 Datos plateados es una plataforma de información sobre necesidades y oportunidades de la población de 60 años o más en distintas temáticas. Los datos que proporcionamos buscan enriquecer la toma de decisiones en contextos de participación, investigación, programas y servicios dirigidos a las personas mayores.",
+  description:
+    "+60 Datos plateados es una plataforma de información sobre necesidades y oportunidades de la población de 60 años o más en distintas temáticas. Los datos que proporcionamos buscan enriquecer la toma de decisiones en contextos de participación, investigación, programas y servicios dirigidos a las personas mayores.",
 };
 
 export default function Page() {
@@ -65,12 +66,11 @@ export default function Page() {
                   </span>
                 </h1>
                 <p className="w-2/3 text-center mt-5 mx-auto">
-                  +60 Datos plateados es una plataforma de información sobre
-                  necesidades y oportunidades de la población de 60 años o más
-                  en distintas temáticas. Los datos que proporcionamos buscan
-                  enriquecer la toma de decisiones en contextos de
-                  participación, investigación, programas y servicios dirigidos
-                  a las personas mayores.
+                  +60 Datos plateados es una plataforma de visualización de
+                  información de la población de 60 años o más en distintas
+                  temáticas. Los datos provienen de diferentes fuentes, con las
+                  cuales se busca incentivar el desarrollo de programas y
+                  servicios dirigidos a las personas mayores.
                 </p>
               </div>
             </div>

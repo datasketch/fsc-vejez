@@ -1,12 +1,12 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/Tabs";
-import Image from "next/image";
 
 interface TabSectionProps {
   sections: {
     title: string;
-    wordCloud: React.ReactNode;
+    wordCloud?: React.ReactNode;
+    wordContent?: React.ReactNode;
   }[];
 }
 
@@ -35,7 +35,8 @@ export default function TabSections({ sections }: TabSectionProps) {
               key={`section-content-${i + 1}`}
               value={section.title}
             >
-              {section.wordCloud}
+              {section.wordCloud && section.wordCloud}
+              {section.wordContent && section.wordContent}
             </TabsContent>
           );
         })}

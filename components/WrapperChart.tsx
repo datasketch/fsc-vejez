@@ -7,11 +7,13 @@ import { useState } from "react";
 interface WrapperChartProps {
   children: React.ReactNode;
   description: string | string[];
+  type?: "chart" | "content";
 }
 
 export default function WrapperChart({
   children,
   description,
+  type = "chart",
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
@@ -24,8 +26,16 @@ export default function WrapperChart({
               <Image
                 width={112}
                 height={73.59}
-                src="/images/how-to-read-this-chart.svg"
-                alt="how to read this chart image"
+                src={
+                  type === "chart"
+                    ? "/images/how-to-read-this-chart.svg"
+                    : "/images/what-this-means.svg"
+                }
+                alt={
+                  type === "chart"
+                    ? "how to read this chart image"
+                    : "what this means image"
+                }
               />
             ) : (
               <div className="flex flex-col items-center justify-center">

@@ -17,12 +17,11 @@ export default function Footer() {
                 alt="logo FSC"
               />
               <p className="mt-5 lg:mt-[30px]">
-                +60 Datos plateados es una plataforma de información sobre
-                necesidades y oportunidades de la población de 60 años o más en
-                distintas temáticas. Los datos que proporcionamos buscan
-                enriquecer la toma de decisiones en contextos de participación,
-                investigación, programas y servicios dirigidos a las personas
-                mayores.
+                +60 Datos plateados es una plataforma de visualización de
+                información de la población de 60 años o más en distintas
+                temáticas. Los datos provienen de diferentes fuentes, con las
+                cuales se busca incentivar el desarrollo de programas y
+                servicios dirigidos a las personas mayores.
               </p>
             </div>
             <div className="col-span-4 lg:col-start-10 lg:col-end-13">
