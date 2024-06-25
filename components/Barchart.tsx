@@ -48,16 +48,8 @@ export default function BarChart2({ data }: any) {
       <YAxis />
       <Tooltip content={<CustomTooltip />} />
       <Legend />
-      <Bar
-        dataKey="Hombres"
-        fill="#1D5556"
-        activeBar={<Rectangle fill="pink" stroke="blue" />}
-      />
-      <Bar
-        dataKey="Mujeres"
-        fill="#B6174B"
-        activeBar={<Rectangle fill="gold" stroke="purple" />}
-      />
+      <Bar dataKey="Hombres" fill="#1D5556" />
+      <Bar dataKey="Mujeres" fill="#B6174B" />
     </BarChart>
   );
 }
