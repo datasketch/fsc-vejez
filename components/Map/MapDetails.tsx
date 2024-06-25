@@ -27,16 +27,21 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
   }, [selectedDepartment]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-y-8 lg:gap-y-0 lg:flex-col gap-x-12 justify-center h-full">
-      <div className="mb-20">
-        <Image
-          width={1000}
-          height={215}
-          src="/images/home/legend.svg"
-          alt="legend"
-        />
+    <div className="flex flex-col md:flex-row md:items-center lg:items-start lg:justify-start gap-y-8 lg:flex-col gap-x-12 justify-center h-full">
+      <div className="md:w-1/2 lg:w-full">
+        <h3 className="text-xl font-semibold text-center">
+          Porcentaje de personas que no utilizan internet
+        </h3>
+        <div className="mt-10">
+          <Image
+            width={1000}
+            height={215}
+            src="/images/home/legend.svg"
+            alt="legend"
+          />
+        </div>
       </div>
-      <div>
+      <div className="md:w-1/2 lg:w-full">
         {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
             <h3 className="font-semibold">

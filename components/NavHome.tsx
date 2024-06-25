@@ -7,21 +7,28 @@ export default function NavHome() {
   const [selected, setSelected] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        navRef.current?.classList.remove("-bottom-full");
-        navRef.current?.classList.add("bottom-5");
-      } else {
-        navRef.current?.classList.add("-bottom-full");
-        navRef.current?.classList.remove("bottom-5");
+    const exploreDataEl = document.getElementById("explore-data");
+    const navHomeObserver = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (!entry.isIntersecting) {
+          navRef.current?.classList.remove("!-bottom-full");
+          navRef.current?.classList.add("!bottom-5");
+        } else {
+          console.log("si");
+
+          navRef.current?.classList.add("!-bottom-full");
+          navRef.current?.classList.remove("!bottom-5");
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0,
       }
-    };
+    );
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    navHomeObserver.observe(exploreDataEl as any);
   }, []);
 
   return (

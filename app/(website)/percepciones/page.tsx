@@ -14,10 +14,6 @@ import armeniaWordsData from "@/data/perception/armenia.json";
 import barranquillaWordsData from "@/data/perception/barranquilla.json";
 import bogotaWordsData from "@/data/perception/bogota.json";
 import caliWordsData from "@/data/perception/cali.json";
-import healthWordsData from "@/data/mision/health.json";
-import educationWordsData from "@/data/mision/education.json";
-import financesWordsData from "@/data/mision/finances.json";
-import techWordsData from "@/data/mision/technology.json";
 
 export const metadata: Metadata = {
   title: "Percepciones",

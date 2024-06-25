@@ -74,7 +74,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="mt-14 lg:mt-40 xl:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
+            <div className="mt-14 lg:mt-32 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-3 lg:order-2">
               <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Las personas mayores en Colombia
               </h2>
@@ -123,25 +123,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="mt-12 col-span-4 lg:mt-36 relative order-2 lg:order-3 z-10">
-              <div className="lg:hidden md:flex md:items-end md:justify-around relative z-30 space-y-2.5">
-                <Image
-                  className="sm:mx-auto md:mx-0 lg:w-10/12"
-                  width={256}
-                  height={86}
-                  src="/images/home/message-1.svg"
-                  alt="message 1"
-                />
-                <div className="pl-12 md:pl-0">
-                  <Image
-                    className="sm:mx-auto md:mx-0 lg:w-10/12"
-                    width={280}
-                    height={144}
-                    src="/images/home/message-mobile-2.svg"
-                    alt="message 2"
-                  />
-                </div>
-              </div>
+            <div className="mt-12 col-span-4 lg:mt-20 relative order-2 lg:order-3 z-10">
               <div className="relative z-20">
                 <div className="relative z-10">
                   <Image
@@ -169,26 +151,8 @@ export default function Page() {
                   />
                 </div>
               </div>
-              <div className="hidden lg:block absolute -top-20 lg:-left-40 xl:-left-60 z-20">
-                <Image
-                  className="lg:w-10/12 xl:w-auto"
-                  width={256}
-                  height={86}
-                  src="/images/home/message-1.svg"
-                  alt="message 1"
-                />
-              </div>
-              <div className="hidden lg:block absolute -top-24 -right-full z-20">
-                <Image
-                  className="lg:w-10/12 xl:w-auto"
-                  width={401}
-                  height={93}
-                  src="/images/home/message-2.svg"
-                  alt="message 2"
-                />
-              </div>
             </div>
-            <div className="mt-14 lg:mt-60 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-4">
+            <div className="mt-14 lg:mt-48 col-span-4 md:col-span-2 lg:col-span-4 relative z-20 order-4">
               <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                 Distribución población de 60 años o más en Colombia por sexo
               </h2>
@@ -235,8 +199,8 @@ export default function Page() {
       </div>
       <div className="lg:-mt-[500px] relative pt-12 pb-24 lg:pt-20 lg:pb-40 xl:pt-32 xl:pb-64 bg-banner-home-mobile lg:bg-banner-home 2xl:bg-banner-big bg-cover bg-center">
         <div className="u-container">
-          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
-            <div className="col-span-4 md:col-span-2 lg:col-span-5">
+          <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 lg:gap-x-11">
+            <div className="mt-14 lg:mt-0 col-span-4 md:col-span-2 lg:col-span-6 flex flex-col justify-between">
               <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt leading-tight">
                 Distribución de la población en Colombia por grupo de edad en
                 2024 (post COVID-19)
@@ -250,7 +214,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div className="mt-14 lg:mt-0 col-span-4 md:col-span-2 lg:col-start-8 lg:col-end-13">
+            <div className="mt-14 lg:mt-0 col-span-4 md:col-span-2 lg:col-span-6">
               <h2 className="relative font-semibold text-xl text-seasalt after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-seasalt">
                 Departamentos con más personas mayores
               </h2>
@@ -262,7 +226,7 @@ export default function Page() {
               <div className="mt-6">
                 <Image
                   width={1920}
-                  height={251}
+                  height={263}
                   src="/images/home/demo-chart-2.svg"
                   alt="demo chart 2"
                 />
@@ -274,8 +238,8 @@ export default function Page() {
                 href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106"
               >
                 <p className="text-seasalt">
-                  Proyecciones del Censo Nacional de Población y Vivienda
-                  (CNPV), 2018, DANE
+                  Proyecciones del Censo Nacional de Población y Vivienda para
+                  2024 (CNPV), 2018, DANE
                 </p>
               </a>
             </div>
@@ -320,7 +284,7 @@ export default function Page() {
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
               <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Frecuencia de uso de internet y acceso a{" "}
+                Uso de internet y acceso a{" "}
                 <span className="italic font-normal text-dark-slate-gray">
                   dispositivos
                 </span>
@@ -328,11 +292,17 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El mapa muestra la frecuencia de utilización de internet a cargo
-                de personas mayores en los departamentos de Colombia, de acuerdo
-                con la Encuesta Nacional de Calidad de Vida 2022. Predomina la
-                no utilización de internet, pero el uso diario es mayor en los
-                departamentos que están en el centro del país.
+                El mapa muestra el porcentaje de personas mayores en familias
+                encuestadas que no utilizan internet en los departamentos de
+                Colombia, de acuerdo con la Encuesta Nacional de Calidad de Vida
+                2022. Esta fue la respuesta predominante ante la pregunta por la
+                frecuencia de utilización de este servicio. El porcentaje de no
+                utilización de internet es menor en los departamentos del centro
+                del país y en el Archipiélago de San Andrés, Providencia y Santa
+                Catalina. Al seleccionar un departamento, se muestra el
+                porcentaje de uso de dispositivos por las personas mayores que
+                acceden a internet, mostrando con ello que el celular es el
+                dispositivo que más se usa para tal fin.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -371,15 +341,20 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
+                La gráfica muestra las fuentes de ingresos de las personas
+                mayores a partir de los datos de la Gran Encuesta de Hogares
+                (GEIH), (DANE, 2023). Estas fuentes se clasifican en honorarios
+                profesionales, ingresos o comisiones y salarios u honorarios.
                 Los honorarios profesionales son la remuneración por ejercer la
-                profesión de manera independiente, los salarios son los pagos en
-                dinero o especie que reciben los empleados y los ingresos son
+                profesión de manera independiente; los ingresos o comisiones son
                 las ganancias por obra, pieza, comisión u oficio, sin
-                deducciones. Los honorarios profesionales son una fuente
-                principal de ingresos, especialmente a medida que las personas
-                envejecen. El promedio de honorarios de personas mayores es el
-                más alto en comparación con los otros ingresos que obtienen y
-                respecto a los ingresos de las otras etapas del ciclo de vida.
+                deducciones; y los salarios u honorarios corresponden a los
+                pagos en dinero o especie que reciben los empleados. Los
+                honorarios profesionales son una fuente principal de ingresos,
+                especialmente a medida que las personas envejecen. El promedio
+                de honorarios de personas mayores es el más alto en comparación
+                con los otros ingresos que obtienen y también respecto a los
+                ingresos de las otras etapas del ciclo de vida.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -412,11 +387,12 @@ export default function Page() {
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El gráfico de barra apilada ilustra el uso de productos
-                financieros en las personas de 60 años o más. La cuenta de
-                ahorros es el producto más común, representando más de la mitad
-                de las respuestas (53.06%). Un porcentaje significativo (27.95%)
-                de las personas respondieron no tener ningún producto
-                financiero.
+                financieros en los hogares con personas de 60 años o más según
+                los datos obtenidos por la Gran Encuesta de Hogares (GEIH),
+                (DANE,2023). La cuenta de ahorros es el producto más común,
+                representando más de la mitad de las respuestas (53.06%). Un
+                porcentaje significativo (27.95%) de las personas respondieron
+                no tener ningún producto financiero.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -707,7 +683,7 @@ export default function Page() {
         </div>
       </div>
       {/*  */}
-      <div className="pt-20 pb-6">
+      <div id="explore-data" className="pt-20 pb-6">
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4">

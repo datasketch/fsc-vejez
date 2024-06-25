@@ -109,13 +109,13 @@ export default function MapContainer({
                   const colorScale = scaleQuantile()
                     .domain([0, 100])
                     .range([
-                      "#215957",
-                      "#3B7C65",
-                      "#56A273",
-                      "#72C581",
                       "#8CE98E",
+                      "#72C581",
+                      "#56A273",
+                      "#3B7C65",
+                      "#215957",
                     ] as string[] | any);
-
+                    
                   return (
                     <Geography
                       key={geo.rsmKey}
