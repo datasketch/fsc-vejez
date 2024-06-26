@@ -11,7 +11,7 @@ import HorizontalStakedBarChart from "@/components/HorizontalStakedBarChart";
 import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
 import NavHome from "@/components/NavHome";
-import Disclaimer from "@/components/Disclaimer";
+import DisclaimerTitle from "@/components/DisclaimerTitle";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -285,12 +285,14 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Uso de internet y acceso a{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  dispositivos
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold inline-block">
+                  Uso de internet y acceso a{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    dispositivos
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -334,12 +336,14 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Fuentes de{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  ingreso
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Fuentes de{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    ingreso
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -443,9 +447,11 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Capacidades
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Capacidades
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -477,12 +483,14 @@ export default function Page() {
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Vivienda y composición{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  del hogar
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Vivienda y composición{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    del hogar
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -544,12 +552,14 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
-                Personas que saben
-                <span className="block italic font-normal text-dark-slate-gray">
-                  leer y escribir
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
+                  Personas que saben
+                  <span className="block italic font-normal text-dark-slate-gray">
+                    leer y escribir
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -582,12 +592,14 @@ export default function Page() {
               </a>
             </div>
             <div className="mt-12 lg:mt-20 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Nivel educativo{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  alcanzado
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Nivel educativo{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    alcanzado
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -707,7 +719,6 @@ export default function Page() {
         </div>
       </div>
       <NavHome />
-      <Disclaimer />
     </>
   );
 }

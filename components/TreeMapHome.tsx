@@ -8,7 +8,7 @@ interface TreeMapHomeProps {
 export default function TreeMapHome({ data }: TreeMapHomeProps) {
   return (
     <div className="w-full overflow-x-auto">
-      <div className="w-[1200px] mx-auto">
+      <div className="w-[1200px] lg:w-full mx-auto lg:mx-0">
         <div className="h-[500px]">
           <ResponsiveTreeMap
             data={data}

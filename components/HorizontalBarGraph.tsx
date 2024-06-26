@@ -32,7 +32,10 @@ export default function HorizontalBarGraph({
             <p
               key={`item-${index}`}
               style={{
-                color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+                color:
+                  entry.color !== "#FAAA8D" && entry.color !== "#41A5B4"
+                    ? entry.color
+                    : "#1A1A1A",
               }}
             >
               {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
@@ -54,7 +57,10 @@ export default function HorizontalBarGraph({
             key={`item-${index}`}
             className="flex items-center gap-x-1.5 flex-shrink-0"
             style={{
-              color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+              color:
+                entry.color !== "#FAAA8D" && entry.color !== "#41A5B4"
+                  ? entry.color
+                  : "#1A1A1A",
             }}
           >
             <div className="size-4" style={{ backgroundColor: entry.color }}>

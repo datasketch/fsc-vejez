@@ -12,7 +12,7 @@ export default function Map() {
     <>
       <div className="flex flex-col lg:flex-row lt lg:gap-x-12">
         <div className="lg:w-7/12 relative">
-          <WrapperChart description="La escala de tonalidades de verde en el mapa representa el porcentaje de personas mayores que no utilizan internet. A mayor porcentaje, el verde es más oscuro y viceversa. Por su parte, el gráfico de barras que aparece haciendo clic en un departamento, compara el porcentaje de uso de los dispositivos que utilizan las personas mayores para el acceso a internet. Cuanto más larga es la barra sombreada, mayor es el porcentaje y viceversa.">
+          <WrapperChart description="La escala de tonalidades de verde en el mapa representa el porcentaje de personas mayores que no utilizan internet. A mayor porcentaje, el verde es más claro y viceversa. Por su parte, el gráfico de barras que aparece haciendo clic en un departamento, compara el porcentaje de uso de los dispositivos que utilizan las personas mayores para el acceso a internet. Cuanto más larga es la barra sombreada, mayor es el porcentaje y viceversa.">
             <MapContainer setSelectedDepartment={setSelectedDepartment} />
           </WrapperChart>
         </div>

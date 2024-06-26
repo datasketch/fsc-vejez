@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import * as XLSX from 'xlsx'
+import * as XLSX from "xlsx";
 import { useEffect, useRef, useState } from "react";
 import ServicesCard from "./ServicesCard";
 import ReactPaginate from "react-paginate";
@@ -11,12 +11,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/FilterModal";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/Tooltip";
+import DisclaimerTitle from "./DisclaimerTitle";
 
 interface ServicesClientProps {
   data: any;
@@ -34,8 +29,12 @@ export default function ServicesClient({ data }: ServicesClientProps) {
   const servicesRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const categoryOptions = Array.from(new Set(data.map((el: any) => el.categoria))).sort();
-  const countryOptions = Array.from(new Set(data.map((el: any) => el.pais_de_origen))).sort();
+  const categoryOptions = Array.from(
+    new Set(data.map((el: any) => el.categoria))
+  ).sort();
+  const countryOptions = Array.from(
+    new Set(data.map((el: any) => el.pais_de_origen))
+  ).sort();
 
   const handlePageClick = (event: any) => {
     const newOffset = (event.selected * itemsPerPage) % filterData.length;
@@ -44,15 +43,16 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-
   const downloadServicesData = () => {
     const workbook = XLSX.utils.book_new();
-    const records: Array<Array<string>> = data.map((record: Record<string, unknown>) => Object.values(record))
-    records.unshift(Object.keys(data[0]))
-    const worksheet = XLSX.utils.aoa_to_sheet(records)
-    XLSX.utils.book_append_sheet(workbook, worksheet, 'servicios')
-    XLSX.writeFile(workbook, "datos-servicios.xlsx")
-  }
+    const records: Array<Array<string>> = data.map(
+      (record: Record<string, unknown>) => Object.values(record)
+    );
+    records.unshift(Object.keys(data[0]));
+    const worksheet = XLSX.utils.aoa_to_sheet(records);
+    XLSX.utils.book_append_sheet(workbook, worksheet, "servicios");
+    XLSX.writeFile(workbook, "datos-servicios.xlsx");
+  };
 
   const resetFilters = () => {
     setCategory("");
@@ -61,7 +61,6 @@ export default function ServicesClient({ data }: ServicesClientProps) {
     setItemOffset(0);
     setCurrentPage(0);
   };
-
 
   useEffect(() => {
     let newData = data;
@@ -82,7 +81,9 @@ export default function ServicesClient({ data }: ServicesClientProps) {
       newData = newData.filter(
         (item: { nombre: string; descripcion_del_servicio: string }) =>
           item.nombre.toLowerCase().includes(search.toLowerCase()) ||
-          item.descripcion_del_servicio.toLowerCase().includes(search.toLowerCase())
+          item.descripcion_del_servicio
+            .toLowerCase()
+            .includes(search.toLowerCase())
       );
     }
 
@@ -96,36 +97,12 @@ export default function ServicesClient({ data }: ServicesClientProps) {
       <div className="u-container">
         <div className="grid grid-cols-12 gap-x-2.5 xl:gap-x-5">
           <div className="col-span-12">
-            <div className="flex items-center gap-x-2.5">
+            <DisclaimerTitle message="Estos servicios compartidos son tomados de la oferta publicada por Socialab, BID Lab y Tsunami LATAM">
               <h2 className="text-2xl lg:text-[31px]">
                 <span className="font-semibold">Todos los</span>{" "}
                 <span className="italic text-dark-slate-gray">servicios</span>
               </h2>
-              <TooltipProvider delayDuration={0}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <button className="grid place-items-center">
-                      <Image
-                        src="/images/icons/information.svg"
-                        alt="information icon"
-                        width={21}
-                        height={21}
-                      />
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent
-                    className="text-center"
-                    side="top"
-                    sideOffset={10}
-                  >
-                    <p>
-                      Estos servicios compartidos son tomados de la oferta
-                      publicada por Socialab, BID Lab y Tsunami LATAM
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </div>
+            </DisclaimerTitle>
           </div>
           <div className="lg:hidden mt-8 col-span-12">
             <button
