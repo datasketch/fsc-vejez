@@ -157,7 +157,7 @@ export default function MapContainer({
             </Geographies>
             {markers.map(({ name, coordinates }) => (
               <Marker key={name} coordinates={coordinates as any}>
-                <text fontSize={10} fontWeight={700} x={-20}>
+                <text fontSize={10} fontWeight={700} x={-20} fill="#FFF">
                   {name}
                 </text>
               </Marker>

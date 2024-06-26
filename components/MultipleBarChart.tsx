@@ -29,7 +29,12 @@ export default function MultipleBarChart({
         <div className="bg-white p-3 border">
           <p className="label">{`${label}`}</p>
           {payload.map((entry: any, index: any) => (
-            <p key={`item-${index}`} style={{ color: entry.color }}>
+            <p
+              key={`item-${index}`}
+              style={{
+                color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+              }}
+            >
               {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
@@ -41,6 +46,22 @@ export default function MultipleBarChart({
 
     return null;
   };
+
+  const CustomLegend = ({ payload }: any) => {
+    return (
+      <ul className="flex flex-col items-center sm:flex-row justify-center gap-x-6 gap-y-2 lg:gap-x-10">
+        {payload.map((entry: any, index: number) => (
+          <li key={`item-${index}`} className="flex items-center gap-x-1.5 " style={{ color: entry.color !== '#FAAA8D' ? entry.color : '#1A1A1A' }}>
+            <div className="size-4" style={{ backgroundColor: entry.color }}>
+              &nbsp;
+            </div>
+            <p>{entry.value}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <div className="h-[475px]">
       <ResponsiveContainer>
@@ -59,7 +80,11 @@ export default function MultipleBarChart({
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip content={<CustomTooltip />} />
-          <Legend verticalAlign="top" height={width >= 1024 ? 60 : 100} />
+          <Legend
+            content={<CustomLegend />}
+            verticalAlign="top"
+            height={width >= 1024 ? 60 : 100}
+          />
           {
             // @ts-ignore
             legend.map((item, i) => {

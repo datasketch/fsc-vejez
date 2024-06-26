@@ -10,14 +10,16 @@ export default function Map() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="lg:w-5/12 relative">
+      <div className="flex flex-col lg:flex-row lt lg:gap-x-12">
+        <div className="lg:w-7/12 relative">
           <WrapperChart description="La escala de tonalidades de verde en el mapa representa el porcentaje de personas mayores que no utilizan internet. A mayor porcentaje, el verde es más oscuro y viceversa. Por su parte, el gráfico de barras que aparece haciendo clic en un departamento, compara el porcentaje de uso de los dispositivos que utilizan las personas mayores para el acceso a internet. Cuanto más larga es la barra sombreada, mayor es el porcentaje y viceversa.">
             <MapContainer setSelectedDepartment={setSelectedDepartment} />
           </WrapperChart>
         </div>
         <div className="mt-12 md:mt-0 lg:w-5/12">
-          <MapDetails selectedDepartment={selectedDepartment} />
+          <div className="lg:sticky lg:top-28 lg:left-0 lg:w-full">
+            <MapDetails selectedDepartment={selectedDepartment} />
+          </div>
         </div>
       </div>
       <div className="mt-12 lg:mt-16">
