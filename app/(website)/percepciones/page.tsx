@@ -120,16 +120,22 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <a
-          target="_blank"
-          href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
-        >
-          <p className="text-vampire-gray mt-16 lg:w-1/2">
-            Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
-            Concha, PROESA y DANE, 2023 y Encuesta de Percepción Ciudadana, Red
-            de Ciudades Cómo Vamos, 2022
-          </p>
-        </a>
+        <div className="mt-16 lg:w-1/2">
+          <a
+            target="_blank"
+            href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
+          >
+            <p className="text-vampire-gray">
+              Misión Colombia Envejece; Fedesarrollo, Fundación Saldarriaga
+              Concha, PROESA y DANE, 2023
+            </p>
+          </a>
+          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+            <p className="text-vampire-gray mt-4">
+              Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
+            </p>
+          </a>
+        </div>
       </div>
       <div className="bg-white w-full rounded-[40px] my-10">
         <div className="u-container font-proxima-nova pb-10">
@@ -235,7 +241,7 @@ export default function Page() {
         <div className="mt-6 lg:mt-10 xl:mt-12">
           <iframe
             className="size-full aspect-video"
-            src="https://services.datasketch.co/content/2a4bce5c-cddd-4464-8e32-0f3318613bd9/"
+            src="https://services.datasketch.co/fnd-app-questions/"
             title="Dashboard para poder cruzar informacion"
           />
         </div>

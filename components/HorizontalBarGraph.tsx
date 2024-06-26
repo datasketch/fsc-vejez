@@ -7,7 +7,6 @@ import {
   XAxis,
   YAxis,
   Legend,
-  Text,
   Tooltip,
 } from "recharts";
 
@@ -30,8 +29,13 @@ export default function HorizontalBarGraph({
         <div className="bg-white p-3 border">
           <p className="label">{`${label}`}</p>
           {payload.map((entry: any, index: any) => (
-            <p key={`item-${index}`} style={{ color: entry.color }}>
-              {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
+            <p
+              key={`item-${index}`}
+              style={{
+                color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+              }}
+            >
+              {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
             </p>
@@ -42,9 +46,29 @@ export default function HorizontalBarGraph({
 
     return null;
   };
+  const CustomLegend = ({ payload }: any) => {
+    return (
+      <ul className="flex flex-col items-center lg:flex-row justify-center gap-x-6 gap-y-2 lg:gap-x-10 mb-10">
+        {payload.map((entry: any, index: number) => (
+          <li
+            key={`item-${index}`}
+            className="flex items-center gap-x-1.5 flex-shrink-0"
+            style={{
+              color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+            }}
+          >
+            <div className="size-4" style={{ backgroundColor: entry.color }}>
+              &nbsp;
+            </div>
+            <p>{entry.value}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  };
   return (
     <ResponsiveContainer
-      width={"80%"}
+      width="100%"
       height={height}
       debounce={50}
       className="mt-20 mx-auto"
@@ -54,7 +78,6 @@ export default function HorizontalBarGraph({
         layout="vertical"
         margin={{ left: 10, right: BAR_AXIS_SPACE - 8 }}
       >
-        
         <XAxis type="number" />
         <YAxis
           yAxisId={0}
@@ -64,7 +87,7 @@ export default function HorizontalBarGraph({
           width={150}
         />
         <Tooltip content={<CustomTooltip />} />
-        <Legend verticalAlign="top" />
+        <Legend verticalAlign="top" content={<CustomLegend />} />
         {legend.map((item, i) => {
           return <Bar key={i} dataKey={item.key} fill={item.fill} />;
         })}

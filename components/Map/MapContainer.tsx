@@ -109,12 +109,13 @@ export default function MapContainer({
                   const colorScale = scaleQuantile()
                     .domain([0, 100])
                     .range([
-                      "#8CE98E",
-                      "#72C581",
-                      "#56A273",
-                      "#3B7C65",
                       "#215957",
+                      "#3B7C65",
+                      "#56A273",
+                      "#72C581",
+                      "#8CE98E",
                     ] as string[] | any);
+
                     
                   return (
                     <Geography
@@ -157,7 +158,7 @@ export default function MapContainer({
             </Geographies>
             {markers.map(({ name, coordinates }) => (
               <Marker key={name} coordinates={coordinates as any}>
-                <text fontSize={12} fontWeight={700} x={-20} fill="#FFF" stroke="#000" strokeWidth={1}>
+                <text fontSize={12} fontWeight={700} x={-20} fill="#1A1A1A">
                   {name}
                 </text>
               </Marker>

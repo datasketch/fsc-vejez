@@ -3,13 +3,14 @@ import Image from "next/image";
 import { Progress } from "@/components/Progress";
 import data from "@/data/home.json";
 import { useEffect, useState } from "react";
+import departmentsData from "@/data/departments.json";
 
 interface MapDetailsProps {
   selectedDepartment: number;
 }
 
 export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
-  const [devicesUsage, setDevicesUsage] = useState(null);
+  const [devicesUsage, setDevicesUsage] = useState<any>(null);
 
   function omit(key: string, obj: any) {
     const { [key]: omitted, ...rest } = obj;
@@ -22,7 +23,10 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
         (el) => el.cod_dpto === selectedDepartment
       );
       const formatDepartment = omit("cod_dpto", findDepartment);
-      setDevicesUsage(formatDepartment);
+      const department = departmentsData.find(
+        (el) => +el.code === +selectedDepartment
+      )?.name;
+      setDevicesUsage({ ...formatDepartment, department });
     }
   }, [selectedDepartment]);
 
@@ -32,7 +36,7 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
         <h3 className="text-xl font-semibold text-center">
           Porcentaje de personas que no utilizan internet
         </h3>
-        <div className="mt-10">
+        <div className="mt-6">
           <Image
             width={1000}
             height={215}
@@ -44,29 +48,34 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
       <div className="md:w-1/2 lg:w-full">
         {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
-            <h3 className="font-semibold">
+            <h3 className="text-center text-xl font-semibold">
+              {devicesUsage.department}
+            </h3>
+            <h4 className="mt-4 font-semibold">
               ¿Cuáles dispositivos utilizan las personas de 60 años o más para
               acceder a internet?
-            </h3>
+            </h4>
             <div className="mt-6 space-y-4">
-              {Object.entries(devicesUsage).map(([key, value]: any, i) => {
-                return (
-                  <div
-                    key={`device-${i + 1}`}
-                    className="grid grid-cols-12 items-center gap-x-[14px]"
-                  >
-                    <div className="col-span-7">
-                      <p className="text-sm">{key}</p>
+              {Object.entries(omit("department", devicesUsage)).map(
+                ([key, value]: any, i) => {
+                  return (
+                    <div
+                      key={`device-${i + 1}`}
+                      className="grid grid-cols-12 items-center gap-x-[14px]"
+                    >
+                      <div className="col-span-7">
+                        <p className="text-sm">{key}</p>
+                      </div>
+                      <div className="col-span-3">
+                        <Progress value={value} />
+                      </div>
+                      <div className="col-span-2">
+                        <p className="text-sm">{value}%</p>
+                      </div>
                     </div>
-                    <div className="col-span-3">
-                      <Progress value={value} />
-                    </div>
-                    <div className="col-span-2">
-                      <p className="text-sm">{value}%</p>
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                }
+              )}
             </div>
           </div>
         ) : (

@@ -219,9 +219,11 @@ export default function Page() {
                 Departamentos con más personas mayores
               </h2>
               <p className="mt-5 text-seasalt">
-                Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos
-                de la región Andina (Santander y Antioquia) tienen mayor
-                porcentaje de personas mayores en Colombia.
+                De acuerdo con las Proyecciones del Censo Nacional de Población
+                y Vivienda (DANE, 2018), dos departamentos en el Pacífico (Valle
+                del Cauca y Cauca) y dos de la región Andina (Santander y
+                Antioquia) tienen mayor porcentaje de personas mayores en
+                Colombia.
               </p>
               <div className="mt-6">
                 <Image
@@ -447,19 +449,20 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                Oír, hablar, ver, mover el cuerpo, entre otras, son capacidades
-                que ayudan a satisfacer las necesidades básicas. Aunque la
-                mayoría de las personas mayores manifestaron no tener
-                impedimentos en realizar las actividades, presentan alguna o
-                mucha dificultad en ver; mover el cuerpo, caminar o usar
-                escaleras y oír.
+                A partir de los datos presentados por la Encuesta Nacional de
+                Calidad de Vida (DANE, 2022), oír, hablar, ver, mover el cuerpo,
+                entre otras, son capacidades que ayudan a satisfacer las
+                necesidades básicas diarias, por lo que su estado de bienestar
+                influye en aspectos como el nivel de independencia de una
+                persona. Aunque la mayoría de las personas mayores manifestaron
+                no tener impedimentos en realizar las actividades, presentan
+                alguna o mucha dificultad en ver; mover el cuerpo, caminar o
+                usar escaleras y oír.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
-                <div className="h-[424px]">
-                  <HeatMapHome data={data.capacidades} />
-                </div>
+                <HeatMapHome data={data.capacidades} />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
@@ -468,7 +471,7 @@ export default function Page() {
                 href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
               >
                 <p className="text-davys-gray">
-                  Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+                  Encuesta Nacional de Calidad de Vida (ECV), 2022, DANE
                 </p>
               </a>
             </div>
@@ -491,8 +494,9 @@ export default function Page() {
                 una distribución más diversa en cuanto a tenencia, pero priman
                 la propiedad totalmente pagada, en usufructo y en
                 arriendo/subarriendo. La gráfica filtra los valores
-                predominantes. Para conocer todos los resultados, diríjase a
-                “Explora los datos”, al final de la página de inicio.
+                predominantes tomados de la Encuesta Integrada de Hogares (DANE,
+                2023). Para conocer todos los resultados, diríjase a “Explora
+                los datos”, al final de la página de inicio.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -502,9 +506,7 @@ export default function Page() {
                   "Los hombres y las mujeres están ubicados en la primera columna del diagrama, los tipos de vivienda se encuentran en la segunda columna, mientras que la condición de tenencia corresponde a la tercera columna. Las bandas de colores fluyen desde las categorías de género hacia los diferentes tipos de vivienda y condiciones de tenencia, mostrando visualmente la distribución de la población según estas variables.",
                 ]}
               >
-                <div className="h-[527.23px]">
-                  <SankeyHome data={data.vivienda_composicion} />
-                </div>
+                <SankeyHome data={data.vivienda_composicion} />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
@@ -553,22 +555,20 @@ export default function Page() {
               <p>
                 El treemap muestra la proporción de personas mayores que
                 afirmaron saber leer y escribir según la Gran Encuesta Integrada
-                de Hogares del 2022. Los jóvenes son quienes más respondieron de
-                manera afirmativa, seguidos de los adultos y las personas
-                mayores. 11.6% de las personas de 60 años o más reportaron no
-                saben leer ni escribir.
+                de Hogares (DANE, 2022). Los jóvenes son quienes más
+                respondieron de manera afirmativa, seguidos de los adultos y las
+                personas mayores. 11.6% de las personas de 60 años o más
+                reportaron no saben leer ni escribir.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
-                <div className="h-[500px]">
-                  <TreeMapHome
-                    data={{
-                      name: "Tasa de alfabetismo",
-                      children: literacyRateData,
-                    }}
-                  />
-                </div>
+                <TreeMapHome
+                  data={{
+                    name: "Tasa de alfabetismo",
+                    children: literacyRateData,
+                  }}
+                />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
@@ -591,13 +591,13 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El archivo de datos de la Gran Encuesta Integrada de Hogares -
-                2023 brinda información del último nivel educativo alcanzado. La
-                mayor parte de las personas mayores estudió hasta básica
-                primaria, seguida de media académica y básica secundaria. Salvo
-                básica primaria, normalista y doctorado, las personas mayores
-                son la etapa del ciclo de vida con menos personas en los demás
-                niveles educativos.
+                El archivo de datos de la Gran Encuesta Integrada de Hogares
+                (DANE, 2023) brinda información del último nivel educativo
+                alcanzado. La mayor parte de las personas mayores estudió hasta
+                básica primaria, seguida de media académica y básica secundaria.
+                Salvo básica primaria, normalista y doctorado, las personas
+                mayores son la etapa del ciclo de vida con menos personas en los
+                demás niveles educativos.
               </p>
             </div>
             <div className="col-span-4 lg:col-span-12">
@@ -653,11 +653,13 @@ export default function Page() {
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El transporte público es el modo de transporte más utilizado
-                entre los diferentes grupos etarios. El siguiente modo más
-                popular es a pie, en recorridos superiores a 15 minutos. Las
-                personas mayores (60 años o más) hacen un menor uso del
-                transporte en las diferentes categorías en comparación con otras
-                etapas ciclo de vida, con barras generalmente más cortas.
+                entre los diferentes grupos etarios en la ciudad de Bogotá,
+                según la Encuesta de Movilidad (Secretaría Distrital de
+                Movilidad, 2023). El siguiente modo más popular es a pie, en
+                recorridos superiores a 15 minutos. Las personas mayores (60
+                años o más) hacen un menor uso del transporte en las diferentes
+                categorías en comparación con otras etapas del ciclo de vida,
+                con barras generalmente más cortas.
               </p>
             </div>
             <div className="col-span-4 lg:col-span-12">
@@ -696,7 +698,7 @@ export default function Page() {
             </div>
             <div className="mt-6 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
               <iframe
-                className="size-full aspect-video"
+                className="size-full lg:aspect-video h-[80vh]"
                 src="https://services.datasketch.co/fsc-vejez-app/"
                 title="Explora los datos relacionados con la pagina"
               />

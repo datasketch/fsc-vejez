@@ -19,15 +19,15 @@ export default function Disclaimer() {
         <PopoverTrigger>
           {open ? (
             <Image
-              width={24}
-              height={24}
+              width={40}
+              height={40}
               src="/images/icons/disclaimer-close.svg"
               alt="close disclaimer icon"
             />
           ) : (
             <Image
-              width={60}
-              height={60}
+              width={40}
+              height={40}
               src="/images/icons/disclaimer-information.svg"
               alt="information disclaimer icon"
             />
