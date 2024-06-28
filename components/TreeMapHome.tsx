@@ -43,7 +43,7 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
             borderColor="#ffffff"
             theme={{
               text: {
-                fontSize: 14,
+                fontSize: 16,
               },
             }}
           />

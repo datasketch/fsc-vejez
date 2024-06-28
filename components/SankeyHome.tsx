@@ -16,6 +16,9 @@ export default function SankeyHome({ data }: SankeyHomeProps) {
           <ResponsiveSankey
             data={data}
             margin={{ top: 0, right: 0, bottom: 20, left: 0 }}
+            valueFormat={(valueFormat) =>
+              new Intl.NumberFormat("es-CO").format(valueFormat)
+            }
             ariaLabel="sankey-vivienda"
             align="justify"
             colors={[

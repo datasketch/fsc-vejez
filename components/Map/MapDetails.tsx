@@ -4,6 +4,7 @@ import { Progress } from "@/components/Progress";
 import data from "@/data/home.json";
 import { useEffect, useState } from "react";
 import departmentsData from "@/data/departments.json";
+import { numberFormat } from "@/util";
 
 interface MapDetailsProps {
   selectedDepartment: number;
@@ -11,7 +12,7 @@ interface MapDetailsProps {
 
 export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
   const [devicesUsage, setDevicesUsage] = useState<any>(null);
-
+  const [department, setDepartment] = useState<any>(null);
   function omit(key: string, obj: any) {
     const { [key]: omitted, ...rest } = obj;
     return rest;
@@ -26,7 +27,14 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
       const department = departmentsData.find(
         (el) => +el.code === +selectedDepartment
       )?.name;
-      setDevicesUsage({ ...formatDepartment, department });
+      const devicesUsageFormat = Object.entries(formatDepartment)
+        .reduce((prev: any, curr: any) => {
+          return [...prev, { device: curr[0], percentaje: curr[1] }];
+        }, [])
+        .sort((a: any, b: any) => b.percentaje - a.percentaje);
+
+      setDepartment(department);
+      setDevicesUsage(devicesUsageFormat);
     }
   }, [selectedDepartment]);
 
@@ -48,34 +56,32 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
       <div className="md:w-1/2 lg:w-full">
         {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
-            <h3 className="text-center text-xl font-semibold">
-              {devicesUsage.department}
-            </h3>
+            <h3 className="text-center text-xl font-semibold">{department}</h3>
             <h4 className="mt-4 font-semibold">
               ¿Cuáles dispositivos utilizan las personas de 60 años o más para
               acceder a internet?
             </h4>
             <div className="mt-6 space-y-4">
-              {Object.entries(omit("department", devicesUsage)).map(
-                ([key, value]: any, i) => {
-                  return (
-                    <div
-                      key={`device-${i + 1}`}
-                      className="grid grid-cols-12 items-center gap-x-[14px]"
-                    >
-                      <div className="col-span-7">
-                        <p className="text-sm">{key}</p>
-                      </div>
-                      <div className="col-span-3">
-                        <Progress value={value} />
-                      </div>
-                      <div className="col-span-2">
-                        <p className="text-sm">{value}%</p>
-                      </div>
+              {devicesUsage.map((item: any, i: number) => {
+                return (
+                  <div
+                    key={`device-${i + 1}`}
+                    className="grid grid-cols-12 items-center gap-x-[14px]"
+                  >
+                    <div className="col-span-7">
+                      <p className="text-sm">{item.device}</p>
                     </div>
-                  );
-                }
-              )}
+                    <div className="col-span-3">
+                      <Progress value={item.percentaje} />
+                    </div>
+                    <div className="col-span-2">
+                      <p className="text-sm">
+                        {numberFormat(item.percentaje)}%
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         ) : (

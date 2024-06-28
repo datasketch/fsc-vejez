@@ -16,8 +16,10 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
         <div className="h-[424px]">
           <ResponsiveHeatMap
             data={data}
-            margin={{ top: 0, right: 0, bottom: 80, left: 350 }}
-            valueFormat=">-.2s"
+            margin={{ top: 40, right: 0, bottom: 80, left: 450 }}
+            valueFormat={(valueFormat) =>
+              new Intl.NumberFormat("es-CO").format(valueFormat)
+            }
             axisTop={{
               tickSize: 0,
               tickPadding: 5,

@@ -13,6 +13,7 @@ import markers from "@/data/markers.json";
 import data from "@/data/home.json";
 import departments from "@/data/departments.json";
 import { scaleQuantile } from "d3-scale";
+import { numberFormat } from "@/util";
 
 interface MapContainerProps {
   setSelectedDepartment: Dispatch<SetStateAction<number>>;
@@ -54,31 +55,40 @@ export default function MapContainer({
             <p className="text-sm">
               No utiliza internet:{" "}
               <span className="font-semibold">
-                {tooltip["No utiliza internet"]}%
+                {numberFormat(tooltip["No utiliza internet"])}%
               </span>
             </p>
             <p className="text-sm">
               Al menos una vez al año, pero no cada mes:{" "}
               <span className="font-semibold">
-                {tooltip["Al menos una vez al año, pero no cada mes"]}%
+                {numberFormat(
+                  tooltip["Al menos una vez al año, pero no cada mes"]
+                )}
+                %
               </span>
             </p>
             <p className="text-sm">
               Al menos una vez al mes, pero no cada semana:{" "}
               <span className="font-semibold">
-                {tooltip["Al menos una vez al mes, pero no cada semana"]}%
+                {numberFormat(
+                  tooltip["Al menos una vez al mes, pero no cada semana"]
+                )}
+                %
               </span>
             </p>
             <p className="text-sm">
               Al menos una vez a la semana, pero no cada día:{" "}
               <span className="font-semibold">
-                {tooltip["Al menos una vez a la semana, pero no cada día"]}%
+                {numberFormat(
+                  tooltip["Al menos una vez a la semana, pero no cada día"]
+                )}
+                %
               </span>
             </p>
             <p className="text-sm">
               Todos los días de la semana:{" "}
               <span className="font-semibold">
-                {tooltip["Todos los días de la semana"]}%
+                {numberFormat(tooltip["Todos los días de la semana"])}%
               </span>
             </p>
           </>
@@ -89,12 +99,12 @@ export default function MapContainer({
           projection="geoMercator"
           projectionConfig={{
             center: [-74.2973, 4.5709],
-            scale: 2000,
+            scale: 1800,
           }}
           width={511}
           height={651.75}
         >
-          <ZoomableGroup center={[0, 0]} maxZoom={0}>
+          <ZoomableGroup>
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
                 geographies.map((geo) => {
@@ -116,7 +126,6 @@ export default function MapContainer({
                       "#8CE98E",
                     ] as string[] | any);
 
-                    
                   return (
                     <Geography
                       key={geo.rsmKey}

@@ -1,10 +1,16 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/Tabs";
+import clsx from "clsx";
+import Image from "next/image";
 
 interface TabSectionProps {
   sections: {
     title: string;
+    image?: {
+      src: string;
+      alt: string;
+    };
     wordCloud?: React.ReactNode;
     wordContent?: React.ReactNode;
   }[];
@@ -19,9 +25,20 @@ export default function TabSections({ sections }: TabSectionProps) {
             return (
               <TabsTrigger
                 key={`section-trigger-${i + 1}`}
+                className={clsx({
+                  "flex items-center gap-x-2.5": section.image,
+                })}
                 value={section.title}
               >
-                {section.title}
+                {section.image && (
+                  <Image
+                    width={20}
+                    height={20}
+                    src={section.image.src}
+                    alt={section.image.alt}
+                  />
+                )}
+                <p>{section.title}</p>
               </TabsTrigger>
             );
           })}

@@ -12,7 +12,6 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 
-
 interface ResourcePanelProps {
   data: any;
   isType?: boolean;
@@ -25,7 +24,7 @@ export default function ResourcePanel({
   image = false,
 }: ResourcePanelProps) {
   const [query, setQuery] = useState("");
-  const [order, setOrder] = useState("AZ");
+  const [order, setOrder] = useState("Públicación más reciente");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedYear, setSelectedYear] = useState("");
@@ -36,31 +35,48 @@ export default function ResourcePanel({
   const ref = useRef<HTMLDivElement>(null);
 
   // @ts-ignore
-  const years = Array.from(new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))).sort((a, b) => a - b)
+  const years = Array.from(
+    new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))
+  ).sort((a: any, b: any) => a - b);
 
   // @ts-ignore
-  const optionsCategory: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.categoria))).sort((a, b) => a - b).filter(item => item).map(item => {
-    return {
-      label: item,
-      value: item,
-    }
-  })
+  const optionsCategory: Array<{ label: string; value: string }> = Array.from(
+    new Set(data.map((item: any) => item.categoria))
+  )
+    .sort((a: any, b: any) => a - b)
+    .filter((item) => item)
+    .map((item) => {
+      return {
+        label: item,
+        value: item,
+      };
+    });
 
   // @ts-ignore
-  const optionsType: Array<{ label: string; value: string }> = Array.from(new Set(data.map((item: any) => item.tipo_de_publicacion))).sort((a, b) => a - b).filter(item => item).map(item => {
-    return {
-      label: item,
-      value: item,
-    }
-  })
+  const optionsType: Array<{ label: string; value: string }> = Array.from(
+    new Set(data.map((item: any) => item.tipo_de_publicacion))
+  )
+    .sort((a: any, b: any) => a - b)
+    .filter((item) => item)
+    .map((item) => {
+      return {
+        label: item,
+        value: item,
+      };
+    });
 
   function filterBySearch(item: any) {
     if (!query) return true;
 
-    const tmpTitle = item.nombre || item.titulo_de_ley
-    return removeAccents(tmpTitle.toLowerCase()).includes(
-      removeAccents(query.toLowerCase())
-    ) || removeAccents((item.identificacion || "").toLowerCase()).includes(removeAccents(query.toLowerCase()))
+    const tmpTitle = item.nombre || item.titulo_de_ley;
+    return (
+      removeAccents(tmpTitle.toLowerCase()).includes(
+        removeAccents(query.toLowerCase())
+      ) ||
+      removeAccents((item.identificacion || "").toLowerCase()).includes(
+        removeAccents(query.toLowerCase())
+      )
+    );
   }
 
   function filterByCategory(item: any) {
@@ -79,7 +95,7 @@ export default function ResourcePanel({
 
   function filterByYear(item: any) {
     if (!selectedYear) return true;
-    const tmp = item.anio || item.anio_de_publicacion || ''
+    const tmp = item.anio || item.anio_de_publicacion || "";
 
     return tmp.toString() === selectedYear;
   }
@@ -92,13 +108,17 @@ export default function ResourcePanel({
     // @ts-ignore
     .sort((a, b) => {
       if (order === "AZ") {
-        const tmpA = a.nombre || a.titulo_de_ley
-        const tmpB = b.nombre || b.titulo_de_ley
+        const tmpA = a.nombre || a.titulo_de_ley;
+        const tmpB = b.nombre || b.titulo_de_ley;
         return tmpA.localeCompare(tmpB);
       } else if (order === "ZA") {
-        const tmpA = a.nombre || a.titulo_de_ley
-        const tmpB = b.nombre || b.titulo_de_ley
+        const tmpA = a.nombre || a.titulo_de_ley;
+        const tmpB = b.nombre || b.titulo_de_ley;
         return tmpB.localeCompare(tmpA);
+      } else if (order === "Públicación más reciente") {
+        return b.anio_de_publicacion - a.anio_de_publicacion;
+      } else if (order === "Públicación más antigua") {
+        return a.anio_de_publicacion - b.anio_de_publicacion;
       }
     });
 
@@ -209,10 +229,12 @@ export default function ResourcePanel({
                         onChange={(e) => setSelectedYear(e.target.value)}
                       >
                         <option value="">Selecciona una opción</option>
-                        {years.map((option, i) => {
+                        {years.map((option: any, i: number) => {
                           return (
                             // @ts-ignore
-                            <option key={i} value={option}>{option}</option>
+                            <option key={i} value={option}>
+                              {option}
+                            </option>
                           );
                         })}
                       </select>
@@ -311,10 +333,12 @@ export default function ResourcePanel({
               onChange={(e) => setSelectedYear(e.target.value)}
             >
               <option value="">Selecciona una opción</option>
-              {years.map((option, i) => {
+              {years.map((option: any, i: number) => {
                 return (
                   // @ts-ignore
-                  <option key={i} value={option}>{option} </option>
+                  <option key={i} value={option}>
+                    {option}
+                  </option>
                 );
               })}
             </select>
@@ -322,9 +346,11 @@ export default function ResourcePanel({
         </div>
       </div>
       <div className="col-span-8">
-        {filteredData.length > 0 &&
+        {filteredData.length > 0 && (
           <div className="flex lg:justify-end items-center gap-4 mb-10 lg:mb-0">
-            <h2 className="text-xl font-semibold hidden lg:block">Ordenar por</h2>
+            <h2 className="text-xl font-semibold hidden lg:block">
+              Ordenar por
+            </h2>
             <select
               className="h-10 w-full lg:w-min overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
               name=""
@@ -333,12 +359,18 @@ export default function ResourcePanel({
               value={order}
               onChange={(e) => setOrder(e.target.value)}
             >
+              <option value="Públicación más reciente">
+                Públicación más reciente
+              </option>
+              <option value="Públicación más antigua">
+                Públicación más antigua
+              </option>
               <option value="AZ">De la A a Z</option>
               <option value="ZA">De la Z a A</option>
             </select>
           </div>
-        }
-        {filteredData.length > 0 ?
+        )}
+        {filteredData.length > 0 ? (
           filteredData
             .slice(itemOffset, endOffset)
             .map((item: any, idx: any) => {
@@ -352,10 +384,10 @@ export default function ResourcePanel({
                 />
               );
             })
-          :
+        ) : (
           <p>No existen resultados</p>
-        }
-        {filteredData.length > 0 &&
+        )}
+        {filteredData.length > 0 && (
           <div className="flex items-center justify-center lg:col-span-8 lg:col-start-5 mt-14 shado font-normal w-full">
             <ReactPaginate
               className="flex items-center gap-x-8"
@@ -389,7 +421,7 @@ export default function ResourcePanel({
               }
             />
           </div>
-        }
+        )}
       </div>
     </div>
   );

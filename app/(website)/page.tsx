@@ -80,7 +80,7 @@ export default function Page() {
               </h2>
               <div className="mt-4 flex gap-x-2.5">
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
-                  7.8M
+                  7,8M
                 </p>
                 <p>
                   de personas de 60 años o más <br /> en 2024
@@ -94,9 +94,10 @@ export default function Page() {
                   alt="dashed"
                 />
               </div>
-              <div className="flex gap-x-2.5">
+              <div className="flex gap-x-2.5 group">
                 <div className="w-7/12">
                   <Image
+                    className="lg:group-hover:scale-110 duration-300"
                     width={1920}
                     height={32}
                     src="/images/home/human-figure.svg"
@@ -104,7 +105,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="w-5/12">
-                  <p className="font-semibold text-dark-slate-gray">
+                  <p className="font-semibold text-dark-slate-gray lg:group-hover:translate-x-5 lg:group-hover:scale-110 duration-300">
                     equivale al 14,9% de la población
                   </p>
                 </div>
@@ -115,6 +116,7 @@ export default function Page() {
                 </h2>
                 <div className="mt-6">
                   <Image
+                    className="lg:hover:scale-110 duration-300"
                     width={363}
                     height={283}
                     src="/images/home/pie-chart.svg"
@@ -158,8 +160,8 @@ export default function Page() {
               </h2>
               <div className="mt-5">
                 <Image
-                  className="mx-auto"
-                  width={223.14}
+                  className="mx-auto lg:hover:scale-110 duration-300"
+                  width={250}
                   height={120}
                   src="/images/home/human-figure-2.svg"
                   alt="human figure 2"
@@ -170,9 +172,9 @@ export default function Page() {
               </h2>
               <div className="mt-5">
                 <Image
-                  className="mx-auto"
-                  width={287}
-                  height={213}
+                  width={387}
+                  height={310}
+                  className="w-full lg:hover:scale-110 duration-300"
                   src="/images/home/line-chart.svg"
                   alt="line chart"
                 />
@@ -207,6 +209,7 @@ export default function Page() {
               </h2>
               <div className="mt-6">
                 <Image
+                  className="hover:scale-110 duration-300"
                   width={1920}
                   height={314}
                   src="/images/home/demo-chart-1.svg"
@@ -227,6 +230,7 @@ export default function Page() {
               </p>
               <div className="mt-6">
                 <Image
+                  className="hover:scale-110 duration-300"
                   width={1920}
                   height={263}
                   src="/images/home/demo-chart-2.svg"
@@ -236,6 +240,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="inline-block underline decoration-white"
                 target="_blank"
                 href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106"
               >
@@ -373,6 +378,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -414,6 +420,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -473,6 +480,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
               >
@@ -519,6 +527,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -583,6 +592,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -622,6 +632,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -685,6 +696,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://www.simur.gov.co/encuestas-de-movilidad"
               >

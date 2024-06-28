@@ -38,7 +38,7 @@ export default function HorizontalBarGraph({
                     : "#1A1A1A",
               }}
             >
-              {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
+              {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
             </p>

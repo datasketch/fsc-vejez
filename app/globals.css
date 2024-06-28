@@ -12,6 +12,9 @@
   .u-container {
     @apply mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl;
   }
+  .u-container-2 {
+    @apply mx-auto w-11/12;
+  }
   .u-shadow-1 {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08),
       0px 5px 50px 0px rgba(0, 0, 0, 0.08);

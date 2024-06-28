@@ -122,6 +122,7 @@ export default function Page() {
         </div>
         <div className="mt-16 lg:w-1/2">
           <a
+            className="underline"
             target="_blank"
             href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
           >
@@ -130,7 +131,11 @@ export default function Page() {
               Concha, PROESA y DANE, 2023
             </p>
           </a>
-          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+          <a
+            className="underline"
+            target="_blank"
+            href="https://redcomovamos.org/biblioteca-rccv/"
+          >
             <p className="text-vampire-gray mt-4">
               Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
             </p>
@@ -200,7 +205,11 @@ export default function Page() {
               </WrapperChart>
             </div>
           </div>
-          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+          <a
+            className="underline"
+            target="_blank"
+            href="https://redcomovamos.org/biblioteca-rccv/"
+          >
             <p className="text-vampire-gray mt-16 ">
               Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
             </p>
@@ -226,7 +235,11 @@ export default function Page() {
               legend={data.ciudades_como_vamos.data_finanzas.legend}
             />
           </WrapperChart>
-          <a target="_blank" href="https://redcomovamos.org/biblioteca-rccv/">
+          <a
+            className="underline"
+            target="_blank"
+            href="https://redcomovamos.org/biblioteca-rccv/"
+          >
             <p className="text-vampire-gray mt-16 ">
               Encuesta de Percepción Ciudadana, Red de Ciudades Cómo Vamos, 2022
             </p>
@@ -261,8 +274,9 @@ export default function Page() {
                   sections={[
                     {
                       title: "Salud y bienestar",
+                      image: { src: "/images/home/health.svg", alt: "health image" },
                       wordContent: (
-                        <div className="space-y-6">
+                        <div className="space-y-6 max-w-[1002px] mx-auto">
                           <p>
                             Las personas mayores definen tener buena salud como
                             la capacidad de ser independientes, moverse
@@ -273,7 +287,7 @@ export default function Page() {
                             subyacentes.
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;Tener buena salud es estar funcional, ser
                               productivo, sentirme bien en mi diario, con
                               trabajo, con mis amigos, con mi familia. Entonces,
@@ -281,7 +295,7 @@ export default function Page() {
                               base, yo siento que tengo una buena salud porque
                               funciono bien, para mí&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               GF, hombres y mujeres, intergeneracional, estratos
                               5 y 6, Manizales; Fundación Saldarriaga Concha,
                               Fedesarrollo, PROESA y DANE, 2023, p. 35
@@ -308,13 +322,13 @@ export default function Page() {
                             bienestar.
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;La gran mayoría (70%) de las personas
                               mayores que necesitan cuidados reciben cuidado no
                               remunerado por parte de otro miembro del
                               hogar&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               Fundación Saldarriaga Concha, Fedesarrollo, PROESA
                               y DANE, 2023, p. 331
                             </p>
@@ -333,8 +347,9 @@ export default function Page() {
                     },
                     {
                       title: "Educación",
+                      image: { src: "/images/home/education.svg", alt: "education image" },
                       wordContent: (
-                        <div className="space-y-6">
+                        <div className="space-y-6 max-w-[1002px] mx-auto">
                           <p>
                             Las personas mayores muestran un fuerte interés en
                             aprender cosas nuevas para mantenerse cognitivamente
@@ -349,7 +364,7 @@ export default function Page() {
                             generaciones se benefician de sus enseñanzas.
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;A mí me gustaría aprender (...) cómo
                               administrar el negocio, aprender algo más que
                               podamos hacer (...) ahora las cosas se manejan muy
@@ -357,7 +372,7 @@ export default function Page() {
                               eso para traer beneficios a la fundación, que nos
                               podamos modernizar&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               GF, mujeres mayores de 60 años, estratos 3 y 4,
                               Manizales; Fundación Saldarriaga Concha,
                               Fedesarrollo, PROESA y DANE, 2023, p. 224
@@ -390,8 +405,9 @@ export default function Page() {
                     },
                     {
                       title: "Ingresos y finanzas",
+                      image: { src: "/images/home/pig.svg", alt: "pig image" },
                       wordContent: (
-                        <div className="space-y-6">
+                        <div className="space-y-6 max-w-[1002px] mx-auto">
                           <p>
                             Las principales fuentes de ingreso para las personas
                             mayores incluyen pensiones, subsidios y, en algunos
@@ -417,13 +433,13 @@ export default function Page() {
                             cantidad de pensiones y subsidios.
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;El subsidio no contributivo de Colombia
                               Mayor tiene una cobertura limitada ({"<"} 30% de
                               la población mayor) y un monto bajo (entre $80.000
                               y $120.000 mensuales)&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               Fundación Saldarriaga Concha, Fedesarrollo, PROESA
                               y DANE, 2023, p.437
                             </p>
@@ -440,12 +456,12 @@ export default function Page() {
                             a sus familias debido a la falta de pensión.
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;Los hijos colaboran, pero eso no es lo mismo
                               que tener uno su capital (…) después de los 60 no
                               lo están recibiendo a uno en ningún lado&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               GF, hombres y mujeres, mayores de 60 años,
                               estratos 1 y 2, Tunja; Fundación Saldarriaga
                               Concha, Fedesarrollo, PROESA y DANE, 2023, p.481
@@ -456,8 +472,9 @@ export default function Page() {
                     },
                     {
                       title: "Tecnología y digitalización",
+                      image: { src: "/images/home/phone.svg", alt: "phone image" },
                       wordContent: (
-                        <div className="space-y-6">
+                        <div className="space-y-6 max-w-[1002px] mx-auto">
                           <p>
                             Las personas mayores reconocen la importancia de las
                             nuevas tecnologías para mejorar su calidad de vida y
@@ -467,7 +484,7 @@ export default function Page() {
                             desarrollado algunas de forma básica
                           </p>
                           <div className="relative pl-8 space-y-2 before:content-[''] before:absolute before:top-1.5 before:left-0 before:w-5 before:h-[3px] before:bg-[#1D5556]">
-                            <p className="text-xl leading-[22px]">
+                            <p className="font-semibold">
                               &quot;Hay muchas barreras en el momento porque
                               ahora lo que manda es la tecnología, y a nosotros
                               nos atropella la tecnología, porque yo veo que
@@ -475,7 +492,7 @@ export default function Page() {
                               nosotros apenas para chatear, contestar y
                               llamar&quot;
                             </p>
-                            <p className="text-[13px]">
+                            <p>
                               GF, Mujeres mayores de 60 años, estratos 1 y 2,
                               Manizales; Fundación Saldarriaga Concha,
                               Fedesarrollo, PROESA y DANE, 2023, p.231
@@ -513,6 +530,7 @@ export default function Page() {
             </div>
           </div>
           <a
+            className="underline"
             target="_blank"
             href="https://www.saldarriagaconcha.org/mision-colombia-envejece-una-investigacion-viva/"
           >

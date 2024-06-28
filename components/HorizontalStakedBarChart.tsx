@@ -35,7 +35,7 @@ export default function HorizontalStakedBarChart({
                 color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
               }}
             >
-              {`${entry.name} : $${new Intl.NumberFormat("es-CO").format(
+              {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
             </p>

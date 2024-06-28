@@ -24,6 +24,7 @@ export default function Map() {
       </div>
       <div className="mt-12 lg:mt-16">
         <a
+          className="underline"
           target="_blank"
           href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
         >
