@@ -18,7 +18,6 @@ export default function WrapperChart({
   const [open, setIsOpen] = useState(false);
   return (
     <div className="flex flex-col gap-y-4">
-      <div>{children}</div>
       <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>
@@ -67,6 +66,7 @@ export default function WrapperChart({
           </PopoverContent>
         </Popover>
       </div>
+      <div>{children}</div>
     </div>
   );
 }

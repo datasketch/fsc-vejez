@@ -22,7 +22,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
   const [country, setCountry] = useState("");
   const [search, setSearch] = useState("");
   const [filterData, setFilterData] = useState([] as any);
-  const itemsPerPage = 6;
+  const itemsPerPage = 12;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
   const pageCount = Math.ceil(filterData.length / itemsPerPage);
