@@ -8,128 +8,149 @@ import educationWordsData from "@/data/service/education.json";
 import financeWordsData from "@/data/service/finances.json";
 import WordCloud from "@/components/WordCloud";
 import MapServices from "@/components/MapServices";
-import countriesCode from "@/data/country.json"
+import countriesCode from "@/data/country.json";
 
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
-import { Credentials } from "aws-sdk"
+import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { Credentials } from "aws-sdk";
 import omit from "lodash.omit";
 import ServicesClient from "@/components/ServicesClient";
 import StackedBarChart from "@/components/StackedBarChart";
 
 export const metadata: Metadata = {
   title: "Servicios",
-  description: "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
+  description:
+    "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
 };
 
 interface ServicesData {
-  services: Array<Record<string, unknown>>,
+  services: Array<Record<string, unknown>>;
   barChartData: {
-    legend: Array<{ key: string, fill: string }>,
-    data: Array<Record<string, unknown>>
-  }
-  mapData: Array<{ city_code: string, lng: string, lat: string, population: string }>
+    legend: Array<{ key: string; fill: string }>;
+    data: Array<Record<string, unknown>>;
+  };
+  mapData: Array<{
+    city_code: string;
+    lng: string;
+    lat: string;
+    population: string;
+  }>;
 }
 
 function getServicesByCountry(data: Array<Record<string, unknown>>) {
   const legend = [
     {
-      "key": "Educación",
-      "fill": "#1D5556"
+      key: "Educación",
+      fill: "#1D5556",
     },
     {
-      "key": "Ingresos y finanzas",
-      "fill": "#FAAA8D"
+      key: "Ingresos y finanzas",
+      fill: "#FAAA8D",
     },
     {
-      "key": "Salud y bienestar",
-      "fill": "#B6174B"
-    }
-  ]
+      key: "Salud y bienestar",
+      fill: "#B6174B",
+    },
+  ];
 
   const groupedData = data.reduce((result, item) => {
-    const { pais_de_origen: country, categoria: cat } = item
+    const { pais_de_origen: country, categoria: cat } = item;
     if (!result[country as string]) {
       result[country as string] = {
-        [cat as string]: 1
-      }
+        [cat as string]: 1,
+      };
     } else {
-      const record = result[country as string] as Record<string, string | number>
-      record[cat as string] = record[cat as string] ? +record[cat as string] + 1 : 1
+      const record = result[country as string] as Record<
+        string,
+        string | number
+      >;
+      record[cat as string] = record[cat as string]
+        ? +record[cat as string] + 1
+        : 1;
     }
-    return result
-  }, {})
+    return result;
+  }, {});
 
   return {
     legend,
     data: Object.entries(groupedData).map(([key, value]) => ({
       ...(value as Record<string, number>),
       name: key,
-      total: Object.values(value as Record<string, number>).reduce((a, b) => a + b)
-    }))
-  }
+      total: Object.values(value as Record<string, number>).reduce(
+        (a, b) => a + b
+      ),
+    })),
+  };
 }
 
 async function getServices(): Promise<ServicesData | {}> {
   try {
     const s3Client = new S3Client({
-      region: 'us-east-1',
+      region: "us-east-1",
       credentials: new Credentials({
-        accessKeyId: process.env.ACCESS_KEY_ID || '',
-        secretAccessKey: process.env.SECRET_ACCESS_KEY || '',
-      })
-    })
-    const bucket = process.env.BUCKET
+        accessKeyId: process.env.ACCESS_KEY_ID || "",
+        secretAccessKey: process.env.SECRET_ACCESS_KEY || "",
+      }),
+    });
+    const bucket = process.env.BUCKET;
 
     const cmd = new GetObjectCommand({
       Bucket: bucket,
-      Key: 'fundacion-saldarriaga-concha/datos-plateados/servicios.json'
-    })
+      Key: "fundacion-saldarriaga-concha/datos-plateados/servicios.json",
+    });
 
-    const { Body } = await s3Client.send(cmd)
+    const { Body } = await s3Client.send(cmd);
 
-    const content = await Body?.transformToString()
+    const content = await Body?.transformToString();
 
-    const data = content ? JSON.parse(content) : []
+    const data = content ? JSON.parse(content) : [];
 
-    const barChartData = getServicesByCountry(data)
+    const barChartData = getServicesByCountry(data);
 
     const cmd2 = new GetObjectCommand({
       Bucket: bucket,
-      Key: 'fundacion-saldarriaga-concha/datos-plateados/paises-1.json'
-    })
+      Key: "fundacion-saldarriaga-concha/datos-plateados/paises-1.json",
+    });
 
-    const countries = await s3Client.send(cmd2)
+    const countries = await s3Client.send(cmd2);
 
-    const content2 = await countries.Body?.transformToString()
+    const content2 = await countries.Body?.transformToString();
 
-    const data2 = content2 ? JSON.parse(content2) : []
+    const data2 = content2 ? JSON.parse(content2) : [];
 
     const mapData = barChartData.data.map((country) => {
-      const cod = data2.find((item: { nombre: string; }): any => item.nombre === country.name)
+      const cod = data2.find(
+        (item: { nombre: string }): any => item.nombre === country.name
+      );
 
-      const info = countriesCode.ref_country_codes.find((item) => item.alpha3 === cod.codigo)
+      const info = countriesCode.ref_country_codes.find(
+        (item) => item.alpha3 === cod.codigo
+      );
+
       return {
         city_code: cod.codigo,
         lng: info?.longitude,
         lat: info?.latitude,
-        population: country.total
-      }
-    })
+        population: country.total,
+      };
+    });
 
     // rcd___id is a field appended to data when uploaded to Datasketch SaaS
     return {
-      services: data.map((item: Record<string, unknown>) => omit(item, ['rcd___id'])),
+      services: data.map((item: Record<string, unknown>) =>
+        omit(item, ["rcd___id"])
+      ),
       barChartData,
-      mapData
-    }
+      mapData,
+    };
   } catch (error) {
-    console.error(error)
-    return {}
+    console.error("error:" + error);
+    return {};
   }
 }
 
 export default async function Page() {
-  const data = await getServices()
+  const data = await getServices();
+
   return (
     <>
       <div className="py-16">
@@ -173,7 +194,21 @@ export default async function Page() {
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
+                    Socialab, 2023;{" "}
+                    <a
+                      href="https://materiais.hype50mais.com.br/tsunami-latam"
+                      className="underline"
+                      target="_blank"
+                    >
+                      Tsunami LATAM, 2022;
+                    </a>{" "}
+                    <a
+                      href="https://www.pensarengrande.com.uy/catalogo-de-emprendimientos-plateados/"
+                      className="underline"
+                      target="_blank"
+                    >
+                      BID Lab, 2021
+                    </a>
                   </p>
                 </div>
                 <div className="w-full max-w-[797px]">
@@ -218,7 +253,10 @@ export default async function Page() {
               </div>
               <div className="mt-6">
                 <WrapperChart description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
-                  <StackedBarChart data={(data as ServicesData).barChartData.data} legend={(data as ServicesData).barChartData.legend} />
+                  <StackedBarChart
+                    data={(data as ServicesData).barChartData.data}
+                    legend={(data as ServicesData).barChartData.legend}
+                  />
                 </WrapperChart>
               </div>
             </div>
@@ -226,7 +264,21 @@ export default async function Page() {
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
+                    Socialab, 2023;{" "}
+                    <a
+                      href="https://materiais.hype50mais.com.br/tsunami-latam"
+                      className="underline"
+                      target="_blank"
+                    >
+                      Tsunami LATAM, 2022;
+                    </a>{" "}
+                    <a
+                      href="https://www.pensarengrande.com.uy/catalogo-de-emprendimientos-plateados/"
+                      className="underline"
+                      target="_blank"
+                    >
+                      BID Lab, 2021
+                    </a>
                   </p>
                 </div>
               </div>
@@ -290,7 +342,21 @@ export default async function Page() {
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-y-2.5">
                 <div className="lg:flex-shrink-0">
                   <p className="text-davys-gray">
-                    Socialab, 2023; Tsunami LATAM, 2022; BID Lab, 2021
+                    Socialab, 2023;{" "}
+                    <a
+                      href="https://materiais.hype50mais.com.br/tsunami-latam"
+                      className="underline"
+                      target="_blank"
+                    >
+                      Tsunami LATAM, 2022;
+                    </a>{" "}
+                    <a
+                      href="https://www.pensarengrande.com.uy/catalogo-de-emprendimientos-plateados/"
+                      className="underline"
+                      target="_blank"
+                    >
+                      BID Lab, 2021
+                    </a>
                   </p>
                 </div>
               </div>

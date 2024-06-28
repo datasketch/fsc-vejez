@@ -29,7 +29,12 @@ export default function HorizontalStakedBarChart({
         <div className="bg-white p-3 border">
           <p className="label">{`${label}`}</p>
           {payload.map((entry: any, index: any) => (
-            <p key={`item-${index}`} style={{ color: entry.color }}>
+            <p
+              key={`item-${index}`}
+              style={{
+                color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+              }}
+            >
               {`${entry.name} : ${new Intl.NumberFormat("es-CO").format(
                 entry.value
               )}`}
@@ -42,9 +47,30 @@ export default function HorizontalStakedBarChart({
     return null;
   };
 
+  const CustomLegend = ({ payload }: any) => {
+    return (
+      <ul className="flex flex-col items-center sm:flex-row justify-center gap-x-6 gap-y-2 lg:gap-x-10 mb-10">
+        {payload.map((entry: any, index: number) => (
+          <li
+            key={`item-${index}`}
+            className="flex items-center gap-x-1.5 "
+            style={{
+              color: entry.color !== "#FAAA8D" ? entry.color : "#1A1A1A",
+            }}
+          >
+            <div className="size-4" style={{ backgroundColor: entry.color }}>
+              &nbsp;
+            </div>
+            <p>{entry.value}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <ResponsiveContainer
-      width={"80%"}
+      width="100%"
       height={height}
       debounce={50}
       className="mt-20 mx-auto"
@@ -63,7 +89,7 @@ export default function HorizontalStakedBarChart({
           width={150}
         />
         <Tooltip content={<CustomTooltip />} />
-        <Legend verticalAlign="top" />
+        <Legend verticalAlign="top" content={<CustomLegend />} />
         {legend.map((item, i) => {
           return (
             <Bar key={i} dataKey={item.key} fill={item.fill} stackId="a" />

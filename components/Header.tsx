@@ -33,7 +33,7 @@ export default function Header() {
     >
       <div className="u-container">
         <nav className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
-          <ul className="col-span-4 lg:col-start-5 justify-center gap-x-[22px] lg:col-end-9 flex lg:justify-between lg:gap-x-10">
+          <ul className="col-span-4 lg:col-start-3 lg:col-end-11 xl:col-start-4 justify-center gap-x-[22px] xl:col-end-10 flex lg:justify-between lg:gap-x-10">
             <li>
               <Link
                 className={clsx(
@@ -64,11 +64,13 @@ export default function Header() {
                 "border-b pb-0.5 border-b-transparent lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300",
                 {
                   "!border-b-asparagus text-dark-slate-gray":
-                    pathname === "/servicios",
+                    pathname === "/repositorio-de-servicios",
                 }
               )}
             >
-              <Link href="/servicios">Servicios</Link>
+              <Link href="/repositorio-de-servicios">
+                Repositorio de servicios
+              </Link>
             </li>
             <li
               className={clsx(

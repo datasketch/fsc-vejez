@@ -11,7 +11,7 @@ import HorizontalStakedBarChart from "@/components/HorizontalStakedBarChart";
 import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
 import NavHome from "@/components/NavHome";
-import Disclaimer from "@/components/Disclaimer";
+import DisclaimerTitle from "@/components/DisclaimerTitle";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -80,7 +80,7 @@ export default function Page() {
               </h2>
               <div className="mt-4 flex gap-x-2.5">
                 <p className="text-dark-slate-gray font-bold text-[39px] leading-none">
-                  7.8M
+                  7,8M
                 </p>
                 <p>
                   de personas de 60 años o más <br /> en 2024
@@ -94,9 +94,10 @@ export default function Page() {
                   alt="dashed"
                 />
               </div>
-              <div className="flex gap-x-2.5">
+              <div className="flex gap-x-2.5 group">
                 <div className="w-7/12">
                   <Image
+                    className="lg:group-hover:scale-110 duration-300"
                     width={1920}
                     height={32}
                     src="/images/home/human-figure.svg"
@@ -104,7 +105,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="w-5/12">
-                  <p className="font-semibold text-dark-slate-gray">
+                  <p className="font-semibold text-dark-slate-gray lg:group-hover:translate-x-5 lg:group-hover:scale-110 duration-300">
                     equivale al 14,9% de la población
                   </p>
                 </div>
@@ -115,6 +116,7 @@ export default function Page() {
                 </h2>
                 <div className="mt-6">
                   <Image
+                    className="lg:hover:scale-110 duration-300"
                     width={363}
                     height={283}
                     src="/images/home/pie-chart.svg"
@@ -158,8 +160,8 @@ export default function Page() {
               </h2>
               <div className="mt-5">
                 <Image
-                  className="mx-auto"
-                  width={223.14}
+                  className="mx-auto lg:hover:scale-110 duration-300"
+                  width={250}
                   height={120}
                   src="/images/home/human-figure-2.svg"
                   alt="human figure 2"
@@ -170,9 +172,9 @@ export default function Page() {
               </h2>
               <div className="mt-5">
                 <Image
-                  className="mx-auto"
-                  width={287}
-                  height={213}
+                  width={387}
+                  height={310}
+                  className="w-full lg:hover:scale-110 duration-300"
                   src="/images/home/line-chart.svg"
                   alt="line chart"
                 />
@@ -207,6 +209,7 @@ export default function Page() {
               </h2>
               <div className="mt-6">
                 <Image
+                  className="hover:scale-110 duration-300"
                   width={1920}
                   height={314}
                   src="/images/home/demo-chart-1.svg"
@@ -219,12 +222,15 @@ export default function Page() {
                 Departamentos con más personas mayores
               </h2>
               <p className="mt-5 text-seasalt">
-                Dos departamentos en el Pacífico (Valle del Cauca y Cauca) y dos
-                de la región Andina (Santander y Antioquia) tienen mayor
-                porcentaje de personas mayores en Colombia.
+                De acuerdo con las Proyecciones del Censo Nacional de Población
+                y Vivienda (DANE, 2018), dos departamentos en el Pacífico (Valle
+                del Cauca y Cauca) y dos de la región Andina (Santander y
+                Antioquia) tienen mayor porcentaje de personas mayores en
+                Colombia.
               </p>
               <div className="mt-6">
                 <Image
+                  className="hover:scale-110 duration-300"
                   width={1920}
                   height={263}
                   src="/images/home/demo-chart-2.svg"
@@ -234,6 +240,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="inline-block underline decoration-white"
                 target="_blank"
                 href="https://docs.google.com/spreadsheets/d/1Ob7FwsSr5r8p_pop5VEIiK2bFiyUm7xQ/edit#gid=2017683106"
               >
@@ -283,12 +290,14 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Uso de internet y acceso a{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  dispositivos
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold inline-block">
+                  Uso de internet y acceso a{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    dispositivos
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -332,12 +341,14 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Fuentes de{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  ingreso
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Fuentes de{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    ingreso
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -367,6 +378,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -408,6 +420,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -441,45 +454,54 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Capacidades
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Capacidades
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                Oír, hablar, ver, mover el cuerpo, entre otras, son capacidades
-                que ayudan a satisfacer las necesidades básicas. Aunque la
-                mayoría de las personas mayores manifestaron no tener
-                impedimentos en realizar las actividades, presentan alguna o
-                mucha dificultad en ver; mover el cuerpo, caminar o usar
-                escaleras y oír.
+                A partir de los datos presentados por la Encuesta Nacional de
+                Calidad de Vida (DANE, 2022), oír, hablar, ver, mover el cuerpo,
+                entre otras, son capacidades que ayudan a satisfacer las
+                necesidades básicas diarias, por lo que su estado de bienestar
+                influye en aspectos como el nivel de independencia de una
+                persona. Aunque la mayoría de las personas mayores manifestaron
+                no tener impedimentos en realizar las actividades, presentan
+                alguna o mucha dificultad en ver; mover el cuerpo, caminar o
+                usar escaleras y oír.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
-                <div className="h-[424px]">
-                  <HeatMapHome data={data.capacidades} />
-                </div>
+                <p className="xl:hidden">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
+                <HeatMapHome data={data.capacidades} />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
               >
                 <p className="text-davys-gray">
-                  Encuesta de Nacional de Calidad de Vida (ECV), 2022, DANE
+                  Encuesta Nacional de Calidad de Vida (ECV), 2022, DANE
                 </p>
               </a>
             </div>
             {/*  */}
             <div className="mt-12 lg:mt-20 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Vivienda y composición{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  del hogar
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Vivienda y composición{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    del hogar
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
@@ -491,8 +513,9 @@ export default function Page() {
                 una distribución más diversa en cuanto a tenencia, pero priman
                 la propiedad totalmente pagada, en usufructo y en
                 arriendo/subarriendo. La gráfica filtra los valores
-                predominantes. Para conocer todos los resultados, diríjase a
-                “Explora los datos”, al final de la página de inicio.
+                predominantes tomados de la Encuesta Integrada de Hogares (DANE,
+                2023). Para conocer todos los resultados, diríjase a “Explora
+                los datos”, al final de la página de inicio.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
@@ -502,13 +525,15 @@ export default function Page() {
                   "Los hombres y las mujeres están ubicados en la primera columna del diagrama, los tipos de vivienda se encuentran en la segunda columna, mientras que la condición de tenencia corresponde a la tercera columna. Las bandas de colores fluyen desde las categorías de género hacia los diferentes tipos de vivienda y condiciones de tenencia, mostrando visualmente la distribución de la población según estas variables.",
                 ]}
               >
-                <div className="h-[527.23px]">
-                  <SankeyHome data={data.vivienda_composicion} />
-                </div>
+                <p className="xl:hidden mb-6">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
+                <SankeyHome data={data.vivienda_composicion} />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -542,37 +567,41 @@ export default function Page() {
             </div>
             <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
             <div className="mt-6 lg:mt-12 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
-                Personas que saben
-                <span className="block italic font-normal text-dark-slate-gray">
-                  leer y escribir
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
+                  Personas que saben
+                  <span className="block italic font-normal text-dark-slate-gray">
+                    leer y escribir
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El treemap muestra la proporción de personas mayores que
                 afirmaron saber leer y escribir según la Gran Encuesta Integrada
-                de Hogares del 2022. Los jóvenes son quienes más respondieron de
-                manera afirmativa, seguidos de los adultos y las personas
-                mayores. 11.6% de las personas de 60 años o más reportaron no
-                saben leer ni escribir.
+                de Hogares (DANE, 2022). Los jóvenes son quienes más
+                respondieron de manera afirmativa, seguidos de los adultos y las
+                personas mayores. 11.6% de las personas de 60 años o más
+                reportaron no saben leer ni escribir.
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
-                <div className="h-[500px]">
-                  <TreeMapHome
-                    data={{
-                      name: "Tasa de alfabetismo",
-                      children: literacyRateData,
-                    }}
-                  />
-                </div>
+                <p className="xl:hidden mb-6">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
+                <TreeMapHome
+                  data={{
+                    name: "Tasa de alfabetismo",
+                    children: literacyRateData,
+                  }}
+                />
               </WrapperChart>
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -582,22 +611,24 @@ export default function Page() {
               </a>
             </div>
             <div className="mt-12 lg:mt-20 col-span-4">
-              <h3 className="text-2xl lg:text-[31px] font-semibold">
-                Nivel educativo{" "}
-                <span className="italic font-normal text-dark-slate-gray">
-                  alcanzado
-                </span>
-              </h3>
+              <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
+                <h3 className="text-2xl lg:text-[31px] font-semibold">
+                  Nivel educativo{" "}
+                  <span className="italic font-normal text-dark-slate-gray">
+                    alcanzado
+                  </span>
+                </h3>
+              </DisclaimerTitle>
             </div>
             <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
-                El archivo de datos de la Gran Encuesta Integrada de Hogares -
-                2023 brinda información del último nivel educativo alcanzado. La
-                mayor parte de las personas mayores estudió hasta básica
-                primaria, seguida de media académica y básica secundaria. Salvo
-                básica primaria, normalista y doctorado, las personas mayores
-                son la etapa del ciclo de vida con menos personas en los demás
-                niveles educativos.
+                El archivo de datos de la Gran Encuesta Integrada de Hogares
+                (DANE, 2023) brinda información del último nivel educativo
+                alcanzado. La mayor parte de las personas mayores estudió hasta
+                básica primaria, seguida de media académica y básica secundaria.
+                Salvo básica primaria, normalista y doctorado, las personas
+                mayores son la etapa del ciclo de vida con menos personas en los
+                demás niveles educativos.
               </p>
             </div>
             <div className="col-span-4 lg:col-span-12">
@@ -610,6 +641,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://microdatos.dane.gov.co/index.php/catalog/782/get-microdata"
               >
@@ -653,11 +685,13 @@ export default function Page() {
             <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
               <p>
                 El transporte público es el modo de transporte más utilizado
-                entre los diferentes grupos etarios. El siguiente modo más
-                popular es a pie, en recorridos superiores a 15 minutos. Las
-                personas mayores (60 años o más) hacen un menor uso del
-                transporte en las diferentes categorías en comparación con otras
-                etapas ciclo de vida, con barras generalmente más cortas.
+                entre los diferentes grupos etarios en la ciudad de Bogotá,
+                según la Encuesta de Movilidad (Secretaría Distrital de
+                Movilidad, 2023). El siguiente modo más popular es a pie, en
+                recorridos superiores a 15 minutos. Las personas mayores (60
+                años o más) hacen un menor uso del transporte en las diferentes
+                categorías en comparación con otras etapas del ciclo de vida,
+                con barras generalmente más cortas.
               </p>
             </div>
             <div className="col-span-4 lg:col-span-12">
@@ -671,6 +705,7 @@ export default function Page() {
             </div>
             <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
               <a
+                className="underline"
                 target="_blank"
                 href="https://www.simur.gov.co/encuestas-de-movilidad"
               >
@@ -696,7 +731,7 @@ export default function Page() {
             </div>
             <div className="mt-6 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
               <iframe
-                className="size-full aspect-video"
+                className="size-full lg:aspect-video h-[80vh]"
                 src="https://services.datasketch.co/fsc-vejez-app/"
                 title="Explora los datos relacionados con la pagina"
               />
@@ -705,7 +740,6 @@ export default function Page() {
         </div>
       </div>
       <NavHome />
-      <Disclaimer />
     </>
   );
 }

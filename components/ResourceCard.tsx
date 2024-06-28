@@ -15,7 +15,7 @@ export default function ResourceCard({
   cardTitle,
   isLibrary = false,
 }: ResourceCardProps) {
-  const link = data.enlace || data.url_conjunto_de_datos
+  const link = data.enlace || data.url_conjunto_de_datos;
   return (
     <div
       className={clsx(
@@ -27,7 +27,17 @@ export default function ResourceCard({
     >
       {image && (
         <div className="lg:w-1/4 px-5 pt-5 lg:pt-0 lg:px-0 z-10">
-          <Image className="rounded" width={204} height={264} src={data.enlace_portada || ""} alt={data.nombre} />
+          {link && (
+            <Link href={link} target="_blank">
+              <Image
+                className="rounded"
+                width={204}
+                height={264}
+                src={data.enlace_portada}
+                alt={data.nombre}
+              />
+            </Link>
+          )}
         </div>
       )}
       {image ? (

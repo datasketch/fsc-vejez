@@ -15,8 +15,6 @@ export default function NavHome() {
           navRef.current?.classList.remove("!-bottom-full");
           navRef.current?.classList.add("!bottom-5");
         } else {
-          console.log("si");
-
           navRef.current?.classList.add("!-bottom-full");
           navRef.current?.classList.remove("!bottom-5");
         }
