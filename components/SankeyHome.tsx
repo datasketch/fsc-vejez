@@ -11,7 +11,7 @@ interface SankeyHomeProps {
 export default function SankeyHome({ data }: SankeyHomeProps) {
   return (
     <div className="w-full overflow-x-auto">
-      <div className="w-[1200px] lg:w-full mx-auto lg:mx-0">
+      <div className="w-[1200px] xl:w-full mx-auto lg:mx-0">
         <div className="h-[527.23px]">
           <ResponsiveSankey
             data={data}

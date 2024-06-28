@@ -475,6 +475,9 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
+                <p className="xl:hidden">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
                 <HeatMapHome data={data.capacidades} />
               </WrapperChart>
             </div>
@@ -522,6 +525,9 @@ export default function Page() {
                   "Los hombres y las mujeres están ubicados en la primera columna del diagrama, los tipos de vivienda se encuentran en la segunda columna, mientras que la condición de tenencia corresponde a la tercera columna. Las bandas de colores fluyen desde las categorías de género hacia los diferentes tipos de vivienda y condiciones de tenencia, mostrando visualmente la distribución de la población según estas variables.",
                 ]}
               >
+                <p className="xl:hidden mb-6">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
                 <SankeyHome data={data.vivienda_composicion} />
               </WrapperChart>
             </div>
@@ -582,6 +588,9 @@ export default function Page() {
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
               <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
+                <p className="xl:hidden mb-6">
+                  Para ver la gráfica completa desliza hacia los lados
+                </p>
                 <TreeMapHome
                   data={{
                     name: "Tasa de alfabetismo",

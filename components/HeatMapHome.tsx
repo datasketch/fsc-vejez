@@ -12,7 +12,7 @@ interface HeatMapHomeProps {
 export default function HeatMapHome({ data }: HeatMapHomeProps) {
   return (
     <div className="w-full overflow-x-auto">
-      <div className="w-[1200px] lg:w-full mx-auto lg:mx-0">
+      <div className="w-[1200px] xl:w-full mx-auto lg:mx-0">
         <div className="h-[424px]">
           <ResponsiveHeatMap
             data={data}

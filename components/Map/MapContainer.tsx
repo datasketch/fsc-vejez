@@ -32,6 +32,9 @@ export default function MapContainer({
   setSelectedDepartment,
 }: MapContainerProps) {
   const [tooltip, setTooltip] = useState<TooltipProps | null>(null);
+  const [scale, setScale] = useState(1800);
+  const minScale = 1800;
+
   const baseStyles = { outline: "none", strokeWidth: 1 };
 
   function getDepartment(cod: number) {
@@ -94,85 +97,96 @@ export default function MapContainer({
           </>
         )}
       </ReactTooltip>
-      <div data-tip="">
+      <div data-tip="" className="relative">
+        <div className="absolute z-10 top-8 right-4">
+          <div className="flex flex-col gap-y-1">
+            <button
+              className="py-2 px-4 shadow bg-white"
+              onClick={() => setScale((prev) => prev + 100)}
+            >
+              +
+            </button>
+            <button
+              className="py-2 px-4 shadow bg-white"
+              onClick={() => setScale((prev) => prev - 100)}
+            >
+              -
+            </button>
+          </div>
+        </div>
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
             center: [-74.2973, 4.5709],
-            scale: 1800,
+            scale,
           }}
           width={511}
           height={651.75}
         >
-          <ZoomableGroup>
-            <Geographies geography={geoUrl}>
-              {({ geographies }) =>
-                geographies.map((geo) => {
-                  const findDepartment =
-                    data.mapa_tech.frecuencia_internet.find(
-                      (el) => el.cod_dpto === +geo.properties.DPTO
-                    );
+          <Geographies geography={geoUrl}>
+            {({ geographies }) =>
+              geographies.map((geo) => {
+                const findDepartment = data.mapa_tech.frecuencia_internet.find(
+                  (el) => el.cod_dpto === +geo.properties.DPTO
+                );
 
-                  const object = omit("cod_dpto", findDepartment);
-                  const values = Object.values(object).map((el: any) => el);
-                  const maxValue = Math.max(...values);
-                  const colorScale = scaleQuantile()
-                    .domain([0, 100])
-                    .range([
-                      "#215957",
-                      "#3B7C65",
-                      "#56A273",
-                      "#72C581",
-                      "#8CE98E",
-                    ] as string[] | any);
+                const object = omit("cod_dpto", findDepartment);
+                const values = Object.values(object).map((el: any) => el);
+                const maxValue = Math.max(...values);
+                const colorScale = scaleQuantile()
+                  .domain([0, 100])
+                  .range([
+                    "#215957",
+                    "#3B7C65",
+                    "#56A273",
+                    "#72C581",
+                    "#8CE98E",
+                  ] as string[] | any);
 
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      onMouseEnter={() => {
-                        setTooltip(findDepartment || null);
-                      }}
-                      onMouseLeave={() => setTooltip(null)}
-                      onClick={() =>
-                        setSelectedDepartment(+geo.properties.DPTO)
-                      }
-                      style={{
-                        default: {
-                          ...baseStyles,
-                          stroke: "#FAFAFA",
-                          fill: findDepartment
-                            ? colorScale(maxValue) + ""
-                            : "#77B769",
-                        },
-                        hover: {
-                          ...baseStyles,
-                          stroke: "#FAFAFA",
-                          fill: findDepartment
-                            ? colorScale(maxValue) + ""
-                            : "#77B769",
-                        },
-                        pressed: {
-                          ...baseStyles,
-                          stroke: "#FAFAFA",
-                          fill: findDepartment
-                            ? colorScale(maxValue) + ""
-                            : "#77B769",
-                        },
-                      }}
-                    />
-                  );
-                })
-              }
-            </Geographies>
-            {markers.map(({ name, coordinates }) => (
-              <Marker key={name} coordinates={coordinates as any}>
-                <text fontSize={12} fontWeight={700} x={-20} fill="#1A1A1A">
-                  {name}
-                </text>
-              </Marker>
-            ))}
-          </ZoomableGroup>
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => {
+                      setTooltip(findDepartment || null);
+                    }}
+                    onMouseLeave={() => setTooltip(null)}
+                    onClick={() => setSelectedDepartment(+geo.properties.DPTO)}
+                    style={{
+                      default: {
+                        ...baseStyles,
+                        stroke: "#FAFAFA",
+                        fill: findDepartment
+                          ? colorScale(maxValue) + ""
+                          : "#77B769",
+                      },
+                      hover: {
+                        ...baseStyles,
+                        stroke: "#FAFAFA",
+                        fill: findDepartment
+                          ? colorScale(maxValue) + ""
+                          : "#77B769",
+                      },
+                      pressed: {
+                        ...baseStyles,
+                        stroke: "#FAFAFA",
+                        fill: findDepartment
+                          ? colorScale(maxValue) + ""
+                          : "#77B769",
+                      },
+                    }}
+                  />
+                );
+              })
+            }
+          </Geographies>
+          {markers.map(({ name, coordinates }) => (
+            <Marker key={name} coordinates={coordinates as any}>
+              <text fontSize={12} fontWeight={700} x={-20} fill="#1A1A1A">
+                {name}
+              </text>
+            </Marker>
+          ))}
         </ComposableMap>
       </div>
     </>

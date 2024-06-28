@@ -8,7 +8,7 @@ interface TreeMapHomeProps {
 export default function TreeMapHome({ data }: TreeMapHomeProps) {
   return (
     <div className="w-full overflow-x-auto">
-      <div className="w-[1200px] lg:w-full mx-auto lg:mx-0">
+      <div className="w-[1200px] xl:w-full mx-auto lg:mx-0">
         <div className="h-[500px]">
           <ResponsiveTreeMap
             data={data}
@@ -21,7 +21,8 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
             label={(e) =>
               e.id +
               " (" +
-              ((e.data.loc / e.data.total) * 100).toFixed(1) +
+              (new Intl.NumberFormat("es-CO", {maximumFractionDigits: 2})
+                .format((e.data.loc / e.data.total) * 100)) +
               "%" +
               ")"
             }

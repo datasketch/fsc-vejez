@@ -17,7 +17,7 @@ export default function WrapperChart({
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="mt-12 flex flex-col gap-y-4">
       <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>
@@ -51,8 +51,9 @@ export default function WrapperChart({
             )}
           </PopoverTrigger>
           <PopoverContent
-            className="z-50 w-[351px] absolute shadow bottom-0 left-0 bg-alabaster p-5 leading-[20.8px] text-eerie-black rounded-t-[10px] rounded-br-[10px]"
+            className="z-50 w-[351px] absolute shadow top-0 left-0 bg-white p-5 leading-[20.8px] text-eerie-black rounded-b-[10px] rounded-tr-[10px]"
             side="right"
+            align="center"
           >
             {!Array.isArray(description) ? (
               <p>{description}</p>

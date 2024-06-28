@@ -30,7 +30,8 @@ export default function ResourcePanel({
   const [selectedYear, setSelectedYear] = useState("");
 
   const [itemOffset, setItemOffset] = useState(0);
-  const endOffset = itemOffset + 5;
+  const itemsPerPage = 10;
+  const endOffset = itemOffset + itemsPerPage;
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -116,13 +117,13 @@ export default function ResourcePanel({
         const tmpB = b.nombre || b.titulo_de_ley;
         return tmpB.localeCompare(tmpA);
       } else if (order === "Públicación más reciente") {
-        return b.anio_de_publicacion - a.anio_de_publicacion;
+        return b.anio_de_publicacion - a.anio_deƒ_publicacion;
       } else if (order === "Públicación más antigua") {
         return a.anio_de_publicacion - b.anio_de_publicacion;
       }
     });
 
-  const pageCount = Math.ceil(filteredData.length / 5);
+  const pageCount = Math.ceil(filteredData.length / itemsPerPage);
 
   const handleCategoryChange = (e: any) => {
     const { value } = e.target;
