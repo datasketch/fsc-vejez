@@ -75,7 +75,7 @@ export default async function Page() {
             <ResourcePanel data={libraryData} isType image />
           </TabPanel>
           <TabPanel className="bg-white w-full rounded-[40px] py-16">
-            <ResourcePanel data={politicsData} />
+            <ResourcePanel data={politicsData} scale />
           </TabPanel>
           <TabPanel className="bg-white w-full rounded-[40px] py-16">
             <ResourcePanel data={dataData} />

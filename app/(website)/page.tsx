@@ -136,7 +136,7 @@ export default function Page() {
                     alt="people"
                   />
                 </div>
-                <div className="absolute top-9 -left-20">
+                <div className="absolute left-0 top-1/3 lg:top-9 lg:-left-20">
                   <Image
                     width={246.06}
                     height={101.94}
@@ -144,7 +144,7 @@ export default function Page() {
                     alt="cloud 1"
                   />
                 </div>
-                <div className="absolute -top-16 -right-44">
+                <div className="absolute right-0 top-2/3 lg:-top-16 lg:-right-44">
                   <Image
                     width={339.1}
                     height={140.45}

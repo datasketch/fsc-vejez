@@ -254,7 +254,7 @@ export default function Page() {
         <div className="mt-6 lg:mt-10 xl:mt-12">
           <iframe
             className="size-full aspect-video"
-            src="https://services.datasketch.co/fnd-app-questions/"
+            src="https://services.datasketch.co/fsc-app-questions/"
             title="Dashboard para poder cruzar informacion"
           />
         </div>

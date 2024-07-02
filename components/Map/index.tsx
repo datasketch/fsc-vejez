@@ -7,6 +7,7 @@ import WrapperChart from "../WrapperChart";
 
 export default function Map() {
   const [selectedDepartment, setSelectedDepartment] = useState(-1);
+  console.log(selectedDepartment);
 
   return (
     <>

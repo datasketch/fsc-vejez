@@ -94,6 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${proximaNovaAltFont.variable}`}>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
       <Script
         id="show-accesibility-widget"
         dangerouslySetInnerHTML={{
@@ -108,16 +109,16 @@ export default function RootLayout({
           */
           window.interdeal = {
               "sitekey": "427badf766cb21a4adc344eba97ee8cb",
-              "Position": "left",
+              "Position": "right",
               "domains": {
                   "js": "https://cdn.equalweb.com/",
                   "acc": "https://access.equalweb.com/"
               },
-              "Menulang": "es-MX",
+              "Menulang": "es",
               "draggable": false,
               "btnStyle": {
                   "vPosition": [
-                      "50%",
+                      "20%",
                       "20%"
                   ],
                   "scale": [
