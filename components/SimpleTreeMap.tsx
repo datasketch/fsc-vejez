@@ -5,17 +5,17 @@ interface TreeMapHomeProps {
   data: DefaultTreeMapDatum[] | any;
 }
 
-export default function TreeMapHome({ data }: TreeMapHomeProps) {
+export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
   console.log(data)
   return (
     <div className="w-full overflow-x-auto">
-      <div className="w-[1200px] xl:w-full mx-auto lg:mx-0">
-        <div className="h-[500px]">
+      <div className="w-full mx-auto lg:mx-0">
+        <div className="h-[390px]">
           <ResponsiveTreeMap
             data={data}
             identity="name"
             value="loc"
-            margin={{ top: 0, right: 0, bottom: 20, left: 0 }}
+            margin={{ top: 0, right: 20, bottom: 20, left: 0 }}
             valueFormat={(valueFormat) =>
               new Intl.NumberFormat("es-CO").format(valueFormat)
             }
@@ -23,11 +23,11 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
               e.id +
               " (" +
               (new Intl.NumberFormat("es-CO", {maximumFractionDigits: 2})
-                .format((e.data.loc / e.data.total) * 100)) +
+                .format((e.data.loc))) +
               "%" +
               ")"
             }
-            enableParentLabel={true}
+            enableParentLabel={false}
             parentLabelPosition="top"
             parentLabelSize={40}
             parentLabelPadding={20}
@@ -41,7 +41,7 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
                 ? "#FFFFFF"
                 : "#1A1A1A"
             }
-            colors={["#1D5556", "#FAAA8D", "#B6174B", "#4B034F", "#41A5B4"]}
+            colors={["#B6174B","#1D5556", "#FAAA8D", "#4B034F", "#41A5B4"]}
             borderColor="#ffffff"
             theme={{
               text: {

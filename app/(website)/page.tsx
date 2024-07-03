@@ -12,6 +12,7 @@ import MultipleBarChart from "@/components/MultipleBarChart";
 import WrapperChart from "@/components/WrapperChart";
 import NavHome from "@/components/NavHome";
 import DisclaimerTitle from "@/components/DisclaimerTitle";
+import TechTreeMap from "@/components/TechTreeMap";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -315,7 +316,8 @@ export default function Page() {
               </p>
             </div>
             <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-              <Map />
+              {/* <Map /> */}
+              <TechTreeMap />
             </div>
           </div>
         </div>
