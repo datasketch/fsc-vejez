@@ -47,8 +47,6 @@ export default function ResourcePanel({
     new Set(data.map((item: any) => item.escala))
   )
 
-  console.log(scale);
-
   // @ts-ignore
   const optionsCategory: Array<{ label: string; value: string }> = Array.from(
     new Set(data.map((item: any) => item.categoria))

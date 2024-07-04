@@ -6,7 +6,6 @@ interface TreeMapHomeProps {
 }
 
 export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
-  console.log(data)
   return (
     <div className="w-full overflow-x-auto">
       <div className="w-full mx-auto lg:mx-0">

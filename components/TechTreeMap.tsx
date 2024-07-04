@@ -9,7 +9,7 @@ import SimpleTreeMap from "./SimpleTreeMap";
 
 
 export default function TechTreeMap() {
-    const [selectedDepartment, setSelectedDepartment] = useState<number | string>(-1);
+    const [selectedDepartment, setSelectedDepartment] = useState<number | string>('');
     const [devicesUsage, setDevicesUsage] = useState<any>(null);
     const [internetUsage, setInternetUsage] = useState<any>(null);
     const [department, setDepartment] = useState<any>(null);
@@ -19,7 +19,7 @@ export default function TechTreeMap() {
     }
 
     useEffect(() => {
-        if (selectedDepartment !== -1) {
+        if (selectedDepartment !== '') {
             const findDepartment = data.mapa_tech.uso_dispositivos.find(
                 //@ts-ignore
                 (el) => el.cod_dpto === parseInt(selectedDepartment)
@@ -55,6 +55,9 @@ export default function TechTreeMap() {
             })
             setDepartment(department);
             setDevicesUsage(devicesUsageFormat);
+        } else {
+            setDevicesUsage(null);
+            setInternetUsage(null)
         }
     }, [selectedDepartment]);
 
@@ -80,18 +83,15 @@ export default function TechTreeMap() {
                     })}
                 </select>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 w-full">
                 <div>
-                    {internetUsage ? (
+                    {internetUsage && (
                         <SimpleTreeMap data={internetUsage} />
-                    ) : (
-                        <p className="font-semibold">Selecciona un departamento</p>
                     )}
                 </div>
                 <div className="md:w-1/2 lg:w-full">
                     {devicesUsage ? (
                         <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
-                            <h3 className="text-center text-xl font-semibold">{department}</h3>
                             <h4 className="mt-4 font-semibold">
                                 ¿Cuáles dispositivos utilizan las personas de 60 años o más para
                                 acceder a internet?
