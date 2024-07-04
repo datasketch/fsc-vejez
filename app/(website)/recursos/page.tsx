@@ -89,7 +89,7 @@ export default async function Page() {
           </h2>
           <Link
             className="block text-center md:text-left md:inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px] mt-10"
-            href="/"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSevQlu80LNKeJCXzqYpi34sNwadxscwti-yz4z2ViDlY-kOTQ/viewform"
           >
             <p className="text-nowrap">Envíanos tu información</p>
           </Link>

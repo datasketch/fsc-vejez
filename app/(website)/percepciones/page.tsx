@@ -251,7 +251,9 @@ export default function Page() {
           Cruza{" "}
           <i className="font-normal text-dark-slate-gray">la información</i>
         </h3>
-        <div className="mt-6 lg:mt-10 xl:mt-12">
+        <p className="mt-5">Explora los datos de la encuesta {'"'}Ciudades Cómo Vamos{'"'} sobre la percepción ciudadana de la vejez en Colombia. El tablero ofrece una experiencia interactiva y a la medida. Con solo unos clics, podrás filtrar y cruzar información según tus intereses, obteniendo una visión detallada de cada ciudad encuestada.</p>
+        <p className="mt-1">Analiza las percepciones sobre los espacios públicos, los servicios más importantes y los factores de vulnerabilidad que impactan el consumo. Además, podrás descargar los datos en múltiples formatos de imagen o procesables para sacarles provecho. ¡Transforma la información en conocimiento y toma decisiones informadas!</p>
+        <div className="mt-3 lg:mt-10 xl:mt-12">
           <iframe
             className="size-full aspect-video"
             src="https://services.datasketch.co/fsc-app-questions/"
