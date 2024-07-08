@@ -48,7 +48,7 @@ export default function Header() {
                 <div className="flex mx-auto max-w-screen-md justify-between gap-10">
                   <a
                     className="flex items-center gap-x-2"
-                    href={`https://wa.me/?text=Requisitos%20${url}`}
+                    href={`https://wa.me/?text=Visita%20%2B60%20datos%20plateados%20${url}`}
                     target="_blank"
                   >
                     <Image
@@ -72,7 +72,7 @@ export default function Header() {
                   </a>
                   <a
                     className="flex items-center gap-x-2"
-                    href={`https://twitter.com/intent/tweet?url=${url}`}
+                    href={`https://twitter.com/intent/tweet?url=${url}&text=Visita%20%2B60%20datos%20plateados`}
                     target="_blank"
                   >
                     <Image
