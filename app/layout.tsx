@@ -142,8 +142,18 @@ export default function RootLayout({
               coreCall.integrity       = 'sha512-DeZBWLOEHK1CkmU3vQTNSXeENfZmhTHFmn7zzhvZCPERahpp/DTouMc1ZHOu+RAo1FTKnuKEf1NQyB76z8mU1Q==';
               coreCall.crossOrigin     = 'anonymous';
               coreCall.setAttribute('data-cfasync', true );
+              coreCall.onload = function() {
+                window.equalweb.init({
+                  account_id: '427badf766cb21a4adc344eba97ee8cb',
+                  options: {
+                    contrast: {
+                      dark_high_contrast: false
+                    }
+                  }
+                });
+              };
               body? body.appendChild(coreCall) : head.appendChild(coreCall);
-          })(document, document.head, document.body);
+                      })(document, document.head, document.body);
           `,
         }}
       />

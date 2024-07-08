@@ -37,10 +37,7 @@ export default function HeatMapHome({ data }: HeatMapHomeProps) {
             borderColor="white"
             borderWidth={2}
             enableLabels={false}
-            labelTextColor={{
-              from: "color",
-              modifiers: [["darker", 2]],
-            }}
+            labelTextColor="black"
             theme={{
               text: {
                 fontSize: 14,
