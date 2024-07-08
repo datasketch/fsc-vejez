@@ -9,7 +9,7 @@ import SimpleTreeMap from "./SimpleTreeMap";
 
 
 export default function TechTreeMap() {
-    const [selectedDepartment, setSelectedDepartment] = useState<number | string>('');
+    const [selectedDepartment, setSelectedDepartment] = useState<number | string>('5');
     const [devicesUsage, setDevicesUsage] = useState<any>(null);
     const [internetUsage, setInternetUsage] = useState<any>(null);
     const [department, setDepartment] = useState<any>(null);
@@ -83,7 +83,7 @@ export default function TechTreeMap() {
                     })}
                 </select>
             </div>
-            <div className="grid grid-cols-2 w-full">
+            <div className="grid lg:grid-cols-2 w-full">
                 <div>
                     {internetUsage && (
                         <SimpleTreeMap data={internetUsage} />

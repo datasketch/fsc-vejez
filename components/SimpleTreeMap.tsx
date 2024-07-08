@@ -14,7 +14,7 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
             data={data}
             identity="name"
             value="loc"
-            margin={{ top: 0, right: 20, bottom: 20, left: 0 }}
+            margin={{ top: 0, right: 20, bottom: 20, left: 20 }}
             valueFormat={(valueFormat) =>
               new Intl.NumberFormat("es-CO").format(valueFormat)
             }

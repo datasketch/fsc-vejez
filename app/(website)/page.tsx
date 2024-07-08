@@ -14,20 +14,20 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-12 order-1">
-              <div className="text-center">
-                <h1 className="text-[49px] lg:text-5xl xl:text-[61px] lg:font-semibold leading-none">
+              <div className="lg:text-center">
+                <h1 className="text-[49px] lg:text-5xl xl:text-[61px] font-semibold leading-[50px]">
                   +60{" "}
                   <span className="-mt-2 lg:mt-0 block lg:inline-block text-[39px] lg:text-5xl xl:text-[61px] italic text-dark-slate-gray font-normal">
                     Datos plateados
                   </span>
                 </h1>
-                <p className="w-3/5 text-center mt-5 mx-auto">
+                <p className="lg:w-4/5 mt-5 mx-auto">
                   +60 Datos Plateados es una plataforma de visualización de datos sobre personas mayores (de 60 años o más). Desarrollada en colaboración con diversos actores, esta plataforma busca fortalecer el ecosistema de la economía plateada, o economía silver, promoviendo programas y servicios dirigidos a este grupo etario.
                 </p>
-                <p className="w-3/5 text-center mt-1 mx-auto">
+                <p className="lg:w-4/5 mt-1 mx-auto">
                   En +60 Datos Plateados, encontrarás información demográfica sobre envejecimiento y cifras relevantes de salud, educación, finanzas y tecnología, basadas en diferentes fuentes de información. Además, incluye resultados de estudios sobre la percepción de la vejez, un directorio de servicios disponibles para personas mayores en Colombia y el mundo, y recursos bibliográficos, conjuntos de datos y políticas públicas.
                 </p>
-                <p className="w-3/5 text-center mt-1 mx-auto">
+                <p className="lg:w-4/5 mt-1 mx-auto">
                   Manteniéndose a la vanguardia, +60 Datos Plateados ofrece diversos formatos de visualización y herramientas interactivas, asegurando una actualización constante de la información. Explora esta plataforma para conocer más sobre las personas mayores y contribuir al desarrollo de la economía plateada.
                 </p>
               </div>

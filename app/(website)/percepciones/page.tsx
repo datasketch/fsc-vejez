@@ -165,7 +165,7 @@ export default function Page() {
           </div>
           <div className="flex w-full justify-center mt-16">
             <div className="w-full">
-              <WrapperChart description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la frecuencia de las respuestas.">
+              <WrapperChart mobile description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la frecuencia de las respuestas.">
                 <TabSections
                   sections={[
                     {
@@ -229,7 +229,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <WrapperChart description="La gráfica de barras clasifica en su eje vertical los diferentes ciclos de vida y muestra, mediante barras de colores, las respuestas de los encuestados sobre su nivel de acuerdo o desacuerdo respecto a su preparación financiera para la vejez. El eje horizontal de la gráfica permite conocer el número de personas que contestaron para cada una de las opciones de respuesta.">
+          <WrapperChart mobile description="La gráfica de barras clasifica en su eje vertical los diferentes ciclos de vida y muestra, mediante barras de colores, las respuestas de los encuestados sobre su nivel de acuerdo o desacuerdo respecto a su preparación financiera para la vejez. El eje horizontal de la gráfica permite conocer el número de personas que contestaron para cada una de las opciones de respuesta.">
             <HorizontalBarGraph
               data={data.ciudades_como_vamos.data_finanzas.data}
               legend={data.ciudades_como_vamos.data_finanzas.legend}
@@ -253,7 +253,15 @@ export default function Page() {
         </h3>
         <p className="mt-5">Explora los datos de la encuesta {'"'}Ciudades Cómo Vamos{'"'} sobre la percepción ciudadana de la vejez en Colombia. El tablero ofrece una experiencia interactiva y a la medida. Con solo unos clics, podrás filtrar y cruzar información según tus intereses, obteniendo una visión detallada de cada ciudad encuestada.</p>
         <p className="mt-1">Analiza las percepciones sobre los espacios públicos, los servicios más importantes y los factores de vulnerabilidad que impactan el consumo. Además, podrás descargar los datos en múltiples formatos de imagen o procesables para sacarles provecho. ¡Transforma la información en conocimiento y toma decisiones informadas!</p>
-        <div className="mt-3 lg:mt-10 xl:mt-12">
+        <div className="lg:hidden col-span-4 mt-4">
+          <Image
+            src="/images/cifras/mini-dashboard.png"
+            alt="grafico finanzas 1"
+            width={100}
+            height={100} // Estos valores son proporcionales
+            style={{ width: '100%', height: 'auto' }} />
+        </div>
+        <div className="hidden lg:block mt-3 lg:mt-10 xl:mt-12">
           <iframe
             className="size-full aspect-video"
             src="https://services.datasketch.co/fsc-app-questions/"
@@ -269,6 +277,7 @@ export default function Page() {
           <div className="flex w-full justify-center mt-16">
             <div className="w-full">
               <WrapperChart
+                mobile
                 description="Estas descripciones corresponden con algunos de los hallazgos que surgieron del Informe Misión Colombia Envejece liderado por la Fundación Saldarriaga Concha. Cada uno de los hallazgos están clasificados en las temáticas de Salud y Bienestar, Educación, Ingresos y finanzas, Tecnología y digitalización; haga uso de la barra disponible para conocer esta información temática. Este contenido se construyó con base a las preguntas relevantes que estructuraron la conversación en los grupos focales, metodología llevada a cabo en la Misión."
                 type="content"
               >

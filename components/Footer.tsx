@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="col-span-4 lg:col-start-10 lg:col-end-13">
               <div className="flex justify-center lg:justify-end">
                 <Link
-                  className="inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px]"
+                  className="inline-flex py-2 px-5 gap-x-2 text-dark-slate-gray font-semibold bg-asparagus/40 rounded-[20px] z-10"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSevQlu80LNKeJCXzqYpi34sNwadxscwti-yz4z2ViDlY-kOTQ/viewform"
                 >
                   <p className="text-nowrap">Formulario de contacto</p>

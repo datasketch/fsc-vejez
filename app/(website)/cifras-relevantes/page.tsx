@@ -108,6 +108,10 @@ export default function Page() {
                                 dispositivo que más se usa para tal fin.
                             </p>
                         </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 shadow-lg p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             {/* <Map /> */}
                             <TechTreeMap />
@@ -163,6 +167,18 @@ export default function Page() {
                                 ingresos de las otras etapas del ciclo de vida.
                             </p>
                         </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-finanzas.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
+                        </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los grupos etarios de juventud, adultez y personas mayores. Los datos son representados en barras verticales para compararlos. En las personas mayores, los honorarios profesionales llegan a 3 millones de pesos, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
                                 <MultipleBarChart
@@ -201,6 +217,18 @@ export default function Page() {
                                 porcentaje significativo (27.95%) de las personas respondieron
                                 no tener ningún producto financiero.
                             </p>
+                        </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-finanzas2.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
                         </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             <WrapperChart description="La gráfica de barra apilada tiene la forma de un billete de $50.000, con la efigie del escritor Gabriel García Márquez, representando a una persona mayor. Cada barra tiene un tamaño y un color diferente, correspondiente a los productos financieros que usan las personas mayores con su respectivo porcentaje de uso.">
@@ -268,6 +296,18 @@ export default function Page() {
                                 usar escaleras y oír.
                             </p>
                         </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-salud.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
+                        </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
                                 <p className="xl:hidden">
@@ -312,6 +352,18 @@ export default function Page() {
                                 2023). Para conocer todos los resultados, diríjase a “Explora
                                 los datos”, al final de la página de inicio.
                             </p>
+                        </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-vivienda.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
                         </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             <WrapperChart
@@ -381,6 +433,18 @@ export default function Page() {
                                 reportaron no saben leer ni escribir.
                             </p>
                         </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-educacion.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
+                        </div>
                         <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
                             <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
                                 <p className="xl:hidden mb-6">
@@ -425,6 +489,18 @@ export default function Page() {
                                 mayores son la etapa del ciclo de vida con menos personas en los
                                 demás niveles educativos.
                             </p>
+                        </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-educacion2.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
                         </div>
                         <div className="col-span-4 lg:col-span-12">
                             <WrapperChart description="El gráfico de barras apiladas muestra el número de personas por nivel educativo alcanzado en cada barra, dividida a su vez por colores que representan diferentes etapas del ciclo vital: jóvenes, adultos y personas mayores. El tamaño del área ocupada por cada color indica la proporción de personas de un grupo etario que tienen cierto nivel educativo alcanzado. El gráfico permite la comparación entre niveles educativos alcanzados y el número de personas por grupo etario.">
@@ -489,6 +565,18 @@ export default function Page() {
                                 con barras generalmente más cortas.
                             </p>
                         </div>
+                        <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
+                            <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                            <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+                        </div>
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-transporte.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
+                        </div>
                         <div className="col-span-4 lg:col-span-12">
                             <WrapperChart description="La gráfica de barras agrupadas muestra los modos de transporte utilizados en Bogotá, Colombia, por las diferentes etapas del ciclo de vida. Cada barra representa un modo de transporte, y las barras de colores en cada grupo indican la distribución de usuarios por etapas del ciclo vital.">
                                 <HorizontalBarGraph
@@ -526,7 +614,15 @@ export default function Page() {
                         </div>
                         <p className="mt-5 col-span-4 lg:col-span-12">Conoce más de las personas mayores personalizando tu búsqueda en información sociodemográfica, tecnología, finanzas, salud, educación y transporte. Este tablero te permite interactuar al instante con los datos por grupos etarios, departamentos, países y años. </p>
                         <p className="mt-1 col-span-4 lg:col-span-12">Profundiza el análisis de tu información con apoyo del panel de detalle. Cada temática aporta datos de contexto actualizados, como el total de personas mayores en Colombia o su distribución por área geográfica y género. Impulsa tu trabajo con los datos y descárgalos en formatos de imagen o procesables.</p>
-                        <div className="mt-3 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
+                        <div className="lg:hidden col-span-4 mt-4">
+                            <Image
+                                src="/images/cifras/mini-dashboard.png"
+                                alt="grafico finanzas 1"
+                                width={100}
+                                height={100} // Estos valores son proporcionales
+                                style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                        <div className="hidden lg:block mt-3 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
                             <iframe
                                 className="size-full lg:aspect-video h-[80vh]"
                                 src="https://services.datasketch.co/fsc-vejez-app/"
