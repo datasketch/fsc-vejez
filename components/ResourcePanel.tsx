@@ -11,23 +11,27 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/FilterModal";
+import Link from "next/link";
 
 interface ResourcePanelProps {
   data: any;
   isType?: boolean;
   image?: boolean;
+  scale?: boolean;
 }
 
 export default function ResourcePanel({
   data,
   isType = false,
   image = false,
+  scale = false,
 }: ResourcePanelProps) {
   const [query, setQuery] = useState("");
   const [order, setOrder] = useState("Públicación más reciente");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedYear, setSelectedYear] = useState("");
+  const [selectedScale, setSelectedScale] = useState("")
 
   const [itemOffset, setItemOffset] = useState(0);
   const itemsPerPage = 10;
@@ -39,6 +43,10 @@ export default function ResourcePanel({
   const years = Array.from(
     new Set(data.map((item: any) => item.anio || item.anio_de_publicacion))
   ).sort((a: any, b: any) => a - b);
+
+  const scales = Array.from(
+    new Set(data.map((item: any) => item.escala))
+  )
 
   // @ts-ignore
   const optionsCategory: Array<{ label: string; value: string }> = Array.from(
@@ -101,11 +109,18 @@ export default function ResourcePanel({
     return tmp.toString() === selectedYear;
   }
 
+  function filterByScale(item: any) {
+    if (!selectedScale) return true;
+
+    return item.escala === selectedScale
+  }
+
   const filteredData = data
     .filter(filterByCategory)
     .filter(filterByType)
     .filter(filterBySearch)
     .filter(filterByYear)
+    .filter(filterByScale)
     // @ts-ignore
     .sort((a, b) => {
       if (order === "AZ") {
@@ -221,6 +236,30 @@ export default function ResourcePanel({
                           <hr className="my-7" />
                         </>
                       )}
+                      {
+                        scale && (
+                          <>
+                            <h2 className="mb-3 text-xl font-semibold">Escala</h2>
+                            <select
+                              className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
+                              name=""
+                              id={selectedScale}
+                              value={selectedScale}
+                              onChange={(e) => setSelectedScale(e.target.value)}
+                            >
+                              <option value="">Selecciona una opción</option>
+                              {scales.map((option: any, i: number) => {
+                                return (
+                                  // @ts-ignore
+                                  <option key={i} value={option}>
+                                    {option}
+                                  </option>
+                                );
+                              })}
+                            </select>
+                          </>
+                        )
+                      }
                       <h2 className="mb-3 text-xl font-semibold">Año</h2>
                       <select
                         className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
@@ -324,6 +363,31 @@ export default function ResourcePanel({
                 <hr className="my-7" />
               </>
             )}
+            {
+              scale && (
+                <>
+                  <h2 className="mb-3 text-xl font-semibold">Escala</h2>
+                  <select
+                    className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
+                    name=""
+                    id={selectedScale}
+                    value={selectedScale}
+                    onChange={(e) => setSelectedScale(e.target.value)}
+                  >
+                    <option value="">Selecciona una opción</option>
+                    {scales.map((option: any, i: number) => {
+                      return (
+                        // @ts-ignore
+                        <option key={i} value={option}>
+                          {option}
+                        </option>
+                      );
+                    })}
+                  </select>
+                  <hr className="my-7" />
+                </>
+              )
+            }
             <h2 className="mb-3 text-xl font-semibold">Año</h2>
             <select
               className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
@@ -343,6 +407,7 @@ export default function ResourcePanel({
                 );
               })}
             </select>
+            <p className="mt-8 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/cifras-relevantes" className="text-dark-slate-gray underline">Cifras relevantes</Link></p>
           </div>
         </div>
       </div>

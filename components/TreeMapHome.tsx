@@ -32,11 +32,11 @@ export default function TreeMapHome({ data }: TreeMapHomeProps) {
             parentLabelPadding={20}
             nodeOpacity={1}
             parentLabelTextColor={(node) =>
-              node.id !== "Jóvenes" ? "#FFFFFF" : "#1A1A1A"
+              node.id !== "Personas mayores" ? "#FFFFFF" : "#1A1A1A"
             }
             labelTextColor={(node) =>
-              node.path !== "Tasa de alfabetismo.Jóvenes.Sí" &&
-              node.path !== "Tasa de alfabetismo.Jóvenes.No"
+              node.path !== "Tasa de alfabetismo.Personas mayores.Sí" &&
+              node.path !== "Tasa de alfabetismo.Personas mayores.No"
                 ? "#FFFFFF"
                 : "#1A1A1A"
             }

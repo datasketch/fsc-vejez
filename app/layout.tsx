@@ -3,6 +3,7 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 import Script from "next/script";
+// import Head from "next/head";
 
 const proximaNovaAltFont = localFont({
   variable: "--font-proxima-nova-a",
@@ -81,9 +82,11 @@ const proximaNovaAltFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.mas60datosplateados.com'),
   title: {
     template: '%s | +60 Datos plateados',
     default: '+60 Datos plateados'
+
   }
 }
 
@@ -94,6 +97,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${proximaNovaAltFont.variable}`}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-207MZNNLJJ" />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-207MZNNLJJ');
+        `,
+        }}
+      />
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
       <Script
         id="show-accesibility-widget"
         dangerouslySetInnerHTML={{
@@ -108,16 +125,16 @@ export default function RootLayout({
           */
           window.interdeal = {
               "sitekey": "427badf766cb21a4adc344eba97ee8cb",
-              "Position": "left",
+              "Position": "right",
               "domains": {
                   "js": "https://cdn.equalweb.com/",
                   "acc": "https://access.equalweb.com/"
               },
-              "Menulang": "es-MX",
+              "Menulang": "es",
               "draggable": false,
               "btnStyle": {
                   "vPosition": [
-                      "50%",
+                      "20%",
                       "20%"
                   ],
                   "scale": [
@@ -141,8 +158,18 @@ export default function RootLayout({
               coreCall.integrity       = 'sha512-DeZBWLOEHK1CkmU3vQTNSXeENfZmhTHFmn7zzhvZCPERahpp/DTouMc1ZHOu+RAo1FTKnuKEf1NQyB76z8mU1Q==';
               coreCall.crossOrigin     = 'anonymous';
               coreCall.setAttribute('data-cfasync', true );
+              coreCall.onload = function() {
+                window.equalweb.init({
+                  account_id: '427badf766cb21a4adc344eba97ee8cb',
+                  options: {
+                    contrast: {
+                      dark_high_contrast: false
+                    }
+                  }
+                });
+              };
               body? body.appendChild(coreCall) : head.appendChild(coreCall);
-          })(document, document.head, document.body);
+                      })(document, document.head, document.body);
           `,
         }}
       />

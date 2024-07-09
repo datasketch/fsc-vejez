@@ -1,8 +1,8 @@
 [
   {
-    "etiqueta_rango_edad": "Jóvenes",
-    "si": 178654,
-    "no": 1747
+    "etiqueta_rango_edad": "Personas mayores",
+    "si": 124969,
+    "no": 16379
   },
   {
     "etiqueta_rango_edad": "Adultos",
@@ -10,8 +10,8 @@
     "no": 10488
   },
   {
-    "etiqueta_rango_edad": "Personas mayores",
-    "si": 124969,
-    "no": 16379
+    "etiqueta_rango_edad": "Jóvenes",
+    "si": 178654,
+    "no": 1747
   }
 ]

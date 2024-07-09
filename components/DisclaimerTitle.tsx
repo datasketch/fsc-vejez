@@ -23,7 +23,7 @@ export default function DisclaimerTitle({
       <TooltipProvider delayDuration={0}>
         <Tooltip>
           <TooltipTrigger asChild>
-            <button className="flex-shrink-0 grid place-items-center translate-y-1.5">
+            <button className="hidden flex-shrink-0 lg:grid place-items-center translate-y-1.5">
               <Image
                 src="/images/icons/information.svg"
                 alt="information icon"

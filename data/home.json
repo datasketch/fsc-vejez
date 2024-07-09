@@ -760,10 +760,10 @@
   "ingresos": {
     "data": [
       {
-        "name": "Jóvenes",
-        "Honorarios profesionales": 1899384.704,
-        "Ingresos o comisiones": 765181.5826,
-        "Salarios u honorarios": 1008744.472
+        "name": "Personas mayores",
+        "Honorarios profesionales": 2938404.93,
+        "Ingresos o comisiones": 837773.09,
+        "Salarios u honorarios": 1504540.08
       },
       {
         "name": "Adultos",
@@ -772,10 +772,10 @@
         "Salarios u honorarios": 2037980.705
       },
       {
-        "name": "Personas mayores",
-        "Honorarios profesionales": 2938404.93,
-        "Ingresos o comisiones": 837773.09,
-        "Salarios u honorarios": 1504540.08
+        "name": "Jóvenes",
+        "Honorarios profesionales": 1899384.704,
+        "Ingresos o comisiones": 765181.5826,
+        "Salarios u honorarios": 1008744.472
       }
     ],
     "legend": [
@@ -1166,16 +1166,16 @@
     ],
     "legend": [
       {
-        "key": "Jóvenes",
-        "fill": "#1D5556"
+        "key": "Personas mayores",
+        "fill": "#B6174B"
       },
       {
         "key": "Adultos",
         "fill": "#FAAA8D"
       },
       {
-        "key": "Personas mayores",
-        "fill": "#B6174B"
+        "key": "Jóvenes",
+        "fill": "#1D5556"
       }
     ]
   },
@@ -1250,16 +1250,16 @@
     ],
     "legend": [
       {
-        "key": "Jóvenes (14-26 años)",
-        "fill": "#1D5556"
+        "key": "Personas mayores (60 años o más)",
+        "fill": "#B6174B"
       },
       {
         "key": "Adultos (27-59 años)",
         "fill": "#FAAA8D"
       },
       {
-        "key": "Personas mayores (60 años o más)",
-        "fill": "#B6174B"
+        "key": "Jóvenes (14-26 años)",
+        "fill": "#1D5556"
       }
     ]
   }

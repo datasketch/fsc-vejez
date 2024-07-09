@@ -12,6 +12,7 @@ import {
   DialogTrigger,
 } from "@/components/FilterModal";
 import DisclaimerTitle from "./DisclaimerTitle";
+import Link from "next/link";
 
 interface ServicesClientProps {
   data: any;
@@ -264,6 +265,7 @@ export default function ServicesClient({ data }: ServicesClientProps) {
               </button>
             </div>
           </div>
+          <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/" className="text-dark-slate-gray underline">Conoce más de la plataforma</Link></p>
           <div className="mt-4 lg:mt-12 col-span-12">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5 xl:gap-5">
               {filterData.length > 0 ? (

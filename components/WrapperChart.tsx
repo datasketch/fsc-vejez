@@ -3,21 +3,24 @@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import Image from "next/image";
 import { useState } from "react";
+import clsx from "clsx";
 
 interface WrapperChartProps {
   children: React.ReactNode;
   description: string | string[];
   type?: "chart" | "content";
+  mobile?: boolean;
 }
 
 export default function WrapperChart({
   children,
   description,
   type = "chart",
+  mobile = false,
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
-    <div className="mt-12 flex flex-col gap-y-4">
+    <div className={clsx(mobile ? "mt-12 flex flex-col gap-y-1" : "hidden mt-12 lg:flex flex-col gap-y-1")}>
       <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>

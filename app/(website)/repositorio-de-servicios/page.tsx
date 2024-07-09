@@ -244,6 +244,7 @@ export default async function Page() {
                 involucren a las necesidades financieras de las personas
                 mayores.
               </p>
+              <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=biblioteca" className="text-dark-slate-gray underline">Recursos-Biblioteca</Link></p>
             </div>
             <div className="mt-10 col-span-4 lg:col-span-12">
               <div className="text-center">
@@ -252,7 +253,7 @@ export default async function Page() {
                 </h3>
               </div>
               <div className="mt-6">
-                <WrapperChart description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
+                <WrapperChart mobile description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
                   <StackedBarChart
                     data={(data as ServicesData).barChartData.data}
                     legend={(data as ServicesData).barChartData.legend}
@@ -299,9 +300,10 @@ export default async function Page() {
                 servicios tecnológicos en cuanto a Salud y bienestar, Educación
                 e Ingresos y finanzas.
               </p>
+              <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=biblioteca" className="text-dark-slate-gray underline">Recursos-Biblioteca</Link></p>
             </div>
             <div className="mt-8 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
-              <WrapperChart description="La siguiente visualización destaca algunas palabras clave con las que las empresas han descrito sus servicios tecnológicos. Esta información está clasificada según los tipos de servicios tecnológicos en cuanto a Salud y bienestar, Educación e Ingresos y finanzas.">
+              <WrapperChart mobile description="La siguiente visualización destaca algunas palabras clave con las que las empresas han descrito sus servicios tecnológicos. Esta información está clasificada según los tipos de servicios tecnológicos en cuanto a Salud y bienestar, Educación e Ingresos y finanzas.">
                 <TabSections
                   sections={[
                     {
@@ -375,7 +377,7 @@ export default async function Page() {
                     ¿Quieres añadir tu servicio digital para persona mayor?
                   </h3>
                   <Link
-                    href="/"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSevQlu80LNKeJCXzqYpi34sNwadxscwti-yz4z2ViDlY-kOTQ/viewform"
                     className="mt-4 lg:mt-6 inline-block py-2 px-5 rounded-[20px] bg-white text-dark-slate-gray font-semibold text-lg lg:text-xl"
                   >
                     Envíanos tu información

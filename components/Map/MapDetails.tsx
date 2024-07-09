@@ -53,6 +53,26 @@ export default function MapDetails({ selectedDepartment }: MapDetailsProps) {
           />
         </div>
       </div>
+      <div>
+        <h2 className="mb-3 text-xl font-semibold">Dpto</h2>
+        <select
+          className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
+          name=""
+          /* id={selectedScale}
+          value={selectedScale}
+          onChange={(e) => setSelectedScale(e.target.value)} */
+        >
+          <option value="">Selecciona una opción</option>
+          {departmentsData.map((option: any, i: number) => {
+            return (
+              // @ts-ignore
+              <option key={i} value={option.code}>
+                {option.name}
+              </option>
+            );
+          })}
+        </select>
+      </div>
       <div className="md:w-1/2 lg:w-full">
         {devicesUsage ? (
           <div className="p-[30px] rounded-[10px] border border-eerie-black/40">
