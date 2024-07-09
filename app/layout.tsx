@@ -94,6 +94,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${proximaNovaAltFont.variable}`}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-207MZNNLJJ" />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-207MZNNLJJ');
+        `,
+        }}
+      />
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
       <Script
         id="show-accesibility-widget"

@@ -244,6 +244,7 @@ export default async function Page() {
                 involucren a las necesidades financieras de las personas
                 mayores.
               </p>
+              <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=biblioteca" className="text-dark-slate-gray underline">Recursos-Biblioteca</Link></p>
             </div>
             <div className="mt-10 col-span-4 lg:col-span-12">
               <div className="text-center">
@@ -299,6 +300,7 @@ export default async function Page() {
                 servicios tecnológicos en cuanto a Salud y bienestar, Educación
                 e Ingresos y finanzas.
               </p>
+              <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=biblioteca" className="text-dark-slate-gray underline">Recursos-Biblioteca</Link></p>
             </div>
             <div className="mt-8 lg:mt-12 xl:mt-16 col-span-4 lg:col-span-12">
               <WrapperChart mobile description="La siguiente visualización destaca algunas palabras clave con las que las empresas han descrito sus servicios tecnológicos. Esta información está clasificada según los tipos de servicios tecnológicos en cuanto a Salud y bienestar, Educación e Ingresos y finanzas.">

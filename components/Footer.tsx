@@ -16,13 +16,15 @@ export default function Footer() {
                 height={54.315}
                 alt="logo FSC"
               />
-              <p className="mt-5 lg:mt-[30px]">
+              <p className="mt-5 lg:mt-[30px] mb-5">
                 +60 Datos plateados es una plataforma de visualización de
                 información de la población de 60 años o más en distintas
                 temáticas. Los datos provienen de diferentes fuentes, con las
                 cuales se busca incentivar el desarrollo de programas y
                 servicios dirigidos a las personas mayores.
               </p>
+              <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Preguntas%20frecuentes%20%2B60%20Datos%20Plateados.pdf">Preguntas frecuentes</Link></p>
+              <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">Anexo técnico sobre las fuentes de información y el uso de datos</Link></p>
             </div>
             <div className="col-span-4 lg:col-start-10 lg:col-end-13">
               <div className="flex justify-center lg:justify-end">
@@ -60,14 +62,14 @@ export default function Footer() {
               <p className="text-nowrap">Elaborado por</p>
               <Image
                 src="/images/logo-white.svg"
-                alt="logo white"
+                alt="Logotipo de la Fundación Saldarriaga Concha"
                 width={101.63}
                 height={30}
               />
               <p className="text-nowrap">y desarrollo tecnológico por</p>
               <Image
                 src="/images/logo-datasketch.svg"
-                alt="logo white"
+                alt="Logotipo de Datasketch"
                 width={128.42}
                 height={20}
               />

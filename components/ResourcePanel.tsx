@@ -11,6 +11,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/FilterModal";
+import Link from "next/link";
 
 interface ResourcePanelProps {
   data: any;
@@ -406,6 +407,7 @@ export default function ResourcePanel({
                 );
               })}
             </select>
+            <p className="mt-8 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/cifras-relevantes" className="text-dark-slate-gray underline">Cifras relevantes</Link></p>
           </div>
         </div>
       </div>

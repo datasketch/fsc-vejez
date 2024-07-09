@@ -164,67 +164,70 @@ export default function Header() {
                 anchor="bottom"
                 className="flex sticky w-full origin-top-right bg-seasalt mt-5 mx-auto transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
-                <div className="mx-auto justify-between gap-10 w-full text-center text-xl bg-seasalt">
-                  <div className={clsx(
+                {({ close }) => (
+                  <div className="mx-auto justify-between gap-10 w-full text-center text-xl bg-seasalt">
+                    <div className={clsx(
                       "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
                       {
                         "!bg-asparagus/40 text-dark-slate-gray":
                           pathname === "/",
                       }
-                    )}>                    
-                    <Link
-                      href="/"
+                    )}>
+                      <Link
+                        href="/"
+                        onClick={() => close()}
+                      >
+                        Inicio
+                      </Link>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
+                        {
+                          "!bg-asparagus/40 text-dark-slate-gray":
+                            pathname === "/cifras-relevantes",
+                        }
+                      )}
                     >
-                      Inicio
-                    </Link>
+                      <Link href="/cifras-relevantes" onClick={() => close()}>Cifras relevantes</Link>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
+                        {
+                          "!bg-asparagus/40 text-dark-slate-gray":
+                            pathname === "/percepciones",
+                        }
+                      )}
+                    >
+                      <Link href="/percepciones" onClick={() => close()}>Percepciones</Link>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
+                        {
+                          "!bg-asparagus/40 text-dark-slate-gray":
+                            pathname === "/repositorio-de-servicios",
+                        }
+                      )}
+                    >
+                      <Link href="/repositorio-de-servicios" onClick={() => close()}>
+                        Repositorio de servicios
+                      </Link>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
+                        {
+                          "!bg-asparagus/40 text-dark-slate-gray":
+                            pathname === "/recursos",
+                        }
+                      )}
+                    >
+                      <Link href="/recursos" onClick={() => close()}>Recursos</Link>
+                    </div>
                   </div>
-                  <div
-                    className={clsx(
-                      "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
-                      {
-                        "!bg-asparagus/40 text-dark-slate-gray":
-                          pathname === "/cifras-relevantes",
-                      }
-                    )}
-                  >
-                    <Link href="/cifras-relevantes">Cifras relevantes</Link>
-                  </div>
-                  <div
-                    className={clsx(
-                      "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
-                      {
-                        "!bg-asparagus/40 text-dark-slate-gray":
-                          pathname === "/percepciones",
-                      }
-                    )}
-                  >
-                    <Link href="/percepciones">Percepciones</Link>
-                  </div>
-                  <div
-                    className={clsx(
-                      "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
-                      {
-                        "!bg-asparagus/40 text-dark-slate-gray":
-                          pathname === "/repositorio-de-servicios",
-                      }
-                    )}
-                  >
-                    <Link href="/repositorio-de-servicios">
-                      Repositorio de servicios
-                    </Link>
-                  </div>
-                  <div
-                    className={clsx(
-                      "lg:hover:border-b-asparagus/40 lg:hover:text-dark-slate-gray lg:duration-300 py-5",
-                      {
-                        "!bg-asparagus/40 text-dark-slate-gray":
-                          pathname === "/recursos",
-                      }
-                    )}
-                  >
-                    <Link href="/recursos">Recursos</Link>
-                  </div>
-                </div>
+                )}
               </PopoverPanel>
             </Popover>
           </div>

@@ -59,7 +59,7 @@ export default function Page() {
                 Cifras relevantes
             </h1>
             <p className="u-container lg:w-3/5 lg:text-center mt-5 mx-auto">
-                En esta sección encontrarás una recopilación exhaustiva de datos clave sobre temáticas de importancia para la población mayor en Colombia. La información sobre tecnología, finanzas, salud, educación y movilidad está pensada para apoyar la investigación, la formulación de políticas y el desarrollo de iniciativas que mejoren la calidad de vida de las personas mayores en Colombia.
+                En esta sección encontrarás una recopilación amplia de <Link className="text-dark-slate-gray underline" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">datos</Link> clave sobre temáticas relevantes para la población mayor en Colombia. La información sobre tecnología, finanzas, salud, educación y movilidad está pensada para apoyar la investigación, la formulación de políticas y el desarrollo de iniciativas que mejoren la calidad de vida de las personas mayores en Colombia.
             </p>
             <p className="u-container lg:w-3/5 lg:text-center mt-1 mx-auto mb-10">
                 Las cifras relevantes proporcionan una visión integral de las condiciones y tendencias de la vejez en Colombia, basándose en datos actuales y confiables. Puedes explorar estos datos en profundidad a través del tablero de visualización interactivo, diseñado para proporcionar una comprensión clara y detallada de los datos. Descubre información valiosa que puede marcar la diferencia.
@@ -79,7 +79,7 @@ export default function Page() {
                                     alt="phone"
                                 />
                                 <h2 className="text-2xl lg:text-[31px] text-dark-slate-gray font-semibold">
-                                    Tecnología y digitalización
+                                    Tecnología y entornos digitales
                                 </h2>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export default function Page() {
                                 acceden a internet, mostrando con ello que el celular es el
                                 dispositivo que más se usa para tal fin.
                             </p>
-                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray">Repositorio de servicios</Link></p>
+                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 shadow-lg p-2">
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
@@ -168,7 +168,7 @@ export default function Page() {
                                 con los otros ingresos que obtienen y también respecto a los
                                 ingresos de las otras etapas del ciclo de vida.
                             </p>
-                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray">Repositorio de servicios</Link></p>
+                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
@@ -182,7 +182,7 @@ export default function Page() {
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+                        <div className="mt-4 col-span-4 lg:col-span-12">
                             <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los grupos etarios de juventud, adultez y personas mayores. Los datos son representados en barras verticales para compararlos. En las personas mayores, los honorarios profesionales llegan a 3 millones de pesos, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
                                 <MultipleBarChart
                                     data={data.ingresos.data}
@@ -233,14 +233,15 @@ export default function Page() {
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+                        <div className="mt-4 col-span-4 lg:col-span-12">
                             <WrapperChart description="La gráfica de barra apilada tiene la forma de un billete de $50.000, con la efigie del escritor Gabriel García Márquez, representando a una persona mayor. Cada barra tiene un tamaño y un color diferente, correspondiente a los productos financieros que usan las personas mayores con su respectivo porcentaje de uso.">
                                 <Image
                                     className="mx-auto"
                                     width={822}
                                     height={696}
                                     src="/images/home/ticket.svg"
-                                    alt="ticket"
+                                    alt="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
+                                    aria-label="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
                                 />
                             </WrapperChart>
                         </div>
@@ -298,7 +299,7 @@ export default function Page() {
                                 alguna o mucha dificultad en ver; mover el cuerpo, caminar o
                                 usar escaleras y oír.
                             </p>
-                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray">Repositorio de servicios</Link></p>
+                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
@@ -312,7 +313,7 @@ export default function Page() {
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+                        <div className="mt-4 col-span-4 lg:col-span-12">
                             <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
                                 <p className="xl:hidden">
                                     Para ver la gráfica completa desliza hacia los lados
@@ -369,7 +370,7 @@ export default function Page() {
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+                        <div className="mt-4 col-span-4 lg:col-span-12">
                             <WrapperChart
                                 description={[
                                     "El diagrama de Sankey muestra la distribución entre el género de las personas, los tipos de vivienda en los que residen y las condiciones de tenencia de las viviendas. Los flujos están representados por bandas de colores que varían en grosor, indicando la cantidad de personas que pertenecen a cada categoría.",
@@ -436,7 +437,7 @@ export default function Page() {
                                 personas mayores. 11.6% de las personas de 60 años o más
                                 reportaron no saben leer ni escribir.
                             </p>
-                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray">Repositorio de servicios</Link></p>
+                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
@@ -450,7 +451,7 @@ export default function Page() {
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
+                        <div className="mt-4 col-span-4 lg:col-span-12">
                             <WrapperChart description="El mapa de árbol muestra tres rectángulos correspondientes a los grupos etarios (jóvenes, adultos y personas mayores) y, dentro de cada uno, dos rectángulos con la proporción de las personas que saben leer y las que no. Cada rectángulo representa una categoría y su tamaño es proporcional al porcentaje indicado. Los colores distinguen las diferentes categorías.">
                                 <p className="xl:hidden mb-6">
                                     Para ver la gráfica completa desliza hacia los lados
@@ -569,7 +570,7 @@ export default function Page() {
                                 categorías en comparación con otras etapas del ciclo de vida,
                                 con barras generalmente más cortas.
                             </p>
-                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray">Repositorio de servicios</Link></p>
+                            <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
@@ -620,6 +621,7 @@ export default function Page() {
                         </div>
                         <p className="mt-5 col-span-4 lg:col-span-12">Conoce más de las personas mayores personalizando tu búsqueda en información sociodemográfica, tecnología, finanzas, salud, educación y transporte. Este tablero te permite interactuar al instante con los datos por grupos etarios, departamentos, países y años. </p>
                         <p className="mt-1 col-span-4 lg:col-span-12">Profundiza el análisis de tu información con apoyo del panel de detalle. Cada temática aporta datos de contexto actualizados, como el total de personas mayores en Colombia o su distribución por área geográfica y género. Impulsa tu trabajo con los datos y descárgalos en formatos de imagen o procesables.</p>
+                        <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=datos" className="text-dark-slate-gray underline">Recursos-Datos</Link></p>
                         <div className="lg:hidden col-span-4 mt-4">
                             <Image
                                 src="/images/cifras/mini-dashboard.png"

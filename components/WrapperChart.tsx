@@ -20,7 +20,7 @@ export default function WrapperChart({
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
-    <div className={clsx(mobile ? "mt-12 flex flex-col gap-y-4" : "hidden mt-12 lg:flex flex-col gap-y-4")}>
+    <div className={clsx(mobile ? "mt-12 flex flex-col gap-y-1" : "hidden mt-12 lg:flex flex-col gap-y-1")}>
       <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>
