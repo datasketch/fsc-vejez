@@ -25,10 +25,10 @@ export default function Page() {
                 <p className="lg:w-4/5 mt-5 mx-auto">
                   +60 Datos Plateados es una plataforma de visualización de <Link className="text-dark-slate-gray underline" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">datos</Link> sobre personas mayores (de 60 años o más), desarrollada sobre diversas fuentes de información provenientes de organizaciones y aliados. Esta plataforma busca fortalecer el ecosistema de la economía plateada, o economía silver, promoviendo la creación de programas y servicios dirigidos a este grupo etario.
                 </p>
-                <p className="lg:w-4/5 mt-1 mx-auto">
+                <p className="lg:w-4/5 mt-2 mx-auto">
                   En +60 Datos Plateados, encontrarás información demográfica sobre envejecimiento y vejez, y <Link className="text-dark-slate-gray underline" href="/cifras-relevantes">cifras relevantes</Link> de salud, educación, finanzas y tecnología. Además, incluye resultados de estudios sobre la <Link className="text-dark-slate-gray underline" href="/percepciones">percepción</Link> de la vejez, un <Link className="text-dark-slate-gray underline" href="/repositorio-de-servicios">directorio de servicios</Link> disponibles para personas mayores en Colombia y el mundo, y <Link className="text-dark-slate-gray underline" href="/recursos">recursos</Link> como reportes, conjuntos de datos y políticas públicas.
                 </p>
-                <p className="lg:w-4/5 mt-1 mx-auto">
+                <p className="lg:w-4/5 mt-2 mx-auto">
                   Manteniéndose a la vanguardia, +60 Datos Plateados ofrece diversos formatos de visualización y herramientas interactivas, asegurando una actualización constante de la información. Explora esta plataforma para conocer más sobre las personas mayores y contribuir al desarrollo de la economía plateada.
                 </p>
               </div>

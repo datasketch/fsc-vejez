@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import Link from "next/link";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { Credentials } from "aws-sdk";
 import omit from "lodash.omit";
-import ResourcePanel from "@/components/ResourcePanel";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import TabsResources from "@/components/TabsResources";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Recursos",
@@ -50,7 +45,7 @@ async function getResources(
 }
 
 export default async function Page() {
-  
+
   const [libraryData, politicsData, dataData] = await Promise.all([
     getResources("biblioteca"),
     getResources("politicas-publicas"),
@@ -58,6 +53,8 @@ export default async function Page() {
   ]);
 
   return (
-    <TabsResources libraryData={libraryData} politicsData={politicsData} dataData={dataData} />
+    <Suspense>
+      <TabsResources libraryData={libraryData} politicsData={politicsData} dataData={dataData} />
+    </Suspense>
   );
 }

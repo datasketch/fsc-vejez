@@ -5,14 +5,13 @@ import Link from "next/link";
 import ResourcePanel from "@/components/ResourcePanel";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function TabsResources({ libraryData, politicsData, dataData }: any) {
     const router = useRouter()
     const params = useSearchParams()
     const resource = params.get('seccion')
     const index = resource === 'datos' ? 2 : (resource === 'politicas' ? 1 : 0)
-    
+
 
     return (
         <div className="bg-alabaster font-proxima-nova">

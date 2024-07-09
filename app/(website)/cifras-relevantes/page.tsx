@@ -61,7 +61,7 @@ export default function Page() {
             <p className="u-container lg:w-3/5 lg:text-center mt-5 mx-auto">
                 En esta sección encontrarás una recopilación amplia de <Link className="text-dark-slate-gray underline" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">datos</Link> clave sobre temáticas relevantes para la población mayor en Colombia. La información sobre tecnología, finanzas, salud, educación y movilidad está pensada para apoyar la investigación, la formulación de políticas y el desarrollo de iniciativas que mejoren la calidad de vida de las personas mayores en Colombia.
             </p>
-            <p className="u-container lg:w-3/5 lg:text-center mt-1 mx-auto mb-10">
+            <p className="u-container lg:w-3/5 lg:text-center mt-2 mx-auto mb-10">
                 Las cifras relevantes proporcionan una visión integral de las condiciones y tendencias de la vejez en Colombia, basándose en datos actuales y confiables. Puedes explorar estos datos en profundidad a través del tablero de visualización interactivo, diseñado para proporcionar una comprensión clara y detallada de los datos. Descubre información valiosa que puede marcar la diferencia.
             </p>
             <div
@@ -620,7 +620,7 @@ export default function Page() {
                             </h2>
                         </div>
                         <p className="mt-5 col-span-4 lg:col-span-12">Conoce más de las personas mayores personalizando tu búsqueda en información sociodemográfica, tecnología, finanzas, salud, educación y transporte. Este tablero te permite interactuar al instante con los datos por grupos etarios, departamentos, países y años. </p>
-                        <p className="mt-1 col-span-4 lg:col-span-12">Profundiza el análisis de tu información con apoyo del panel de detalle. Cada temática aporta datos de contexto actualizados, como el total de personas mayores en Colombia o su distribución por área geográfica y género. Impulsa tu trabajo con los datos y descárgalos en formatos de imagen o procesables.</p>
+                        <p className="mt-2 col-span-4 lg:col-span-12">Profundiza el análisis de tu información con apoyo del panel de detalle. Cada temática aporta datos de contexto actualizados, como el total de personas mayores en Colombia o su distribución por área geográfica y género. Impulsa tu trabajo con los datos y descárgalos en formatos de imagen o procesables.</p>
                         <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=datos" className="text-dark-slate-gray underline">Recursos-Datos</Link></p>
                         <div className="lg:hidden col-span-4 mt-4">
                             <Image
