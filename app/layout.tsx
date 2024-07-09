@@ -3,7 +3,7 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 import Script from "next/script";
-import Head from "next/head";
+// import Head from "next/head";
 
 const proximaNovaAltFont = localFont({
   variable: "--font-proxima-nova-a",
@@ -82,9 +82,11 @@ const proximaNovaAltFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.mas60datosplateados.com'),
   title: {
     template: '%s | +60 Datos plateados',
     default: '+60 Datos plateados'
+
   }
 }
 
@@ -171,10 +173,6 @@ export default function RootLayout({
           `,
         }}
       />
-      <Head>
-        <meta property="og:image" content="/images/opengraph-image.png" />
-        <meta name="twitter:image" content="/images/twitter-image.png" />
-      </Head>
       <body>{children}</body>
     </html>
   );
