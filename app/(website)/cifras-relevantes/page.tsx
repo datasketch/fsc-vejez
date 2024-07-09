@@ -105,7 +105,7 @@ export default function Page() {
                             <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
                         </div>
                         <div className="mt-4 col-span-4 lg:col-span-12">
-                            <WrapperChart down description="El treemap o mapa de árbol es una visualización jerárquica que utiliza unos recuadros dentro de otros para representar la proporción de diferentes categorías en un conjunto de datos. Cada recuadro representa una categoría específica del uso de internet y su tamaño es proporcional al porcentaje de respuestas. Los diferentes colores ayudan a distinguir visualmente entre las categorías. Cada recuadro tiene una etiqueta con la descripción de la categoría y el porcentaje correspondiente, facilitando la identificación de cada categoría.">
+                            <WrapperChart description="El treemap o mapa de árbol es una visualización jerárquica que utiliza unos recuadros dentro de otros para representar la proporción de diferentes categorías en un conjunto de datos. Cada recuadro representa una categoría específica del uso de internet y su tamaño es proporcional al porcentaje de respuestas. Los diferentes colores ayudan a distinguir visualmente entre las categorías. Cada recuadro tiene una etiqueta con la descripción de la categoría y el porcentaje correspondiente, facilitando la identificación de cada categoría.">
                                 <TechTreeMap />
                             </WrapperChart>
                         </div>

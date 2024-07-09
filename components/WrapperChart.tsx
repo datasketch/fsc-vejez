@@ -10,7 +10,6 @@ interface WrapperChartProps {
   description: string | string[];
   type?: "chart" | "content";
   mobile?: boolean;
-  down?: boolean;
 }
 
 export default function WrapperChart({
@@ -18,12 +17,10 @@ export default function WrapperChart({
   description,
   type = "chart",
   mobile = false,
-  down = false,
 }: WrapperChartProps) {
   const [open, setIsOpen] = useState(false);
   return (
     <div className={clsx(mobile ? "mt-12 flex flex-col gap-y-1" : "hidden mt-12 lg:flex flex-col gap-y-1")}>
-      {down && <div>{children}</div>}
       <div>
         <Popover onOpenChange={(open) => setIsOpen(open)}>
           <PopoverTrigger>
@@ -73,7 +70,7 @@ export default function WrapperChart({
           </PopoverContent>
         </Popover>
       </div>
-      {!down && <div>{children}</div>}
+      <div>{children}</div>
     </div>
   );
 }
