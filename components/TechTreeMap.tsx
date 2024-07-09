@@ -65,14 +65,14 @@ export default function TechTreeMap() {
         <div className="flex flex-col md:flex-row md:items-center lg:items-start lg:justify-start gap-y-8 lg:flex-col gap-x-12 justify-center h-full">
 
             <div>
-                <h2 className="mb-3 text-xl font-semibold">Departamento</h2>
+                <h2 className=" text-xl font-semibold">Departamento</h2>
+                <p  className="mb-3">Selecciona una opción</p>
                 <select
                     className="h-10  overflow-hidden rounded-3xl border border-prussian-blue pl-4 pr-12"
                     name=""
                     value={selectedDepartment}
                     onChange={(e) => setSelectedDepartment(e.target.value)}
                 >
-                    <option value="">Selecciona una opción</option>
                     {departmentsData.map((option: any, i: number) => {
                         return (
                             // @ts-ignore

@@ -96,17 +96,7 @@ export default function Page() {
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El mapa muestra el porcentaje de personas mayores en familias
-                                encuestadas que no utilizan internet en los departamentos de
-                                Colombia, de acuerdo con la Encuesta Nacional de Calidad de Vida
-                                2022. Esta fue la respuesta predominante ante la pregunta por la
-                                frecuencia de utilización de este servicio. El porcentaje de no
-                                utilización de internet es menor en los departamentos del centro
-                                del país y en el Archipiélago de San Andrés, Providencia y Santa
-                                Catalina. Al seleccionar un departamento, se muestra el
-                                porcentaje de uso de dispositivos por las personas mayores que
-                                acceden a internet, mostrando con ello que el celular es el
-                                dispositivo que más se usa para tal fin.
+                                La Encuesta Nacional de Calidad de Vida 2022 preguntó por la frecuencia de utilización de internet. Al seleccionar un departamento, se muestran las respuestas de las personas mayores y los dispositivos con los que acceden a este servicio. El porcentaje de utilización de internet es mayor en los departamentos del centro del país y en el Archipiélago de San Andrés, Providencia y Santa Catalina. El dispositivo que más se usa para tal fin es el celular.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
@@ -114,9 +104,10 @@ export default function Page() {
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
                             <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
                         </div>
-                        <div className="mt-4 lg:mt-16 xl:mt-20 col-span-4 lg:col-span-12">
-                            {/* <Map /> */}
-                            <TechTreeMap />
+                        <div className="mt-4 col-span-4 lg:col-span-12">
+                            <WrapperChart down description="El treemap o mapa de árbol es una visualización jerárquica que utiliza unos recuadros dentro de otros para representar la proporción de diferentes categorías en un conjunto de datos. Cada recuadro representa una categoría específica del uso de internet y su tamaño es proporcional al porcentaje de respuestas. Los diferentes colores ayudan a distinguir visualmente entre las categorías. Cada recuadro tiene una etiqueta con la descripción de la categoría y el porcentaje correspondiente, facilitando la identificación de cada categoría.">
+                                <TechTreeMap />
+                            </WrapperChart>
                         </div>
                     </div>
                 </div>

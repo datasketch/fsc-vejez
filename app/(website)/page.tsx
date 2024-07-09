@@ -15,6 +15,10 @@ export default function Page() {
         <div className="u-container">
           <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-2.5 xl:gap-x-5">
             <div className="col-span-4 lg:col-span-12 order-1">
+              <div className="lg:hidden w-full flex col-span-4 mb-4 gap-2 p-2  shadow-lg">
+                <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
+                <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
+              </div>
               <div className="lg:text-center">
                 <h1 className="text-[49px] lg:text-5xl xl:text-[61px] font-semibold leading-[50px]">
                   +60{" "}
@@ -69,7 +73,7 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-              <div className="mt-12 lg:mt-4">
+              <div className="mt-12 lg:mt-12">
                 <h2 className="relative font-semibold text-xl text-dark-slate-gray after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-[60px] after:h-[1px] after:bg-dark-slate-gray">
                   Distribución en áreas geográficas
                 </h2>

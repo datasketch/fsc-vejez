@@ -6,6 +6,14 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 
+const msg = {
+  '/': 'Descubre%20%2B60%20Datos%20Plateados%2C%20la%20plataforma%20de%20informaci%C3%B3n%20sobre%20personas%20mayores%20para%20fortalecer%20el%20ecosistema%20de%20%23Econom%C3%ADaPlateada%20%C2%A1Explora%20y%20contribuye%20a%20la%20calidad%20de%20vida%20para%20la%20vejez%21',
+  '/cifras-relevantes': 'Encuentra%20datos%20clave%20sobre%20tecnolog%C3%ADa%2C%20finanzas%2C%20salud%2C%20educaci%C3%B3n%20y%20movilidad%20para%20personas%20mayores%20en%20Colombia.%20%2B60%20Datos%20Plateados%20es%20el%20punto%20de%20inicio%20para%20mejorar%20su%20calidad%20de%20vida.%20%F0%9F%93%8A%F0%9F%87%A8%F0%9F%87%B4%20%23Econom%C3%ADaPlateada',
+  '/percepciones': 'Conoce%20las%20percepciones%20sobre%20envejecimiento%20en%20Colombia%20en%20%2B60%20Datos%20Plateados%20y%20transforma%20los%20imaginarios%20sobre%20la%20vejez.%20%F0%9F%91%B5%F0%9F%A7%93%20%23Percepciones%20%23Envejecimiento',
+  '/repositorio-de-servicios': 'Conoce%20%2B60%20Datos%20Plateados%20y%20explora%20servicios%20digitales%20para%20personas%20mayores%20en%20Colombia%20y%20el%20mundo.%20Descubre%20los%20avances%20y%20las%20oportunidades%20en%20el%20ecosistema%20de%20%23Econom%C3%ADaPlateada.%20%F0%9F%8C%90%F0%9F%93%B1',
+  '/recursos': 'Accede%20a%20una%20biblioteca%20con%20reportes%2C%20datos%20y%20pol%C3%ADticas%20p%C3%BAblicas%20para%20contribuir%20a%20la%20investigaci%C3%B3n%20y%20creaci%C3%B3n%20de%20servicios%20para%20personas%20mayores%20en%20Colombia.%20Visita%20%2B60%20Datos%20Plateados%F0%9F%93%9A%F0%9F%93%8A%20%23Econom%C3%ADaPlateada'
+}
+
 export default function Header() {
   const pathname = usePathname();
   const navRef = useRef<HTMLDivElement>(null);
@@ -48,7 +56,8 @@ export default function Header() {
                 <div className="flex mx-auto max-w-screen-md justify-between gap-10">
                   <a
                     className="flex items-center gap-x-2"
-                    href={`https://wa.me/?text=Visita%20%2B60%20datos%20plateados%20${url}`}
+                    //@ts-ignore
+                    href={`https://wa.me/?text=${msg[pathname]}%20${url}`}
                     target="_blank"
                   >
                     <Image
@@ -72,7 +81,8 @@ export default function Header() {
                   </a>
                   <a
                     className="flex items-center gap-x-2"
-                    href={`https://twitter.com/intent/tweet?url=${url}&text=Visita%20%2B60%20datos%20plateados`}
+                    //@ts-ignore
+                    href={`https://twitter.com/intent/tweet?url=${url}&text=${msg[pathname]}`}
                     target="_blank"
                   >
                     <Image

@@ -23,8 +23,6 @@ export default function Footer() {
                 cuales se busca incentivar el desarrollo de programas y
                 servicios dirigidos a las personas mayores.
               </p>
-              <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Preguntas%20frecuentes%20%2B60%20Datos%20Plateados.pdf">Preguntas frecuentes</Link></p>
-              <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">Anexo técnico sobre las fuentes de información y el uso de datos</Link></p>
             </div>
             <div className="col-span-4 lg:col-start-10 lg:col-end-13">
               <div className="flex justify-center lg:justify-end">
@@ -40,6 +38,10 @@ export default function Footer() {
                     height={11}
                   />
                 </Link>
+              </div>
+              <div className="mt-10">
+                <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Preguntas%20frecuentes%20%2B60%20Datos%20Plateados.pdf">Preguntas frecuentes</Link></p>
+                <p><Link className="mt-5 underline text-dark-slate-gray relative z-10" href="/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf">Anexo técnico sobre las fuentes de información y el uso de datos</Link></p>
               </div>
             </div>
           </div>

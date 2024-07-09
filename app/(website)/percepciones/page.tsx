@@ -167,7 +167,7 @@ export default function Page() {
               <p className="mt-4 col-span-4 lg:col-span-12">Te puede interesar: <Link href="/recursos?seccion=biblioteca" className="text-dark-slate-gray underline">Recursos-Biblioteca</Link></p>
             </div>
           </div>
-          <div className="flex w-full justify-center mt-16">
+          <div className="flex w-full justify-center mt-4">
             <div className="w-full">
               <WrapperChart mobile description="Esta nube de palabras circular se conforma de diferentes palabras que describen la percepción de los encuestados sobre la vejez. Estas palabras varían su tamaño según la frecuencia de las respuestas.">
                 <TabSections

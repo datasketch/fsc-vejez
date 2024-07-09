@@ -18,13 +18,12 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
             valueFormat={(valueFormat) =>
               new Intl.NumberFormat("es-CO").format(valueFormat)
             }
-            label={(e) =>
-              e.id +
-              " (" +
-              (new Intl.NumberFormat("es-CO", {maximumFractionDigits: 2})
-                .format((e.data.loc))) +
-              "%" +
-              ")"
+            label={(e) => {
+              if (e.value > 10) {
+                return (e.id + " (" + (new Intl.NumberFormat("es-CO", {maximumFractionDigits: 2}).format((e.data.loc))) + "%" + ")")
+              }
+              return ""
+            }
             }
             enableParentLabel={false}
             parentLabelPosition="top"
@@ -34,11 +33,19 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
             parentLabelTextColor={(node) =>
               node.id !== "Personas mayores" ? "#FFFFFF" : "#1A1A1A"
             }
-            labelTextColor={(node) =>
-              node.path !== "Tasa de alfabetismo.Personas mayores.Sí" &&
+            labelTextColor={(node) => {
+              console.log(node);
+
+              if (node.value > 10) {
+                return "black"
+              }
+              return node.color
+
+              /* eturn node.path !== "Tasa de alfabetismo.Personas mayores.Sí" &&
               node.path !== "Tasa de alfabetismo.Personas mayores.No"
-                ? "#FFFFFF"
-                : "#1A1A1A"
+                ? "black"
+                : "#1A1A1A" */
+            }
             }
             colors={["#B6174B","#1D5556", "#FAAA8D", "#4B034F", "#41A5B4"]}
             borderColor="#ffffff"
