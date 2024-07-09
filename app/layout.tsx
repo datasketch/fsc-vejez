@@ -3,6 +3,7 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 import Script from "next/script";
+import Head from "next/head";
 
 const proximaNovaAltFont = localFont({
   variable: "--font-proxima-nova-a",
@@ -170,6 +171,10 @@ export default function RootLayout({
           `,
         }}
       />
+      <Head>
+        <meta property="og:image" content="/images/opengraph-image.png" />
+        <meta name="twitter:image" content="/images/twitter-image.png" />
+      </Head>
       <body>{children}</body>
     </html>
   );

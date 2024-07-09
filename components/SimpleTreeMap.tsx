@@ -37,6 +37,9 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
               console.log(node);
 
               if (node.value > 10) {
+                if (node.color === "#B6174B") {
+                  return "white"
+                }
                 return "black"
               }
               return node.color
