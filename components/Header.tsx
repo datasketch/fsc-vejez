@@ -100,7 +100,7 @@ export default function Header() {
             <Link
               href="/"
             >
-              <Image width={150} height={80} src="/images/logo60.svg" alt="logo" />
+              <Image width={150} height={80} src="/images/logo60.svg" alt="Logo +60 Datos plateados" />
             </Link>
           </div>
           <ul className="hidden lg:flex lg:col-start-5 lg:col-end-13 justify-center gap-x-[22px] lg:justify-between lg:gap-x-10">
