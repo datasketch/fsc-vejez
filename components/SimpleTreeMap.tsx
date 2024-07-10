@@ -9,7 +9,7 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
   return (
     <div className="w-full overflow-x-auto">
       <div className="w-full mx-auto lg:mx-0">
-        <div className="h-[390px]">
+        <div className="h-[360px]">
           <ResponsiveTreeMap
             data={data}
             identity="name"

@@ -280,15 +280,7 @@ export default function Page() {
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                A partir de los datos presentados por la Encuesta Nacional de
-                                Calidad de Vida (DANE, 2022), oír, hablar, ver, mover el cuerpo,
-                                entre otras, son capacidades que ayudan a satisfacer las
-                                necesidades básicas diarias, por lo que su estado de bienestar
-                                influye en aspectos como el nivel de independencia de una
-                                persona. Aunque la mayoría de las personas mayores manifestaron
-                                no tener impedimentos en realizar las actividades, presentan
-                                alguna o mucha dificultad en ver; mover el cuerpo, caminar o
-                                usar escaleras y oír.
+                                Oír, hablar, ver, mover el cuerpo, entre otras, son capacidades que ayudan a satisfacer las necesidades básicas diarias, por lo que su estado de bienestar influye en aspectos como el nivel de independencia de otra persona. Según los datos de la Encuesta Nacional de Calidad de Vida (DANE, 2022), la mayoría de las personas mayores manifestaron no tener impedimentos en realizar las actividades. Sin embargo, presentan alguna o mucha dificultad en ver; mover el cuerpo, caminar o usar escaleras y oír.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>

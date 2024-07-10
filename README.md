@@ -1,8 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# + 60 Datos plateados
 
-## Getting Started
+Este es un proyecto desarrollado en [Next.js](https://nextjs.org/).
 
-First, run the development server:
+## Para empezar
+
+Se requiere tener primero Node js version 18 o mayor y un administrador de paquetes como lo es npm.
+
+Con ello se comienza con la instalacion de dependecias:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Luego se configura el archivo con las varibles de entorno:
+
+```dosini
+# .env.local
+ACCESS_KEY_ID=
+SECRET_ACCESS_KEY=
+BUCKET=
+```
+
+Ya con el ambiente configurado se puede proceder a correr en modo de desarrollo:
 
 ```bash
 npm run dev
@@ -14,23 +39,12 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) con tu browser para mirar el resultado y poder empezar a realizar cambios al codigo en vivo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Ver mas
 
-## Learn More
+Para obtener más información sobre Next.js, consulte los siguientes recursos:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs) - obtenga más información sobre las funciones y la API de Next.js.
+- [Learn Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
