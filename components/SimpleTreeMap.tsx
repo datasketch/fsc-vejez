@@ -34,8 +34,6 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
               node.id !== "Personas mayores" ? "#FFFFFF" : "#1A1A1A"
             }
             labelTextColor={(node) => {
-              console.log(node);
-
               if (node.value > 10) {
                 if (node.color === "#B6174B") {
                   return "white"

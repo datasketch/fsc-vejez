@@ -10,11 +10,10 @@ import WordCloud from "@/components/WordCloud";
 import MapServices from "@/components/MapServices";
 import countriesCode from "@/data/country.json";
 
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import { Credentials } from "aws-sdk";
 import omit from "lodash.omit";
 import ServicesClient from "@/components/ServicesClient";
 import StackedBarChart from "@/components/StackedBarChart";
+import { client } from "@/util";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -39,7 +38,7 @@ interface ServicesData {
 function getServicesByCountry(data: Array<Record<string, unknown>>) {
   const legend = [
     {
-      key: "Educación",
+      key: "EducaciÃ³n",
       fill: "#1D5556",
     },
     {
@@ -84,41 +83,17 @@ function getServicesByCountry(data: Array<Record<string, unknown>>) {
 
 async function getServices(): Promise<ServicesData | {}> {
   try {
-    const s3Client = new S3Client({
-      region: "us-east-1",
-      credentials: new Credentials({
-        accessKeyId: process.env.ACCESS_KEY_ID || "",
-        secretAccessKey: process.env.SECRET_ACCESS_KEY || "",
-      }),
-    });
-    const bucket = process.env.BUCKET;
-
-    const cmd = new GetObjectCommand({
-      Bucket: bucket,
-      Key: "fundacion-saldarriaga-concha/datos-plateados/servicios.json",
-    });
-
-    const { Body } = await s3Client.send(cmd);
-
-    const content = await Body?.transformToString();
-
-    const data = content ? JSON.parse(content) : [];
-
+    
+    await client.setTable("servicios")
+    const {data} = await client.getRecords()
     const barChartData = getServicesByCountry(data);
 
-    const cmd2 = new GetObjectCommand({
-      Bucket: bucket,
-      Key: "fundacion-saldarriaga-concha/datos-plateados/paises-1.json",
-    });
-
-    const countries = await s3Client.send(cmd2);
-
-    const content2 = await countries.Body?.transformToString();
-
-    const data2 = content2 ? JSON.parse(content2) : [];
+   
+    await client.setTable("paises_1")
+    const {data:countries} = await client.getRecords()
 
     const mapData = barChartData.data.map((country) => {
-      const cod = data2.find(
+      const cod = countries.find(
         (item: { nombre: string }): any => item.nombre === country.name
       );
 
@@ -136,7 +111,7 @@ async function getServices(): Promise<ServicesData | {}> {
 
     // rcd___id is a field appended to data when uploaded to Datasketch SaaS
     return {
-      services: data.map((item: Record<string, unknown>) =>
+      services:  data.map((item: Record<string, unknown>) =>
         omit(item, ["rcd___id"])
       ),
       barChartData,
@@ -254,6 +229,7 @@ export default async function Page() {
               </div>
               <div className="mt-6">
                 <WrapperChart mobile description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
+                  <div/>
                   <StackedBarChart
                     data={(data as ServicesData).barChartData.data}
                     legend={(data as ServicesData).barChartData.legend}
