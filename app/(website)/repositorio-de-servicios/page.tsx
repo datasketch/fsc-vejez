@@ -10,17 +10,21 @@ import WordCloud from "@/components/WordCloud";
 import MapServices from "@/components/MapServices";
 import countriesCode from "@/data/country.json";
 
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import { Credentials } from "aws-sdk";
 import omit from "lodash.omit";
 import ServicesClient from "@/components/ServicesClient";
 import StackedBarChart from "@/components/StackedBarChart";
+import { client } from "@/util";
 
 export const metadata: Metadata = {
   title: "Servicios",
   description:
     "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
 };
+
+interface Country {
+  nombre: string
+  codigo: string
+}
 
 interface ServicesData {
   services: Array<Record<string, unknown>>;
@@ -39,7 +43,7 @@ interface ServicesData {
 function getServicesByCountry(data: Array<Record<string, unknown>>) {
   const legend = [
     {
-      key: "Educación",
+      key: "EducaciÃ³n",
       fill: "#1D5556",
     },
     {
@@ -84,50 +88,25 @@ function getServicesByCountry(data: Array<Record<string, unknown>>) {
 
 async function getServices(): Promise<ServicesData | {}> {
   try {
-    const s3Client = new S3Client({
-      region: "us-east-1",
-      credentials: new Credentials({
-        accessKeyId: process.env.ACCESS_KEY_ID || "",
-        secretAccessKey: process.env.SECRET_ACCESS_KEY || "",
-      }),
-    });
-    const bucket = process.env.BUCKET;
-
-    const cmd = new GetObjectCommand({
-      Bucket: bucket,
-      Key: "fundacion-saldarriaga-concha/datos-plateados/servicios.json",
-    });
-
-    const { Body } = await s3Client.send(cmd);
-
-    const content = await Body?.transformToString();
-
-    const data = content ? JSON.parse(content) : [];
-
+    await client.setTable("servicios")
+    const { data } = await client.getRecords<Record<string, unknown>>()
     const barChartData = getServicesByCountry(data);
 
-    const cmd2 = new GetObjectCommand({
-      Bucket: bucket,
-      Key: "fundacion-saldarriaga-concha/datos-plateados/paises-1.json",
-    });
 
-    const countries = await s3Client.send(cmd2);
-
-    const content2 = await countries.Body?.transformToString();
-
-    const data2 = content2 ? JSON.parse(content2) : [];
+    await client.setTable("paises_1")
+    const { data: countries } = await client.getRecords<Country>()
 
     const mapData = barChartData.data.map((country) => {
-      const cod = data2.find(
-        (item: { nombre: string }): any => item.nombre === country.name
+      const cod = countries.find(
+        (item): any => item.nombre === country.name
       );
 
       const info = countriesCode.ref_country_codes.find(
-        (item) => item.alpha3 === cod.codigo
+        (item) => item.alpha3 === cod?.codigo
       );
 
       return {
-        city_code: cod.codigo,
+        city_code: cod?.codigo,
         lng: info?.longitude,
         lat: info?.latitude,
         population: country.total,
@@ -254,6 +233,7 @@ export default async function Page() {
               </div>
               <div className="mt-6">
                 <WrapperChart mobile description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
+                  <div />
                   <StackedBarChart
                     data={(data as ServicesData).barChartData.data}
                     legend={(data as ServicesData).barChartData.legend}
