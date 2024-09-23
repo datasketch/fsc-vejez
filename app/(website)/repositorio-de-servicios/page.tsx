@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     "Esta sección destaca servicios digitales especializados para personas de 60 años o más. Aquí encontrará ejemplos e información sobre los avances en soluciones tecnológicas a nivel global dirigidos a este grupo demográfico. También incluye un recurso de búsqueda para explorar fácilmente estos servicios.",
 };
 
+interface Country {
+  nombre: string
+  codigo: string
+}
+
 interface ServicesData {
   services: Array<Record<string, unknown>>;
   barChartData: {
@@ -83,26 +88,25 @@ function getServicesByCountry(data: Array<Record<string, unknown>>) {
 
 async function getServices(): Promise<ServicesData | {}> {
   try {
-    
     await client.setTable("servicios")
-    const {data} = await client.getRecords()
+    const { data } = await client.getRecords<Record<string, unknown>>()
     const barChartData = getServicesByCountry(data);
 
-   
+
     await client.setTable("paises_1")
-    const {data:countries} = await client.getRecords()
+    const { data: countries } = await client.getRecords<Country>()
 
     const mapData = barChartData.data.map((country) => {
       const cod = countries.find(
-        (item: { nombre: string }): any => item.nombre === country.name
+        (item): any => item.nombre === country.name
       );
 
       const info = countriesCode.ref_country_codes.find(
-        (item) => item.alpha3 === cod.codigo
+        (item) => item.alpha3 === cod?.codigo
       );
 
       return {
-        city_code: cod.codigo,
+        city_code: cod?.codigo,
         lng: info?.longitude,
         lat: info?.latitude,
         population: country.total,
@@ -111,7 +115,7 @@ async function getServices(): Promise<ServicesData | {}> {
 
     // rcd___id is a field appended to data when uploaded to Datasketch SaaS
     return {
-      services:  data.map((item: Record<string, unknown>) =>
+      services: data.map((item: Record<string, unknown>) =>
         omit(item, ["rcd___id"])
       ),
       barChartData,
@@ -229,7 +233,7 @@ export default async function Page() {
               </div>
               <div className="mt-6">
                 <WrapperChart mobile description="El gráfico muestra la cantidad de servicios tecnológicos documentados por cada uno de los países. Los diferentes colores muestran la clasificación de servicios tecnológicos según la necesidad que buscan suplir, como lo son ingresos y finanzas, salud y bienestar y educación.">
-                  <div/>
+                  <div />
                   <StackedBarChart
                     data={(data as ServicesData).barChartData.data}
                     legend={(data as ServicesData).barChartData.legend}

@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     template: '%s | +60 Datos plateados',
     default: '+60 Datos plateados'
 
-  }
+  },
 }
 
 export default function RootLayout({

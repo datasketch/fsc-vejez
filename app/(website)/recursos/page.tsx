@@ -14,6 +14,7 @@ async function getResources(
   try {
     await client.setTable(`recursos_${panel}`)
     const {data} = await client.getRecords()
+    
     return data as Record<string, unknown>[]
   } catch (error) {
     console.error(error);
@@ -24,7 +25,7 @@ async function getResources(
 export default async function Page() {
   const [libraryData, politicsData, dataData] = await Promise.all([
     getResources("biblioteca"),
-    getResources("politicas-publicas"),
+    getResources("politicas_publicas"),
     getResources("datos"),
   ]);
 
