@@ -4,6 +4,9 @@ parameters:
   run_workflow:
     type: boolean
     default: false
+  token:
+    type: string
+    default: ''
 
 jobs:
   push_to_build:
