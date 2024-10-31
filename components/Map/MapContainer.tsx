@@ -148,6 +148,7 @@ export default function MapContainer({
                     key={geo.rsmKey}
                     geography={geo}
                     onMouseEnter={() => {
+                      // @ts-ignore
                       setTooltip(findDepartment || null);
                     }}
                     onMouseLeave={() => setTooltip(null)}
