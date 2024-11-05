@@ -35,10 +35,10 @@ export default function SimpleTreeMap({ data }: TreeMapHomeProps) {
             }
             labelTextColor={(node) => {
               if (node.value > 10) {
-                if (node.color === "#B6174B") {
-                  return "white"
+                if (node.color === "#FAAA8D") {
+                  return "black"
                 }
-                return "black"
+                return "white"
               }
               return node.color
 
