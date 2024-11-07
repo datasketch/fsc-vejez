@@ -14,6 +14,8 @@ import NavHome from "@/components/NavHome";
 import DisclaimerTitle from "@/components/DisclaimerTitle";
 import TechTreeMap from "@/components/TechTreeMap";
 import Link from "next/link";
+import PieChart from "@/components/PieChart";
+import PieChartDepartment from "@/components/PieChart";
 
 export const metadata: Metadata = {
     title: "Cifras relevantes",
@@ -301,7 +303,8 @@ export default function Page() {
                                 <p className="xl:hidden">
                                     Para ver la gráfica completa desliza hacia los lados
                                 </p>
-                                <HeatMapHome data={data.capacidades} />
+                                <PieChartDepartment />
+                                {/* <HeatMapHome data={data.capacidades} /> */}
                             </WrapperChart>
                         </div>
                         <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
