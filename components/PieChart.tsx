@@ -376,8 +376,9 @@ export default function PieChartDepartment() {
                 </select>
             </div>
             <div className="w-full h-full flex justify-center items-center">
-                <PieChart width={1000} height={400}>
-                    <Pie
+                <ResponsiveContainer width="100%" height={400}>
+                    <PieChart width={1000} height={400}>
+                        <Pie
                         data={data[selectedDepartment as keyof typeof data]}
                         cx="50%"
                         cy="50%"
@@ -390,8 +391,9 @@ export default function PieChartDepartment() {
                         {data[selectedDepartment as keyof typeof data].map((entry: any, index: number) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
-                    </Pie>
-                </PieChart>
+                        </Pie>
+                    </PieChart>
+                </ResponsiveContainer>
                 <Legend
                     verticalAlign="bottom"
                     height={36}
