@@ -43,7 +43,7 @@ interface ServicesData {
 function getServicesByCountry(data: Array<Record<string, unknown>>) {
   const legend = [
     {
-      key: "EducaciÃ³n",
+      key: "Educación",
       fill: "#1D5556",
     },
     {

@@ -14,6 +14,8 @@ import NavHome from "@/components/NavHome";
 import DisclaimerTitle from "@/components/DisclaimerTitle";
 import TechTreeMap from "@/components/TechTreeMap";
 import Link from "next/link";
+import PieChart from "@/components/PieChart";
+import PieChartDepartment from "@/components/PieChart";
 
 export const metadata: Metadata = {
     title: "Cifras relevantes",
@@ -85,18 +87,16 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
                         <div className="mt-6 lg:mt-12 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold inline-block">
-                                    Uso de internet y acceso a{" "}
-                                    <span className="italic font-normal text-dark-slate-gray">
-                                        dispositivos
-                                    </span>
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold inline-block">
+                                Uso de internet y acceso a{" "}
+                                <span className="italic font-normal text-dark-slate-gray">
+                                    dispositivos
+                                </span>
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                La Encuesta Nacional de Calidad de Vida 2022 preguntó por la frecuencia de utilización de internet. Al seleccionar un departamento, se muestran las respuestas de las personas mayores y los dispositivos con los que acceden a este servicio. El porcentaje de utilización de internet es mayor en los departamentos del centro del país y en el Archipiélago de San Andrés, Providencia y Santa Catalina. El dispositivo que más se usa para tal fin es el celular.
+                                Al seleccionar un departamento, se muestra la frecuencia de utilización de internet de las personas mayores y los dispositivos con los que acceden a este servicio, según la Encuesta Nacional de Calidad de Vida (ECV) (DANE, 2022). El uso de internet es mayor en los departamentos del centro del país (Risaralda, Caldas y Santander) y en el Archipiélago de San Andrés, Providencia y Santa Catalina. El dispositivo que más se usa para tal fin es el celular.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
@@ -108,6 +108,17 @@ export default function Page() {
                             <WrapperChart description="El treemap o mapa de árbol es una visualización jerárquica que utiliza unos recuadros dentro de otros para representar la proporción de diferentes categorías en un conjunto de datos. Cada recuadro representa una categoría específica del uso de internet y su tamaño es proporcional al porcentaje de respuestas. Los diferentes colores ayudan a distinguir visualmente entre las categorías. Cada recuadro tiene una etiqueta con la descripción de la categoría y el porcentaje correspondiente, facilitando la identificación de cada categoría.">
                                 <TechTreeMap />
                             </WrapperChart>
+                        </div>
+                        <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
+                            <a
+                                className="underline"
+                                target="_blank"
+                                href="https://microdatos.dane.gov.co/index.php/catalog/793/get-microdata"
+                            >
+                                <p className="text-davys-gray">
+                                    Encuesta Nacional de Calidad de Vida (ECV), 2022, DANE
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -133,31 +144,16 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
                         <div className="mt-6 lg:mt-12 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold">
-                                    Fuentes de{" "}
-                                    <span className="italic font-normal text-dark-slate-gray">
-                                        ingreso
-                                    </span>
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold">
+                                Fuentes de{" "}
+                                <span className="italic font-normal text-dark-slate-gray">
+                                    ingreso
+                                </span>
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                La gráfica muestra las fuentes de ingresos de las personas
-                                mayores a partir de los datos de la Gran Encuesta de Hogares
-                                (GEIH), (DANE, 2023). Estas fuentes se clasifican en honorarios
-                                profesionales, ingresos o comisiones y salarios u honorarios.
-                                Los honorarios profesionales son la remuneración por ejercer la
-                                profesión de manera independiente; los ingresos o comisiones son
-                                las ganancias por obra, pieza, comisión u oficio, sin
-                                deducciones; y los salarios u honorarios corresponden a los
-                                pagos en dinero o especie que reciben los empleados. Los
-                                honorarios profesionales son una fuente principal de ingresos,
-                                especialmente a medida que las personas envejecen. El promedio
-                                de honorarios de personas mayores es el más alto en comparación
-                                con los otros ingresos que obtienen y también respecto a los
-                                ingresos de las otras etapas del ciclo de vida.
+                                La gráfica muestra los promedios de las fuentes de ingresos de las personas mayores a partir de los datos de la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2023). Estas fuentes se clasifican en honorarios profesionales, ingresos o comisiones y salarios u honorarios. Los honorarios profesionales son la remuneración por ejercer la profesión de manera independiente; los ingresos o comisiones son las ganancias por obra, pieza, comisión u oficio, sin deducciones; y los salarios u honorarios corresponden a los pagos en dinero o especie que reciben los empleados. Los honorarios profesionales son la mayor fuente de ingresos, especialmente a medida que las personas envejecen. El promedio de honorarios de personas mayores es el más alto en comparación con sus demás ingresos. Sin embargo, los promedios de fuentes de ingresos de los adultos son mayores en comparación con los de las otras etapas del ciclo de vida.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
@@ -174,7 +170,7 @@ export default function Page() {
                                 style={{ width: '100%', height: 'auto' }} />
                         </div>
                         <div className="mt-4 col-span-4 lg:col-span-12">
-                            <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los grupos etarios de juventud, adultez y personas mayores. Los datos son representados en barras verticales para compararlos. En las personas mayores, los honorarios profesionales llegan a 3 millones de pesos, los salarios u honorarios a 1.5 millones y los ingresos o comisiones a 1 millón.">
+                            <WrapperChart description="La gráfica muestra los ingresos en términos de honorarios profesionales, ingresos o comisiones y salarios u honorarios a través de los grupos etarios de juventud, adultez y personas mayores. Los datos son representados en barras verticales para comparar por fuentes de ingreso o por etapas del ciclo vital.">
                                 <MultipleBarChart
                                     data={data.ingresos.data}
                                     legend={data.ingresos.legend}
@@ -203,13 +199,7 @@ export default function Page() {
                         </div>
                         <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El gráfico de barra apilada ilustra el uso de productos
-                                financieros en los hogares con personas de 60 años o más según
-                                los datos obtenidos por la Gran Encuesta de Hogares (GEIH),
-                                (DANE,2023). La cuenta de ahorros es el producto más común,
-                                representando más de la mitad de las respuestas (53.06%). Un
-                                porcentaje significativo (27.95%) de las personas respondieron
-                                no tener ningún producto financiero.
+                                El gráfico de barra apilada ilustra el uso de productos financieros en los hogares con personas de 60 años o más, según los datos obtenidos por la Gran Encuesta Integrada de Hogares (GEIH) (DANE,2023). La cuenta de ahorros es el producto más usado con el 58,6%. El 38,4% de las personas respondieron no tener ningún producto financiero. La sumatoria de los porcentajes es mayor que el 100% porque una persona puede usar más de un producto financiero y las proporciones suelen calcularse en función del total de encuestados.
                             </p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
@@ -230,7 +220,7 @@ export default function Page() {
                                     className="mx-auto"
                                     width={822}
                                     height={696}
-                                    src="/images/home/ticket.svg"
+                                    src="/images/home/new-ticket.svg"
                                     alt="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
                                     aria-label="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
                                 />
@@ -272,15 +262,13 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
                         <div className="mt-6 lg:mt-12 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold">
-                                    Capacidades
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold">
+                                Capacidades
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                Oír, hablar, ver, mover el cuerpo, entre otras, son capacidades que ayudan a satisfacer las necesidades básicas diarias, por lo que su estado de bienestar influye en aspectos como el nivel de independencia de otra persona. Según los datos de la Encuesta Nacional de Calidad de Vida (DANE, 2022), la mayoría de las personas mayores manifestaron no tener impedimentos en realizar las actividades. Sin embargo, presentan alguna o mucha dificultad en ver; mover el cuerpo, caminar o usar escaleras y oír.
+                                Oír, hablar, ver, comer, mover el cuerpo, entre otras, son capacidades que ayudan a satisfacer las necesidades básicas diarias. De acuerdo con el Grupo de Washington sobre Estadísticas de la Discapacidad, se considera que una persona tiene una discapacidad si respondió “no puedo hacerlo” o “sí, con mucha dificultad” a una de las ocho preguntas sobre capacidades de la Encuesta Nacional de Calidad de Vida (ECV) (DANE, 2022). Nariño, Guaviare y Valle del Cauca son los departamentos con mayor porcentaje de personas mayores con discapacidad, alcanzando el 20% de esta población. Por el contrario, San Andrés, Vaupés y Vichada tienen los porcentajes más bajos, de 6% o menos.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
@@ -288,20 +276,21 @@ export default function Page() {
                             <Image src="/images/icons/warning.svg" width={30} height={30} alt="warning" />
                             <p>Para ver los gráficos dinámicos, entra a esta página desde tu computador.</p>
                         </div>
-                        <div className="lg:hidden col-span-4 mt-4">
+                        {/* <div className="lg:hidden col-span-4 mt-4">
                             <Image
                                 src="/images/cifras/mini-salud.png"
                                 alt="grafico finanzas 1"
                                 width={100}
                                 height={100} // Estos valores son proporcionales
                                 style={{ width: '100%', height: 'auto' }} />
-                        </div>
+                        </div> */}
                         <div className="mt-4 col-span-4 lg:col-span-12">
-                            <WrapperChart description="El mapa de calor muestra el número de personas mayores con diferentes niveles de dificultad para realizar diversas actividades. Las columnas representan los niveles de dificultad: 'No puede hacerlo', 'Sí, con mucha dificultad', 'Sí, con alguna dificultad' y 'Sin dificultad'. Los colores van del verde claro al verde oscuro, indicando el número de personas para cada nivel de dificultad según la capacidad. Cuantas más personas hayan respondido en una opción, más oscuro será el verde y viceversa.">
+                            <WrapperChart description="Al seleccionar una opción de departamento, un gráfico de torta muestra el porcentaje de personas mayores que tienen una discapacidad o no. El porcentaje de cada opción es igual al área de la torta, o sea, el espacio que ocupa, facilitando la comparación.">
                                 <p className="xl:hidden">
                                     Para ver la gráfica completa desliza hacia los lados
                                 </p>
-                                <HeatMapHome data={data.capacidades} />
+                                <PieChartDepartment />
+                                {/* <HeatMapHome data={data.capacidades} /> */}
                             </WrapperChart>
                         </div>
                         <div className="mt-12 lg:mt-16 col-span-4 lg:col-span-12">
@@ -317,28 +306,16 @@ export default function Page() {
                         </div>
                         {/*  */}
                         <div className="mt-12 lg:mt-20 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold">
-                                    Vivienda y composición{" "}
-                                    <span className="italic font-normal text-dark-slate-gray">
-                                        del hogar
-                                    </span>
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold">
+                                Vivienda y composición{" "}
+                                <span className="italic font-normal text-dark-slate-gray">
+                                    del hogar
+                                </span>
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                Tanto hombres como mujeres muestran patrones de vivienda
-                                similares. Los apartamentos y las casas son los tipos de
-                                vivienda más comunes para ambos géneros. La propiedad totalmente
-                                pagada y el arriendo/subarriendo son las condiciones de tenencia
-                                más comunes para los apartamentos. En cambio, las casas tienen
-                                una distribución más diversa en cuanto a tenencia, pero priman
-                                la propiedad totalmente pagada, en usufructo y en
-                                arriendo/subarriendo. La gráfica filtra los valores
-                                predominantes tomados de la Encuesta Integrada de Hogares (DANE,
-                                2023). Para conocer todos los resultados, diríjase a “Explora
-                                los datos”, al final de la página de inicio.
+                                Tanto hombres como mujeres mayores muestran patrones de vivienda similares. Los apartamentos y las casas son los tipos de vivienda más comunes para ambos géneros. La propiedad totalmente pagada y el arriendo/subarriendo son las condiciones de tenencia más usuales para los apartamentos. En cambio, las casas tienen una distribución más diversa en cuanto a tenencia, pero priman la propiedad totalmente pagada, en usufructo y en arriendo/subarriendo. La gráfica filtra los valores predominantes tomados de la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2023). Para conocer todos los resultados, diríjase a “Explora los datos”, al final de la página de Inicio.
                             </p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
@@ -402,23 +379,16 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:block lg:col-span-6">&nbsp;</div>
                         <div className="mt-6 lg:mt-12 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
-                                    Personas que saben
-                                    <span className="block italic font-normal text-dark-slate-gray">
-                                        leer y escribir
-                                    </span>
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold leading-none">
+                                Personas que saben
+                                <span className="block italic font-normal text-dark-slate-gray">
+                                    leer y escribir
+                                </span>
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El treemap muestra la proporción de personas mayores que
-                                afirmaron saber leer y escribir según la Gran Encuesta Integrada
-                                de Hogares (DANE, 2022). Los jóvenes son quienes más
-                                respondieron de manera afirmativa, seguidos de los adultos y las
-                                personas mayores. 11.6% de las personas de 60 años o más
-                                reportaron no saben leer ni escribir.
+                                El treemap muestra la proporción de personas mayores que afirmaron saber leer y escribir según la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2022). Los jóvenes son quienes más respondieron de manera afirmativa, seguidos de los adultos y las personas mayores. Más de 970 000 personas de 60 años o más no saben leer ni escribir, que equivalen al 12,59% de esta etapa del ciclo vital.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>
@@ -459,24 +429,16 @@ export default function Page() {
                             </a>
                         </div>
                         <div className="mt-12 lg:mt-20 col-span-4">
-                            <DisclaimerTitle message="Precaución proveniente del DANE: estas estadísticas reflejan el número de casos encontrados en el archivo de datos. No deben ser interpretadas como un resumen estadístico del universo de interés.">
-                                <h3 className="text-2xl lg:text-[31px] font-semibold">
-                                    Nivel educativo{" "}
-                                    <span className="italic font-normal text-dark-slate-gray">
-                                        alcanzado
-                                    </span>
-                                </h3>
-                            </DisclaimerTitle>
+                            <h3 className="text-2xl lg:text-[31px] font-semibold">
+                                Nivel educativo{" "}
+                                <span className="italic font-normal text-dark-slate-gray">
+                                    alcanzado
+                                </span>
+                            </h3>
                         </div>
                         <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El archivo de datos de la Gran Encuesta Integrada de Hogares
-                                (DANE, 2023) brinda información del último nivel educativo
-                                alcanzado. La mayor parte de las personas mayores estudió hasta
-                                básica primaria, seguida de media académica y básica secundaria.
-                                Salvo básica primaria, normalista y doctorado, las personas
-                                mayores son la etapa del ciclo de vida con menos personas en los
-                                demás niveles educativos.
+                                El archivo de datos de la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2023) brinda información del último nivel educativo alcanzado. La mayor parte de las personas mayores estudió hasta básica primaria, seguida de media académica y básica secundaria. Es la etapa del ciclo de vida con más personas que no estudiaron. Además, son menos las personas de 60 años o más en los diferentes niveles educativos, exceptuando básica primaria, normalista y doctorado.
                             </p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
@@ -616,7 +578,7 @@ export default function Page() {
                         <div className="hidden lg:block mt-3 lg:mt-10 xl:mt-12 col-span-4 lg:col-span-12">
                             <iframe
                                 className="size-full lg:aspect-video h-[80vh]"
-                                src="https://services.datasketch.co/fsc-vejez-app/"
+                                src="https://services.datasketch.co/fsc-vejez-app-new/"
                                 title="Explora los datos relacionados con la pagina"
                             />
                         </div>
