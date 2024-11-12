@@ -199,7 +199,7 @@ export default function Page() {
                         </div>
                         <div className="mt-4 lg:mt-20 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El gráfico de barra apilada ilustra el uso de productos financieros en los hogares con personas de 60 años o más, según los datos obtenidos por la Gran Encuesta Integrada de Hogares (GEIH) (DANE,2023). La cuenta de ahorros es el producto más usado con el 58.6%. El 38.4% de las personas respondieron no tener ningún producto financiero. La sumatoria de los porcentajes es mayor que el 100% porque una persona puede usar más de un producto financiero y las proporciones suelen calcularse en función del total de encuestados.
+                                El gráfico de barra apilada ilustra el uso de productos financieros en los hogares con personas de 60 años o más, según los datos obtenidos por la Gran Encuesta Integrada de Hogares (GEIH) (DANE,2023). La cuenta de ahorros es el producto más usado con el 58,6%. El 38,4% de las personas respondieron no tener ningún producto financiero. La sumatoria de los porcentajes es mayor que el 100% porque una persona puede usar más de un producto financiero y las proporciones suelen calcularse en función del total de encuestados.
                             </p>
                         </div>
                         <div className="lg:hidden w-full flex col-span-4 mt-4 gap-2 p-2">
@@ -388,7 +388,7 @@ export default function Page() {
                         </div>
                         <div className="mt-4 lg:mt-12 col-span-4 lg:col-start-6 lg:col-end-13">
                             <p>
-                                El treemap muestra la proporción de personas mayores que afirmaron saber leer y escribir según la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2022). Los jóvenes son quienes más respondieron de manera afirmativa, seguidos de los adultos y las personas mayores. Más de 970 000 personas de 60 años o más no saben leer ni escribir, equivalente al 12.59% de esta etapa del ciclo vital.
+                                El treemap muestra la proporción de personas mayores que afirmaron saber leer y escribir según la Gran Encuesta Integrada de Hogares (GEIH) (DANE, 2022). Los jóvenes son quienes más respondieron de manera afirmativa, seguidos de los adultos y las personas mayores. Más de 970 000 personas de 60 años o más no saben leer ni escribir, que equivalen al 12,59% de esta etapa del ciclo vital.
                             </p>
                             <p className="mt-4">Te puede interesar: <Link href="/repositorio-de-servicios" className="text-dark-slate-gray underline">Repositorio de servicios</Link></p>
                         </div>

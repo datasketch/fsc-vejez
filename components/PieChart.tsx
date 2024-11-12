@@ -336,7 +336,7 @@ const data = {
     ]
 }
 
-const COLORS = ["#B6174B", "#41A5B4"];
+const COLORS = ["#B6174B", "#1D5556"];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, name }: any) => {
