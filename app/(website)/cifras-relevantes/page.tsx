@@ -220,7 +220,7 @@ export default function Page() {
                                     className="mx-auto"
                                     width={822}
                                     height={696}
-                                    src="/images/home/ticket.svg"
+                                    src="/images/home/new-ticket.svg"
                                     alt="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
                                     aria-label="Gráfico de barras en forma de billete mostrando porcentajes de tipos de productos financieros utilizados por personas mayores: 53,06% con cuenta de ahorros, 27,95% ninguno, 7,88% con tarjeta de crédito, 6,09% con otros o no sabe, y 5,02% con préstamo de libre inversión"
                                 />
